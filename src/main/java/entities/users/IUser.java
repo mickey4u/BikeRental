@@ -1,4 +1,4 @@
-package models.users;
+package entities.users;
 
 
 public interface IUser {

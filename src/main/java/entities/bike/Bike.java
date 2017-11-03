@@ -1,6 +1,6 @@
-package models.bike;
+package entities.bike;
 
-import models.users.IUser;
+import entities.users.IUser;
 
 public class Bike {
 

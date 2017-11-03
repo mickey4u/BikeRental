@@ -1,4 +1,4 @@
-package models.bike;
+package entities.bike;
 
 /**
  * This class holds the bicycles location coordinates

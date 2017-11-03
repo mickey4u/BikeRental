@@ -1,4 +1,4 @@
-package models.users;
+package entities.users;
 
 /**
  * This class contains methods that require the user to be logged in.

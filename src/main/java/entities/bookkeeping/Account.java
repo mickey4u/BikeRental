@@ -1,4 +1,4 @@
-package models.bookkeeping;
+package entities.bookkeeping;
 
 import org.javamoney.moneta.Money;
 

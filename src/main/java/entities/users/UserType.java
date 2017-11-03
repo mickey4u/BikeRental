@@ -1,4 +1,4 @@
-package models.users;
+package entities.users;
 
 /**
  * represents the type of users supported on

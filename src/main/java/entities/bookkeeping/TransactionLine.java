@@ -1,4 +1,4 @@
-package models.bookkeeping;
+package entities.bookkeeping;
 
 public class TransactionLine {
 

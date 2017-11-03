@@ -1,4 +1,4 @@
-import models.users.CreateAccount;
+import entities.users.CreateAccount;
 
 /**
  * This class is the application's entry point.
