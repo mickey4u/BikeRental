@@ -11,7 +11,7 @@ import java.io.*;
 import java.lang.reflect.Type;
 import java.util.List;
 
-public class UserDAO {
+public class UserDAO implements UserDaoInterface {
 
     /**
      * This method checks if a user; student/staff exist in the UL database
@@ -19,11 +19,7 @@ public class UserDAO {
      * @param id represent the id of the user
      * @return
      */
-
-
     public boolean userExist(String id) {
-
-        boolean found = false;
 
         try {
             Type type = new TypeToken<List<DummyUser>>() {

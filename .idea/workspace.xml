@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbac297a-215d-4b13-9c17-c43ab0a233c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/UserModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ulstudents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ulstaff.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controllers/AccountController.java" afterPath="$PROJECT_DIR$/src/main/java/models/AccountModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controllers/BikeController.java" afterPath="$PROJECT_DIR$/src/main/java/models/BikeModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controllers/LedgerController.java" afterPath="$PROJECT_DIR$/src/main/java/models/LedgerModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controllers/SupportController.java" afterPath="$PROJECT_DIR$/src/main/java/models/SupportModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controllers/TransactionController.java" afterPath="$PROJECT_DIR$/src/main/java/models/TransactionModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/bike/Bike.java" afterPath="$PROJECT_DIR$/src/main/java/entities/bike/Bike.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/bike/BikeLocation.java" afterPath="$PROJECT_DIR$/src/main/java/entities/bike/BikeLocation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/bookkeeping/Account.java" afterPath="$PROJECT_DIR$/src/main/java/entities/bookkeeping/Account.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/bookkeeping/Id.java" afterPath="$PROJECT_DIR$/src/main/java/entities/bookkeeping/Id.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/bookkeeping/Ledger.java" afterPath="$PROJECT_DIR$/src/main/java/entities/bookkeeping/Ledger.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/bookkeeping/Transaction.java" afterPath="$PROJECT_DIR$/src/main/java/entities/bookkeeping/Transaction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/bookkeeping/TransactionLine.java" afterPath="$PROJECT_DIR$/src/main/java/entities/bookkeeping/TransactionLine.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/users/Address.java" afterPath="$PROJECT_DIR$/src/main/java/entities/users/Address.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/users/Admin.java" afterPath="$PROJECT_DIR$/src/main/java/entities/users/Admin.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/users/BikeOwner.java" afterPath="$PROJECT_DIR$/src/main/java/entities/users/BikeOwner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/users/BikeRenter.java" afterPath="$PROJECT_DIR$/src/main/java/entities/users/BikeRenter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/users/CreateAccount.java" afterPath="$PROJECT_DIR$/src/main/java/entities/users/CreateAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/users/IUser.java" afterPath="$PROJECT_DIR$/src/main/java/entities/users/IUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/users/Session.java" afterPath="$PROJECT_DIR$/src/main/java/entities/users/Session.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/users/User.java" afterPath="$PROJECT_DIR$/src/main/java/entities/users/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/users/UserType.java" afterPath="$PROJECT_DIR$/src/main/java/entities/users/UserType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/BikeRental_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/BikeRental_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoInterface.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BikeRental.iml" afterPath="$PROJECT_DIR$/BikeRental.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BikeRentalSingleton.java" afterPath="$PROJECT_DIR$/src/main/java/BikeRentalSingleton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,11 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserModel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/UserModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="254">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDaoInterface.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDaoInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,8 +70,8 @@
       <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,6 +106,7 @@
         <option value="Enum" />
         <option value="Singleton" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -182,8 +166,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/ulstaff.json" />
         <option value="$PROJECT_DIR$/src/ulstaff.json" />
         <option value="$PROJECT_DIR$/src/main/java/models/DummyUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/UserModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/UserDaoInterface.java" />
       </list>
     </option>
   </component>
@@ -245,6 +230,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
@@ -410,15 +403,24 @@
       <workItem from="1509458724044" duration="2477000" />
       <workItem from="1509486501200" duration="46000" />
       <workItem from="1509545148558" duration="2887000" />
-      <workItem from="1509704302268" duration="6036000" />
+      <workItem from="1509704302268" duration="6532000" />
     </task>
+    <task id="LOCAL-00001" summary="Partial commit for UserDao implementation">
+      <created>1509711964430</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1509711964430</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39387000" />
+    <option name="totallyTimeSpent" value="39883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -429,7 +431,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30441642" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30441642" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27602524" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -489,6 +491,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Partial commit for UserDao implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Partial commit for UserDao implementation" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="3" />
@@ -496,14 +502,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -859,20 +857,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/UserModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDaoInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
