@@ -3,6 +3,6 @@ package entities.users;
 /**
  *
  */
-public class BikeRenter {
+public class BikeRenter extends UserAccountDetails implements IUser{
 
 }

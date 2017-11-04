@@ -4,10 +4,9 @@ package entities.users;
  * represents the type of users supported on
  * the platform
  */
-public enum UserType {
+public enum UserRoles {
 
-    STAFF,
-    STUDENT,
-    MECHANIC,
+    BIKE_RENTER,
+    BIKE_OWNER,
     ADMIN
 }

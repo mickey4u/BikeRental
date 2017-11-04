@@ -1,17 +1,16 @@
 package dao;
 
-import com.google.gson.*;
+
 import com.google.gson.reflect.TypeToken;
-import com.google.gson.stream.JsonReader;
-import entities.users.User;
-import models.DummyUser;
+import entities.users.IUser;
 
 
-import java.io.*;
 import java.lang.reflect.Type;
 import java.util.List;
 
 public class UserDAO implements UserDaoInterface {
+    Type type;
+
 
     /**
      * This method checks if a user; student/staff exist in the UL database
@@ -21,19 +20,25 @@ public class UserDAO implements UserDaoInterface {
      */
     public boolean userExist(String id) {
 
-        try {
-            Type type = new TypeToken<List<DummyUser>>() {
-            }.getType();
-            JsonReader reader = new JsonReader(new FileReader("src/ulstaff.json"));
-            List<DummyUser> students = new Gson().fromJson(reader, type);
-            for (DummyUser user : students) {
-                if (user.getId().equals(id)) {
-                    return true;
-                }
+        type = new TypeToken<List<IUser>>() {
+        }.getType();
+
+        List<IUser> students = FlatFileReader.readFromflatFile("ulstaff.json", type);
+        for (IUser iUser : students) {
+            if (iUser.getId().equals(id)) {
+                return true;
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         }
+
+        return false;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public boolean createUser(IUser iUser){
+
         return false;
     }
 

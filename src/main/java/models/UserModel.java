@@ -5,7 +5,7 @@ import dao.UserDAO;
 /**
  * Handles all the business logic for user on the platform
  */
-public class UserModel {
+public class UserModel implements IUserModel{
 
     UserDAO userDAO = new UserDAO();
 
@@ -28,6 +28,23 @@ public class UserModel {
         } else {
 
         }
+
+    }
+
+
+    @Override
+    public void register(String firstname, String lastname, String id, String password, String phoneNumber, String secretQuestion) {
+
+    }
+
+
+    @Override
+    public void login(String userId, String userPassword) {
+
+    }
+
+    @Override
+    public void logout() {
 
     }
 }
