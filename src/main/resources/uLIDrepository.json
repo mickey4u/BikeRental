@@ -1,0 +1,46 @@
+{
+    "ULdatabase": [
+    {
+      "id": "1024",
+      "firstname": "Mayank",
+      "user" : "student"
+    },
+    {
+      "id": "1036",
+      "firstname": " Chandan",
+      "user" : "student"
+    },
+    {
+      "id": "1045",
+      "firstname": "Bruce",
+      "user" : "student"
+    },
+    {
+      "id": "1067",
+      "firstname": "Michael",
+      "user" : "staff"
+    },
+    {
+      "id": "1211",
+      "firstname": "Jim",
+      "user" : "staff"
+    },
+    {
+      "id": "1212",
+      "firstname": "Chris",
+      "user" : "staff"
+    },
+    {
+      "id": "1213",
+      "firstname": "Michael",
+      "user" : "staff"
+    },
+    {
+      "id": "1214",
+      "firstname": "James",
+      "user" : "staff"
+	}
+    
+    ]
+}
+
