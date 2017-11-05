@@ -1,7 +1,9 @@
 package dao;
 
+import entities.users.IUser;
+
 public interface UserDaoInterface {
 
-    boolean userExist(String id);
+    IUser userExist(String id);
 
 }

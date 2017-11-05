@@ -18,7 +18,7 @@ public class UsersAction extends ActionSupport {
         if (bikeRentalSingleton.getUserModel().login(username, password)) {
             return SUCCESS;
         }
-        return SUCCESS;
+        return ERROR;
     }
 
     public String getUsername() {

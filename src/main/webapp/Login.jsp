@@ -29,11 +29,12 @@ body{
 <h2>UL Bike Rental</h2>
 <s:actionerror />
 <div id="homePage">
-	<s:form action="login.action" method="post">
+	<s:form method="post">
     <s:textfield name="username" key="label.username" size="20" />
     <s:password name="password" key="label.password" size="20" />
     <s:submit method="execute" key="label.login" align="center" />
     <div id="register"><a href="RegisterUser.jsp">Register User</a></div>
+
 <%--     <s:submit value="Register" action="registerAction" align="center"/> --%>
 </s:form>
 </div>

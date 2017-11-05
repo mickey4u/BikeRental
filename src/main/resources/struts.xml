@@ -9,9 +9,9 @@
 
     <package name="bikerental" extends="struts-default">
        
-        <action name="login">
+        <action name="login" class="actions.UsersAction" method="userLogin">
             <result name="success">/Login.jsp</result>
-<!-- 			<result name="error">error.jsp</result> -->
+		<result name="error">/Error.jsp</result>
         </action>
     </package>
 </struts>

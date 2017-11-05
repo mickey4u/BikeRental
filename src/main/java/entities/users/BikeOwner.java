@@ -11,4 +11,9 @@ public class BikeOwner implements IUser{
     public Optional<String> getId() {
         return null;
     }
+
+    @Override
+    public Optional<String> getPassword() {
+        return null;
+    }
 }
