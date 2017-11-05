@@ -4,49 +4,49 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class UsersAction extends ActionSupport {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -6275269125913784899L;
-	String username;
-	String password;
+    /**
+     *
+     */
+    private static final long serialVersionUID = -6275269125913784899L;
+    String username;
+    String password;
 
-	main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
+    main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
 
-	@SuppressWarnings("unused")
-	public String userLogin() {
-		if (bikeRentalSingleton.getUserModel().login(username, password)) {
-			return SUCCESS;
-		}
-		return SUCCESS;
-	}
 
-	public String getUsername() {
-		return username;
-	}
+    public String userLogin() {
+        if (bikeRentalSingleton.getUserModel().login(username, password)) {
+            return SUCCESS;
+        }
+        return SUCCESS;
+    }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public main.BikeRentalSingleton getBikeRentalSingleton() {
-		return bikeRentalSingleton;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public void setBikeRentalSingleton(main.BikeRentalSingleton bikeRentalSingleton) {
-		this.bikeRentalSingleton = bikeRentalSingleton;
-	}
+    public main.BikeRentalSingleton getBikeRentalSingleton() {
+        return bikeRentalSingleton;
+    }
+
+    public void setBikeRentalSingleton(main.BikeRentalSingleton bikeRentalSingleton) {
+        this.bikeRentalSingleton = bikeRentalSingleton;
+    }
 
 	/*
-	 * @SuppressWarnings("unused") public String resetPasswordRequest() { Boolean
+     * @SuppressWarnings("unused") public String resetPasswordRequest() { Boolean
 	 * passwordUpdateStatus = iUserModel.requestPasswordChange(secretAnswer); return
 	 * SUCCESS; }
 	 * 

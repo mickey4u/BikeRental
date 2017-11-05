@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="BikeRental:war exploded">
-    <output-path>$PROJECT_DIR$/target/models.bike-rental</output-path>
+    <output-path>$PROJECT_DIR$/target/bikerental</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -19,10 +19,11 @@
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.5" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.6" />
           <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/models.bike-rental/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/bikerental/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="BikeRental/web/Web" />
     </root>

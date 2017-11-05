@@ -7,10 +7,10 @@
 <struts>
     <constant name="struts.devMode" value="true" />
 
-    <package name="bikerental" extends="struts-default" namespace="/">
+    <package name="bikerental" extends="struts-default">
        
-        <action name="login" class="actions.UsersAction" method="userLogin">
-            <result name="success">Welcome.jsp</result>
+        <action name="login">
+            <result name="success">/Login.jsp</result>
 <!-- 			<result name="error">error.jsp</result> -->
         </action>
     </package>
