@@ -9,8 +9,8 @@ public abstract class UserModelDecorator implements IUserModel {
     }
 
     @Override
-    public void login(String userId, String userPassword) {
-        model.login(userId, userPassword);
+    public boolean login(String userId, String userPassword) {
+       return model.login(userId, userPassword);
     }
 
     @Override

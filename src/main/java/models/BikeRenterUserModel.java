@@ -45,4 +45,10 @@ public class BikeRenterUserModel extends UserModelDecorator {
 
         return null;
     }
+
+	@Override
+	public void passwordReset(String secretAnswer) {
+		// TODO Auto-generated method stub
+		
+	}
 }
