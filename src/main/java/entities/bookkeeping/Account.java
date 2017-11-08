@@ -12,7 +12,7 @@ public class Account {
     private Money balance;
     // limit on the account
     private Money limit;
-    // id of the ledger the account is attached to
+    // username of the ledger the account is attached to
     private String ledgerId;
 
 }

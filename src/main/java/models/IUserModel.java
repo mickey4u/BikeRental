@@ -1,5 +1,6 @@
 package models;
 
+
 public interface IUserModel {
 
 	/**
@@ -10,7 +11,7 @@ public interface IUserModel {
 	 * @param lastname
 	 *            lastname of the user
 	 * @param id
-	 *            student/staff id of the user
+	 *            student/staff username of the user
 	 * @param phoneNumber
 	 *            phone number of the user
 	 * @param secretQuestion
@@ -23,7 +24,7 @@ public interface IUserModel {
 	 * This method logs the user into the system
 	 *
 	 * @param userId
-	 *            id of the user
+	 *            username of the user
 	 * @param userPassword
 	 *            password of the user
 	 */

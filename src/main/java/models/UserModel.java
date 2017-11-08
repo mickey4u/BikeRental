@@ -1,35 +1,16 @@
 package models;
 
-import dao.UserDAO;
-import entities.users.IUser;
+import dao.userdao.UserDAO;
+import entities.users.User;
 
 /**
  * Handles all the business logic for user on the platform
  */
 public class UserModel implements IUserModel {
 
-    UserDAO userDAO = new UserDAO();
+    private UserDAO userDAO = new UserDAO();
+    private User user;
 
-    /**
-     * Methods registers a user on the platform
-     *
-     * @param firstname      firstname of the user
-     * @param lastname       lastname of the user
-     * @param id             student/staff id of the user
-     * @param phoneNumber    phone number of the user
-     * @param secretQuestion secret question of the user
-     */
-    public void register(String firstname, String lastname, String id, String phoneNumber, String secretQuestion) {
-
-        // check if the id of the user is a valid id for a UL student/staff
-        // before continuing registration
-       /* if (userDAO.userExist(id)) {
-
-        } else {
-
-        }*/
-
-    }
 
     @Override
     public void register(String firstname, String lastname, String id, String password, String phoneNumber,
@@ -37,16 +18,14 @@ public class UserModel implements IUserModel {
 
     }
 
-
     @Override
     public boolean login(String userId, String userPassword) {
 
-        IUser user = userDAO.userExist(userId);
+        user = userDAO.findUser(userId);
 
-        if (user != null && user.getId().equals(userId) && user.getPassword().equals(userPassword)) {
+        if (user != null && user.getUsername().equals(userId) && user.getPassword().equals(userPassword)) {
             return true;
         }
-
         return false;
     }
 
