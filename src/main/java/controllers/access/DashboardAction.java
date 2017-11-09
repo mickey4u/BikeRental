@@ -6,7 +6,7 @@ import entities.users.User;
 import lombok.Getter;
 import lombok.Setter;
 
-public class DashboardAction extends ActionSupport implements UserAware, ModelDriven<User> {
+public abstract class DashboardAction extends ActionSupport implements UserAware, ModelDriven<User> {
     @Getter
     @Setter
     private User user;
