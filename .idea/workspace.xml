@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fbac297a-215d-4b13-9c17-c43ab0a233c5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,7 +61,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-203">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1510337192156" expanded="true" signature="0:581" ph="[...]" />
+                <marker date="1510337192156" expanded="true" signature="4:147" ph="{&quot;username&quot;: &quot;2024&quot;...}" />
+                <marker date="1510337192156" expanded="true" signature="151:294" ph="{&quot;username&quot;: &quot;2036&quot;...}" />
+                <marker date="1510337192156" expanded="true" signature="298:446" ph="{&quot;username&quot;: &quot;2045&quot;...}" />
+                <marker date="1510337192156" expanded="true" signature="450:579" ph="{&quot;username&quot;: &quot;2067&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -267,6 +272,124 @@
       <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src" />
       <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/BikeRental.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/files/Users.json</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bike/BikesAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/BikesDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/IBikeDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/IBike.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/IPay.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/files/BikeSpots.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/files/bookings.json</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1216,7 +1339,7 @@
       <workItem from="1509928772001" duration="3457000" />
       <workItem from="1509982126316" duration="2131000" />
       <workItem from="1510085245556" duration="88930000" />
-      <workItem from="1510309512103" duration="11845000" />
+      <workItem from="1510309512103" duration="11908000" />
     </task>
     <task id="LOCAL-00001" summary="Partial commit for UserDao implementation">
       <created>1509711964430</created>
@@ -1267,11 +1390,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510336982329</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Login Interceptor fixed">
+      <created>1510337161173</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1510337161173</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175424000" />
+    <option name="totallyTimeSpent" value="175487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1670,7 +1800,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1689,7 +1819,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-203">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1510337192156" expanded="true" signature="0:581" ph="[...]" />
+            <marker date="1510337192156" expanded="true" signature="4:147" ph="{&quot;username&quot;: &quot;2024&quot;...}" />
+            <marker date="1510337192156" expanded="true" signature="151:294" ph="{&quot;username&quot;: &quot;2036&quot;...}" />
+            <marker date="1510337192156" expanded="true" signature="298:446" ph="{&quot;username&quot;: &quot;2045&quot;...}" />
+            <marker date="1510337192156" expanded="true" signature="450:579" ph="{&quot;username&quot;: &quot;2067&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
