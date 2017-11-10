@@ -18,6 +18,7 @@ C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\entities\bookkeeping\Transa
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\models\LedgerModel.java
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\controllers\bike\PreBookAction.java
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\controllers\bike\RegisterBike.java
+C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\interceptors\UserAware.java
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\models\BikeModel.java
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\utilities\FlatFileReader.java
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\models\Book.java
@@ -26,7 +27,6 @@ C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\models\IUserModel.java
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\controllers\access\RegisterAction.java
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\entities\bike\BikeLocation.java
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\utilities\Constants.java
-C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\controllers\access\UserAware.java
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\controllers\access\LoginAction.java
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\controllers\access\LogoutAction.java
 C:\Users\Molly\IdeaProjects\BikeRental\src\main\java\entities\users\User.java
