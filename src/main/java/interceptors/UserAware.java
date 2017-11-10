@@ -1,4 +1,4 @@
-package controllers.access;
+package interceptors;
 
 import entities.users.User;
 

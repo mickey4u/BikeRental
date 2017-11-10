@@ -3,7 +3,7 @@ package dao.userdao;
 
 import com.google.gson.reflect.TypeToken;
 import entities.users.User;
-import utilities.FlatFileReader;
+import utilities.FileManager;
 
 
 import java.lang.reflect.Type;
@@ -24,7 +24,7 @@ public class UserDAO implements UserDaoInterface {
         type = new TypeToken<List<User>>() {
         }.getType();
 
-        List<User> students = FlatFileReader.readFromflatFile("Users.json", User[].class);
+        List<User> students = FileManager.readFromflatFile("Users.json", User[].class);
         for (User user : students) {
             if (user.getUsername().equals(id)) {
                 System.out.print(user.getUsername());

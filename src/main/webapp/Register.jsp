@@ -11,10 +11,10 @@
 <s:actionerror />
 <h1>Register User</h1>
 <div id="homePage">
-	<s:form action="registerAction.action" method="post">
-    <s:textfield name="username" key="label.username" size="20" />
-    <s:textfield name="name" key="label.name" size="20" />
-    <s:password name="password" key="label.password" size="20" />
+	<s:form >
+    <s:textfield name="username"  size="20" />
+    <s:textfield name="name"  size="20" />
+    <s:password name="password" size="20" />
 <%--     <s:submit method="execute" key="label.register" align="center" /> --%>
     <s:submit value="Register" align="center"/>
 </s:form>

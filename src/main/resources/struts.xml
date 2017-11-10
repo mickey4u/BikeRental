@@ -5,23 +5,18 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
-    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.devMode" value="false"/>
+    <constant name="struts.convention.result.path" value="/"></constant>
 
-    <!-- handles unsopported routes on the platform-->
-    <package name="default" extends="struts-default">
-        <default-action-ref name="default"/>
-        <action name="default">
-            <result>/Login.jsp</result>
-        </action>
-    </package>
     <!-- handles rounting of supported routes on the platform-->
-    <package name="bikerental" extends="struts-default">
+    <package name="bikerental" namespace="/" extends="struts-default">
+
         <!-- interceptors -->
         <interceptors>
-            <interceptor name="authenticatorInterceptor" class="interceptors.AuthenticationInterceptor"/>
+            <interceptor name="authenticatorInterceptor" class="interceptors.AuthenticationInterceptor" />
             <interceptor-stack name="autheticationStack">
-                <interceptor-ref name="authenticatorInterceptor"/>
-                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="authenticatorInterceptor"></interceptor-ref>
+                <interceptor-ref name="defaultStack"></interceptor-ref>
             </interceptor-stack>
         </interceptors>
         <!-- -->
@@ -30,18 +25,21 @@
         <global-results>
             <result name="login" type="redirect">home.action</result>
         </global-results>
+
         <action name="home">
             <interceptor-ref name="defaultStack"></interceptor-ref>
             <result>/Login.jsp</result>
         </action>
+
         <!-- Handles the login, after user enter his/her credentials-->
         <action name="login" class="controllers.access.LoginAction">
-            <result name="dashboard">/dasboard.jsp</result>
-            <result name="login">/Login.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/Dasboard.jsp</result>
+            <result name="input">/Login.jsp</result>
         </action>
         <!-- User dashboard -->
-        <!--<action name="dashboard" class="controllers.access.DashboardAction">
-            <result name="success">/dasboard.jsp</result>
-        </action>-->
+        <action name="dashboard" class="controllers.access.DashboardAction">
+            <result name="success">/Dasboard.jsp</result>
+        </action>
     </package>
 </struts>

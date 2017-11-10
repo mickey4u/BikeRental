@@ -6,15 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-< %
-HttpSession session = request.getSession(true);
-if (session.getAttribute("loggedIn")==null)
-{
-% >
-<jsp:forward page="/Login.jsp?msg=You will have to login first in order to access other pages"></jsp:forward>
-< %
-}
-% >
 <html>
 <head>
     <title>Title</title>

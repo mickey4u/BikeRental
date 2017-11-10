@@ -1,4 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
@@ -31,9 +32,9 @@
 <s:actionerror/>
 <div id="homePage">
     <s:form action="login">
-        <s:textfield name="user.username" size="20"/>
-        <s:password name="user.password" size="20"/>
-        <s:submit align="center"/>
+        <s:textfield name="user.username" size="20"></s:textfield>
+        <s:password name="user.password" size="20"></s:password>
+        <s:submit align="center" value="Login"></s:submit>
         <div id="register"><a href="RegisterUser.jsp">Register User</a></div>
 
         <%--     <s:submit value="Register" action="registerAction" align="center"/> --%>

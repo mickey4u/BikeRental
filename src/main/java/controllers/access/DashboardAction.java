@@ -3,6 +3,7 @@ package controllers.access;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import entities.users.User;
+import interceptors.UserAware;
 import lombok.Getter;
 import lombok.Setter;
 

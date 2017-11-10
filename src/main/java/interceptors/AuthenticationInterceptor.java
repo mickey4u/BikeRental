@@ -2,13 +2,11 @@ package interceptors;
 
 
 import com.opensymphony.xwork2.Action;
-import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.Interceptor;
-import controllers.access.LoginAction;
-import controllers.access.UserAware;
 import entities.users.User;
-import org.apache.struts2.dispatcher.SessionMap;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import utilities.Constants;
 
 import java.util.Map;
@@ -17,34 +15,35 @@ import java.util.Map;
  *
  */
 public class AuthenticationInterceptor implements Interceptor, Constants {
-    @Override
+    private static final Logger logger = LogManager.getLogger(AuthenticationInterceptor.class);
+
     public void destroy() {
 
     }
 
-    @Override
-    public void init() {
 
+    public void init() {
+        logger.info("Authentication Interceptor Initialized");
     }
 
-    @Override
+
     public String intercept(ActionInvocation actionInvocation) throws Exception {
-        ActionContext context = actionInvocation.getInvocationContext();
-        if (context.getName().equalsIgnoreCase("login") ||
-                context.getName().equalsIgnoreCase("login.action")) {
+        String actionToPerform = "";
 
-            return actionInvocation.invoke();
-        }
-        SessionMap<String, Object> map = (SessionMap<String, Object>) actionInvocation.getInvocationContext().getSession();
-        if (map == null) {
-            return "login";
-        }
-        Object user = map.get(LOGGED_IN_USER);
-        if (user == null || user.equals("") || map.isEmpty() || map == null) {
-            return "login";
-        }
+        Map<String, Object> userSession = actionInvocation.getInvocationContext().getSession();
+        // get user stored in the HTTP Session
+        User user = (User) userSession.get(LOGGED_IN_USER);
+        // user not logged in
+        if (user == null) {
+            actionToPerform = Action.LOGIN;
+        } else {
+            Action action = (Action) actionInvocation.getAction();
+            if (action instanceof UserAware) {
+                ((UserAware) action).setUser(user);
+            }
+            actionToPerform = actionInvocation.invoke();
 
-        return actionInvocation.invoke();
-
+        }
+        return actionToPerform;
     }
 }
