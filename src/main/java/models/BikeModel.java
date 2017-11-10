@@ -1,4 +1,3 @@
-/*
 package models;
 import dao.userdao.BikesDao;
 import entities.bike.Bike;
@@ -33,4 +32,3 @@ public class BikeModel implements IBike {
     }
 
 }
-*/

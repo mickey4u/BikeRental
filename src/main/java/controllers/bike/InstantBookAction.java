@@ -1,4 +1,3 @@
-/*
 package controllers.bike;
 
 import com.opensymphony.xwork2.ActionSupport;
@@ -20,4 +19,3 @@ public class InstantBookAction extends ActionSupport {
         return SUCCESS;
     }
 }
-*/
