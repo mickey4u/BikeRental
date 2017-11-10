@@ -12,4 +12,6 @@ public class BikeLocation {
     private long longitude;
     // latitude value of the coordinate
     private long latitude;
+
+
 }

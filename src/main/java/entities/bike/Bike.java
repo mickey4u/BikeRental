@@ -1,8 +1,15 @@
 package entities.bike;
 
+import lombok.Data;
 
+@Data
 public class Bike {
 
-    // location of the bike
-    BikeLocation location;
+    // represents the bike's id
+    String bikeID;
+    // represents bike location;
+    String bikeSpotLocation;
+    // represents the bike availability
+    String BikeStatus;
+
 }
