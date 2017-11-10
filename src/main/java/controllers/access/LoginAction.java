@@ -1,7 +1,5 @@
 package controllers.access;
 
-import com.opensymphony.xwork2.Action;
-import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import entities.users.User;
@@ -10,8 +8,10 @@ import org.apache.logging.log4j.Logger;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.interceptor.SessionAware;
 import utilities.Constants;
+import utilities.FileManager;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 import java.util.Map;
 
 
@@ -29,6 +29,9 @@ public class LoginAction extends ActionSupport implements Constants, SessionAwar
 
     @Override
     public String execute() throws Exception {
+
+        List<User> students = FileManager.readFromflatFile("Users.json", User[].class);
+
         // check for user session existence
         HttpSession currentSession = ServletActionContext.getRequest().getSession(true);
         // cast object to user object

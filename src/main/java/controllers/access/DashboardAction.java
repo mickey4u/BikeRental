@@ -7,7 +7,7 @@ import interceptors.UserAware;
 import lombok.Getter;
 import lombok.Setter;
 
-public abstract class DashboardAction extends ActionSupport implements UserAware, ModelDriven<User> {
+public class DashboardAction extends ActionSupport implements UserAware, ModelDriven<User> {
     @Getter
     @Setter
     private User user;
