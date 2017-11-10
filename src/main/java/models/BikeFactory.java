@@ -4,23 +4,21 @@ import entities.bike.Bike;
 
 import java.util.List;
 
-public class BikeFactory implements IBike {
+public class BikeFactory{
 
-    @Override
     public List<Bike> checkAvailableBikes(String bikeSpot) {
         return null;
     }
 
-    @Override
     public models.Bike bikeBook(String bikeSpots, String bikeType) {
 
         if(bikeType=="racerBike")
         {
-            return new RacerBike();
+            return new RacerBike(bikeSpots);
         }
         if(bikeType=="normalBike")
         {
-            return new NormalBike();
+            return new NormalBike(bikeSpots);
         }
         return null;
     }

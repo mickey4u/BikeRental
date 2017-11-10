@@ -1,12 +1,14 @@
 package controllers.bike;
 
 import com.opensymphony.xwork2.ActionSupport;
-import models.IBike;
+import models.Bike;
+import models.BikeFactory;
 
 public class InstantBookAction extends ActionSupport {
 
-    IBike bikespotss;
+    BikeFactory bikefactory=new BikeFactory();
     String bikeSpots;
+    String bikeType;
 
     @Override
     public String execute() throws Exception {
@@ -15,7 +17,7 @@ public class InstantBookAction extends ActionSupport {
 
     public String instantBooking()
     {
-        Boolean bikeBookStatus = bikespotss.bikeBook(bikeSpots);
+        Bike bikeBookStatus = bikefactory.bikeBook(bikeSpots,bikeType);
         return SUCCESS;
     }
 }
