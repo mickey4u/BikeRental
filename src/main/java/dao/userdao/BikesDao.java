@@ -2,7 +2,7 @@ package dao.userdao;
 
 import com.google.gson.reflect.TypeToken;
 import entities.bike.Bike;
-import utilities.FlatFileReader;
+import utilities.FileManager;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public class BikesDao implements IBikeDAO {
         type = new TypeToken<List<Bike>>() {
         }.getType();
 
-        List<Bike> bikes = FlatFileReader.readFromflatFile("BikeSpots.json", Bike[].class);
+        List<Bike> bikes = FileManager.readFromflatFile("BikeSpots.json", Bike[].class);
         for (Bike bike : bikes)
             if (bike.getBikeStatus() == "Available" && bike.getBikeSpotLocation() == bikeSpot) {
                 listOfAvailableBikes.add(bike);
