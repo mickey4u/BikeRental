@@ -1,0 +1,72 @@
+[
+  {
+    "BikeID":"2001",
+    "BikeStatus":"Available",
+    "BikeLocation":"Stable"
+  },
+  {
+    "BikeID":"2002",
+    "BikeStatus":"Unavailable",
+    "BikeLocation":"Library"
+  },
+  {
+    "BikeID":"2003",
+    "BikeStatus":"Available",
+    "BikeLocation":"KBC"
+  },
+  {
+    "BikeID":"2004",
+    "BikeStatus":"Broken",
+    "BikeLocation":"Thomond Village"
+  },
+  {
+    "BikeID":"2005",
+    "BikeStatus":"Available",
+    "BikeLocation":"Stable"
+  },
+  {
+    "BikeID":"2006",
+    "BikeStatus":"Available",
+    "BikeLocation":"Computer Building"
+  },
+  {
+    "BikeID":"2007",
+    "BikeStatus":"Available",
+    "BikeLocation":"Computer Building"
+  },
+  {
+    "BikeID":"2008",
+    "BikeStatus":"Available",
+    "BikeLocation":"Computer Building"
+  },
+  {
+    "BikeID":"2009",
+    "BikeStatus":"Unavailable",
+    "BikeLocation":"Computer Building",
+  },
+  {
+    "BikeID":"2010",
+    "BikeStatus":"Available",
+    "BikeLocation":"Stable"
+  },
+  {
+    "BikeID":"2011",
+    "BikeStatus":"Available",
+    "BikeLocation":"Stable"
+  },
+  {
+    "BikeID":"2012",
+    "BikeStatus":"Available",
+    "BikeLocation":"Stable"
+  },
+  {
+    "BikeID":"2013",
+    "BikeStatus":"Available",
+    "BikeLocation":"Stable"
+  },
+  {
+    "BikeID":"2014",
+    "BikeStatus":"Available",
+    "BikeLocation":"Stable"
+  }
+]
