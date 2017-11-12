@@ -11,5 +11,7 @@ public class Bike {
     String bikeSpotLocation;
     // represents the bike availability
     String BikeStatus;
+    //Bike Type
+    String BikeType;
 
 }

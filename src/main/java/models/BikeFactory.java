@@ -12,11 +12,11 @@ public class BikeFactory{
 
     public models.Bike bikeBook(String bikeSpots, String bikeType) {
 
-        if(bikeType=="racerBike")
+        if(bikeType=="CityBike")
         {
             return new RacerBike(bikeSpots);
         }
-        if(bikeType=="normalBike")
+        if(bikeType=="GearBike")
         {
             return new NormalBike(bikeSpots);
         }

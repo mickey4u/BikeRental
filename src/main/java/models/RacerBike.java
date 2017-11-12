@@ -6,6 +6,7 @@ import java.util.List;
 
 public class RacerBike implements Bike {
 
+    double charges = 1.0;
     IBikeDAO bike;
     public RacerBike(String bikeSpots)
     {
