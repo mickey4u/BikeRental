@@ -4,5 +4,17 @@
     "username":"2024",
     "bookingTime":"13:32",
     "status":"waiting"
+  },
+  {
+    "bookingID":"12346",
+    "username":"2036",
+    "bookingTime":"13:32",
+    "status":"Ongoing"
+  },
+  {
+    "bookingID":"12341",
+    "username":"2036",
+    "bookingTime":"13:32",
+    "status":"Completed"
   }
 ]

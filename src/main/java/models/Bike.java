@@ -2,5 +2,5 @@ package models;
 
 public interface Bike {
 
-    boolean rentBike();
+    boolean rentBike(String bikeSpots);
 }

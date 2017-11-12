@@ -11,8 +11,8 @@ import models.PenaltyUsage;
 public class PayAction extends ActionSupport {
 
     //Strategies for fare calculation
-    private final IFareCalculationStrategy CalculationStrategy1 = new NormalUsage();
-    private final IFareCalculationStrategy CalculationStrategy2 = new PenaltyUsage();
+    private final IFareCalculationStrategy calculationStrategy1 = new NormalUsage();
+    private final IFareCalculationStrategy calculationStrategy2 = new PenaltyUsage();
 
     @Override
     public String execute() throws Exception {
@@ -26,16 +26,16 @@ public class PayAction extends ActionSupport {
     public String getTotalFare()
     {
      //   Collection tripDetail = tripDetails.getTripDetails(); //
-        Double totalTime=0.0; //Calculate the total Trip time
-        Object bike = BikeType.CityBike;   //Get the Bike booked by user
+        Double totalTime=8.0;               //Calculate the total Trip time(Static Content)
+        Object bike = BikeType.CityBike;   //Get the Bike booked by user(Static Content)
         double fare = 0.0;
-        if(totalTime<=6)
+        if(totalTime<=6.0)
         {
-            fare = CalculationStrategy1.calculateFare(totalTime,bike);
+            fare = calculationStrategy1.calculateFare(totalTime,bike);
         }
-        else if(totalTime>6)
+        else if(totalTime>6.0)
         {
-            fare = CalculationStrategy1.calculateFare(6.0,bike) + CalculationStrategy2.calculateFare(totalTime-6.0,bike);
+            fare = calculationStrategy1.calculateFare(6.0,bike) + calculationStrategy2.calculateFare(totalTime-6.0,bike);
         }
     return SUCCESS;
     }

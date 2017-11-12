@@ -1,6 +1,10 @@
 package models;
 
 
+import entities.users.RentalHistory;
+
+import java.util.List;
+
 public interface IUserModel {
 
 	/**
@@ -34,7 +38,8 @@ public interface IUserModel {
 	 * This method logs the user out of the system
 	 */
 	void logout();
-	
+
+	List<RentalHistory> viewRentalHistory(String username);
 
 	/**
 	 * 

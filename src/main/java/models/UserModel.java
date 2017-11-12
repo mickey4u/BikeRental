@@ -1,7 +1,10 @@
 package models;
 
 import dao.userdao.UserDAO;
+import entities.users.RentalHistory;
 import entities.users.User;
+
+import java.util.List;
 
 /**
  * Handles all the business logic for user on the platform
@@ -33,6 +36,13 @@ public class UserModel implements IUserModel {
     @Override
     public void logout() {
 
+    }
+
+    @Override
+    public List<RentalHistory> viewRentalHistory(String username) {
+
+        List<RentalHistory> viewRentalHistory = userDAO.viewRentalHistory(username);
+        return viewRentalHistory;
     }
 
     @Override
