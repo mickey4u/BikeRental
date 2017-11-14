@@ -46,7 +46,13 @@ public class UserModel implements IUserModel {
     }
 
     @Override
-    public void passwordReset(String secretAnswer) {
+    public Boolean passwordReset(String userId, String answer, String newPassword) {
 
+        user = userDAO.findUser(userId);
+
+//        if (user != null && user.getUsername().equals(userId) && user.getPassword().equals(userPassword)) {
+//            return true;
+//        }
+        return true;
     }
 }

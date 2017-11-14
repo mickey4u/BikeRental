@@ -1,0 +1,14 @@
+[{
+  "username":"2024",
+  "bookings": [
+    { "bookingID":"12345", "status":"waiting" }
+  ]
+},
+{
+  "username":"2036",
+  "bookings": [
+    { "bookingID":"12341", "status":"completed" },
+    { "bookingID":"12346", "status":"ongoing" }
+  ]
+}
+]

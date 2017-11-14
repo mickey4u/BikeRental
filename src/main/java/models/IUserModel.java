@@ -42,9 +42,11 @@ public interface IUserModel {
 	List<RentalHistory> viewRentalHistory(String username);
 
 	/**
-	 * 
-	 * @param secretAnswer
+	 *
+	 * @param userId
+	 * @param answer
+	 * @param newPassword
 	 */
-	void passwordReset(String secretAnswer);
+	Boolean passwordReset(String userId, String answer, String newPassword);
 
 }
