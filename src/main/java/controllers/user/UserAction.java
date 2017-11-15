@@ -4,6 +4,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import entities.bike.BikeType;
 import models.IUserModel;
 
+import java.io.FileNotFoundException;
+
 public class UserAction extends ActionSupport {
 
 
@@ -15,9 +17,14 @@ public class UserAction extends ActionSupport {
     public String updatePassword()
     {
 
-       Boolean status = userPasswordReset.passwordReset(userId,secretAnswer,newPassword);
+        Boolean status = null;
+        try {
+            status = userPasswordReset.passwordReset(userId,secretAnswer,newPassword);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
-       if(status)
+        if(status)
             return SUCCESS;
         else
             return ERROR;
