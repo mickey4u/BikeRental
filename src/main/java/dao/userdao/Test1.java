@@ -13,7 +13,7 @@ public class Test1 {
 
     public static void main(String args[]) throws IOException {
         JSONParser parser = new JSONParser();
-        String newPassword = "T@t@12345";
+        String newPassword = "12345";
         try {
             JSONArray jsonArray = (JSONArray) parser.parse(new FileReader("src\\main\\webapp\\files\\Users.json"));
      //       JSONObject person =  jsonArray.getJSONObject(0).getJSONObject("person");

@@ -52,20 +52,41 @@ public class UserDAO implements UserDaoInterface {
     * Unable to read the file correctly at the moment. Throws a null pointer.
     *
     * */
-    public List<RentalHistory> viewRentalHistory(String username) {
+    public List<RentalHistory> viewRentalHistory(String username)
+    {
 
-        type = new TypeToken<List<RentalHistory>>() {
-        }.getType();
+        JSONParser parser = new JSONParser();
         RentalHistory rhistory = new RentalHistory();
-        List<RentalHistory> rentalHistory = FileManager.readFromflatFile("bookings.json", RentalHistory[].class);
-        for (RentalHistory history : rentalHistory) {
-            if (rhistory.username.equals(username)) {
-                System.out.print(rhistory.username);
-                return rentalHistory;
+        List<RentalHistory> list = new ArrayList<RentalHistory>();
+        User users = new User();
+        try {
+            JSONArray jsonArray = null;
+            try {
+                jsonArray = (JSONArray) parser.parse(new FileReader("src\\main\\webapp\\files\\Users.json"));
+                for (Object o : jsonArray) {
+                    JSONObject person = (JSONObject) o;
+                    if (users.getUsername().equals(person.get("username"))) {
+                       rhistory.setBookingID(String.valueOf(person.get("bookingID")));
+                       rhistory.setBookingTime(String.valueOf(person.get("bookingTime")));
+                       rhistory.setStatus(String.valueOf(person.get("status")));
+                       list.add(rhistory);
+                    }
+                }
+                return list;
+
+            } catch (ParseException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            catch(Exception e)
+            {
+                throw new IllegalStateException("Exception encountered", e);
             }
         }
-
-        return null;
+        finally {
+            return null;
+        }
     }
 
     /*
