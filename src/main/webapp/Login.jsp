@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
@@ -13,7 +11,9 @@
         }
 
         body {
+/*
             background-image: src('icon/UL.png');
+*/
             width: 100%;
             height: 100%;
         }
@@ -35,7 +35,7 @@
         <s:textfield name="user.username" size="20"></s:textfield>
         <s:password name="user.password" size="20"></s:password>
         <s:submit align="center" value="Login"></s:submit>
-        <div id="register"><a href="RegisterUser.jsp">Register User</a></div>
+        <div id="register"><a href="Register.jsp">Register User</a></div>
 
         <%--     <s:submit value="Register" action="registerAction" align="center"/> --%>
     </s:form>

@@ -1,8 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
-<%--
-<%@ taglib prefix="sx" uri="/struts-dojo-tags"%>
---%>
 <html>
 <head>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -11,7 +7,6 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsNPCh1hdLeGbQjYxj812X14w4rN64afI&callback=initMap"></script>
     <script type="text/javascript" src="http://gmap3.net/js/gmap3-4.1-min.js"></script>
     <script type="text/javascript" src="js/bikeLocator-1.1-min.js"></script>
-
     <title>UL Bike Rental</title>
     <style></style>
 </head>
@@ -24,49 +19,49 @@
         <img id="signInLogo" class="signInLogo" src="images/signIN.png">
         <span id="signInfont" class="signInfont">Sign Out</span>
     </div>
-    <div   class="tabs">
-        <span   class="tabsfont">Account</span>
+    <div class="tabs">
+        <span class="tabsfont">Account</span>
     </div>
-    <div   class="tabs">
-        <span   class="tabsfont">Offers</span>
+    <div class="tabs">
+        <span class="tabsfont">Offers</span>
     </div>
-    <div   class="tabs">
-        <span   class="tabsfont">Raise Ticket</span>
+    <div class="tabs">
+        <span class="tabsfont">Raise Ticket</span>
     </div>
-    <div   class="tabs">
-        <span   class="tabsfont">UL</span>
+    <div class="tabs">
+        <span class="tabsfont">UL</span>
     </div>
-    <div   class="tabs">
-        <span   class="tabsfont">Bikes</span>
+    <div class="tabs">
+        <span class="tabsfont">Bikes</span>
     </div>
-    <div   class="tabs">
-        <span   class="tabsfont">Travel</span>
+    <div class="tabs">
+        <span class="tabsfont">Travel</span>
     </div>
     <div>
         <div id="map" style="width: 500px; height: 400px;"></div>
     </div>
     <button id="button" data-role="button" onclick="fetchAvailability">View Bikes</button>
-    <%--<FORM NAME="buttons" METHOD="POST">
-        <INPUT TYPE="HIDDEN" NAME="buttonName">
-        <INPUT TYPE="BUTTON" VALUE="View Bikes" ONCLICK="fetchAvailability()">
-    </FORM>--%>
 </div>
 <script>
     $( document ).ready(function() {
         console.log( "document loaded" );
         navigator.geolocation.getCurrentPosition(showPosition);
-
+        $('#button').click(function() {
+            alert("welcome");
+            fetchAvailability();
+        });
 
     });
     function fetchAvailability()
     {
+        var loc = "The Stables";
         {
             $.ajax({
                 type: "POST",
                 url: "<s:url action='fetchAvailability'/>",
                 dataType: 'text/javascript',
                 data: {
-                    bikeSpot: bikeSpots
+                    bikeSpot: loc
                 },
                 success: function (results) {
 
