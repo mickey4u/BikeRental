@@ -26,4 +26,6 @@ public class User {
     @SerializedName("secretQuestion")
     private String secretQuestion;
 
+    private String secretAnswer;
+
 }

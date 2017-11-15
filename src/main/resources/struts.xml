@@ -41,5 +41,9 @@
         <action name="dashboard" class="controllers.access.DashboardAction">
             <result name="success">/Dasboard.jsp</result>
         </action>
+
+        <action name="fetchAvailability" class="controllers.user.UserAction" method="updatePassword">
+            <result name="success">/Dasboard.jsp</result>
+        </action>
     </package>
 </struts>

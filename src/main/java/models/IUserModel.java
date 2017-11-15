@@ -3,6 +3,7 @@ package models;
 
 import entities.users.RentalHistory;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 
 public interface IUserModel {
@@ -47,6 +48,6 @@ public interface IUserModel {
 	 * @param answer
 	 * @param newPassword
 	 */
-	Boolean passwordReset(String userId, String answer, String newPassword);
+	Boolean passwordReset(String userId, String answer, String newPassword) throws FileNotFoundException;
 
 }
