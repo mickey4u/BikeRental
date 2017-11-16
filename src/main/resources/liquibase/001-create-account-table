@@ -1,0 +1,6 @@
+<changeSet author="mickey" id="001-create-account-table">
+    <createTable tableName="account">
+        <column name="id" type="varchar(10)"/>
+        <column name="ledgerId" type="varchar(25)"/>
+    </createTable>
+</changeSet>

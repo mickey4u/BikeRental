@@ -1,4 +1,4 @@
-package models;
+package models.bookkeeping;
 
 public class LedgerModel {
 }
