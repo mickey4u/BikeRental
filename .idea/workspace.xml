@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbac297a-215d-4b13-9c17-c43ab0a233c5" name="Default" comment="Booking for Gear Bike functionality implemented">
+    <list default="true" id="fbac297a-215d-4b13-9c17-c43ab0a233c5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1540,7 +1540,7 @@
       <workItem from="1510500232072" duration="22493000" />
       <workItem from="1510671496405" duration="55019000" />
       <workItem from="1510794525260" duration="2063000" />
-      <workItem from="1510851508909" duration="292000" />
+      <workItem from="1510851508909" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="Partial commit for UserDao implementation">
       <created>1509711964430</created>
@@ -1654,7 +1654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510795820625</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Booking for Gear Bike functionality implemented">
+      <created>1510851821149</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1510851821149</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1663,7 +1670,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291539000" />
+    <option name="totallyTimeSpent" value="291556000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
