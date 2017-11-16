@@ -1,4 +1,4 @@
-package models;
+package models.Charges;
 
 import entities.bike.BikeType;
 import entities.bike.Fares;

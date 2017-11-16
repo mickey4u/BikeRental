@@ -1,4 +1,4 @@
-package models;
+package models.Bike;
 
 import dao.userdao.IBikeDAO;
 

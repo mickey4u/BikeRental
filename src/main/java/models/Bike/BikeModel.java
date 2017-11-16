@@ -1,8 +1,8 @@
-package models;
+package models.Bike;
 import dao.userdao.BikesDao;
 import entities.bike.Bike;
-import java.util.ArrayList;
-import java.util.HashMap;
+import models.IBike;
+
 import java.util.List;
 
 

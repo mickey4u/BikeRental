@@ -3,9 +3,9 @@ package controllers.payment;
 import com.opensymphony.xwork2.ActionSupport;
 //import models.Booking; //
 import entities.bike.BikeType;
-import models.IFareCalculationStrategy;
-import models.NormalUsage;
-import models.PenaltyUsage;
+import models.Charges.IFareCalculationStrategy;
+import models.Charges.NormalUsage;
+import models.Charges.PenaltyUsage;
 
 
 public class PayAction extends ActionSupport {

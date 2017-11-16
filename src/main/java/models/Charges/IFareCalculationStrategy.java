@@ -1,6 +1,4 @@
-package models;
-
-import entities.bike.BikeType;
+package models.Charges;
 
 public interface IFareCalculationStrategy {
 
