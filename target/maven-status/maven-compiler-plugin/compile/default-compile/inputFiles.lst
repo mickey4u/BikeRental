@@ -8,6 +8,7 @@ C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\models\Book.java
 C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\models\NormalBike.java
 C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\dao\userdao\IBikeDAO.java
 C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\controllers\bike\RegisterBike.java
+C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\entities\bike\ActiveBooking.java
 C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\entities\bike\Fares.java
 C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\utilities\FileManager.java
 C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\entities\users\RentalHistory.java
@@ -53,4 +54,5 @@ C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\entities\users\Address.jav
 C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\dao\userdao\UserDAO.java
 C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\interceptors\UserAware.java
 C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\models\NormalUsage.java
+C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\dao\userdao\Test1.java
 C:\Users\Mayank\IdeaProjects\BikeRental\src\main\java\entities\bike\Bike.java

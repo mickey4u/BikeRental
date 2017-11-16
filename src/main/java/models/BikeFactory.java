@@ -17,11 +17,11 @@ public class BikeFactory{
         boolean result = false;
         if(bikeType=="CityBike")
         {
-           return new GearBike(bikeSpots);
+           return new NormalBike(bikeSpots);
         }
         if(bikeType=="GearBike")
         {
-            return new NormalBike(bikeSpots);
+            return new GearBike(bikeSpots);
         }
         return null;
     }

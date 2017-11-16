@@ -16,8 +16,10 @@ public class GearBike implements Bike {
     public boolean rentBike(String bikeSpots)
     {
         List<entities.bike.Bike> AvailableBikes = checkAvailableBikes(bikeSpots);
+        boolean booking = false;
         if(AvailableBikes.size()>0)
         {
+            booking = bike.rentNow(bikeSpots,"gear");
             //bookings.json updated with booking ID
             //BikeSpots.json updated with changed biked status
             return true;

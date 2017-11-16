@@ -56,12 +56,18 @@ public class UserModel implements IUserModel {
     public Boolean passwordReset(String userId, String answer, String newPassword) throws FileNotFoundException {
 
         /*Fetches the user details*/
-        Boolean matched = userDAO.getUserDetails(userId);
-
-        if (matched) {
-            Boolean status = userDAO.updateDetails(newPassword);
-            return true;
+        try
+        {
+            Boolean matched = userDAO.getUserDetails(userId);
+            if (matched) {
+                Boolean status = userDAO.updateDetails(newPassword);
+                return true;
+            }
+            return false;
         }
-        return false;
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    return false;
     }
 }
