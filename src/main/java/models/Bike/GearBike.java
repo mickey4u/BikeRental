@@ -17,11 +17,10 @@ public class GearBike implements Bike {
     {
         List<entities.bike.Bike> AvailableBikes = checkAvailableBikes(bikeSpots);
         boolean booking = false;
+        BikeConstant bikeType = new BikeConstant();
         if(AvailableBikes.size()>0)
         {
-            booking = bike.rentNow(bikeSpots,"gear");
-            //bookings.json updated with booking ID
-            //BikeSpots.json updated with changed biked status
+            booking = bike.rentNow(bikeSpots,bikeType.getGearBike());
             return true;
         }
         return false;

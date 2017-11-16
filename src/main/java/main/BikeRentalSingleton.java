@@ -1,5 +1,5 @@
 package main;
-import models.UserModel;
+import models.user.UserModel;
 
 /**
  * This class is the application's entry point.

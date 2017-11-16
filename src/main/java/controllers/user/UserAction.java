@@ -1,8 +1,7 @@
 package controllers.user;
 
 import com.opensymphony.xwork2.ActionSupport;
-import entities.bike.BikeType;
-import models.IUserModel;
+import models.user.IUserModel;
 
 import java.io.FileNotFoundException;
 

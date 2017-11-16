@@ -2,10 +2,6 @@ package models.Bike;
 
 public class BikeFactory{
 
-    //public List<Bike> checkAvailableBikes(String bikeSpot) {
-      //  return null;
-    //}
-
         /*
         * Factory Pattern for the user to book Bikes based bikeTypes
         * paramters:
@@ -15,11 +11,12 @@ public class BikeFactory{
         * */
     public Bike bikeBook(String bikeSpots, String bikeType) {
         boolean result = false;
-        if(bikeType=="CityBike")
+        BikeConstant type = new BikeConstant();
+        if(bikeType.equals(type.getCityBike()))
         {
            return new NormalBike(bikeSpots);
         }
-        if(bikeType=="GearBike")
+        if(bikeType.equals(type.getGearBike()))
         {
             return new GearBike(bikeSpots);
         }
