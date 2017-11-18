@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet id="1" author="Michael Tetteh">
+        <comment>Create Users Table</comment>
+        <createTable tableName="Users">
+            <column name="username" type="varchar(40)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="password" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="firstname" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lastname" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phoneNumber" type="varchar(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="secretQuestion" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="secretAnswer" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="Michael Tetteh">
+        <comment>Insert Dummy Data Into Your Database</comment>
+        <insert tableName="Users">
+            <column name="username" value="2036"/>
+            <column name="password" value="2036"/>
+            <column name="firstname" value="Michael"/>
+            <column name="lastname" value="Tetteh"/>
+            <column name="phoneNumber" value="+356576473733"/>
+            <column name="secretQuestion" value="What is your firstname"/>
+            <column name="secretAnswer" value="Michael"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
