@@ -1,8 +1,8 @@
 package main;
 
-import dao.user.UserAccess;
-import dao.user.UserDAO;
-import models.user.UserModel;
+import dao.userdao.UserAccess;
+import dao.userdao.UserDAO;
+import models.usermodel.UserModel;
 import org.jdbi.v3.core.Jdbi;
 import org.jdbi.v3.sqlobject.SqlObjectPlugin;
 

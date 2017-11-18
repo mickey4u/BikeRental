@@ -1,10 +1,10 @@
 package main;
 
-import models.bike.BikeModel;
-import models.bookkeeping.AccountModel;
-import models.bookkeeping.LedgerModel;
-import models.bookkeeping.TransactionModel;
-import models.user.UserModel;
+import models.bikemodel.BikeModel;
+import models.bookkeepingmodel.AccountModel;
+import models.bookkeepingmodel.LedgerModel;
+import models.bookkeepingmodel.TransactionModel;
+import models.usermodel.UserModel;
 
 public interface ModelsInterface {
 

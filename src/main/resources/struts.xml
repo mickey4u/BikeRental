@@ -30,39 +30,39 @@
             <result>/Login.jsp</result>
         </action>
         <!-- Handles the login, after user enter his/her credentials-->
-        <action name="login" class="controllers.user.LoginAction">
+        <action name="login" class="controllers.usercontroller.LoginAction">
             <interceptor-ref name="defaultStack"></interceptor-ref>
             <result name="success">/Dasboard.jsp</result>
             <result name="input">/Login.jsp</result>
         </action>
         <!-- Handles User registration-->
-        <action name="register" class="controllers.user.RegisterAction">
+        <action name="register" class="controllers.usercontroller.RegisterAction">
             <interceptor-ref name="defaultStack"></interceptor-ref>
             <result name="success">/Login.jsp</result>
             <result name="input">/Register.jsp</result>
         </action>
         <!-- Logout -->
-        <action name="logout" class="controllers.user.LogoutAction">
+        <action name="logout" class="controllers.usercontroller.LogoutAction">
             <result name="success">/Login.jsp</result>
         </action>
         <!-- User dashboard -->
-        <action name="dashboard" class="controllers.user.DashboardAction">
+        <action name="dashboard" class="controllers.usercontroller.DashboardAction">
             <result name="success">/Dasboard.jsp</result>
         </action>
         <!--Fetch Bike Availabilty-->
-        <action name="fetchAvailability" class="controllers.bike.BikesAction" method="checkAvailableBikes">
+        <action name="fetchAvailability" class="controllers.bikecontroller.BikesAction" method="checkAvailableBikes">
             <result name="success">/Dasboard.jsp</result>
         </action>
         <!--Instant Booking-->
-        <action name="bookBike" class="controllers.bike.InstantBookAction" method="instantBooking">
+        <action name="bookBike" class="controllers.bikecontroller.InstantBookAction" method="instantBooking">
             <result name="success">/Dasboard.jsp</result>
         </action>
         <!--View Rental History-->
-        <action name="viewRentalHistory" class="controllers.bike.UsersAccountAction" method="viewRentalHistory">
+        <action name="viewRentalHistory" class="controllers.bikecontroller.UsersAccountAction" method="viewRentalHistory">
             <result name="success">/Dasboard.jsp</result>
         </action>
         <!--Updates password-->
-        <action name="updateDetails" class="controllers.user.UserAction" method="updatePassword">
+        <action name="updateDetails" class="controllers.usercontroller.UserAction" method="updatePassword">
             <result name="success">/Dasboard.jsp</result>
         </action>
     </package>
