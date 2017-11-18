@@ -1,4 +1,4 @@
-package controllers.access;
+package controllers.user;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
@@ -8,30 +8,25 @@ import org.apache.logging.log4j.Logger;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.interceptor.SessionAware;
 import utilities.Constants;
-import utilities.FileManager;
 
 import javax.servlet.http.HttpSession;
-import java.util.List;
 import java.util.Map;
 
-
+/**
+ * Handles user login
+ */
 public class LoginAction extends ActionSupport implements Constants, SessionAware, ModelDriven<User> {
+    private static final Logger logger = LogManager.getLogger(LoginAction.class);
 
     private static final long serialVersionUID = 1L;
-
     private Map<String, Object> session = null;
     private User user = new User();
-
-    private static final Logger logger = LogManager.getLogger(LoginAction.class);
 
     main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
 
 
     @Override
     public String execute() throws Exception {
-
-        List<User> students = FileManager.readFromflatFile("Users.json", User[].class);
-
         // check for user session existence
         HttpSession currentSession = ServletActionContext.getRequest().getSession(true);
         // cast object to user object

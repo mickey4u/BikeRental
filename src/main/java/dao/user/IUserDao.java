@@ -1,4 +1,4 @@
-package dao.userdao;
+package dao.user;
 
 import entities.users.RentalHistory;
 import entities.users.User;
@@ -6,7 +6,7 @@ import entities.users.User;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-public interface UserDaoInterface {
+public interface IUserDao {
 
     User findUser(String id);
 

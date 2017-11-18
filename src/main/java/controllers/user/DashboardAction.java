@@ -1,4 +1,4 @@
-package controllers.access;
+package controllers.user;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;

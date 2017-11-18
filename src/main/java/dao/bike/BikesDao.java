@@ -1,4 +1,4 @@
-package dao.userdao;
+package dao.bike;
 
 import com.google.gson.reflect.TypeToken;
 import entities.bike.ActiveBooking;

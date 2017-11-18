@@ -1,100 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.bike-rental</groupId>
-	<artifactId>BikeRental</artifactId>
-	<packaging>war</packaging>
-	<version>1.0-SNAPSHOT</version>
+    <groupId>com.bike-rental</groupId>
+    <artifactId>BikeRental</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
 
-	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.javamoney/moneta -->
-		<dependency>
-			<groupId>org.javamoney</groupId>
-			<artifactId>moneta</artifactId>
-			<version>1.1</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-core -->
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-core</artifactId>
-			<version>2.5.13</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-junit-plugin -->
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-junit-plugin</artifactId>
-			<version>2.5.13</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.8.2</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-    		<artifactId>javax.servlet-api</artifactId>
-    		<version>3.1.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.16.16</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>2.8.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-api</artifactId>
-			<version>2.8.2</version>
-		</dependency>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.javamoney/moneta -->
+        <dependency>
+            <groupId>org.javamoney</groupId>
+            <artifactId>moneta</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-core -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>2.5.13</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-junit-plugin -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-junit-plugin</artifactId>
+            <version>2.5.13</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.16</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-maven-plugin -->
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-maven-plugin</artifactId>
+            <version>3.5.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jdbi/jdbi3 -->
+        <dependency>
+            <groupId>org.jdbi</groupId>
+            <artifactId>jdbi3</artifactId>
+            <version>3.0.0-beta2</version>
+        </dependency>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
             <version>1.1.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jdbi/jdbi3-sqlobject -->
+        <dependency>
+            <groupId>org.jdbi</groupId>
+            <artifactId>jdbi3-sqlobject</artifactId>
+            <version>3.0.0-beta2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.6</version>
+        </dependency>
+    </dependencies>
 
-	</dependencies>
-
-	<build>
-		<finalName>bikerental</finalName>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>9.3.0.v20150612</version>
-				<configuration>
-					<webApp>
-						<contextPath>/${project.build.finalName}</contextPath>
-					</webApp>
-					<stopKey>CTRL+C</stopKey>
-					<stopPort>8999</stopPort>
-					<scanIntervalSeconds>10</scanIntervalSeconds>
-					<scanTargets>
-						<scanTarget>src/main/webapp/WEB-INF/web.xml</scanTarget>
-					</scanTargets>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-
-
-
+    <build>
+        <finalName>bikerental</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.3.0.v20150612</version>
+                <configuration>
+                    <webApp>
+                        <contextPath>/${project.build.finalName}</contextPath>
+                    </webApp>
+                    <stopKey>CTRL+C</stopKey>
+                    <stopPort>8999</stopPort>
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
+                    <scanTargets>
+                        <scanTarget>src/main/webapp/WEB-INF/web.xml</scanTarget>
+                    </scanTargets>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <configuration>
+                    <propertyFile>src/main/resources/liquibase/liquibase.properties</propertyFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>migrate tables</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>update</goal>
+                        </goals>
+                        <configuration>
+                            <dropFirst>true</dropFirst>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

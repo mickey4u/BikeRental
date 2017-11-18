@@ -8,12 +8,11 @@
     <constant name="struts.devMode" value="false"/>
     <constant name="struts.convention.result.path" value="/"></constant>
 
-    <!-- handles rounting of supported routes on the platform-->
+    <!-- handles routing of supported routes on the platform-->
     <package name="bikerental" namespace="/" extends="struts-default">
-
         <!-- interceptors -->
         <interceptors>
-            <interceptor name="authenticatorInterceptor" class="interceptors.AuthenticationInterceptor" />
+            <interceptor name="authenticatorInterceptor" class="interceptors.AuthenticationInterceptor"/>
             <interceptor-stack name="autheticationStack">
                 <interceptor-ref name="authenticatorInterceptor"></interceptor-ref>
                 <interceptor-ref name="defaultStack"></interceptor-ref>
@@ -25,43 +24,46 @@
         <global-results>
             <result name="login" type="redirect">home.action</result>
         </global-results>
-
+        <!-- -->
         <action name="home">
             <interceptor-ref name="defaultStack"></interceptor-ref>
             <result>/Login.jsp</result>
         </action>
-
         <!-- Handles the login, after user enter his/her credentials-->
-        <action name="login" class="controllers.access.LoginAction">
+        <action name="login" class="controllers.user.LoginAction">
             <interceptor-ref name="defaultStack"></interceptor-ref>
             <result name="success">/Dasboard.jsp</result>
             <result name="input">/Login.jsp</result>
         </action>
+        <!-- Handles User registration-->
+        <action name="register" class="controllers.user.RegisterAction">
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <result name="success">/Login.jsp</result>
+            <result name="input">/Register.jsp</result>
+        </action>
+        <!-- Logout -->
+        <action name="logout" class="controllers.user.LogoutAction">
+            <result name="success">/Login.jsp</result>
+        </action>
         <!-- User dashboard -->
-        <action name="dashboard" class="controllers.access.DashboardAction">
+        <action name="dashboard" class="controllers.user.DashboardAction">
             <result name="success">/Dasboard.jsp</result>
         </action>
-
         <!--Fetch Bike Availabilty-->
         <action name="fetchAvailability" class="controllers.bike.BikesAction" method="checkAvailableBikes">
             <result name="success">/Dasboard.jsp</result>
         </action>
-
         <!--Instant Booking-->
         <action name="bookBike" class="controllers.bike.InstantBookAction" method="instantBooking">
             <result name="success">/Dasboard.jsp</result>
         </action>
-
         <!--View Rental History-->
         <action name="viewRentalHistory" class="controllers.bike.UsersAccountAction" method="viewRentalHistory">
             <result name="success">/Dasboard.jsp</result>
         </action>
-
         <!--Updates password-->
         <action name="updateDetails" class="controllers.user.UserAction" method="updatePassword">
             <result name="success">/Dasboard.jsp</result>
         </action>
-
-
     </package>
 </struts>

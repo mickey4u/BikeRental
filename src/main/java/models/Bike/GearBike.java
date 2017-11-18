@@ -1,6 +1,6 @@
-package models.Bike;
+package models.bike;
 
-import dao.userdao.IBikeDAO;
+import dao.bike.IBikeDAO;
 
 import java.util.List;
 

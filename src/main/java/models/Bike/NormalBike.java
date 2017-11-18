@@ -1,6 +1,6 @@
-package models.Bike;
+package models.bike;
 
-import dao.userdao.IBikeDAO;
+import dao.bike.IBikeDAO;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class NormalBike implements Bike {
     @Override
     public boolean rentBike(String bikeSpots) {
         List<entities.bike.Bike> AvailableBikes = checkAvailableBikes(bikeSpots);
-        BikeConstant bikeType = new BikeConstant();
+        models.bike.BikeConstant bikeType = new BikeConstant();
         boolean booking = false;
         if(AvailableBikes.size()>0)
         {

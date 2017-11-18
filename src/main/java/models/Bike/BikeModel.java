@@ -1,5 +1,6 @@
-package models.Bike;
-import dao.userdao.BikesDao;
+package models.bike;
+
+import dao.bike.BikesDao;
 import entities.bike.Bike;
 import models.IBike;
 
