@@ -1,4 +1,4 @@
-package models.Bike;
+package models.bike;
 
 public interface Bike {
 
