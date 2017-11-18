@@ -6,7 +6,7 @@ import entities.bike.Bike;
 import java.util.List;
 
 
-public class BikeModel implements models.bikemodel.Bike.IBike {
+public class BikeModel implements IBike {
 
     private BikesDao bike;
 
