@@ -1,8 +1,8 @@
 package controllers.bike;
 
 import com.opensymphony.xwork2.ActionSupport;
-import models.Bike.Bike;
-import models.Bike.BikeFactory;
+import models.bike.Bike;
+import models.bike.BikeFactory;
 
 public class InstantBookAction extends ActionSupport {
 

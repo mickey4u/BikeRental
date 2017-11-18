@@ -2,12 +2,11 @@ package models.bike;
 
 import dao.bike.BikesDao;
 import entities.bike.Bike;
-import models.IBike;
 
 import java.util.List;
 
 
-public class BikeModel implements IBike {
+public class BikeModel implements models.bike.Bike.IBike {
 
     private BikesDao bike;
 
