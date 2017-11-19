@@ -3,6 +3,7 @@ package dao.bikedao;
 import com.google.gson.reflect.TypeToken;
 import entities.bike.ActiveBooking;
 import entities.bike.Bike;
+import entities.users.User;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -102,4 +103,52 @@ public class BikesDao implements IBikeDAO {
         }
         return booking;
     }
+
+    @Override
+    public List<Bike> fetchAllBikes() {
+
+        List<Bike> listOfAllBikes = new ArrayList<Bike>();
+        type = new TypeToken<List<Bike>>() {
+        }.getType();
+
+        List<Bike> bikes = FileManager.readFromflatFile("BikeSpots.json", Bike[].class);
+        for (Bike bike : bikes)
+            listOfAllBikes.add(bike);
+
+        return listOfAllBikes;
+    }
+
+    public Boolean addServicedBike(Bike ServiceBike) {
+
+        type = new TypeToken<List<User>>() {
+        }.getType();
+
+        List<Bike> listOfAllBikes = FileManager.readFromflatFile("BikeSpots.json", User[].class);
+        for (Bike bike : listOfAllBikes) {
+            if (bike.getBikeID().equals(ServiceBike.getBikeID())) {
+                return false;
+            }
+            else{
+                listOfAllBikes.add(ServiceBike);
+                return true;
+            }
+        }
+
+        return null;
+    }
+
+    public Boolean updateBikeStatus(entities.bike.Bike rentBike){
+        List<Bike> listOfAvailableBikes = new ArrayList();
+        List<Bike> bikes = FileManager.readFromflatFile("BikeSpots.json", Bike[].class);
+        for(Bike bike:bikes){
+            int index;
+            if(bike.getBikeID() == rentBike.getBikeID() && bike.getBikeStatus() == "Available"){
+                bike.setBikeStatus("Unavailable");
+
+            }
+
+        }
+        return Boolean.TRUE;
+    }
+
 }

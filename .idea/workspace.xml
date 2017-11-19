@@ -7,11 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbac297a-215d-4b13-9c17-c43ab0a233c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/bikemodel/Book.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BikeRental.iml" afterPath="$PROJECT_DIR$/BikeRental.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/bikedao/BikesDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/bikedao/BikesDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/bikedao/IBikeDAO.java" afterPath="$PROJECT_DIR$/src/main/java/dao/bikedao/IBikeDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/bikemodel/Bike.java" afterPath="$PROJECT_DIR$/src/main/java/models/bikemodel/Bike.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/bikemodel/BikeModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/bikemodel/BikeModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/bikemodel/GearBike.java" afterPath="$PROJECT_DIR$/src/main/java/models/bikemodel/GearBike.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/bikemodel/IBike.java" afterPath="$PROJECT_DIR$/src/main/java/models/bikemodel/IBike.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/bikemodel/NormalBike.java" afterPath="$PROJECT_DIR$/src/main/java/models/bikemodel/NormalBike.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,56 +32,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BikesDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/BikesDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <folding>
+                <element signature="e#4080#4086#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Bike.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/Bike.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+            <state relative-caret-position="34">
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/Book.java">
+      <file leaf-file-name="Observer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/Observer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            <state relative-caret-position="34">
+              <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NormalBike.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/NormalBike.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="68" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#226#236#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BikeModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/BikeModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BikeFactory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/BikeFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BikeConstant.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/BikeConstant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -84,28 +89,20 @@
       <file leaf-file-name="GearBike.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/GearBike.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="425">
+              <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+              <folding>
+                <element signature="e#224#234#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IPay.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IPay.java">
+      <file leaf-file-name="BikeConstant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/BikeConstant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IBook.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IBook.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="119">
+              <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -114,11 +111,29 @@
       <file leaf-file-name="IBike.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IBike.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IBook.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IBook.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1326">
+              <caret line="90" column="35" lean-forward="false" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,9 +144,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="struts_2_5" />
+        <option value="Enum" />
         <option value="Singleton" />
         <option value="Jsp File" />
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -141,12 +156,11 @@
     <findStrings>
       <find>charges</find>
       <find>defaultStack</find>
-      <find>Ledger</find>
+      <find>pom.xml</find>
+      <find>constants</find>
     </findStrings>
     <replaceStrings>
       <replace />
-      <replace>Account</replace>
-      <replace>Transaction</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Molly\IdeaProjects\BikeRental</dir>
@@ -163,57 +177,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/js/bikeLocator-1.1-min.js" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bookkeeping/LedgerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bookkeeping/IAccount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bookkeeping/ILedger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bookkeeping/ITransaction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bookkeeping/IBookkeeping.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bookkeeping/AccountDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bookkeeping/TransactionDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bookkeeping/AccountModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/bookkeeping/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/bookkeeping/Ledger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/bookkeeping/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/bookkeeping/ValueType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/bookkeeping/TransactionLine.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/master.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/user/IUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bike/BikesDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/user/UserMapper.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/users/User.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/files/BookingHistory.json" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/users/Bookings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/bike/UsersAccountAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Bike.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/payment/PayAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/NormalBike.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/PenaltyUsage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/NormalUsageImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/NormalUsage.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/IUserModel.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.users.changelog-1.0.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/user/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/user/UserAccess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/UserModel.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/bikeRental.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/files/Users.json" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/UserDaoInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/users/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/Test1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/user/UserAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/users/RentalHistory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/bikeLocator-1.1-min.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/Dasboard.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/access/LogoutAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/access/RegisterAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/access/LoginAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/user/LoginAction.java" />
         <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/main/ModelsInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bike/BikeModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bike/Bike.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bike/BikeConstant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bike/GearBike.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bike/BikeFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/IBikeDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/BikeFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/files/BikeSpots.json" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/bike/InstantBookAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bike/NormalBike.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bikemodel/NormalBike.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bikemodel/IBike.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bikemodel/IBook.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bikemodel/IPay.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/UserModel.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/models/GearBike.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/bike/ActiveBooking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/BikesDao.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Bike/BikeModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Charges/IFareCalculationStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/user/UserModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Bike/BikeConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Bike/NormalBike.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Bike/GearBike.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Bike/BikeFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/bikedao/IBikeDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/bikemodel/Bike.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/bikemodel/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/bikemodel/BikeModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/bikemodel/NormalBike.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/bikemodel/GearBike.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/bikemodel/IBike.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/bikemodel/Observer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/bikedao/BikesDao.java" />
       </list>
     </option>
   </component>
@@ -258,19 +272,14 @@
           <item name="BikeRental" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="BikeRental" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="139" />
     <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -406,7 +415,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -423,9 +434,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -465,7 +473,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
@@ -474,76 +482,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="bikemodel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="bookkeepingmodel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="Charges" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="liquibase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -557,13 +503,12 @@
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\resources" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="models" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="models" />
-      <recent name="entities.users" />
-      <recent name="entities.bike" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mayank\IdeaProjects\BikeRental\src" />
@@ -572,10 +517,13 @@
       <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp" />
       <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF\pages" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF\lib" />
-      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\resources" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="models.bikemodel" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="entities.bike" />
+      <recent name="models" />
+      <recent name="entities.users" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -592,13 +540,17 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/artifacts/BikeRental_war_exploded.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bike/InstantBookAction.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bike/UsersAccountAction.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/payment/PayAction.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/user/UserAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/BikeRental.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pom.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/UserDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/users/User.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/struts.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/Dasboard.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/Register.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -606,17 +558,50 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/Bike.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/BikeConstant.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/BikeFactory.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/BikeModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/GearBike.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/NormalBike.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Charges/IFareCalculationStrategy.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Charges/NormalUsage.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Charges/PenaltyUsage.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/user/IUserModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/user/UserModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bikecontroller/CancelBookingAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bikecontroller/InstantBookAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bikecontroller/PreBookAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bikecontroller/RegisterBike.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bikecontroller/UsersAccountAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/paymentcontroller/PayAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/usercontroller/DashboardAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/usercontroller/LogoutAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/usercontroller/RegisterAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/usercontroller/UserAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bikedao/BikesDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bikedao/IBikeDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeepingdao/AccountDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeepingdao/IAccount.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeepingdao/ILedger.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeepingdao/ITransaction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeepingdao/LedgerDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeepingdao/TransactionDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/IUserDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/UserMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/main/ModelsInterface.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikemodel/Bike.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikemodel/BikeConstant.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikemodel/BikeFactory.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikemodel/BikeModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikemodel/Book.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikemodel/GearBike.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikemodel/IBike.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikemodel/IBook.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikemodel/IPay.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikemodel/NormalBike.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/AccountModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/LedgerModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/TransactionModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/interfaces/IAccount.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/interfaces/ILedger.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/interfaces/ITransaction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/usermodel/IUserModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/liquibase/database.users.changelog-1.0.xml</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -624,16 +609,53 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/BikeFactory.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/BikeModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/GearBike.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/IFareCalculationStrategy.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/IUserModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/NormalBike.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/NormalUsage.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/PenaltyUsage.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/UserModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/json-jena-1.0.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/json-simple-1.1.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/json-simple-1.1_2.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/json-simple-1.1_3.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/access/DashboardAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/access/LoginAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/access/LogoutAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/access/RegisterAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bike/BikesAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bike/CancelBookingAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bike/InstantBookAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bike/PreBookAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bike/RegisterBike.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bike/UsersAccountAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/payment/PayAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/user/UserAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeeping/AccountDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeeping/IAccount.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeeping/ILedger.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeeping/ITransaction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeeping/LedgerDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookkeeping/TransactionDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/BikesDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/IBikeDAO.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/Test1.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/UserDaoInterface.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/interceptors/LoggingInterceptor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/Bike.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/BikeConstant.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/BikeFactory.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/BikeModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/GearBike.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Bike/NormalBike.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/Book.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/IBike.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/IBook.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/IPay.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeeping/AccountModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeeping/LedgerModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeeping/TransactionModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeeping/interfaces/IAccount.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeeping/interfaces/ILedger.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bookkeeping/interfaces/ITransaction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/user/IUserModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/user/UserModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -727,7 +749,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test1">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="All in BikeRental" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="BikeRental" />
@@ -1478,11 +1500,11 @@
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="dao.bikedao.*" />
+          <option name="PATTERN" value="dao.userdao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="dao.user.Test" />
+      <option name="MAIN_CLASS_NAME" value="dao.userdao.Test" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1497,11 +1519,11 @@
     <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="dao.bikedao.*" />
+          <option name="PATTERN" value="dao.userdao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="dao.user.Test1" />
+      <option name="MAIN_CLASS_NAME" value="dao.userdao.Test1" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1650,8 +1672,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Test1" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Test1" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.All in BikeRental" />
         <item index="3" class="java.lang.String" itemvalue="Application.MyJetty" />
         <item index="4" class="java.lang.String" itemvalue="Application.Trial" />
@@ -1692,9 +1714,13 @@
       <workItem from="1510418002008" duration="38755000" />
       <workItem from="1510499650804" duration="171000" />
       <workItem from="1510500232072" duration="22493000" />
-      <workItem from="1510671496405" duration="43137000" />
-      <workItem from="1510945245311" duration="4963000" />
-      <workItem from="1510953228017" duration="37746000" />
+      <workItem from="1510671496405" duration="55019000" />
+      <workItem from="1510794525260" duration="2063000" />
+      <workItem from="1510851508909" duration="1899000" />
+      <workItem from="1510863811594" duration="3443000" />
+      <workItem from="1510867399530" duration="419000" />
+      <workItem from="1510934530428" duration="110000" />
+      <workItem from="1511094572581" duration="2965000" />
     </task>
     <task id="LOCAL-00001" summary="Partial commit for UserDao implementation">
       <created>1509711964430</created>
@@ -1787,49 +1813,56 @@
       <option name="project" value="LOCAL" />
       <updated>1510769700020</updated>
     </task>
-    <task id="LOCAL-00014" summary="Added initial work on bookkeeping">
-      <created>1510848072142</created>
+    <task id="LOCAL-00014" summary="Struts.xml actions for the use cases">
+      <created>1510778446678</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1510848072142</updated>
+      <updated>1510778446678</updated>
     </task>
-    <task id="LOCAL-00015" summary="Database creation with user login, registration and logout">
-      <created>1511031820262</created>
+    <task id="LOCAL-00015" summary="Booking for Gear Bike functionality implemented">
+      <created>1510795806604</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1511031820262</updated>
+      <updated>1510795806604</updated>
     </task>
-    <task id="LOCAL-00016" summary="Database creation with user login, registration and logout">
-      <created>1511031940124</created>
+    <task id="LOCAL-00016" summary="Booking for Gear Bike functionality implemented">
+      <created>1510795820625</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1511031940124</updated>
+      <updated>1510795820625</updated>
     </task>
-    <task id="LOCAL-00017" summary="Database creation with user login, registration and logout">
-      <created>1511032579035</created>
+    <task id="LOCAL-00017" summary="Booking for Gear Bike functionality implemented">
+      <created>1510851821149</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1511032579035</updated>
+      <updated>1510851821149</updated>
     </task>
-    <task id="LOCAL-00018" summary="Database creation with user login, registration and logout">
-      <created>1511033097024</created>
+    <task id="LOCAL-00018" summary="workspace">
+      <created>1510851846192</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1511033097024</updated>
+      <updated>1510851846192</updated>
     </task>
-    <task id="LOCAL-00019" summary="Database creation with user login, registration and logout">
-      <created>1511033665332</created>
+    <task id="LOCAL-00019" summary="Packages created for the models">
+      <created>1510865492979</created>
       <option name="number" value="00019" />
       <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1511033665332</updated>
+      <updated>1510865492979</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Bike booking for Gear Bikes with factory method">
+      <created>1510867460569</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1510867460569</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1838,7 +1871,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323072000" />
+    <option name="totallyTimeSpent" value="300083000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1853,38 +1886,72 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5252366" sideWeight="0.50292826" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15615141" sideWeight="0.49707174" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3001464" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27602524" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40063092" sideWeight="0.49267936" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17350158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15141957" sideWeight="0.4941435" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1955836" sideWeight="0.511713" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15615141" sideWeight="0.49707174" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22108346" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1955836" sideWeight="0.48828697" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5694006" sideWeight="0.79282576" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20189275" sideWeight="0.49707174" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19399707" sideWeight="0.76046515" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35962147" sideWeight="0.4941435" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24597365" sideWeight="0.76046515" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304539" sideWeight="0.23953488" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4148265" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33438486" sideWeight="0.72108346" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21766561" sideWeight="0.4795022" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32176656" sideWeight="0.47657394" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5694006" sideWeight="0.20717423" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15615141" sideWeight="0.49707174" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22108346" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4148265" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33438486" sideWeight="0.72108346" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5694006" sideWeight="0.79282576" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15141957" sideWeight="0.4941435" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35962147" sideWeight="0.49707174" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304539" sideWeight="0.76046515" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304539" sideWeight="0.23953488" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21766561" sideWeight="0.4795022" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1908,396 +1975,191 @@
     <MESSAGE value="Use Case 3a and A Dashboard for user" />
     <MESSAGE value="Error fixed" />
     <MESSAGE value="Use Case 7 working" />
-    <MESSAGE value="Added initial work on bookkeeping" />
-    <MESSAGE value="Database creation with user login, registration and logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database creation with user login, registration and logout" />
+    <MESSAGE value="Struts.xml actions for the use cases" />
+    <MESSAGE value="Booking for Gear Bike functionality implemented" />
+    <MESSAGE value="workspace" />
+    <MESSAGE value="Packages created for the models" />
+    <MESSAGE value="Bike booking for Gear Bikes with factory method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bike booking for Gear Bikes with factory method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utilities/FileManager.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utilities/FileManager.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utilities/FileManager.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="57" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/NormalUsage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-sources.jar!/org/json/simple/JSONValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="2941">
+          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-sources.jar!/org/json/simple/parser/JSONParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/interceptors/AuthenticationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/NormalBike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/dao.bookkeeping.AccountDao">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>dao.bookkeeping.AccountDao</OriginalElement>
-          <nodes>
-            <node x="" y="">dao.userdao.BikesDao</node>
-            <node x="" y="">models.bookkeeping.LedgerModel</node>
-            <node x="" y="">entities.users.Address</node>
-            <node x="" y="">entities.bookkeeping.Transaction</node>
-            <node x="" y="">models.SupportModel</node>
-            <node x="" y="">entities.users.User</node>
-            <node x="" y="">models.BikeFactory</node>
-            <node x="" y="">utilities.FileManager</node>
-            <node x="" y="">entities.bookkeeping.Ledger</node>
-            <node x="" y="">models.NormalUsage</node>
-            <node x="" y="">entities.bike.ActiveBooking</node>
-            <node x="" y="">entities.users.Roles</node>
-            <node x="" y="">dao.bookkeeping.LedgerDao</node>
-            <node x="" y="">models.bookkeeping.interfaces.ILedger</node>
-            <node x="" y="">entities.bike.Bike</node>
-            <node x="" y="">dao.bookkeeping.ITransaction</node>
-            <node x="" y="">entities.bike.Fares</node>
-            <node x="" y="">models.bookkeeping.AccountModel</node>
-            <node x="" y="">models.bookkeeping.interfaces.ITransaction</node>
-            <node x="" y="">entities.bookkeeping.TransactionLine</node>
-            <node x="" y="">models.IBook</node>
-            <node x="" y="">entities.users.Bookings</node>
-            <node x="" y="">dao.bookkeeping.TransactionDao</node>
-            <node x="" y="">entities.bike.BikeType</node>
-            <node x="" y="">dao.userdao.IBikeDAO</node>
-            <node x="" y="">models.bookkeeping.interfaces.IAccount</node>
-            <node x="" y="">dao.userdao.Test</node>
-            <node x="" y="">models.IUserModel</node>
-            <node x="" y="">models.IBike</node>
-            <node x="" y="">main.BikeRentalSingleton</node>
-            <node x="" y="">models.Bike</node>
-            <node x="" y="">models.UserModel</node>
-            <node x="" y="">entities.bike.BikeLocation</node>
-            <node x="" y="">models.BikeModel</node>
-            <node x="" y="">models.Book</node>
-            <node x="" y="">models.PenaltyUsage</node>
-            <node x="" y="">dao.bookkeeping.ILedger</node>
-            <node x="" y="">models.GearBike</node>
-            <node x="" y="">dao.userdao.UserDAO</node>
-            <node x="" y="">entities.users.RentalHistory</node>
-            <node x="" y="">dao.bookkeeping.AccountDao</node>
-            <node x="" y="">models.NormalBike</node>
-            <node x="" y="">models.bookkeeping.TransactionModel</node>
-            <node x="" y="">main.BikeRentalSingleton.SingletonHelper</node>
-            <node x="" y="">models.IPay</node>
-            <node x="" y="">entities.bookkeeping.ValueType</node>
-            <node x="" y="">dao.userdao.UserDaoInterface</node>
-            <node x="" y="">dao.userdao.Test1</node>
-            <node x="" y="">entities.bookkeeping.Account</node>
-            <node x="" y="">dao.bookkeeping.IAccount</node>
-            <node x="" y="">models.IFareCalculationStrategy</node>
-            <node x="" y="">utilities.Constants</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="385.5" y="1683.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>packageLocal</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">java-money</node>
-            <node x="" y="">main</node>
-            <node x="" y="">utilities</node>
-            <node x="" y="">dao</node>
-            <node x="" y="">controllers</node>
-            <node x="" y="">interceptors</node>
-            <node x="" y="">models</node>
-            <node x="" y="">entities</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="586.5" y="220.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>packageLocal</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/files/Users.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/TransactionModel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/bike/BikeLocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="59" />
-          <folding />
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/bike/Fares.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="80" lean-forward="false" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
-          <folding />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/user/Test1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/RentalHistory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/BikesDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/Bookings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bike/BikesAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bike/CancelBookingAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bike/UsersAccountAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/user/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/IBike.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Bike/Bike.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="80" column="21" lean-forward="false" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="-7">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/SupportModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/001-create-account-table">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="41" column="6" lean-forward="false" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.users.changelog-1.0.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="69" lean-forward="false" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Dasboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="66" column="18" lean-forward="true" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/LogoutAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding>
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/RegisterAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Charges/PenaltyUsage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-7">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/ModelsInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Charges/IFareCalculationStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Register.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/user/IUserModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="85">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/user/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/IPay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/IBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/usermodel/IUserModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="68">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -2306,85 +2168,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Bike/BikeModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/IBike.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/bike/BikeType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Charges/PenaltyUsage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/bike/ActiveBooking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/InstantBookAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/LedgerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/AccountModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/NormalBike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/interfaces/IAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/SupportModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Charges/IFareCalculationStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -2392,40 +2197,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Bike/GearBike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IBike.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Bike/BikeConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Bike/NormalBike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Bike/BikeFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/BikesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/IBikeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IBook.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/IUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="51">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IPay.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="97" column="19" lean-forward="false" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/Book.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/IBikeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="204">
+          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2434,43 +2283,95 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/BikeModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/GearBike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/Bike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        <state relative-caret-position="425">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="31" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/BikeConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/BikeFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/NormalBike.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="10" column="68" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="68" />
+          <folding>
+            <element signature="e#226#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/GearBike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding>
+            <element signature="e#224#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/Bike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IBike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="90" column="35" lean-forward="false" selection-start-line="90" selection-start-column="35" selection-end-line="90" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/BikesDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="e#4080#4086#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

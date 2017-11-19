@@ -9,11 +9,13 @@ import utilities.Constants;
 import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Map;
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  * Handles all the business logic for user on the platform
  */
-public class UserModel implements IUserModel, Constants {
+public class UserModel implements IUserModel, Constants ,Observer{
 
     UserDAO userDAO;
 
@@ -82,5 +84,10 @@ public class UserModel implements IUserModel, Constants {
             e.printStackTrace();
         }
         return false;
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        //do something notify users
     }
 }

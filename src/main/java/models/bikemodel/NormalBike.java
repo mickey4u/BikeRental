@@ -2,12 +2,13 @@ package models.bikemodel;
 
 import dao.bikedao.IBikeDAO;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class NormalBike implements Bike {
 
     IBikeDAO bike;
-
+    private List<Observer> observerList = new ArrayList<Observer>();
     public NormalBike(String bikeSpots)
     {
         rentBike(bikeSpots);
@@ -30,5 +31,25 @@ public class NormalBike implements Bike {
     {
         List<Bike> AvailableBikes = bike.fetchAvailableBikes(bikeSpot);
         return AvailableBikes;
+    }
+    @Override
+    public void addObserver(Observer observer) {
+        if(!observerList.contains(observer)){
+            observerList.add(observer);
+        }
+    }
+
+    @Override
+    public void removeObserver(Observer observer) {
+        if(!observerList.contains(observer)){
+            observerList.remove(observer);
+        }
+    }
+
+    @Override
+    public void notice(String message) {
+        for(Observer observer:observerList){
+            observer.update(message);
+        }
     }
 }

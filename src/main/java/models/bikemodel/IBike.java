@@ -7,7 +7,7 @@ import java.util.List;
 /**
  *
  */
-interface IBike {
+public interface IBike {
 
     /**
      * this method returns a list of available bikes
@@ -16,6 +16,6 @@ interface IBike {
      * @return a list of available bikes
      */
     List<Bike> checkAvailableBikes(String bikeSpot);
-
+    Boolean addNewServicedBike(Bike ServicedBike);
     Boolean bikeBook(String bikeSpots);
 }
