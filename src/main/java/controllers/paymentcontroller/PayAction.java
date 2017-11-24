@@ -13,6 +13,7 @@ public class PayAction extends ActionSupport {
     //Strategies for fare calculation
     private final IFareCalculationStrategy calculationStrategy1 = new NormalUsage();
     private final IFareCalculationStrategy calculationStrategy2 = new PenaltyUsage();
+    double fare = 0.0;
 
     @Override
     public String execute() throws Exception {
@@ -25,10 +26,8 @@ public class PayAction extends ActionSupport {
     * */
     public String getTotalFare()
     {
-     //   Collection tripDetail = tripDetails.getTripDetails(); //
         Double totalTime=8.0;               //Calculate the total Trip time(Static Content)
         Object bike = BikeType.CityBike;   //Get the Bike booked by user(Static Content)
-        double fare = 0.0;
         if(totalTime<=6.0)
         {
             fare = calculationStrategy1.calculateFare(totalTime,bike);

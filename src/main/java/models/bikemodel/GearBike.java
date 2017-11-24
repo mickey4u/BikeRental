@@ -1,37 +1,52 @@
 package models.bikemodel;
 
+import dao.bikedao.BikesDao;
 import dao.bikedao.IBikeDAO;
+import entities.bike.BookingUtils;
+import org.javamoney.moneta.Money;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class GearBike implements Bike {
+public class GearBike implements IBook {
 
-    IBikeDAO bike;
+    private IBikeDAO iBikeDAO;
     private List<Observer> observerList = new ArrayList<Observer>();
-    public GearBike(String bikeSpots)
+    String bikeType = String.valueOf(new BikeConstant());
+
+    public GearBike(String bikeType)
     {
-        rentBike(bikeSpots);
+        this.bikeType = bikeType;
     }
 
-    public boolean rentBike(String bikeSpots)
-    {
-        List<entities.bike.Bike> AvailableBikes = checkAvailableBikes(bikeSpots);
-        boolean booking = false;
+    public GearBike(BikesDao bikesDao) {
+        this.iBikeDAO = bikesDao;
+    }
+
+    @Override
+    public Money rentFee(double hours) {
+        return null;
+    }
+    
+    @Override
+    public boolean rentBike(String bikeSpots) {
+
         BikeConstant bikeType = new BikeConstant();
-        if(AvailableBikes.size()>0)
-        {
-            booking = bike.rentNow(bikeSpots,bikeType.getGearBike());
-            return true;
-        }
-        return false;
+        BookingUtils bookingDetails = new BookingUtils();
+        return iBikeDAO.rentNow(bikeSpots, bikeType.GearBike, bookingDetails.getTime(), bookingDetails.createBookingID());
+
     }
 
-    public List<entities.bike.Bike> checkAvailableBikes(String bikeSpot)
-    {
-        List<entities.bike.Bike> AvailableBikes = bike.fetchAvailableBikes(bikeSpot);
-        return AvailableBikes;
+    @Override
+    public Money commission() {
+        return null;
     }
+
+    /*    public List<entities.bike.Bike> checkAvailableBikes(String bikeSpot)
+        {
+            List<entities.bike.Bike> AvailableBikes = bike.fetchAvailableBikes(bikeSpot);
+            return AvailableBikes;
+        }*/
     @Override
     public void addObserver(Observer observer) {
         if(!observerList.contains(observer)){

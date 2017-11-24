@@ -5,13 +5,14 @@ import lombok.Data;
 @Data
 public class Bike {
 
+
     // represents the bike's id
-    String bikeID;
+    String bikeID = "";
     // represents bike location;
-    String bikeSpotLocation;
+    String bikeSpotLocation = "";
     // represents the bike availability
-    String BikeStatus;
+    String BikeStatus = "";
     //Bike Type
-    String BikeType;
+    String BikeType = "";
 
 }

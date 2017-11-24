@@ -1,7 +1,7 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
     <link rel="stylesheet" href="css/bikeRental.css"/>
     <script async defer
@@ -17,7 +17,7 @@
 <div id="topbar" data-theme='a'>
     <img id="bbcLogo" src="images/bbc-logo.png">
     <div id="signOn" class="sign-In">
-        <img id="signInLogo" class="signInLogo" src="images/signIN.png">
+        <img id="signInLogo" class="signInLogo">
         <%--  <span id="signInfont" class="signInfont">Sign Out</span>--%>
         <a href="<s:url action="logout"/>">SignOut</a>
     </div>
@@ -42,33 +42,25 @@
     <div>
         <div id="map" style="width: 500px; height: 400px;"></div>
     </div>
-    <button id="button" data-role="button" onclick="fetchAvailability">View Bikes</button>
+    <button id="button" onclick="fetchAvailability()" style="align-content: center">View Bikes</button>
 </div>
 <script>
     $(document).ready(function () {
         console.log("document loaded");
         navigator.geolocation.getCurrentPosition(showPosition);
-        $('#button').click(function () {
-            alert("welcome");
-            fetchAvailability();
-        });
-
     });
 
     function fetchAvailability() {
         var loc = "The Stables";
+        alert(loc);
         {
             $.ajax({
-                type: "POST",
-                url: "<s:url action='fetchAvailability'/>",
-                dataType: 'text/javascript',
-                data: {
-                    bikeSpot: loc
-                },
-                success: function (results) {
-
+                type: 'GET',
+                url: "<s:url action='fetchAvailabilityData'/>",
+                dataType : 'text/javascript',
+                data: {bikeSpotLocation: loc},
+                success: function(data) {
                     alert("Some exception occurred! Please try again.");
-
                 }
             });
         }

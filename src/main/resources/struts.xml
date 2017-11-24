@@ -50,7 +50,7 @@
             <result name="success">/Dasboard.jsp</result>
         </action>
         <!--Fetch Bike Availabilty-->
-        <action name="fetchAvailability" class="controllers.bikecontroller.BikesAction" method="checkAvailableBikes">
+        <action name="fetchAvailabilityData" class="controllers.bikecontroller.BikesAction" method="checkAvailableBikes">
             <result name="success">/Dasboard.jsp</result>
         </action>
         <!--Instant Booking-->

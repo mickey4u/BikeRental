@@ -2,32 +2,33 @@ package controllers.bikecontroller;
 
 import com.opensymphony.xwork2.ActionSupport;
 import entities.bike.Bike;
+import lombok.Data;
 import models.bikemodel.IBike;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.util.List;
 
 /**
  *
  */
+@Data
 public class BikesAction extends ActionSupport {
-    models.bikemodel.IBike bikespots;
-    @Getter
-    @Setter
-    String bikeSpot;
-    String bikeID;
-    IBike AdminsterAddServicedBike;
-    Bike  servicedBike;
+    String bikeSpotLocation="";
+    private IBike ibike;
+    private Bike bike;
+    main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
+
     /**
-     * @return
+     * Availability of Bikes
+     * @return List of Available Bikes
      */
     public String checkAvailableBikes() {
-        List<Bike> bikeSpots = bikespots.checkAvailableBikes(bikeSpot);
+        String bikeSpot = bikeSpotLocation;
+        List<Bike> bikeSpots = bikeRentalSingleton.getBikeModel().checkAvailableBikes(bikeSpot);
         return SUCCESS;
     }
+
     public Boolean addServicedBikes(){
-        AdminsterAddServicedBike.addNewServicedBike(servicedBike);
+        ibike.addNewServicedBike(bike);
         return true;
     }
 

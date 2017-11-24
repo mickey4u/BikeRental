@@ -6,6 +6,8 @@ function showPosition(position) {
 	loadMap(lat, long);
 }
 
+
+
 function loadMap(lattitude, longitude)
 {
 	var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
