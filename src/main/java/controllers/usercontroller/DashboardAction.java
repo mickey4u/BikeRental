@@ -2,7 +2,7 @@ package controllers.usercontroller;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
-import entities.users.RentalHistory;
+import entities.bike.Booking;
 import entities.users.User;
 import interceptors.UserAware;
 import lombok.Getter;
@@ -18,7 +18,7 @@ public class DashboardAction extends ActionSupport implements UserAware, ModelDr
     IUserModel iUserModel;
 
     public String viewRentalHistory() {
-        List<RentalHistory> rentalHistory = iUserModel.viewRentalHistory(user.getUsername().toString());  //UserID should go as Input
+        List<Booking> rentalHistory = iUserModel.viewRentalHistory(user.getUsername().toString());  //UserID should go as Input
         return SUCCESS;
     }
 

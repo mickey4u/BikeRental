@@ -21,4 +21,6 @@ public class Bike {
     private BikeStatus bikeStatus;
     // bike available
     private boolean bikeAvailable;
+    // deleted status
+    private boolean deleted;
 }

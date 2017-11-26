@@ -1,12 +1,19 @@
 package main;
 
 import dao.bikedao.BikeAccess;
-import dao.bikedao.BikesDao;
+import dao.bikedao.BikeDao;
+import dao.bikedao.IBikeDao;
+import dao.bookingdao.BookAccess;
+import dao.bookingdao.BookDao;
+import dao.bookingdao.IBookDao;
+import dao.userdao.IUserDao;
 import dao.userdao.UserAccess;
-import dao.userdao.UserDAO;
+import dao.userdao.UserDao;
 import models.bikemodel.BikeModel;
-import models.bikemodel.GearBike;
-import models.bikemodel.NormalBike;
+import models.bikemodel.IBikeModel;
+import models.rentalmodel.BookModel;
+import models.rentalmodel.IBookModel;
+import models.usermodel.IUserModel;
 import models.usermodel.UserModel;
 import org.jdbi.v3.core.Jdbi;
 import org.jdbi.v3.sqlobject.SqlObjectPlugin;
@@ -15,14 +22,13 @@ import org.jdbi.v3.sqlobject.SqlObjectPlugin;
  * This class is the application's entry point.
  */
 public class BikeRentalSingleton {
-
-    Jdbi jdbi;
-    UserDAO userDao;
-    UserModel userModel;
-    BikesDao bikesDao;
-    BikeModel bikeModel;
-    GearBike gearBike;
-    NormalBike cityBike;
+    private Jdbi jdbi;
+    private IUserDao userDao;
+    private IUserModel userModel;
+    private IBikeDao bikesDao;
+    private IBikeModel bikeModel;
+    private IBookDao bookDao;
+    private IBookModel bookModel;
 
     private BikeRentalSingleton() {
         try {
@@ -33,16 +39,14 @@ public class BikeRentalSingleton {
         jdbi = Jdbi.create("jdbc:mysql://localhost:3306/bikerental", "root", "");
         jdbi.installPlugin(new SqlObjectPlugin());
 
-        userDao = new UserDAO(jdbi.onDemand(UserAccess.class));
+        userDao = new UserDao(jdbi.onDemand(UserAccess.class));
         userModel = new UserModel(userDao);
 
-        bikesDao = new BikesDao(jdbi.onDemand(BikeAccess.class));
+        bikesDao = new BikeDao(jdbi.onDemand(BikeAccess.class));
         bikeModel = new BikeModel(bikesDao);
 
-        gearBike = new GearBike(bikesDao);
-
-        cityBike = new NormalBike(bikesDao);
-
+        bookDao = new BookDao(jdbi.onDemand(BookAccess.class));
+        bookModel = new BookModel(bookDao);
     }
 
 
@@ -55,14 +59,16 @@ public class BikeRentalSingleton {
         private static final BikeRentalSingleton instance = new BikeRentalSingleton();
     }
 
-    public UserModel getUserModel() {
+    public IUserModel getUserModel() {
         return userModel;
     }
 
-    public BikeModel getBikeModel() { return bikeModel; }
+    public IBikeModel getBikeModel() {
+        return bikeModel;
+    }
 
-    public GearBike getGearBike() { return gearBike; }
-
-    public NormalBike getCityBike() { return cityBike;  }
+    public IBookModel getBookModel() {
+        return bookModel;
+    }
 
 }

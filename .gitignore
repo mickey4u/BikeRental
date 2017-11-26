@@ -5,3 +5,4 @@
 .settings
 .idea
 .idea/workspace.xml
+/src/main/resources/liquibase/liquibase.properties

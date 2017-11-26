@@ -1,29 +1,21 @@
-package dao.bookingdao;
+package models.rentalmodel;
 
 import entities.bike.Booking;
 
 import java.util.List;
 
 /**
- * Book Dao contract
+ * Book model contract
  */
-public interface IBookDao {
+public interface IBookModel {
 
     /**
-     * Checks if the booking with this id already exist in the database
-     *
-     * @param bookingId
-     * @return
-     */
-    boolean checkExist(String bookingId);
-
-    /**
-     * Creates a booking
+     * Creates a bike booking
      *
      * @param booking
      * @return
      */
-    boolean insertBooking(Booking booking);
+    boolean bookBike(Booking booking);
 
     /**
      * Cancels a booking

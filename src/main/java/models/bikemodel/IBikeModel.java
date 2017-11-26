@@ -1,4 +1,4 @@
-package dao.bikedao;
+package models.bikemodel;
 
 import entities.bike.Bike;
 import entities.bike.BikeStatus;
@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Bike Dao contract
+ * Bike model contract
  */
-public interface IBikeDao {
+public interface IBikeModel {
 
     /**
      * Find a Bike from the database wrt The Bike Spots
@@ -51,12 +51,12 @@ public interface IBikeDao {
     boolean registerBike(Bike bike);
 
     /**
-     * deletes bike from the bike rental system, soft delete
+     * unregisters bike from the bike rental system, soft delete
      *
      * @param bikeId
      * @return
      */
-    boolean deleteBikeById(String bikeId);
+    boolean unregisterBikeById(String bikeId);
 
     /**
      * Changes the state of the bike

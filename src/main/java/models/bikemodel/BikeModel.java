@@ -1,43 +1,54 @@
 package models.bikemodel;
 
-import dao.bikedao.BikesDao;
+import dao.bikedao.IBikeDao;
 import entities.bike.Bike;
+import entities.bike.BikeStatus;
 
 import java.util.List;
+import java.util.Optional;
 
+/**
+ * Bike business logic
+ */
+public class BikeModel implements IBikeModel {
+    private IBikeDao bikeDao;
 
-public class BikeModel implements IBike {
-
-    private BikesDao bike;
-
-    public BikeModel(BikesDao bikesDao) {
-        this.bike = bikesDao;
-    }
-
-    public List<Bike> checkAvailableBikes(String bikeSpot)
-    {
-        List<Bike> AvailableBikes = bike.getAvailableBikes(bikeSpot);
-        return AvailableBikes;
+    public BikeModel(IBikeDao bikeDao) {
+        this.bikeDao = bikeDao;
     }
 
     @Override
-    public Boolean addNewServicedBike(Bike ServicedBike) {
-        return null;
+    public List<Bike> getAvailableBikesBySpot(String bikeSpot) {
+        return bikeDao.getAvailableBikesBySpot(bikeSpot);
     }
 
-    public Boolean bikeBook(String bikeSpot){
-        List<Bike> AvailableBikes = checkAvailableBikes(bikeSpot);
-        if(AvailableBikes.size()>0)
-        {
-            //bookings.json updated with booking ID
-            //BikeSpots.json updated with changed biked status
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-
+    @Override
+    public List<Bike> getAllBikes() {
+        return bikeDao.getAllBikes();
     }
 
+    @Override
+    public List<Bike> getAllDeletedBikes() {
+        return bikeDao.getAllDeletedBikes();
+    }
+
+    @Override
+    public Optional<Bike> findBikeById(String bikeId) {
+        return bikeDao.findBikeById(bikeId);
+    }
+
+    @Override
+    public boolean registerBike(Bike bike) {
+        return bikeDao.registerBike(bike);
+    }
+
+    @Override
+    public boolean unregisterBikeById(String bikeId) {
+        return bikeDao.deleteBikeById(bikeId);
+    }
+
+    @Override
+    public boolean updateBikeStatus(String bikeId, BikeStatus bikeStatus) {
+        return bikeDao.updateBikeStatus(bikeId, bikeStatus);
+    }
 }

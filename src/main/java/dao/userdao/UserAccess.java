@@ -9,9 +9,18 @@ import org.jdbi.v3.sqlobject.statement.SqlUpdate;
 import org.jdbi.v3.sqlobject.statement.UseRowMapper;
 
 /**
- *
+ * Used for Users table access in the database
  */
 public interface UserAccess extends SqlObject {
+
+    /**
+     * Checks if the user with this id already exist in the database
+     *
+     * @param username
+     * @return
+     */
+    @SqlQuery("select true from USERS where username = :username")
+    boolean checkExist(@Bind("username") String username);
 
     /**
      * Find a user from the database
@@ -21,7 +30,7 @@ public interface UserAccess extends SqlObject {
      */
     @SqlQuery("select * from USERS where username = :username")
     @UseRowMapper(UserMapper.class)
-    User findUser(@Bind("username") String username);
+    User getUser(@Bind("username") String username);
 
     /**
      * Create a user

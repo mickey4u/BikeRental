@@ -21,22 +21,15 @@
             <column name="booking_type" type="varchar(40)">
                 <constraints nullable="false"/>
             </column>
-            <column name="status" type="boolean">
-                <constraints nullable="false"/>
+            <column name="status" type="boolean" defaultValueBoolean="false">
             </column>
         </createTable>
     </changeSet>
 
-    <!--<changeSet id="2" author="Michael Tetteh">
+<!--    <changeSet id="2" author="Michael Tetteh">
         <comment>Insert Dummy Data Into Your Database</comment>
-        <insert tableName="Users">
-            <column name="username" value="2036"/>
-            <column name="password" value="2036"/>
-            <column name="firstname" value="Michael"/>
-            <column name="lastname" value="Tetteh"/>
-            <column name="phoneNumber" value="+356576473733"/>
-            <column name="secretQuestion" value="What is your firstname"/>
-            <column name="secretAnswer" value="Michael"/>
+        <insert tableName="Bookings">
+            <column name=""></column>
         </insert>
     </changeSet>-->
 

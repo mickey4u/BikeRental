@@ -1,19 +1,45 @@
 package dao.userdao;
 
-import entities.users.RentalHistory;
+import entities.bike.Booking;
 import entities.users.User;
 
-import java.io.FileNotFoundException;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * User Dao contract
  */
 public interface IUserDao {
 
-    User findUser(String id);
+    /**
+     * Creates a new user
+     *
+     * @param user details of the user
+     * @return
+     */
+    boolean createUser(User user);
 
-    List<RentalHistory> viewRentalHistory(String username);
+    /**
+     * retrieves a user from the database
+     *
+     * @param userId id of the user to find
+     * @return
+     */
+    Optional<User> findUserById(String userId);
 
-    Boolean updateDetails(String newPassword) throws FileNotFoundException;
+    /**
+     * Retrieves a users rental histories
+     *
+     * @param username
+     * @return
+     */
+    List<Booking> getUserRentalHistory(String username);
+
+    /**
+     * Resets a user's password
+     *
+     * @param password new password
+     * @return
+     */
+    Boolean resetPassword(String password);
 }
