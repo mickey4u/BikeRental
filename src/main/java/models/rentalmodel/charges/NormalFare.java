@@ -8,7 +8,7 @@ import javax.money.MonetaryAmount;
 /**
  * Normal fare with charges for bike rentals
  */
-public class NormalFare implements IBikeFare {
+public class NormalFare  implements IBikeFare {
 
     @Override
     public Money calculateFare(Long rentalTime, BikeType bikeType) {

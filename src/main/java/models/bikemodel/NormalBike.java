@@ -5,10 +5,13 @@ import dao.bikedao.IBikeDao;
 import entities.bike.BookingUtils;
 import org.javamoney.moneta.Money;
 
-public class NormalBike implements IBook {
+public class NormalBike  implements IBook{
 
     private IBikeDao iBikeDAO;
     String bikeType = String.valueOf(new BikeConstant());
+
+
+
 
     public NormalBike(String bikeType)
     {
@@ -18,7 +21,6 @@ public class NormalBike implements IBook {
     public NormalBike(BikesDao bikesDao) {
         this.iBikeDAO = bikesDao;
     }
-
     /*
     * For Renting a City Bike
     *
@@ -42,5 +44,6 @@ public class NormalBike implements IBook {
     public Money commission() {
         return null;
     }
+
 
 }

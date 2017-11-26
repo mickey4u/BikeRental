@@ -10,4 +10,5 @@ public interface IBook {
 
     boolean rentBike(String bikeSpots);
 
+
 }
