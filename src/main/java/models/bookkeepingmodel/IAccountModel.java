@@ -1,8 +1,8 @@
-package models.bookkeepingmodel.interfaces;
+package models.bookkeepingmodel;
 
 import entities.bookkeeping.Account;
 
-public interface IAccount {
+public interface IAccountModel {
 
     /**
      * this method creates an account if needed on the plarform

@@ -140,7 +140,7 @@ public class UserDAO implements IUserDao {
             JSONParser parser = new JSONParser();
             JSONArray a = (JSONArray) parser.parse(new FileReader("src\\main\\webapp\\files\\Users.json"));
             JSONObject person = new JSONObject();
-
+/*
             for (Object o : a) {
                 if (username.equals(person.get("username"))) {
                     person = (JSONObject) o;
@@ -151,7 +151,7 @@ public class UserDAO implements IUserDao {
                     users.setSecretAnswer(String.valueOf(person.get("secretAnswer")));
                     return true;
                 }
-            }
+            }*/
 
         } catch (Exception e) {
             System.out.print(e);

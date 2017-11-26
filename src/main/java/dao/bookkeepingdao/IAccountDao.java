@@ -2,7 +2,7 @@ package dao.bookkeepingdao;
 
 import entities.bookkeeping.Account;
 
-public interface IAccount {
+public interface IAccountDao {
 
     /**
      * Retrieves the account from the database

@@ -6,6 +6,9 @@ import entities.users.User;
 import java.io.FileNotFoundException;
 import java.util.List;
 
+/**
+ * User Dao contract
+ */
 public interface IUserDao {
 
     User findUser(String id);

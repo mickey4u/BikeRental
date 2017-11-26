@@ -1,8 +1,8 @@
-package models.bookkeepingmodel.interfaces;
+package models.bookkeepingmodel;
 
 import entities.bookkeeping.Transaction;
 
-public interface ITransaction {
+public interface ITransactionModel {
 
     Transaction getTransaction();
     boolean createTransaction(Transaction transaction);

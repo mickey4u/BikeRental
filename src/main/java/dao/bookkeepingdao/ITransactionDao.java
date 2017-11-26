@@ -2,7 +2,7 @@ package dao.bookkeepingdao;
 
 import entities.bookkeeping.Transaction;
 
-public interface ITransaction {
+public interface ITransactionDao {
 
     /**
      * Retrieves the transaction from the database

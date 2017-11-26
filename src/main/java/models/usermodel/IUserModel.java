@@ -5,6 +5,7 @@ import entities.users.RentalHistory;
 
 import java.io.FileNotFoundException;
 import java.util.List;
+import java.util.Optional;
 
 public interface IUserModel {
 
@@ -18,8 +19,9 @@ public interface IUserModel {
      * @param secretQuestion secret question of the user
      * @return returns true if the user was successfully registered
      */
-    boolean register(String firstname, String lastname, String id, String password, String phoneNumber,
-                     String secretQuestion, String secretAnswer);
+    boolean register(Optional<String> firstname, Optional<String> lastname, Optional<String> id,
+                     Optional<String> password, Optional<String> phoneNumber, Optional<String> secretQuestion,
+                     Optional<String> secretAnswer);
 
     /**
      * This method logs the user into the system
@@ -27,7 +29,7 @@ public interface IUserModel {
      * @param userId       username of the user
      * @param userPassword password of the user
      */
-    boolean login(String userId, String userPassword);
+    boolean login(Optional<String> userId, Optional<String> userPassword);
 
     /**
      * This method logs the user out of the system

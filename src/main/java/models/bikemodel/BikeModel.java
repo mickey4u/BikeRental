@@ -16,7 +16,7 @@ public class BikeModel implements IBike {
 
     public List<Bike> checkAvailableBikes(String bikeSpot)
     {
-        List<Bike> AvailableBikes = bike.fetchAvailableBikes(bikeSpot);
+        List<Bike> AvailableBikes = bike.getAvailableBikes(bikeSpot);
         return AvailableBikes;
     }
 

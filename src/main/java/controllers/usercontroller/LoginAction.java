@@ -39,7 +39,7 @@ public class LoginAction extends ActionSupport implements Constants, SessionAwar
         } else if (user.getUsername() == null || user.getPassword() == null) {
             action = INPUT;
 
-        } else if (user.getUsername().isEmpty() || user.getPassword().isEmpty()) {
+        } else if (!user.getUsername().isPresent() || !user.getPassword().isPresent()) {
             addActionError("Username/Password cannot be left blank");
 
         } else if (bikeRentalSingleton.getUserModel().login(user.getUsername(), user.getPassword())) {

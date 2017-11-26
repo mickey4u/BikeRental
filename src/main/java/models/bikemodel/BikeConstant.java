@@ -5,8 +5,8 @@ import lombok.Data;
 @Data
 public class BikeConstant {
 
-    String cityBike = "CityBike";
-    String GearBike = "GearBike";
+    String cityBike = "CITY_BIKE";
+    String GearBike = "GEAR_BIKE";
 
 }
 

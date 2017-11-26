@@ -17,9 +17,8 @@ public class DashboardAction extends ActionSupport implements UserAware, ModelDr
     private User user;
     IUserModel iUserModel;
 
-    public String viewRentalHistory()
-    {
-        List<RentalHistory> rentalHistory = iUserModel.viewRentalHistory(user.getUsername());  //UserID should go as Input
+    public String viewRentalHistory() {
+        List<RentalHistory> rentalHistory = iUserModel.viewRentalHistory(user.getUsername().toString());  //UserID should go as Input
         return SUCCESS;
     }
 

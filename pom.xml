@@ -21,7 +21,6 @@
             <artifactId>jquery-ajax-native</artifactId>
             <version>1.0.1</version>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-core -->
         <dependency>
             <groupId>org.apache.struts</groupId>
@@ -146,7 +145,17 @@
             <artifactId>ognl</artifactId>
             <version>3.1.14</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/javax.interceptor/javax.interceptor-api -->
+        <dependency>
+            <groupId>javax.interceptor</groupId>
+            <artifactId>javax.interceptor-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.9</version>
+        </dependency>
     </dependencies>
 
 

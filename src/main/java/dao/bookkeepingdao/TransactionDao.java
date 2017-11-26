@@ -2,7 +2,7 @@ package dao.bookkeepingdao;
 
 import entities.bookkeeping.Transaction;
 
-public class TransactionDao implements ITransaction{
+public class TransactionDao implements ITransactionDao {
 
     @Override
     public Transaction load(String id) {
