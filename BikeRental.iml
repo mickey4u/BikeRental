@@ -148,5 +148,7 @@
     <orderEntry type="library" name="Maven: org.apache.struts.xwork:xwork-core:2.2.1" level="project" />
     <orderEntry type="library" name="Maven: ognl:ognl:3.1.14" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.20.0-GA" level="project" />
+    <orderEntry type="library" name="Maven: javax.interceptor:javax.interceptor-api:1.2" level="project" />
+    <orderEntry type="library" name="Maven: joda-time:joda-time:2.9.9" level="project" />
   </component>
 </module>

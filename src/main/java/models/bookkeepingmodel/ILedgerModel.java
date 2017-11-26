@@ -1,8 +1,8 @@
-package models.bookkeepingmodel.interfaces;
+package models.bookkeepingmodel;
 
 import entities.bookkeeping.Ledger;
 
-public interface ILedger {
+public interface ILedgerModel {
 
     Ledger getLedger(String ledgerId);
 

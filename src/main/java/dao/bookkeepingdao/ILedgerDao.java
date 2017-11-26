@@ -2,7 +2,7 @@ package dao.bookkeepingdao;
 
 import entities.bookkeeping.Ledger;
 
-public interface ILedger {
+public interface ILedgerDao {
     /**
      * Retrieves the account from the database
      *

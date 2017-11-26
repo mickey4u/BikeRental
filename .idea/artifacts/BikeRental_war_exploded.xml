@@ -60,6 +60,8 @@
           <element id="library" level="project" name="Maven: org.apache.struts.xwork:xwork-core:2.2.1" />
           <element id="library" level="project" name="Maven: ognl:ognl:3.1.14" />
           <element id="library" level="project" name="Maven: org.javassist:javassist:3.20.0-GA" />
+          <element id="library" level="project" name="Maven: javax.interceptor:javax.interceptor-api:1.2" />
+          <element id="library" level="project" name="Maven: joda-time:joda-time:2.9.9" />
         </element>
       </element>
       <element id="directory" name="META-INF">

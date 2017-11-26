@@ -2,7 +2,7 @@ package dao.bookkeepingdao;
 
 import entities.bookkeeping.Account;
 
-public class AccountDao implements IAccount{
+public class AccountDao implements IAccountDao {
     @Override
     public Account load(String id) {
         return null;

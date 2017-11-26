@@ -7,15 +7,12 @@ import entities.users.User;
 import utilities.Constants;
 
 import java.io.FileNotFoundException;
-import java.util.List;
-import java.util.Map;
-import java.util.Observable;
-import java.util.Observer;
+import java.util.*;
 
 /**
  * Handles all the business logic for user on the platform
  */
-public class UserModel implements IUserModel, Constants ,Observer{
+public class UserModel implements IUserModel, Constants {
 
     UserDAO userDAO;
 
@@ -24,8 +21,9 @@ public class UserModel implements IUserModel, Constants ,Observer{
     }
 
     @Override
-    public boolean register(String firstname, String lastname, String id, String password, String phoneNumber,
-                            String secretQuestion, String secretAnswer) {
+    public boolean register(Optional<String> firstname, Optional<String> lastname, Optional<String> id,
+                            Optional<String> password, Optional<String> phoneNumber, Optional<String> secretQuestion,
+                            Optional<String> secretAnswer) {
 
         User user = new User();
         user.setUsername(id);
@@ -40,9 +38,9 @@ public class UserModel implements IUserModel, Constants ,Observer{
     }
 
     @Override
-    public boolean login(String userId, String userPassword) {
+    public boolean login(Optional<String> userId, Optional<String> userPassword) {
 
-        User user = userDAO.findUser(userId);
+        User user = userDAO.findUser(userId.toString());
         if (user != null && user.getUsername().equals(userId) && user.getPassword().equals(userPassword)) {
             return true;
         }
@@ -86,8 +84,4 @@ public class UserModel implements IUserModel, Constants ,Observer{
         return false;
     }
 
-    @Override
-    public void update(Observable o, Object arg) {
-        //do something notify users
-    }
 }

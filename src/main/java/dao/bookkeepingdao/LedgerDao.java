@@ -2,7 +2,7 @@ package dao.bookkeepingdao;
 
 import entities.bookkeeping.Ledger;
 
-public class LedgerDao implements ILedger {
+public class LedgerDao implements ILedgerDao {
 
     @Override
     public Ledger load(String id) {

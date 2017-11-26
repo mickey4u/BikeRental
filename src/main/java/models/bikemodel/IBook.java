@@ -8,12 +8,6 @@ public interface IBook {
 
     Money commission();
 
-    void addObserver(Observer observer);
-
-    void removeObserver(Observer observer);
-
-    void notice(String message);
-
     boolean rentBike(String bikeSpots);
 
 }

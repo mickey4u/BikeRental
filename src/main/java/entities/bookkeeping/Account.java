@@ -1,6 +1,7 @@
 package entities.bookkeeping;
 
 import org.javamoney.moneta.Money;
+import org.joda.time.DateTime;
 
 import java.time.ZonedDateTime;
 
@@ -18,5 +19,5 @@ public class Account {
     // time the account was created
     private ZonedDateTime created;
     // time the account was last modified
-    private ZonedDateTime lastModified;
+    private DateTime lastModified;
 }

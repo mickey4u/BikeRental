@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet id="1" author="Michael Tetteh">
+        <comment>Create Bikes Table</comment>
+        <createTable tableName="Bikes">
+            <column name="bike_id" type="varchar(40)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="bike_type" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="bike_spot" type="varchar(40)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="bike_available" type="boolean" defaultValue="true">
+                <constraints nullable="false"/>
+            </column>
+            <column name="bike_status" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="latitude" type="decimal(10,8)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="longitude" type="decimal(11,8)">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <!--<changeSet id="2" author="Michael Tetteh">-->
+    <!--<comment>Insert Dummy Data Into Your Database</comment>-->
+    <!--<insert tableName="Users">-->
+    <!--<column name="username" value="2036"/>-->
+    <!--<column name="password" value="2036"/>-->
+    <!--<column name="firstname" value="Michael"/>-->
+    <!--<column name="lastname" value="Tetteh"/>-->
+    <!--<column name="phoneNumber" value="+356576473733"/>-->
+    <!--<column name="secretQuestion" value="What is your firstname"/>-->
+    <!--<column name="secretAnswer" value="Michael"/>-->
+    <!--</insert>-->
+    <!--</changeSet>-->
+
+
+</databaseChangeLog>

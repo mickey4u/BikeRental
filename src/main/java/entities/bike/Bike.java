@@ -2,17 +2,23 @@ package entities.bike;
 
 import lombok.Data;
 
+import java.util.Optional;
+
+/**
+ * Represents a bike
+ */
 @Data
 public class Bike {
-
-
-    // represents the bike's id
-    String bikeID = "";
-    // represents bike location;
-    String bikeSpotLocation = "";
-    // represents the bike availability
-    String BikeStatus = "";
-    //Bike Type
-    String BikeType = "";
-
+    // bike's id
+    private Optional<String> bikeId;
+    // location of the bike
+    private BikeLocation location;
+    // spot where the bike is located
+    private Optional<String> bikeSpot;
+    // type of bike
+    private BikeType bikeType;
+    // bike state
+    private BikeStatus bikeStatus;
+    // bike available
+    private boolean bikeAvailable;
 }
