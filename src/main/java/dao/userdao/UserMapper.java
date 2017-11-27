@@ -15,9 +15,9 @@ public class UserMapper implements RowMapper<User> {
     public User map(ResultSet rs, StatementContext ctx) throws SQLException {
 
         User user = new User();
-        user.setUsername(Optional.ofNullable(rs.getString("username")));
-        user.setPassword(Optional.ofNullable(rs.getString("password")));
-        user.setUserRank(UserRank.valueOf(rs.getString("user_rank")));
+        user.setUsername(Optional.ofNullable(rs.getString("username")).get());
+        user.setPassword(Optional.ofNullable(rs.getString("password")).get());
+        user.setUserRank(UserRank.valueOf(rs.getString("userRank")));
 
         return user;
     }

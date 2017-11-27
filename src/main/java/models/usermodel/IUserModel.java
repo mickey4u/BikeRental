@@ -19,8 +19,8 @@ public interface IUserModel {
      * @param secretQuestion secret question of the user
      * @return returns true if the user was successfully registered
      */
-    boolean register(Optional<String> firstname, Optional<String> lastname, Optional<String> id,
-                     Optional<String> password, Optional<String> phoneNumber, Optional<String> secretQuestion,
+    boolean register(Optional<String> firstname, Optional<String> lastname, String id,
+                     String password, Optional<String> phoneNumber, Optional<String> secretQuestion,
                      Optional<String> secretAnswer);
 
     /**
@@ -29,7 +29,7 @@ public interface IUserModel {
      * @param userId       username of the user
      * @param userPassword password of the user
      */
-    boolean login(Optional<String> userId, Optional<String> userPassword);
+    boolean login(String userId, String userPassword);
 
     /**
      * This method logs the user out of the system

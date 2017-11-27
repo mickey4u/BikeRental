@@ -10,9 +10,9 @@ import java.util.Optional;
 @Data
 public class User {
     // user's username, UL username number
-    private Optional<String> username;
+    private String username;
     // user's password
-    private Optional<String> password;
+    private String password;
     // user's first name
     private Optional<String> firstname;
     // user's last name

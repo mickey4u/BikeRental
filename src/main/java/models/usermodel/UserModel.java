@@ -21,8 +21,8 @@ public class UserModel implements IUserModel, Constants {
     }
 
     @Override
-    public boolean register(Optional<String> firstname, Optional<String> lastname, Optional<String> id,
-                            Optional<String> password, Optional<String> phoneNumber, Optional<String> secretQuestion,
+    public boolean register(Optional<String> firstname, Optional<String> lastname, String id,
+                            String password, Optional<String> phoneNumber, Optional<String> secretQuestion,
                             Optional<String> secretAnswer) {
 
         User user = new User();
@@ -38,9 +38,9 @@ public class UserModel implements IUserModel, Constants {
     }
 
     @Override
-    public boolean login(Optional<String> userId, Optional<String> userPassword) {
+    public boolean login(String userId, String userPassword) {
 
-        User user = userDAO.findUserById(userId.toString()).get();
+        User user = userDAO.findUserById(userId).get();
         if (user != null && user.getUsername().equals(userId) && user.getPassword().equals(userPassword)) {
             return true;
         }

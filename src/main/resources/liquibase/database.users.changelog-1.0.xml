@@ -27,6 +27,9 @@
             <column name="secretQuestion" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>
+            <column name="userRank" type="varchar(20)">
+                <constraints nullable="true"/>
+            </column>
             <column name="secretAnswer" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>
@@ -41,8 +44,10 @@
             <column name="firstname" value="Michael"/>
             <column name="lastname" value="Tetteh"/>
             <column name="phoneNumber" value="+356576473733"/>
+            <column name="phoneNumber" value="+356576473733"/>
             <column name="secretQuestion" value="What is your firstname"/>
             <column name="secretAnswer" value="Michael"/>
+            <column name="userRank" value="GOLD"/>
         </insert>
     </changeSet>
 
