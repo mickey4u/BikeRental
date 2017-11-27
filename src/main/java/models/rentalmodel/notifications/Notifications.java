@@ -56,7 +56,7 @@ public class Notifications implements Subject {
             isUpdated = false;
         }
         // update/notify all observers
-        observers.stream().forEach(eo -> eo.update());
+        existingObservers.stream().forEach(eo -> eo.update());
     }
 
 

@@ -1,22 +1,22 @@
 package models.usermodel;
 
 import com.opensymphony.xwork2.ActionContext;
-import dao.userdao.UserDAO;
-import entities.users.RentalHistory;
+import dao.userdao.IUserDao;
+import entities.bike.Booking;
 import entities.users.User;
 import utilities.Constants;
 
-import java.io.FileNotFoundException;
-import java.util.*;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 /**
  * Handles all the business logic for user on the platform
  */
 public class UserModel implements IUserModel, Constants {
+    private final IUserDao userDAO;
 
-    UserDAO userDAO;
-
-    public UserModel(UserDAO userDAO) {
+    public UserModel(IUserDao userDAO) {
         this.userDAO = userDAO;
     }
 
@@ -34,13 +34,13 @@ public class UserModel implements IUserModel, Constants {
         user.setSecretQuestion(secretQuestion);
         user.setSecretAnswer(secretAnswer);
 
-        return userDAO.registerUser(user);
+        return userDAO.createUser(user);
     }
 
     @Override
     public boolean login(Optional<String> userId, Optional<String> userPassword) {
 
-        User user = userDAO.findUser(userId.toString());
+        User user = userDAO.findUserById(userId.toString()).get();
         if (user != null && user.getUsername().equals(userId) && user.getPassword().equals(userPassword)) {
             return true;
         }
@@ -55,32 +55,14 @@ public class UserModel implements IUserModel, Constants {
     }
 
     @Override
-    public List<RentalHistory> viewRentalHistory(String username) {
-
-        List<RentalHistory> viewRentalHistory = userDAO.viewRentalHistory(username);
-        return viewRentalHistory;
+    public List<Booking> viewRentalHistory(String username) {
+        return userDAO.getUserRentalHistory(username);
     }
 
-    /*This method gets the userID and updates the user Password
-    *
-    * True : Password Updated
-    * False : Password Not updated due to incorrect Input
-    *
-    * */
-    @Override
-    public Boolean passwordReset(String userId, String answer, String newPassword) throws FileNotFoundException {
 
-        /*Fetches the user details*/
-        try {
-            Boolean matched = userDAO.getUserDetails(userId);
-            if (matched) {
-                Boolean status = userDAO.updateDetails(newPassword);
-                return true;
-            }
-            return false;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    @Override
+    public Boolean passwordReset(String userId, String answer, String newPassword) {
+
         return false;
     }
 

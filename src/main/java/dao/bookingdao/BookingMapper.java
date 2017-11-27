@@ -9,7 +9,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
 
-
+/**
+ * Booking mapper for result set from database
+ */
 public class BookingMapper implements RowMapper<Booking> {
     @Override
     public Booking map(ResultSet rs, StatementContext ctx) throws SQLException {

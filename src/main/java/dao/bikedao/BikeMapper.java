@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 /**
- *
+ * Bike row mapper for result set from database
  */
 public class BikeMapper implements RowMapper<Bike> {
 

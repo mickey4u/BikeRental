@@ -30,21 +30,25 @@
             <column name="longitude" type="decimal(11,8)">
                 <constraints nullable="true"/>
             </column>
+            <column name="deleted" type="boolean" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
     </changeSet>
 
-    <!--<changeSet id="2" author="Michael Tetteh">-->
-    <!--<comment>Insert Dummy Data Into Your Database</comment>-->
-    <!--<insert tableName="Users">-->
-    <!--<column name="username" value="2036"/>-->
-    <!--<column name="password" value="2036"/>-->
-    <!--<column name="firstname" value="Michael"/>-->
-    <!--<column name="lastname" value="Tetteh"/>-->
-    <!--<column name="phoneNumber" value="+356576473733"/>-->
-    <!--<column name="secretQuestion" value="What is your firstname"/>-->
-    <!--<column name="secretAnswer" value="Michael"/>-->
-    <!--</insert>-->
-    <!--</changeSet>-->
+<!--    <changeSet id="2" author="Michael Tetteh">
+        <comment>Insert Dummy Data Into Your Database</comment>
+        <insert tableName="Bikes">
+            <column name=""></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2" author="Michael Tetteh">
+        <comment>Insert Dummy Data Into Your Database</comment>
+        <insert tableName="Bikes">
+            <column name=""></column>
+        </insert>
+    </changeSet>-->
 
 
 </databaseChangeLog>

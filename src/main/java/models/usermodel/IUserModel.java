@@ -1,7 +1,7 @@
 package models.usermodel;
 
 
-import entities.users.RentalHistory;
+import entities.bike.Booking;
 
 import java.io.FileNotFoundException;
 import java.util.List;
@@ -36,7 +36,12 @@ public interface IUserModel {
      */
     void logout();
 
-    List<RentalHistory> viewRentalHistory(String username);
+    /**
+     * Retreives users rental history
+     * @param username
+     * @return
+     */
+    List<Booking> viewRentalHistory(String username);
 
     /**
      * @param userId
