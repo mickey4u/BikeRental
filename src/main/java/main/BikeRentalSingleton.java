@@ -14,7 +14,7 @@ public class BikeRentalSingleton {
 
     /* We should fetch the database type from an
     external resource (ex: configuration file).
-    In order to keep this example simple we will
+    In order to keep things simple we will
     use a private static method and an Enum */
 
     Database databaseType = Database.SQL;
@@ -28,10 +28,10 @@ public class BikeRentalSingleton {
     private ConnectionFactory getConnectionFactory(Database databaseType) {
         switch (databaseType) {
             case SQL:
-                Logger.logMsg(1,"MySQLconnectionFactory getUserModel");
+                Logger.logMsg(1,"Entered MySQLconnectionFactory getUserModel");
                 return new MySQLconnectionFactory();
             default:
-                Logger.logMsg(1,"PostGREconnectionFactory getUserModel");
+                Logger.logMsg(1,"Entered PostGREconnectionFactory getUserModel");
                 return new PostGREconnectionFactory();
         }
     }
@@ -50,11 +50,11 @@ public class BikeRentalSingleton {
         switch (databaseType) {
             case SQL:
                 MySqlConnection connection1 = new MySqlConnection();
-                Logger.logMsg(1,"MySqlConnection getUserModel");
+                Logger.logMsg(1,"Entered MySqlConnection getUserModel");
                 return connection1.userModel;
             default:
                 PostGREconnection connection2 = new PostGREconnection();
-                Logger.logMsg(1,"PostGREconnection getUserModel");
+                Logger.logMsg(1,"Entered PostGREconnection getUserModel");
                 return null;
         }
     }
