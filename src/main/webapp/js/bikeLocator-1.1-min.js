@@ -58,7 +58,7 @@ function loadMap(lattitude, longitude)
 	    			marker = new google.maps.Marker({
 	    	        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
 	    	        icon: image,
-	    	        scaledSize: new google.maps.Size(50, 50), // scaled size
+	    	        scaledSize: new google.maps.Size(80, 80), // scaled size
 	    	        origin: new google.maps.Point(0,0), // origin
 	    	        anchor: new google.maps.Point(0, 0), // anchor
 	    	        map: map
