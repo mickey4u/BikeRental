@@ -1,52 +1,39 @@
 package main;
 
-import dao.bikedao.BikeAccess;
-import dao.bikedao.BikeDao;
-import dao.bikedao.IBikeDao;
-import dao.bookingdao.BookAccess;
-import dao.bookingdao.BookDao;
-import dao.bookingdao.IBookDao;
-import dao.userdao.IUserDao;
-import dao.userdao.UserAccess;
-import dao.userdao.UserDao;
-import models.bikemodel.BikeModel;
+import Connection.*;
+import com.sun.media.jfxmedia.logging.Logger;
+import entities.database.Database;
 import models.bikemodel.IBikeModel;
-import models.rentalmodel.BookModel;
 import models.rentalmodel.IBookModel;
 import models.usermodel.IUserModel;
-import models.usermodel.UserModel;
-import org.jdbi.v3.core.Jdbi;
-import org.jdbi.v3.sqlobject.SqlObjectPlugin;
 
 /**
  * This class is the application's entry point.
  */
 public class BikeRentalSingleton {
-    private Jdbi jdbi;
-    private IUserDao userDao;
-    private IUserModel userModel;
-    private IBikeDao bikesDao;
-    private IBikeModel bikeModel;
-    private IBookDao bookDao;
-    private IBookModel bookModel;
+
+    /* We should fetch the database type from an
+    external resource (ex: configuration file).
+    In order to keep this example simple we will
+    use a private static method and an Enum */
+
+    Database databaseType = Database.SQL;
 
     private BikeRentalSingleton() {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+        ConnectionFactory connectionFactory = getConnectionFactory(databaseType);
+        ConnectionManager connection = connectionFactory.getConnection();
+        connection.connect();
+    }
+
+    private ConnectionFactory getConnectionFactory(Database databaseType) {
+        switch (databaseType) {
+            case SQL:
+                Logger.logMsg(1,"MySQLconnectionFactory getUserModel");
+                return new MySQLconnectionFactory();
+            default:
+                Logger.logMsg(1,"PostGREconnectionFactory getUserModel");
+                return new PostGREconnectionFactory();
         }
-        jdbi = Jdbi.create("jdbc:mysql://localhost:3306/bikerental", "root", "");
-        jdbi.installPlugin(new SqlObjectPlugin());
-
-        userDao = new UserDao(jdbi.onDemand(UserAccess.class));
-        userModel = new UserModel(userDao);
-
-        bikesDao = new BikeDao(jdbi.onDemand(BikeAccess.class));
-        bikeModel = new BikeModel(bikesDao);
-
-        bookDao = new BookDao(jdbi.onDemand(BookAccess.class));
-        bookModel = new BookModel(bookDao);
     }
 
 
@@ -60,15 +47,40 @@ public class BikeRentalSingleton {
     }
 
     public IUserModel getUserModel() {
-        return userModel;
+        switch (databaseType) {
+            case SQL:
+                MySqlConnection connection1 = new MySqlConnection();
+                Logger.logMsg(1,"MySqlConnection getUserModel");
+                return connection1.userModel;
+            default:
+                PostGREconnection connection2 = new PostGREconnection();
+                Logger.logMsg(1,"PostGREconnection getUserModel");
+                return null;
+        }
     }
 
     public IBikeModel getBikeModel() {
-        return bikeModel;
+        switch (databaseType) {
+            case SQL:
+                MySqlConnection connection1 = new MySqlConnection();
+                Logger.logMsg(1,"MySqlConnection getBikeModel");
+                return connection1.bikeModel;
+            default:
+                PostGREconnection connection2 = new PostGREconnection();
+                Logger.logMsg(1,"PostGREconnection getBikeModel");
+                return null;
+        }
     }
 
     public IBookModel getBookModel() {
-        return bookModel;
+        switch (databaseType) {
+            case SQL:
+                MySqlConnection connection1 = new MySqlConnection();
+                return connection1.bookModel;
+            default:
+                PostGREconnection connection2 = new PostGREconnection();
+                return null;
+        }
     }
-
 }
+

@@ -1,8 +1,10 @@
 package models.usermodel;
 
 import com.opensymphony.xwork2.ActionContext;
+import dao.daoFactory.UserDAOFactory;
 import dao.userdao.IUserDao;
 import entities.bike.Booking;
+import entities.database.Database;
 import entities.users.User;
 import utilities.Constants;
 
@@ -14,7 +16,8 @@ import java.util.Optional;
  * Handles all the business logic for user on the platform
  */
 public class UserModel implements IUserModel, Constants {
-    private final IUserDao userDAO;
+    private IUserDao userDAO;
+    private UserDAOFactory userDAOFactory;
 
     public UserModel(IUserDao userDAO) {
         this.userDAO = userDAO;
@@ -33,6 +36,7 @@ public class UserModel implements IUserModel, Constants {
         user.setPhoneNumber(phoneNumber);
         user.setSecretQuestion(secretQuestion);
         user.setSecretAnswer(secretAnswer);
+        userDAO=userDAOFactory.getUserDAO(Database.SQL);
 
         return userDAO.createUser(user);
     }
