@@ -30,7 +30,7 @@
             <column name="bikeLocation" value="Stable"/>
             <column name="type" value="Gear"/>
             <column name="bikeID" value="2001"/>
-            <column name="bikeStatus" value="Available"/>
+            <column name="bikeStatus" value="AVAILABLE"/>
         </insert>
     </changeSet>
 

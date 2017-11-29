@@ -33,7 +33,7 @@ public interface BikeAccess extends SqlObject {
      * @param bikeSpot name of the bike spot
      * @return return available Bikes if found and null if it doesn't not exist
      */
-    @SqlQuery("select * from BIKES where bikeSpot = :bikeSpot and deleted = false")
+    @SqlQuery("select * from BIKES where bike_spot = :bikeSpot and deleted = false")
     @UseRowMapper(BikeMapper.class)
     List<Bike> getAvailableBikesBySpot(@Bind("bikeSpot") String bikeSpot);
 
@@ -71,8 +71,8 @@ public interface BikeAccess extends SqlObject {
      * @param bike
      * @return
      */
-    @SqlQuery("insert into BIKES(bike_id, bike_type, bike_spot, bike_available, bike_status, latitude," +
-            "longitude, deleted) values(:bikeId, :bikeType, :bikeSpot, :bikeAvailable, :bikeStatus, :latitude," +
+    @SqlQuery("insert into BIKES(bike_id, bike_type, bike_spot, bike_status, latitude," +
+            "longitude, deleted) values(:bikeId, :bikeType, :bikeSpot, :bikeStatus, :latitude," +
             ":longitude)")
     boolean addBike(@BindBean Bike bike);
 

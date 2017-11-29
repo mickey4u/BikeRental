@@ -36,8 +36,6 @@
         <s:password name="user.password" size="20"></s:password>
         <s:submit align="center" value="Login"></s:submit>
         <div id="register"><a href="Register.jsp">Register User</a></div>
-
-        <%--     <s:submit value="Register" action="registerAction" align="center"/> --%>
     </s:form>
 </div>
 
