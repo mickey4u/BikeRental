@@ -12,9 +12,9 @@ public interface IDiscount {
     // currency
     String CURRENCY = "EUR";
     // 5 percent discount for gold users
-    double GOLD_DISCOUNT = 0.05;
+    static double GOLD_DISCOUNT = 0.05;
     // 2 percent discount for silver users
-    double SILVER_DISCOUNT = 0.02;
+    static double SILVER_DISCOUNT = 0.02;
 
     /**
      * Computes a user's rental discount based on his/her rank
