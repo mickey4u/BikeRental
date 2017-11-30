@@ -4,7 +4,6 @@ import com.opensymphony.xwork2.ActionContext;
 import dao.daoFactory.UserDAOFactory;
 import dao.userdao.IUserDao;
 import entities.bike.Booking;
-import entities.database.Database;
 import entities.users.User;
 import utilities.Constants;
 
@@ -36,7 +35,7 @@ public class UserModel implements IUserModel, Constants {
         user.setPhoneNumber(phoneNumber);
         user.setSecretQuestion(secretQuestion);
         user.setSecretAnswer(secretAnswer);
-        userDAO=userDAOFactory.getUserDAO(Database.SQL);
+       // userDAO=userDAOFactory.getUserDAO(Database.SQL);
 
         return userDAO.createUser(user);
     }

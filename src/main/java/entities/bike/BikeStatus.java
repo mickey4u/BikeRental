@@ -1,10 +1,12 @@
 package entities.bike;
 
 public enum BikeStatus {
-    // already booked
-    BOOKED,
-    // in use
-    IN_USE,
-    // under repairs
-    UNDER_REPAIR
+
+    BOOKED, // already booked
+
+    IN_USE, // in use
+
+    UNDER_REPAIR, // under repairs
+
+    AVAILABLE  //Available Bike
 }
