@@ -3,7 +3,7 @@ package utilities;
 import java.util.Date;
 import java.util.UUID;
 
-public class BookingUtils {
+public class Utils implements IUtil {
 
     public String createBookingID() {
         return UUID.randomUUID().toString();

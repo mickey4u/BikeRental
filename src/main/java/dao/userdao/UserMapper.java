@@ -18,7 +18,6 @@ public class UserMapper implements RowMapper<User> {
         user.setUsername(Optional.ofNullable(rs.getString("username")).get());
         user.setPassword(Optional.ofNullable(rs.getString("password")).get());
         user.setUserRank(UserRank.valueOf(rs.getString("userRank")));
-
         return user;
     }
 }

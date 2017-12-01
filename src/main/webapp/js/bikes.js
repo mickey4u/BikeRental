@@ -1,12 +1,14 @@
 function loadBikesViews(json) {
-$("#goBack").show();
+    $("#goBack").css({
+        display: "block"
+    });
     $("#grid").jqGrid({
         datatype: "local",
         height: 350,
         colNames: ['ID','Description','Spot', 'Variant','Fare',''],
         colModel: [
             { name: 'bikeId', key: true, sorttype: "int", width: 80 },
-            { name: 'bikeIcon', key: true, editype:"image",width: 80 },
+            { name: 'bikeIcon', fixed: true ,width: 80 },
             { name: 'bikeSpot', width: 80  },
             { name: 'bikeType', width: 80  },
             { name: 'Fare', width: 80  },
@@ -26,9 +28,6 @@ $("#goBack").show();
         }
     });
 }
-var selectedBikeJson = "";
-var selectedSpot="";
-
 /*
 * Checks if a location has been chosen or not
 *
@@ -49,7 +48,7 @@ function checkSelection() {
 * */
 function getAvailabilty()
 {
-    alert("selectedBikeSpot");
+    var array = [];
     $.ajax({
         type: 'GET',url: "fetchAvailabilityData",dataType: "json",
         data: {bikeSpotLocation: selectedBikeSpot.toString()},
@@ -57,14 +56,13 @@ function getAvailabilty()
             $("#secondWindow").show();
             $("#map").hide();
             $("#lowerPanel").hide();
-            var array = [];
             for (var index = 0; index < json.length; index++) {
                 array.push({
                     "bikeId": json[index].bikeId,
-                    "bikeIcon": "https://www.w3schools.com/css/trolltunga.jpg",
-                    "bikeSpot": "stables",
-                    "bikeType": "Gear",
-                    "Fare": "1Euro/Hr"
+                    "bikeIcon": "images/Logo.png",
+                    "bikeSpot":selectedBikeSpot ,
+                    "bikeType": json[index].bikeType,
+                    "Fare": json[index].rate+"/Hour"
                 });
             }
             loadBikesViews(array);

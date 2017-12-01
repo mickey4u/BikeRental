@@ -5,16 +5,14 @@ import entities.bike.Booking;
 import entities.bike.BookingType;
 import lombok.Data;
 import main.BikeRentalSingleton;
-import utilities.BookingUtils;
 
 @Data
-public class InstantBookAction extends ActionSupport {
+public class MakeBookingAction extends ActionSupport {
     private String bikeId;
     private String bikeSpot;
     private String bookingType;
     boolean bookingStatus;
     main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
-
     /**
      * Responsibe for Instant Booking of the Bike
      * Fetches the list of Bikes For the Given BikeLocation
@@ -24,8 +22,6 @@ public class InstantBookAction extends ActionSupport {
     public String execute() {
         try {
             Booking bookingDetails = new Booking();
-            BookingUtils bookingID = new BookingUtils();
-            bookingDetails.setBookingId(bookingID.createBookingID());
             bookingDetails.setStatus(false);
             bookingDetails.setBikeId(bikeId);
             bookingDetails.setBikeSpot(bikeSpot);

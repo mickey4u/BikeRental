@@ -8,6 +8,12 @@ body {
     font-family: Arial,Helvetica,freesans,sans-serif;
     overflow: hidden;
 }
+#goBack
+{
+    position: relative !important;
+    bottom: 67% !important;
+    margin-left: 57% !important;
+}
 #map
 {
     width: 96%;
@@ -27,6 +33,10 @@ body {
 #header
 {
     border: 1px #CCCCCC solid !important;
+}
+#ticketForm{
+    position: relative;
+    margin-left: 36%;
 }
 .showcss{ display:block;}
 .hidecss{ display:none;}

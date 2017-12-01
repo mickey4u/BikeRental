@@ -6,11 +6,18 @@ import dao.bikedao.IBikeDao;
 import dao.bookingdao.BookAccess;
 import dao.bookingdao.BookDao;
 import dao.bookingdao.IBookDao;
+import dao.support.ISupportDao;
+import dao.support.SupportAccess;
+import dao.support.SupportDao;
 import dao.userdao.IUserDao;
 import dao.userdao.UserAccess;
 import dao.userdao.UserDao;
 import models.bikemodel.BikeModel;
 import models.bikemodel.IBikeModel;
+import models.rentalmodel.BookModel;
+import models.rentalmodel.IBookModel;
+import models.support.ISupportModel;
+import models.support.SupportModel;
 import models.usermodel.IUserModel;
 import models.usermodel.UserModel;
 import org.jdbi.v3.core.Jdbi;
@@ -26,6 +33,8 @@ public class MySqlConnection implements ConnectionManager {
     public static IBikeModel bikeModel;
     private IBookDao bookDao;
     public static IBookModel bookModel;
+    private ISupportDao supportDao;
+    public static ISupportModel supportModel;
     private Jdbi jdbi;
 
     @Override
@@ -47,6 +56,9 @@ public class MySqlConnection implements ConnectionManager {
 
         bookDao = new BookDao(jdbi.onDemand(BookAccess.class));
         bookModel = new BookModel(bookDao);
+
+        supportDao = new SupportDao(jdbi.onDemand(SupportAccess.class));
+        supportModel = new SupportModel(supportDao);
 
     }
 }

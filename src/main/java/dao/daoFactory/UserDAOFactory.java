@@ -1,6 +1,5 @@
 package dao.daoFactory;
 
-import com.sun.media.jfxmedia.logging.Logger;
 import dao.userdao.IUserDao;
 import dao.userdao.UserAccess;
 import dao.userdao.UserDao;
@@ -16,7 +15,6 @@ public class UserDAOFactory {
     private UserAccess access;
 
     public IUserDao getUserDAO(Database type) {
-        Logger.logMsg(1,"Entering getUserDAO in IUserDao");
         Optional.ofNullable(type).orElseThrow(NullPointerException::new);
         switch (type)
         {

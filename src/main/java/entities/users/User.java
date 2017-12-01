@@ -9,6 +9,7 @@ import java.util.Optional;
  */
 @Data
 public class User {
+    private UserRole role;
     // user's username, UL username number
     private String username;
     // user's password

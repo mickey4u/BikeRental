@@ -84,5 +84,3 @@ function loadMap(lattitude, longitude)
 	    }
 
 }
-
-var selectedBikeSpot="";

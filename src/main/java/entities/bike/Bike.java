@@ -19,4 +19,6 @@ public class Bike {
     private BikeStatus bikeStatus;
     // deleted status
     private boolean deleted;
+    //Actual Rate/Hr
+    private String rate;
 }

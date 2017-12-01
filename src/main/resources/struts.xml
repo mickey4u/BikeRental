@@ -34,6 +34,7 @@
             <interceptor-ref name="defaultStack"></interceptor-ref>
             <result name="success">/Dasboard.jsp</result>
             <result name="input">/Login.jsp</result>
+            <result name="none">/Login.jsp</result>
         </action>
         <!-- Handles User registration-->
         <action name="register" class="controllers.usercontroller.RegisterAction">
@@ -60,7 +61,7 @@
         </action>
 
         <!--Instant Booking-->
-        <action name="bookInstant" class="controllers.bikecontroller.InstantBookAction">
+        <action name="bookInstant" class="controllers.bikecontroller.MakeBookingAction">
             <result type="json">
                 <param name="root">bookingStatus</param>
             </result>
@@ -74,6 +75,13 @@
         <!--Updates password-->
         <action name="updateDetails" class="controllers.usercontroller.UserAction" method="updatePassword">
             <result name="success">/Dasboard.jsp</result>
+        </action>
+
+        <!--Logs a Ticket by User-->
+        <action name="raiseNewTicket" class="controllers.support.RaiseTicketAction">
+            <result type="json">
+                <param name="root">ticketStatus</param>
+            </result>
         </action>
     </package>
 </struts>

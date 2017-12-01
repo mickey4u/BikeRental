@@ -29,6 +29,9 @@
             </column>
             <column name="deleted" type="boolean" defaultValueBoolean="false">
             </column>
+            <column name="rate" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
     </changeSet>
 
@@ -36,12 +39,23 @@
         <comment>Insert Dummy Data Into Your Database</comment>
         <insert tableName="Bikes">
             <column name="bike_id" value="1000"/>
-            <column name="bike_type" value="Gear"/>
+            <column name="bike_type" value="CITY_BIKE"/>
             <column name="bike_spot" value="Stables"/>
             <column name="bike_status" value="AVAILABLE"/>
             <column name="latitude" value="52.670507"/>
             <column name="longitude" value="-8.5698254"/>
             <column name="deleted" valueBoolean="false"/>
+            <column name="rate" value="1"/>
+        </insert>
+        <insert tableName="Bikes">
+            <column name="bike_id" value="1001"/>
+            <column name="bike_type" value="GEAR_BIKE"/>
+            <column name="bike_spot" value="Stables"/>
+            <column name="bike_status" value="AVAILABLE"/>
+            <column name="latitude" value="52.670507"/>
+            <column name="longitude" value="-8.5698254"/>
+            <column name="deleted" valueBoolean="false"/>
+            <column name="rate" value="2"/>
         </insert>
     </changeSet>
 
