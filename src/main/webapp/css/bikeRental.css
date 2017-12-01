@@ -18,28 +18,19 @@ body {
     padding-left: 52px !important;
     margin-top: -49px !important;
 }
+#button{
+    width: 122%;
+    margin-right: 14%;
+    position: relative;
+    left: -79%;
+}
 #header
 {
-    border-bottom: 1px #CCCCCC solid !important;
-    display: block;
-    /* IE10+ */
-    background-image: -ms-linear-gradient(left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
-
-    /* Mozilla Firefox */
-    background-image: -moz-linear-gradient(left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
-
-    /* Opera */
-    background-image: -o-linear-gradient(left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
-
-    /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #ffffff), color-stop(47, #F6F6F6), color-stop(100, #ededed));
-
-    /* Webkit (Chrome 11+) */
-    background-image: -webkit-linear-gradient(left, #ffffff 0%, #F6F6F6 47%, #ededed 100%);
-
-    /* W3C Markup */
-    background-image: linear-gradient(to right, #ffffff 0%, #F6F6F6 47%, #ededed 100%);    z-index: 9999 !important;
+    border: 1px #CCCCCC solid !important;
 }
+.showcss{ display:block;}
+.hidecss{ display:none;}
+.UL_logo { display: block; float: left; background: url(https://www.ul.ie/ee/images/interface/UL_logo_large.jpg) no-repeat; height: 85px; width: 363px; margin-top: 5px; }
 .sign-In {
     float: right;
     border-left: none;
@@ -75,8 +66,8 @@ body {
     border-bottom: 1px #CCCCCC solid !important;
     height: 4%;
     float: left;
-    width: 12% !important;
-    margin-left: 0px;
+    width: 11% !important;
+    margin-left: 0;
     border-left: 1px #CCCCCC solid !important;
 }
 .tabsfont {
@@ -89,12 +80,11 @@ body {
     margin-left: 96px;
 }
 h1 {
-    padding: 0;
     margin: 0;
     color: white;
     font-size: 50px;
     font-weight: normal;
-    padding-top: 6px;
+    padding: 6px 0 0;
     position: relative;
     left: -19.7%;
 }
@@ -123,13 +113,14 @@ h1 {
     font-size: 12px;
     border-left: 0 none;
     border-right: 0 none;
-    border-top: 0 none;
+    border-top-width: 0;
+    border-top-style: none;
 }
 
 h2 {
     font-size: 98%;
     position: relative;
     top: 93px;
-    font-family: 'Bookman Old Style';
+    font-family: 'Bookman Old Style', sans-serif;
     width: 97%;
 }

@@ -7,7 +7,6 @@ import org.jdbi.v3.core.statement.StatementContext;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Optional;
 
 /**
  * Booking mapper for result set from database
@@ -17,10 +16,10 @@ public class BookingMapper implements RowMapper<Booking> {
     public Booking map(ResultSet rs, StatementContext ctx) throws SQLException {
 
         Booking booking = new Booking();
-        booking.setBookingId(Optional.of(rs.getString("booking_id")));
-        booking.setBikeId(Optional.of(rs.getString("bike_id")));
+        booking.setBookingId(rs.getString("booking_id"));
+        booking.setBikeId(rs.getString("bike_id"));
         booking.setStatus(rs.getBoolean("booking_status"));
-        booking.setBikeSpot(Optional.of(rs.getString("bike_spot")));
+        booking.setBikeSpot(rs.getString("bike_spot"));
         booking.setBookingType(BookingType.valueOf(rs.getString("booking_type")));
 
         return booking;

@@ -21,7 +21,7 @@ function loadMap(lattitude, longitude)
 	    	longitude
 	    ],
 	    [
-	        "The Stables",
+	        "Stables",
 	        52.672946,
 	        -8.5698254
 	    ],
@@ -40,10 +40,8 @@ function loadMap(lattitude, longitude)
 	        52.679088,
 	        -8.5735807
 	    ]]
-	console.log(locations);
 	    var map = new google.maps.Map(document.getElementById('map'), {
-	    zoom: 15,
-	    // center: new google.maps.LatLng(-33.92, 151.25),
+	    zoom: 14,
 	    center: new google.maps.LatLng(52.674492,-8.5737320),
 	    mapTypeId: google.maps.MapTypeId.ROADMAP
 	    });
@@ -54,9 +52,10 @@ function loadMap(lattitude, longitude)
 	    	if(i==1)
 	    	{
 	    			marker = new google.maps.Marker({
+                        title: locations[i][0],
 	    	        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-	    	        icon: image,
 	    	        scaledSize: new google.maps.Size(80, 80), // scaled size
+                    animation: google.maps.Animation.DROP,
 	    	        origin: new google.maps.Point(0,0), // origin
 	    	        anchor: new google.maps.Point(0, 0), // anchor
 	    	        map: map
@@ -65,9 +64,9 @@ function loadMap(lattitude, longitude)
 	    	else
 	    		{
 	    			marker = new google.maps.Marker({
+                        title: locations[i][0],
 	    	        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-//	    	        icon: "icon/icon1.png",
-//	    	        scaledSize: new google.maps.Size(1, 1), // scaled size
+                    animation: google.maps.Animation.DROP,
 	    	        map: map
 	    	      });
 	    		}
@@ -76,11 +75,14 @@ function loadMap(lattitude, longitude)
 	        return function() {
 	          infowindow.setContent(locations[i][0], locations[i][6]);
 	          infowindow.open(map, marker);
-//	          fetchAvaibility();
 	        }
 	      })(marker, i));
-//	       marker.addListener('click', function() {
-//	         });
+	       marker.addListener('click', function() {
+	           console.log(this.title);
+               selectedBikeSpot = this.title;
+	         });
 	    }
 
 }
+
+var selectedBikeSpot="";

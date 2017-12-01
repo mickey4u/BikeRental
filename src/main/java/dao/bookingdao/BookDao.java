@@ -23,9 +23,9 @@ public class BookDao implements IBookDao {
     public boolean insertBooking(Booking booking) {
         Optional.of(booking).orElseThrow(NullPointerException::new);
         // check if booking already exist
-       if(Boolean.TRUE.equals(access.checkExist(booking.toString()))){
-           return false;
-       }
+        if (access.checkExist(booking.getBookingId())) {
+            return false;
+        }
         return access.insertBooking(booking);
     }
 
@@ -33,7 +33,7 @@ public class BookDao implements IBookDao {
     public boolean cancelBooking(String bookingId) {
         Optional.of(bookingId).orElseThrow(NullPointerException::new);
         // check if booking exist
-        if(Boolean.TRUE.equals(access.checkExist(bookingId))){
+        if (Boolean.TRUE.equals(access.checkExist(bookingId))) {
             return false;
         }
         return access.cancelBooking(bookingId);

@@ -3,17 +3,19 @@
 <%@ taglib prefix="float" uri="/struts-jquery-tags" %>
 <html>
 <head>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="http://trirand.com/blog/jqgrid/js/jquery.jqGrid.min.js"></script>
-    <script src="http://trirand.com/blog/jqgrid/js/i18n/grid.locale-en.js"></script>
-    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+<%--
+    <a>Library Files</a>
+--%>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.jqGrid.min.js"></script>
+    <script src="js/grid.locale-en.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
 
     <link rel="stylesheet" href="css/bikeRental.css"/>
-    <link rel="stylesheet" href="http://trirand.com/blog/jqgrid/themes/ui.jqgrid.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/ui.jqgrid.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsNPCh1hdLeGbQjYxj812X14w4rN64afI&callback=initMap"></script>
 
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/bikeLocator-1.1-min.js"></script>
@@ -22,28 +24,35 @@
     <style></style>
 </head>
 <body>
-    <div id="header" style="height: 117px;">
-        <h2 style="font-size: 98%;position:relative; top:93px; font-family: 'Bookman Old Style'">Howdy, <s:property value="username"/>...!</h2>
-        <img src="images/Logo.jpg" alt="logo" style="width: 399px;height: 126px; position: relative; top: -37%; float: left;overflow: auto;margin-left: 31%;">
-        <div id="signOn" class="sign-In">
-            <img id="signInLogo" class="signInLogo">
-            <a href="<s:url action="logout"/>">SignOut</a>
+<h2 style="font-size: 98%;position:relative; margin-left: 87%; top:93px; font-family: 'Bookman Old Style',serif">Howdy, <s:property value="username"/>...!</h2>
+    <div id="header" style="height: 132px;">
+        <a class="UL_logo" style="display: block; float: left; background: url(https://www.ul.ie/ee/images/interface/UL_logo_large.jpg) no-repeat; height: 85px; width: 363px; margin-top: 5px;" href="localhost:8080/bikerental/login"></a>
+    </div>
+    <div id="dialog" title="Alert message" style="display: none">
+        <div class="ui-dialog-content ui-widget-content">
+            <p>
+                <span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0"></span>
+                <label id="lblMessage">
+                </label>
+            </p>
         </div>
     </div>
     <div style="float: right; position: relative; top: -54px; width: 100%">
         <ul class="tabs"><a class="tabsfont">Account</a></ul>
+        <ul class="tabs"><a class="tabsfont">Pre-Book</a></ul>
         <ul class="tabs"><a class="tabsfont">Offers</a></ul>
-        <ul class="tabs"><a class="tabsfont">Ticket</a></ul>
-        <ul class="tabs"><a class="tabsfont">UL</a></ul>
+        <ul class="tabs"><a href="https://www.ul.ie/" class="tabsfont">UL</a></ul>
         <ul class="tabs"><a class="tabsfont">Bikes</a></ul>
-        <ul class="tabs"><a class="tabsfont">Travel</a></ul>
+        <ul class="tabs"><a class="tabsfont">Contact</a></ul>
+        <ul class="tabs"><a href="<s:url action="logout"/>" class="tabsfont">SignOut</a></ul>
     </div>
     <div id="map" style="width: 96%; height: 60%; float: right"></div>
     <div id="secondWindow" style="display: none"><table id="grid"></table></div>
     <div id="lowerPanel">
-        <button id="button" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit" onclick="fetchAvailability()">View Bikes</button>
+        <button id="button" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit" onclick="checkSelection()">View Bikes</button>
     </div>
-    <button id="goBack" style="display: none;"class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit">Back</button>
+    <button id="goBack" style="display: none;" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit">Back</button>
+
     <script type="text/javascript">
     $(document).ready(function () {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -55,6 +64,6 @@
                 $("#lowerPanel").show();
             })
         });
-</script>
+    </script>
 </body>
 </html>

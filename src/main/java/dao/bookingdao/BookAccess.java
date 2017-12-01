@@ -19,7 +19,7 @@ public interface BookAccess {
      * @param bookingId
      * @return
      */
-    @SqlQuery("select true from BOOKINGS where booking_id = :bookingId")
+    @SqlQuery("select count(1) from BOOKINGS where booking_id = :bookingId")
     boolean checkExist(@Bind("bookingId") String bookingId);
 
     /**
@@ -28,7 +28,7 @@ public interface BookAccess {
      * @param booking
      * @return
      */
-    @SqlUpdate("insert into BOOKINGS(booking_id, bike_id, bike_spot, booking_type, :status) values " +
+    @SqlUpdate("insert into BOOKINGS(booking_id, bike_id, bike_spot, booking_type, status) values " +
             "(:bookingId, :bikeId, :bikeSpot, :bookingType, :status)")
     boolean insertBooking(@BindBean Booking booking);
 

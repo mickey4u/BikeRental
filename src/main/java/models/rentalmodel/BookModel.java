@@ -15,7 +15,9 @@ public class BookModel implements IBookModel {
 
     @Override
     public boolean bookBike(Booking booking) {
-        return bookDao.insertBooking(booking);
+        boolean status = bookDao.insertBooking(booking);
+        System.out.print("-------->"+status);
+        return status;
     }
 
     @Override

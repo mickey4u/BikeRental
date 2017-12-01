@@ -20,9 +20,7 @@ public class BikesAction extends ActionSupport {
      * @return List of Available Bikes
      */
     public String execute() {
-
         bikeSpots = bikeRentalSingleton.getBikeModel().getAvailableBikesBySpot(bikeSpotLocation);
-        System.out.print(bikeSpots+"BikesActionExit");
         return SUCCESS;
     }
 

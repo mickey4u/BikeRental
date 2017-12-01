@@ -3,7 +3,7 @@ $("#goBack").show();
     $("#grid").jqGrid({
         datatype: "local",
         height: 350,
-        colNames: ['bikeId','Bike Icon','bikeSpot', 'bikeType','Fare',''],
+        colNames: ['ID','Description','Spot', 'Variant','Fare',''],
         colModel: [
             { name: 'bikeId', key: true, sorttype: "int", width: 80 },
             { name: 'bikeIcon', key: true, editype:"image",width: 80 },
@@ -11,61 +11,151 @@ $("#goBack").show();
             { name: 'bikeType', width: 80  },
             { name: 'Fare', width: 80  },
             { name: '', align: 'center', sortable: false, width: 40,
-                formatter: function () { return "<a href='#'>Book</a>"; } }
+                formatter: function () {
+                    var grid = $('#grid'), rowid = $(this).closest("tr.jqgrow").attr("id");
+                    var myCellData = grid.jqGrid('getCell', rowid, 'bikeId');
+                    return "<a href='#' onclick='bookBike()'>Book</a>"; } }
         ],
         caption: "Bikes",
         data: json,
         gridview: true,
         sortname: "bikeId",
-        beforeSelectRow: function (rowid, e) {
-            var $self = $(this),
-                $td = $(e.target).closest("td"),
-                rowid = $td.closest("tr.jqgrow").attr("id"),
-                iCol = $.jgrid.getCellIndex($td[0]),
-                cm = $self.jqGrid("getGridParam", "colModel");
-            if (cm[iCol].name === "edit" && e.target.tagName.toUpperCase() === "A") {
-                alert('Edit id: ' + rowid);
-                return false; // don't select the row on click
+        onCellSelect: function (rowid) {
+            var rowData = $(this).jqGrid("getRowData", rowid);
+            selectedBikeJson = rowData
+        }
+    });
+}
+var selectedBikeJson = "";
+var selectedSpot="";
+
+/*
+* Checks if a location has been chosen or not
+*
+* */
+function checkSelection() {
+    if(selectedBikeSpot.toString().length>0)
+    {
+        getAvailabilty();
+    }
+    else
+    {
+        alert("Choose a Bike Spot");
+    }
+}
+
+/*
+* Fetches Availability
+* */
+function getAvailabilty()
+{
+    alert("selectedBikeSpot");
+    $.ajax({
+        type: 'GET',url: "fetchAvailabilityData",dataType: "json",
+        data: {bikeSpotLocation: selectedBikeSpot.toString()},
+        success: function (json){
+            $("#secondWindow").show();
+            $("#map").hide();
+            $("#lowerPanel").hide();
+            var array = [];
+            for (var index = 0; index < json.length; index++) {
+                array.push({
+                    "bikeId": json[index].bikeId,
+                    "bikeIcon": "https://www.w3schools.com/css/trolltunga.jpg",
+                    "bikeSpot": "stables",
+                    "bikeType": "Gear",
+                    "Fare": "1Euro/Hr"
+                });
             }
-            return true;
+            loadBikesViews(array);
+        },
+        error: function (xhr) {
+            alert("Error:" + "Ooooops! We're down. Come back again.");
         }
     });
 }
 
-function fetchAvailability() {
+/*
+*
+* Books a Bike on click of Book
+*
+* */
+function bookBike() {
+    var jsonData = selectedBikeJson;
     var bookingID = "";
-    var bikeId = "";
-    var bookingType = "";
-    var status = "";
-    var bikeSpot = "Stables";
+    var bikeId = jsonData.bikeId;
+    var bookingType = "INSTANT_BOOKING";
+    var bikeType = jsonData.bikeType;
+    var bikeSpot = jsonData.bikeSpot;
+    console.log(jsonData);
     {
         $.ajax({
             type: 'GET',
-            url: "fetchAvailabilityData",
+            url: "bookInstant",
             dataType: "json",
             data: {
-                bikeSpotLocation: bikeSpot
+                bikeId: bikeId,
+                bookingType: bookingType,
+                bikeSpot: bikeSpot
             },
-            success: function (json) {
-                $("#secondWindow").show();
-                $("#map").hide();
-                $("#lowerPanel").hide();
-                var array = [];
-                for (var index = 0; index < json.length; index++) {
-                    array.push({
-                        "bikeId": json[index].bikeId,
-                        "bikeIcon": "https://www.w3schools.com/css/trolltunga.jpg",
-                        "bikeSpot": "stables",
-                        "bikeType": "Gear",
-                        "Fare": "1Euro/Hr"
-                    });
+            success: function (json){
+                var bookingStatus = json.toString();
+                if (bookingStatus !== "true") {
+
+                } else {
+                    $("#goBack").click();
+                    ShowDialogBox('Title', 'Booking Successful.', 'Ok', '', 'GoToAssetList', null);
                 }
-                console.log(array);
-                loadBikesViews(array);
+
             },
             error: function (xhr) {
                 alert("Error:" + "Ooooops! We're down. Come back again.");
             }
         });
     }
+}
+
+function ShowDialogBox(title, content, btn1text, btn2text, functionText, parameterList) {
+    var btn1css;
+    var btn2css;
+    $('.selector').dialog('option', 'position', 'top');
+    if (btn1text == '') {
+        btn1css = "hidecss";
+    } else {
+        btn1css = "showcss";
+    }
+    if (btn2text == '') {
+        btn2css = "hidecss";
+    } else {
+        btn2css = "showcss";
+    }
+    $("#lblMessage").html(content);
+    $("#dialog").dialog({
+        resizable: false,
+        title: title,
+        modal: true,
+        width: '400px',
+        height: 'auto',
+        bgiframe: false,
+        hide: { effect: 'scale', duration: 100 },
+
+        buttons: [
+            {
+                text: btn1text,
+                "class": btn1css,
+                click: function () {
+
+                    $("#dialog").dialog('close');
+
+                }
+            },
+            {
+                text: btn2text,
+                "class": btn2css,
+                click: function () {
+                    $("#dialog").dialog('close');
+                }
+            }
+        ]
+    });
 }

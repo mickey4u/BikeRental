@@ -12,10 +12,10 @@
             <column name="booking_id" type="varchar(40)">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
-            <column name="bike_spot" type="varchar(40)">
+            <column name="bike_id" type="varchar(40)">
                 <constraints nullable="false"/>
             </column>
-            <column name="bike_type" type="varchar(40)">
+            <column name="bike_spot" type="varchar(40)">
                 <constraints nullable="false"/>
             </column>
             <column name="booking_type" type="varchar(40)">
