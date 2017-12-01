@@ -11,8 +11,6 @@ import dao.userdao.UserAccess;
 import dao.userdao.UserDao;
 import models.bikemodel.BikeModel;
 import models.bikemodel.IBikeModel;
-import models.rentalmodel.BookModel;
-import models.rentalmodel.IBookModel;
 import models.usermodel.IUserModel;
 import models.usermodel.UserModel;
 import org.jdbi.v3.core.Jdbi;
