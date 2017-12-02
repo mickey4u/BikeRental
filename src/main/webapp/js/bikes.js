@@ -2,9 +2,13 @@ function loadBikesViews(json) {
     $("#goBack").css({
         display: "block"
     });
+    if(json.length===0)
+    {
+        json = "<p>Bikes Not Available</p>";
+    }
     $("#grid").jqGrid({
         datatype: "local",
-        height: 350,
+        height: 280,
         colNames: ['ID','Description','Spot', 'Variant','Fare',''],
         colModel: [
             { name: 'bikeId', key: true, sorttype: "int", width: 80 },
@@ -41,6 +45,21 @@ function checkSelection() {
     {
         alert("Choose a Bike Spot");
     }
+}
+function returnBike()
+{
+    $.ajax({
+        type: 'GET',url: "returnBike",dataType: "json",
+        data: {
+
+        },
+        success: function (json){
+           alert(json);
+        },
+        error: function (xhr) {
+            alert("Error:" + "Ooooops! We're down. Come back again.");
+        }
+    });
 }
 
 /*
@@ -156,4 +175,24 @@ function ShowDialogBox(title, content, btn1text, btn2text, functionText, paramet
             }
         ]
     });
+}
+
+function loadRentalHistory()
+{
+    {
+        $.ajax({
+            type: 'GET',
+            url: "viewRentalHistory",
+            dataType: "json",
+            data: {
+                username: "2037"
+            },
+            success: function (json){
+               alert(json);
+            },
+            error: function (xhr) {
+                alert("Error:" + "Ooooops! We're down. Come back again.");
+            }
+        });
+    }
 }

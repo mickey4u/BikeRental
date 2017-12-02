@@ -38,13 +38,13 @@
             </p>
         </div>
     </div>
-    <div style="float: right; position: relative; top: -54px; width: 100%">
-        <ul class="tabs"><a class="tabsfont">Account</a></ul>
-        <ul class="tabs"><a class="tabsfont">Pre-Book</a></ul>
+    <div style="float: right; position: relative; top: -54px; width: 99%">
+        <ul class="tabs"><a href="rentalHistory.jsp" class="tabsfont">Rental History</a></ul>
+        <ul class="tabs"><a class="tabsfont">Pre-Booking</a></ul>
         <ul class="tabs"><a class="tabsfont">Offers</a></ul>
         <ul class="tabs"><a href="https://www.ul.ie/" class="tabsfont">UL</a></ul>
         <ul class="tabs"><a class="tabsfont">Bikes</a></ul>
-        <ul class="tabs"><a id="raiseTicket" class="tabsfont">Contact</a></ul>
+        <ul class="tabs"><a id="raiseTicket" class="tabsfont">Contact Admin</a></ul>
         <ul class="tabs"><a href="<s:url action="logout"/>" class="tabsfont">SignOut</a></ul>
     </div>
     <div id="map" style="width: 96%; height: 60%; float: right"></div>
@@ -67,6 +67,7 @@
     </form>
     <div id="lowerPanel">
         <button id="button" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit" onclick="checkSelection()">View Bikes</button>
+        <button id="returnBike" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit" onclick="returnBike()">Return Bike</button>
     </div>
     <button id="goBack" style="display: none;" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit">Back</button>
 
@@ -79,7 +80,7 @@
                 navigator.geolocation.getCurrentPosition(showPosition);
                 $("#secondWindow").hide();$("#goBack").hide();
                 $("#map").show();$("#lowerPanel").show();
-            })
+            });
             $("#raiseTicket").click(function () {
                 $("#secondWindow").hide();$("#goBack").hide();
                 $("#map").hide();$("#lowerPanel").hide();

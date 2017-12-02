@@ -60,7 +60,14 @@
             </result>
         </action>
 
-        <!--Instant Booking-->
+        <!--Fetch Bike Availabilty-->
+        <action name="returnBike" class="controllers.bikecontroller.BikesAction">
+            <result type="json">
+                <param name="root">fare</param>
+            </result>
+        </action>
+
+        <!--Bike Booking-->
         <action name="bookInstant" class="controllers.bikecontroller.MakeBookingAction">
             <result type="json">
                 <param name="root">bookingStatus</param>
@@ -68,8 +75,10 @@
         </action>
 
         <!--View Rental History-->
-        <action name="viewRentalHistory" class="controllers.bikecontroller.UsersAccountAction" method="viewRentalHistory">
-            <result name="success">/Dasboard.jsp</result>
+        <action name="viewRentalHistory" class="controllers.bikecontroller.UsersAccountAction">
+            <result type="json">
+                <param name="root">bookings</param>
+            </result>
         </action>
 
         <!--Updates password-->

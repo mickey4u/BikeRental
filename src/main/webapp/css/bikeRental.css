@@ -11,8 +11,8 @@ body {
 #goBack
 {
     position: relative !important;
-    bottom: 67% !important;
-    margin-left: 57% !important;
+    bottom: 0% !important;
+    margin-left: 44% !important;
 }
 #map
 {
@@ -25,6 +25,12 @@ body {
     margin-top: -49px !important;
 }
 #button{
+    width: 122%;
+    margin-right: 14%;
+    position: relative;
+    left: -79%;
+}
+#returnBike{
     width: 122%;
     margin-right: 14%;
     position: relative;
@@ -84,7 +90,7 @@ body {
     font-family: Arial,Helvetica,freesans,sans-serif;
     float: right;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 66%;
     top: 11px;
     margin-right: 90px;
     margin-left: 96px;
