@@ -6,83 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbac297a-215d-4b13-9c17-c43ab0a233c5" name="Default" comment="Second major commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/controllers/command/Command.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/interceptors/BookingLoggerInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/interceptors/ClientRequestInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/interceptors/ILoggingDispatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/interceptors/IUnmarshaledRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/interceptors/LoggingDispatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/interceptors/MarshaledRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/interceptors/UnmarshaledRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/BikeFare.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareDecorator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/GoldDiscount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/NoDiscount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/SilverDiscount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/IPayModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/database.accounts.changelog-1.0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/database.ledgers.changelog-1.0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/database.transactionlines.changelog-1.0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/database.transactions.changelog-1.0.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Connection/ConnectionFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Connection/ConnectionManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Connection/MySQLconnectionFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Connection/PostGREconnection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Connection/PostGREconnectionFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/dao/userdao/UserOracleDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/entities/users/Ludo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/entities/users/SnakeLadder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/interceptors/BookLoggerInterceptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/main/ModelsInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/models/bikemodel/IPay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/Decorator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/Fare.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/Goldenmenbershipbikefare.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/NormalbikeFare.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/Silvermembershipbikefare.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/gearbikeFare.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/GoldDiscount.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/SilverDiscount.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Connection/MySqlConnection.java" afterPath="$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dao/bookingdao/BookingMapper.java" afterPath="$PROJECT_DIR$/src/main/java/entities/booking/BookingMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dao/userdao/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/entities/users/UserMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/entities/bike/Booking.java" afterPath="$PROJECT_DIR$/src/main/java/entities/booking/Booking.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/entities/bike/BookingType.java" afterPath="$PROJECT_DIR$/src/main/java/entities/booking/BookingType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/IDiscount.java" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/IFare.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/BikeRental_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/BikeRental_war_exploded.xml" />
+    <list default="true" id="fbac297a-215d-4b13-9c17-c43ab0a233c5" name="Default" comment="Bike Cancellation working use case">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/interceptors/BookingLoggerInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/interceptors/ClientRequestInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/interceptors/ILoggingDispatcher.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/interceptors/IUnmarshaledRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/interceptors/LoggingDispatcher.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/interceptors/MarshaledRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/interceptors/UnmarshaledRequest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BikeRental.iml" afterPath="$PROJECT_DIR$/BikeRental.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/MakeBookingAction.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/MakeBookingAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/paymentcontroller/PayAction.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/paymentcontroller/PayAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/usercontroller/DashboardAction.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/usercontroller/DashboardAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/bikedao/BikeAccess.java" afterPath="$PROJECT_DIR$/src/main/java/dao/bikedao/BikeAccess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/bikedao/BikeMapper.java" afterPath="$PROJECT_DIR$/src/main/java/dao/bikedao/BikeMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/bookingdao/BookAccess.java" afterPath="$PROJECT_DIR$/src/main/java/dao/bookingdao/BookAccess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/bookingdao/BookDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/bookingdao/BookDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/bookingdao/IBookDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/bookingdao/IBookDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/userdao/IUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/userdao/IUserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java" afterPath="$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/bookkeeping/Transaction.java" afterPath="$PROJECT_DIR$/src/main/java/entities/bookkeeping/Transaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/users/User.java" afterPath="$PROJECT_DIR$/src/main/java/entities/users/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/IBookModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/IBookModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/IBikeFare.java" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/IBikeFare.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/NormalFare.java" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/NormalFare.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/usermodel/IUserModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/usermodel/IUserModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/liquibase/database.bookings.changelog-1.0.xml" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/database.bookings.changelog-1.0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/liquibase/database.users.changelog-1.0.xml" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/database.users.changelog-1.0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/src/main/resources/struts.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -96,28 +28,25 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="BikeRentalSingleton.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="258">
-              <caret line="65" column="58" lean-forward="false" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IFare.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/IFare.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="65" column="9" lean-forward="false" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,12 +54,13 @@
       <file leaf-file-name="BookDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/bookingdao/BookDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+            <state relative-caret-position="408">
+              <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
+                <marker date="1512326268308" expanded="true" signature="2137:2176" ph="{...}" />
+                <marker date="1512326268308" expanded="false" signature="2233:2244" ph=" { " />
+                <marker date="1512326268308" expanded="false" signature="2275:2281" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -139,31 +69,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="187">
+              <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IBikeModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IBikeModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-618">
-              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PayModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -175,12 +85,19 @@
               <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1512326268321" expanded="true" signature="430:484" ph="/**...*/" />
+                <marker date="1512326268321" expanded="true" signature="538:663" ph="/**...*/" />
+                <marker date="1512326268321" expanded="true" signature="795:959" ph="/**...*/" />
+                <marker date="1512326268321" expanded="true" signature="964:1059" ph="@{...}" />
+                <marker date="1512326268321" expanded="true" signature="1246:1502" ph="@{...}" />
+                <marker date="1512326268321" expanded="true" signature="1553:1675" ph="/**...*/" />
+                <marker date="1512326268321" expanded="true" signature="1680:1809" ph="@{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
           <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
             <state />
@@ -188,29 +105,39 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1037">
               <caret line="61" column="26" lean-forward="false" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
-              <folding />
+              <folding>
+                <marker date="1512326268733" expanded="true" signature="4036:4112" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IPayModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/IPayModel.java">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="119">
+              <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FareFactory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FareDecorator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FareFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-375">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -222,10 +149,11 @@
       <list>
         <option value="struts_2_5" />
         <option value="Singleton" />
-        <option value="Jsp File" />
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="JavaScript File" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -235,9 +163,17 @@
       <find>charges</find>
       <find>defaultStack</find>
       <find>Ledger</find>
-      <find>buil</find>
-      <find>numberV</find>
-      <find>javax</find>
+      <find>tabs1</find>
+      <find>sign</find>
+      <find>data</find>
+      <find>struts</find>
+      <find>json</find>
+      <find>jquery</find>
+      <find>bikeSpots</find>
+      <find>.tabs</find>
+      <find>grid</find>
+      <find>rentalHistory</find>
+      <find>viewRentalHistory</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -246,10 +182,20 @@
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Molly\IdeaProjects\BikeRental</dir>
+      <dir>$PROJECT_DIR$/src/main/java/models/rentalmodel/caculateFinalfare</dir>
+      <dir>C:\Users\Mayank\IdeaProjects\BikeRental</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Mayank &lt;mayanksrivastava9038@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -259,57 +205,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.accounts.changelog-1.0.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.transactionlines.changelog-1.0.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.transactions.changelog-1.0.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/bookkeeping/TransactionBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bikedao/BikeMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/bike/Booking.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.bookings.changelog-1.0.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/BikeSpotMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/IDashboardDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/bikeSpots/BikeSpotsAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/IDashboardModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/DashboardDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/DashboardAccess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/DashboardMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/DashBoard/IDashboardDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/dashboard/BikeSpotsAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/dashboard/DashboardBikeSpotsAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/DashBoard/DashboardAccess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/DashBoard/DashboardDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/DashboardModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/bikespot/DashboardAccess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/bikespot/IBikeSpotDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/IBikeSpotModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/BikeSpotModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/bikespotmodel/IBikeSpotModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/bikespot/BikeSpotAccess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/bikespotmodel/BikeSpotModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/Connection/MySqlConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/Models.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/DiscountType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/DiscountFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/booking/Booking.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/booking/BookingMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/MakeBookingAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/paymentcontroller/PayAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/IPay.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/IPay.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/SilverDiscount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/IDiscount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/NormalFare.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/IBikeFare.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/SilverBikeFare.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/GoldenBikeFare.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/GoldDiscount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/GoldDiscount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/GoldenDiscount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareDecorator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/NormalBikeFare.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/IFare.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/GoldDiscount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/SilverDiscount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/BikeFare.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/NoDiscount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bikedao/BikeAccess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/IBookModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bookingdao/BookAccess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bookingdao/IBookDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/bookingdao/BookDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/bikeSpot/DashboardBikeSpotsAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/IPayModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/users/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/bikeSpot/BikeSpots.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/bikespot/BikeSpotMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.bikespots.changelog-1.0.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/bikeLocator-1.1-min.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/users/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.users.changelog-1.0.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/users/UserRank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/usermodel/IUserModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/usercontroller/RegisterAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Register.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/bike/Booking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/MakeBookingAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/bookingdao/BookAccess.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/rentalHistory.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/bikeRental.css" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/CancelBookingAction.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/bookingdao/BookDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.bookings.changelog-1.0.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Dasboard.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/bikes.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -364,9 +310,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="479" />
+    <option name="y" value="244" />
     <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -552,103 +499,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="bikedao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="bookingdao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="userdao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="bike" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="bookkeeping" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="interceptors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -721,16 +571,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="rentalmodel" type="462c0819:PsiDirectoryNode" />
-              <item name="pay" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
               <item name="supportmodel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -778,30 +618,32 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="models" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="models" />
-      <recent name="entities.users" />
-      <recent name="entities.bike" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Mayank\IdeaProjects\BikeRental\src" />
-      <recent name="C:\Users\Mayank\IdeaProjects\BikeRental\src\main" />
-      <recent name="C:\Users\Mayank\IdeaProjects\BikeRental\src\main\webapp\images" />
-      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp" />
-      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF\pages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\resources\liquibase" />
       <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF\lib" />
       <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\resources" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mayank\IdeaProjects\BikeRental\src\main\webapp\images" />
+      <recent name="C:\Users\Mayank\IdeaProjects\BikeRental\lib" />
+      <recent name="C:\Users\Mayank\IdeaProjects\BikeRental\src" />
+      <recent name="C:\Users\Mayank\IdeaProjects\BikeRental\src\main" />
+      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="models" />
+      <recent name="dao" />
+      <recent name="dao.userdao" />
+      <recent name="entities" />
+      <recent name="Connection" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -818,36 +660,36 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/artifacts/BikeRental_war_exploded.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/Connection/MySqlConnection.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bikecontroller/CancelBookingAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/BikeRental.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pom.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bikecontroller/MakeBookingAction.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bikecontroller/UsersAccountAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/paymentcontroller/PayAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/usercontroller/DashboardAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bikedao/BikeAccess.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bikedao/BikeMapper.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookingdao/BookAccess.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookingdao/BookDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookingdao/IBookDao.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/IUserDao.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/UserMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/bike/Booking.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/bookkeeping/Transaction.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/users/User.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/IBookModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/IBikeFare.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/NormalFare.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/usermodel/IUserModel.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/liquibase/database.bikespots.changelog-1.0.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/liquibase/database.bookings.changelog-1.0.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/liquibase/database.users.changelog-1.0.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/struts.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/Dasboard.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/Login.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/Register.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/css/bikeRental.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/css/jquery-ui.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/js/bikeLocator-1.1-min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/js/bikes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/js/jquery-ui.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/js/jquery.mobile-1.5.0-alpha.1.min.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -855,20 +697,33 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/bikeSpot/DashboardBikeSpotsAction.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bikespot/BikeSpotAccess.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bikespot/BikeSpotDao.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bikespot/BikeSpotMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bikespot/IBikeSpotDao.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/BikeSpotMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/RentalHistoryMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/bikeSpot/BikeSpots.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikespotmodel/BikeSpotModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikespotmodel/IBikeSpotModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/supportmodel/ISupportModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/supportmodel/SupportModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/css/login.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/rentalHistory.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/controllers/command/Command.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/booking/Booking.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/booking/BookingMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/booking/BookingType.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/users/UserMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/interceptors/BookingLoggerInterceptor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/interceptors/ClientRequestInterceptor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/interceptors/ILoggingDispatcher.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/interceptors/IUnmarshaledRequest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/interceptors/LoggingDispatcher.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/interceptors/MarshaledRequest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/interceptors/UnmarshaledRequest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareFactory.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareType.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/BikeFare.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareDecorator.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareImpl.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/GoldDiscount.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/IFare.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/NoDiscount.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/SilverDiscount.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/IPayModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/liquibase/database.accounts.changelog-1.0.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/liquibase/database.ledgers.changelog-1.0.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/liquibase/database.transactionlines.changelog-1.0.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/liquibase/database.transactions.changelog-1.0.xml</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -876,9 +731,31 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/daoFactory/UserDAOFactory.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/support/ISupportModel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/support/SupportModel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/Connection/ConnectionFactory.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/Connection/ConnectionManager.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/Connection/MySQLconnectionFactory.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/Connection/MySqlConnection.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/Connection/PostGREconnection.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/Connection/PostGREconnectionFactory.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/bookingdao/BookingMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/UserMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/dao/userdao/UserOracleDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/bike/Booking.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/bike/BookingType.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/users/Ludo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/entities/users/SnakeLadder.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/interceptors/BookLoggerInterceptor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/main/ModelsInterface.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/bikemodel/IPay.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/Decorator.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/Fare.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/Goldenmenbershipbikefare.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/NormalbikeFare.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/Silvermembershipbikefare.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/calculateFinalfare/gearbikeFare.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/GoldDiscount.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/IDiscount.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/SilverDiscount.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -972,7 +849,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Jetty Server.New Jetty">
     <configuration name="All in BikeRental" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="BikeRental" />
@@ -1021,25 +898,6 @@
         </option>
       </MavenSettings>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="models.rentalmodel.fare.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="models.rentalmodel.fare.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="BikeRental" />
-      <envs />
-    </configuration>
     <configuration name="MyJetty" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="dummy" />
@@ -1066,634 +924,662 @@
           <option name="configFiles">
             <list>
               <JettyConfigFile>
-                <option name="path" value="modules\alpn.mod" />
+                <option name="path" value="modules/alpn-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\annotations.mod" />
+                <option name="path" value="modules/alpn.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\apache-jsp.mod" />
+                <option name="path" value="modules/annotations.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\apache-jstl.mod" />
+                <option name="path" value="modules/apache-jsp.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\cdi.mod" />
+                <option name="path" value="modules/apache-jstl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\client.mod" />
+                <option name="path" value="modules/cdi.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\connectionlimit.mod" />
+                <option name="path" value="modules/cdi1.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\conscrypt.mod" />
+                <option name="path" value="modules/cdi2.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\console-capture.mod" />
+                <option name="path" value="modules/client.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\continuation.mod" />
+                <option name="path" value="modules/connectionlimit.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\debug.mod" />
+                <option name="path" value="modules/conscrypt.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\debuglog.mod" />
+                <option name="path" value="modules/console-capture.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\deploy.mod" />
+                <option name="path" value="modules/continuation.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\ext.mod" />
+                <option name="path" value="modules/debug.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\fcgi.mod" />
+                <option name="path" value="modules/debuglog.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\flight-recorder.mod" />
+                <option name="path" value="modules/deploy.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\gcloud-datastore.mod" />
+                <option name="path" value="modules/ext.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\gcloud.mod" />
+                <option name="path" value="modules/fcgi.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\gzip.mod" />
+                <option name="path" value="modules/flight-recorder.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\hawtio.mod" />
+                <option name="path" value="modules/gcloud-datastore.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\hazelcast-embedded-sessions.mod" />
+                <option name="path" value="modules/gcloud.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\hazelcast-remote-sessions.mod" />
+                <option name="path" value="modules/gzip.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\home-base-warning.mod" />
+                <option name="path" value="modules/hawtio.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\http-forwarded.mod" />
+                <option name="path" value="modules/hazelcast-embedded-sessions.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\http.mod" />
+                <option name="path" value="modules/hazelcast-remote-sessions.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\http2.mod" />
+                <option name="path" value="modules/home-base-warning.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\http2c.mod" />
+                <option name="path" value="modules/http-forwarded.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\https.mod" />
+                <option name="path" value="modules/http.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\ipaccess.mod" />
+                <option name="path" value="modules/http2.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jaas.mod" />
+                <option name="path" value="modules/http2c.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jamon.mod" />
+                <option name="path" value="modules/https.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jaspi.mod" />
+                <option name="path" value="modules/ipaccess.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jcl-slf4j.mod" />
+                <option name="path" value="modules/jaas.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jminix.mod" />
+                <option name="path" value="modules/jamon.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jmx-remote.mod" />
+                <option name="path" value="modules/jaspi.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="active" value="true" />
-                <option name="path" value="modules\jmx.mod" />
+                <option name="path" value="modules/jcl-slf4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jndi.mod" />
+                <option name="path" value="modules/jminix.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jolokia.mod" />
+                <option name="path" value="modules/jmx-remote.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jsp.mod" />
+                <option name="path" value="modules/jmx.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jstl.mod" />
+                <option name="path" value="modules/jndi.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jul-impl.mod" />
+                <option name="path" value="modules/jolokia.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jul-slf4j.mod" />
+                <option name="path" value="modules/jsp.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jvm.mod" />
+                <option name="path" value="modules/jstl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\log4j-impl.mod" />
+                <option name="path" value="modules/jul-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\log4j2-api.mod" />
+                <option name="path" value="modules/jul-slf4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\log4j2-impl.mod" />
+                <option name="path" value="modules/jvm.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\log4j2-slf4j.mod" />
+                <option name="path" value="modules/log4j-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logback-access.mod" />
+                <option name="path" value="modules/log4j2-api.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logback-impl.mod" />
+                <option name="path" value="modules/log4j2-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-jetty.mod" />
+                <option name="path" value="modules/log4j2-slf4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-jul.mod" />
+                <option name="path" value="modules/logback-access.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-log4j.mod" />
+                <option name="path" value="modules/logback-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-log4j2.mod" />
+                <option name="path" value="modules/logging-jetty.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-logback.mod" />
+                <option name="path" value="modules/logging-jul.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-slf4j.mod" />
+                <option name="path" value="modules/logging-log4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\lowresources.mod" />
+                <option name="path" value="modules/logging-log4j2.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\mail.mod" />
+                <option name="path" value="modules/logging-logback.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\plus.mod" />
+                <option name="path" value="modules/logging-slf4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\proxy-protocol-ssl.mod" />
+                <option name="path" value="modules/lowresources.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\proxy-protocol.mod" />
+                <option name="path" value="modules/mail.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\proxy.mod" />
+                <option name="path" value="modules/plus.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\quickstart.mod" />
+                <option name="path" value="modules/proxy-protocol-ssl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\requestlog.mod" />
+                <option name="path" value="modules/proxy-protocol.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\resources.mod" />
+                <option name="path" value="modules/proxy.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\rewrite-compactpath.mod" />
+                <option name="path" value="modules/quickstart.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\rewrite-customizer.mod" />
+                <option name="path" value="modules/requestlog.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\rewrite.mod" />
+                <option name="path" value="modules/resources.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\security.mod" />
+                <option name="path" value="modules/rewrite-compactpath.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\server.mod" />
+                <option name="path" value="modules/rewrite-customizer.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\servlet.mod" />
+                <option name="path" value="modules/rewrite.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\servlets.mod" />
+                <option name="path" value="modules/security.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-cache-hash.mod" />
+                <option name="path" value="modules/server.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-cache-null.mod" />
+                <option name="path" value="modules/servlet.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-cache.mod" />
+                <option name="path" value="modules/servlets.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-file.mod" />
+                <option name="path" value="modules/session-cache-hash.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-gcloud.mod" />
+                <option name="path" value="modules/session-cache-null.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-hazelcast-embedded.mod" />
+                <option name="path" value="modules/session-store-cache.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-hazelcast-remote.mod" />
+                <option name="path" value="modules/session-store-file.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-infinispan-embedded.mod" />
+                <option name="path" value="modules/session-store-gcloud.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-infinispan-remote.mod" />
+                <option name="path" value="modules/session-store-hazelcast-embedded.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-jdbc.mod" />
+                <option name="path" value="modules/session-store-hazelcast-remote.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-mongo.mod" />
+                <option name="path" value="modules/session-store-infinispan-embedded-910.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\sessions.mod" />
+                <option name="path" value="modules/session-store-infinispan-embedded.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\setuid.mod" />
+                <option name="path" value="modules/session-store-infinispan-remote-910.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-api.mod" />
+                <option name="path" value="modules/session-store-infinispan-remote.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-jul.mod" />
+                <option name="path" value="modules/session-store-jdbc.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-log4j.mod" />
+                <option name="path" value="modules/session-store-mongo.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-log4j2.mod" />
+                <option name="path" value="modules/sessions.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-logback.mod" />
+                <option name="path" value="modules/setuid.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-simple-impl.mod" />
+                <option name="path" value="modules/slf4j-api.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\spring.mod" />
+                <option name="path" value="modules/slf4j-jul.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\ssl.mod" />
+                <option name="path" value="modules/slf4j-log4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\stats.mod" />
+                <option name="path" value="modules/slf4j-log4j2.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\stop.mod" />
+                <option name="path" value="modules/slf4j-logback.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\threadlimit.mod" />
+                <option name="path" value="modules/slf4j-simple-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\transactions.mod" />
+                <option name="path" value="modules/spring.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-forwarded.mod" />
+                <option name="path" value="modules/ssl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-http.mod" />
+                <option name="path" value="modules/stats.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-http2c.mod" />
+                <option name="path" value="modules/stop.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-proxy-protocol.mod" />
+                <option name="path" value="modules/threadlimit.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-secure.mod" />
+                <option name="path" value="modules/transactions.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket.mod" />
+                <option name="path" value="modules/unixsocket-forwarded.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\webapp.mod" />
+                <option name="path" value="modules/unixsocket-http.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\websocket.mod" />
+                <option name="path" value="modules/unixsocket-http2c.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules/unixsocket-proxy-protocol.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules/unixsocket-secure.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules/unixsocket.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules/webapp.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules/websocket.mod" />
               </JettyConfigFile>
             </list>
           </option>
           <option name="myConfigFiles">
             <list>
               <JettyConfigFile>
-                <option name="path" value="modules\alpn.mod" />
+                <option name="path" value="modules/alpn-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\annotations.mod" />
+                <option name="path" value="modules/alpn.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\apache-jsp.mod" />
+                <option name="path" value="modules/annotations.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\apache-jstl.mod" />
+                <option name="path" value="modules/apache-jsp.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\cdi.mod" />
+                <option name="path" value="modules/apache-jstl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\client.mod" />
+                <option name="path" value="modules/cdi.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\connectionlimit.mod" />
+                <option name="path" value="modules/cdi1.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\conscrypt.mod" />
+                <option name="path" value="modules/cdi2.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\console-capture.mod" />
+                <option name="path" value="modules/client.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\continuation.mod" />
+                <option name="path" value="modules/connectionlimit.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\debug.mod" />
+                <option name="path" value="modules/conscrypt.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\debuglog.mod" />
+                <option name="path" value="modules/console-capture.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\deploy.mod" />
+                <option name="path" value="modules/continuation.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\ext.mod" />
+                <option name="path" value="modules/debug.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\fcgi.mod" />
+                <option name="path" value="modules/debuglog.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\flight-recorder.mod" />
+                <option name="path" value="modules/deploy.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\gcloud-datastore.mod" />
+                <option name="path" value="modules/ext.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\gcloud.mod" />
+                <option name="path" value="modules/fcgi.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\gzip.mod" />
+                <option name="path" value="modules/flight-recorder.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\hawtio.mod" />
+                <option name="path" value="modules/gcloud-datastore.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\hazelcast-embedded-sessions.mod" />
+                <option name="path" value="modules/gcloud.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\hazelcast-remote-sessions.mod" />
+                <option name="path" value="modules/gzip.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\home-base-warning.mod" />
+                <option name="path" value="modules/hawtio.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\http-forwarded.mod" />
+                <option name="path" value="modules/hazelcast-embedded-sessions.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\http.mod" />
+                <option name="path" value="modules/hazelcast-remote-sessions.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\http2.mod" />
+                <option name="path" value="modules/home-base-warning.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\http2c.mod" />
+                <option name="path" value="modules/http-forwarded.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\https.mod" />
+                <option name="path" value="modules/http.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\ipaccess.mod" />
+                <option name="path" value="modules/http2.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jaas.mod" />
+                <option name="path" value="modules/http2c.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jamon.mod" />
+                <option name="path" value="modules/https.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jaspi.mod" />
+                <option name="path" value="modules/ipaccess.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jcl-slf4j.mod" />
+                <option name="path" value="modules/jaas.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jminix.mod" />
+                <option name="path" value="modules/jamon.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jmx-remote.mod" />
+                <option name="path" value="modules/jaspi.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="active" value="true" />
-                <option name="path" value="modules\jmx.mod" />
+                <option name="path" value="modules/jcl-slf4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jndi.mod" />
+                <option name="path" value="modules/jminix.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jolokia.mod" />
+                <option name="path" value="modules/jmx-remote.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jsp.mod" />
+                <option name="path" value="modules/jmx.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jstl.mod" />
+                <option name="path" value="modules/jndi.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jul-impl.mod" />
+                <option name="path" value="modules/jolokia.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jul-slf4j.mod" />
+                <option name="path" value="modules/jsp.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\jvm.mod" />
+                <option name="path" value="modules/jstl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\log4j-impl.mod" />
+                <option name="path" value="modules/jul-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\log4j2-api.mod" />
+                <option name="path" value="modules/jul-slf4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\log4j2-impl.mod" />
+                <option name="path" value="modules/jvm.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\log4j2-slf4j.mod" />
+                <option name="path" value="modules/log4j-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logback-access.mod" />
+                <option name="path" value="modules/log4j2-api.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logback-impl.mod" />
+                <option name="path" value="modules/log4j2-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-jetty.mod" />
+                <option name="path" value="modules/log4j2-slf4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-jul.mod" />
+                <option name="path" value="modules/logback-access.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-log4j.mod" />
+                <option name="path" value="modules/logback-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-log4j2.mod" />
+                <option name="path" value="modules/logging-jetty.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-logback.mod" />
+                <option name="path" value="modules/logging-jul.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\logging-slf4j.mod" />
+                <option name="path" value="modules/logging-log4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\lowresources.mod" />
+                <option name="path" value="modules/logging-log4j2.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\mail.mod" />
+                <option name="path" value="modules/logging-logback.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\plus.mod" />
+                <option name="path" value="modules/logging-slf4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\proxy-protocol-ssl.mod" />
+                <option name="path" value="modules/lowresources.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\proxy-protocol.mod" />
+                <option name="path" value="modules/mail.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\proxy.mod" />
+                <option name="path" value="modules/plus.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\quickstart.mod" />
+                <option name="path" value="modules/proxy-protocol-ssl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\requestlog.mod" />
+                <option name="path" value="modules/proxy-protocol.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\resources.mod" />
+                <option name="path" value="modules/proxy.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\rewrite-compactpath.mod" />
+                <option name="path" value="modules/quickstart.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\rewrite-customizer.mod" />
+                <option name="path" value="modules/requestlog.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\rewrite.mod" />
+                <option name="path" value="modules/resources.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\security.mod" />
+                <option name="path" value="modules/rewrite-compactpath.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\server.mod" />
+                <option name="path" value="modules/rewrite-customizer.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\servlet.mod" />
+                <option name="path" value="modules/rewrite.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\servlets.mod" />
+                <option name="path" value="modules/security.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-cache-hash.mod" />
+                <option name="path" value="modules/server.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-cache-null.mod" />
+                <option name="path" value="modules/servlet.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-cache.mod" />
+                <option name="path" value="modules/servlets.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-file.mod" />
+                <option name="path" value="modules/session-cache-hash.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-gcloud.mod" />
+                <option name="path" value="modules/session-cache-null.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-hazelcast-embedded.mod" />
+                <option name="path" value="modules/session-store-cache.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-hazelcast-remote.mod" />
+                <option name="path" value="modules/session-store-file.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-infinispan-embedded.mod" />
+                <option name="path" value="modules/session-store-gcloud.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-infinispan-remote.mod" />
+                <option name="path" value="modules/session-store-hazelcast-embedded.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-jdbc.mod" />
+                <option name="path" value="modules/session-store-hazelcast-remote.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\session-store-mongo.mod" />
+                <option name="path" value="modules/session-store-infinispan-embedded-910.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\sessions.mod" />
+                <option name="path" value="modules/session-store-infinispan-embedded.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\setuid.mod" />
+                <option name="path" value="modules/session-store-infinispan-remote-910.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-api.mod" />
+                <option name="path" value="modules/session-store-infinispan-remote.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-jul.mod" />
+                <option name="path" value="modules/session-store-jdbc.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-log4j.mod" />
+                <option name="path" value="modules/session-store-mongo.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-log4j2.mod" />
+                <option name="path" value="modules/sessions.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-logback.mod" />
+                <option name="path" value="modules/setuid.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\slf4j-simple-impl.mod" />
+                <option name="path" value="modules/slf4j-api.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\spring.mod" />
+                <option name="path" value="modules/slf4j-jul.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\ssl.mod" />
+                <option name="path" value="modules/slf4j-log4j.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\stats.mod" />
+                <option name="path" value="modules/slf4j-log4j2.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\stop.mod" />
+                <option name="path" value="modules/slf4j-logback.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\threadlimit.mod" />
+                <option name="path" value="modules/slf4j-simple-impl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\transactions.mod" />
+                <option name="path" value="modules/spring.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-forwarded.mod" />
+                <option name="path" value="modules/ssl.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-http.mod" />
+                <option name="path" value="modules/stats.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-http2c.mod" />
+                <option name="path" value="modules/stop.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-proxy-protocol.mod" />
+                <option name="path" value="modules/threadlimit.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket-secure.mod" />
+                <option name="path" value="modules/transactions.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\unixsocket.mod" />
+                <option name="path" value="modules/unixsocket-forwarded.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\webapp.mod" />
+                <option name="path" value="modules/unixsocket-http.mod" />
               </JettyConfigFile>
               <JettyConfigFile>
-                <option name="path" value="modules\websocket.mod" />
+                <option name="path" value="modules/unixsocket-http2c.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules/unixsocket-proxy-protocol.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules/unixsocket-secure.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules/unixsocket.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules/webapp.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules/websocket.mod" />
               </JettyConfigFile>
             </list>
           </option>
@@ -1742,7 +1628,7 @@
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="entities.booking.*" />
+          <option name="PATTERN" value="dao.bookingdao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1761,11 +1647,25 @@
     <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="entities.booking.*" />
+          <option name="PATTERN" value="dao.bookingdao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="dao.user.Test1" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="BikeRental" />
+      <envs />
+    </configuration>
+    <configuration name="Trial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Trial" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1892,19 +1792,19 @@
       <item index="0" class="java.lang.String" itemvalue="Jetty Server.New Jetty" />
       <item index="1" class="java.lang.String" itemvalue="Maven.BikeRentalMaven" />
       <item index="2" class="java.lang.String" itemvalue="Remote.BikeJetty" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MyJetty" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.All in BikeRental" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Trial" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MyJetty" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Test" />
       <item index="6" class="java.lang.String" itemvalue="Application.Test1" />
-      <item index="7" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.All in BikeRental" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Test1" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in BikeRental" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MyJetty" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Test1" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in BikeRental" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MyJetty" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Trial" />
       </list>
     </recent_temporary>
   </component>
@@ -1960,16 +1860,10 @@
       <workItem from="1511654388375" duration="189000" />
       <workItem from="1511684591966" duration="1453000" />
       <workItem from="1511714810679" duration="13343000" />
-      <workItem from="1511791402901" duration="13910000" />
-      <workItem from="1511858185368" duration="1001000" />
-      <workItem from="1511879600023" duration="3593000" />
-      <workItem from="1511883978096" duration="12455000" />
-      <workItem from="1511980854807" duration="5641000" />
-      <workItem from="1512082523371" duration="1773000" />
-      <workItem from="1512134459316" duration="9122000" />
-      <workItem from="1512161955379" duration="600000" />
-      <workItem from="1512206985798" duration="34323000" />
-      <workItem from="1512309201240" duration="10143000" />
+      <workItem from="1511791402901" duration="12035000" />
+      <workItem from="1511877137360" duration="62322000" />
+      <workItem from="1512071108316" duration="8121000" />
+      <workItem from="1512224465189" duration="46904000" />
     </task>
     <task id="LOCAL-00001" summary="Partial commit for UserDao implementation">
       <created>1509711964430</created>
@@ -2111,14 +2005,84 @@
       <option name="project" value="LOCAL" />
       <updated>1511034497552</updated>
     </task>
-    <task id="LOCAL-00021" summary="login fixed">
-      <created>1511823961683</created>
+    <task id="LOCAL-00021" summary="Abstract Factory Design Pattern for database&#10;Second major refactoring">
+      <created>1511849739628</created>
       <option name="number" value="00021" />
       <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1511823961683</updated>
+      <updated>1511849739628</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Logs ammended.">
+      <created>1511850002578</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1511850002578</updated>
+    </task>
+    <task id="LOCAL-00023" summary="UI Changes">
+      <created>1511855393880</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1511855393880</updated>
+    </task>
+    <task id="LOCAL-00024" summary="decorator design pattern for calculate final fee for different kinds of users">
+      <created>1512072370131</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1512072370131</updated>
+    </task>
+    <task id="LOCAL-00025" summary="1. New fields added for Bike Booking. Bike Rate and Location being dynamically fetched.&#10;2. Functionality added for raising a ticket">
+      <created>1512162910773</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1512162910773</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Simulation for return Bike">
+      <created>1512228884752</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1512228884753</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Retrieve Bike Locations Dynamically &#10;View Rental History Changes">
+      <created>1512274190099</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1512274190099</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Fix for Registration.&#10;1. Extra Field of UserRank set as basic during registration.&#10;2. Optional fields removed for user Bean Class">
+      <created>1512277642830</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1512277642848</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Field Removed">
+      <created>1512277693353</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1512277693353</updated>
+    </task>
+    <task id="LOCAL-00030" summary="UI for Registration">
+      <created>1512279353165</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1512279353165</updated>
+    </task>
+    <task id="LOCAL-00031" summary="1. Rental History Dynamic Code Push&#10;2. Fixes for Booking">
+      <created>1512312777293</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1512312777293</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2127,9 +2091,9 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="489701000" />
+    <option name="totallyTimeSpent" value="555614000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -2140,6 +2104,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15615141" sideWeight="0.47071743" order="6" side_tool="true" content_ui="tabs" />
@@ -2154,7 +2119,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22749591" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27986908" sideWeight="0.4919473" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19476268" sideWeight="0.4919473" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -2168,47 +2133,72 @@
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3010204" sideWeight="0.11195159" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15615141" sideWeight="0.49707174" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1354009" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47949526" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2949527" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21603929" sideWeight="0.4795022" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27602524" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67346936" sideWeight="0.4919473" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17687075" sideWeight="0.49121523" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2329932" sideWeight="0.8880484" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20189275" sideWeight="0.4941435" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2927383" sideWeight="0.76046515" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304539" sideWeight="0.23953488" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13095239" sideWeight="0.4795022" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15615141" sideWeight="0.47071743" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3010204" sideWeight="0.11195159" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15615141" sideWeight="0.49707174" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34508076" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1354009" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47790506" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2949527" sideWeight="0.49707174" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47949526" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27602524" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07528642" sideWeight="0.4919473" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27602524" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2589438" sideWeight="0.4919473" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.119476266" sideWeight="0.8469985" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08675079" sideWeight="0.52928257" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20662461" sideWeight="0.48828697" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2473525" sideWeight="0.76046515" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17687075" sideWeight="0.49121523" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.8880484" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20189275" sideWeight="0.4941435" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2927383" sideWeight="0.76046515" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304539" sideWeight="0.23953488" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21766561" sideWeight="0.4795022" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13095239" sideWeight="0.4795022" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -2219,14 +2209,46 @@
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Partial commit for UserDao implementation" />
-    <MESSAGE value="Partial edit for UserDao implementation" />
-    <MESSAGE value="Updates, introduced decorator pattern for creating Models for BikeRenter or Bikeowner or both." />
-    <MESSAGE value="Partial commit." />
     <MESSAGE value="Login Interceptor fixed" />
     <MESSAGE value="Factory design pattern for instant Bike book" />
     <MESSAGE value="Factory and Strategy Pattern for Calculating Bike Fare" />
@@ -2239,396 +2261,383 @@
     <MESSAGE value="Database creation with user login, registration and logout" />
     <MESSAGE value="first major refactoring" />
     <MESSAGE value="second major refactoring" />
-    <MESSAGE value="login fixed" />
-    <MESSAGE value="Second major commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second major commit" />
+    <MESSAGE value="Abstract Factory Design Pattern for database&#10;Second major refactoring" />
+    <MESSAGE value="Logs ammended." />
+    <MESSAGE value="UI Changes" />
+    <MESSAGE value="Use Case to View Bikes - Working Functionality&#10;(Partially Complete)" />
+    <MESSAGE value="decorator design pattern for calculate final fee for different kinds of users" />
+    <MESSAGE value="1. New fields added for Bike Booking. Bike Rate and Location being dynamically fetched.&#10;2. Functionality added for raising a ticket" />
+    <MESSAGE value="Simulation for return Bike" />
+    <MESSAGE value="Retrieve Bike Locations Dynamically &#10;View Rental History Changes" />
+    <MESSAGE value="Fix for Registration.&#10;1. Extra Field of UserRank set as basic during registration.&#10;2. Optional fields removed for user Bean Class" />
+    <MESSAGE value="Field Removed" />
+    <MESSAGE value="UI for Registration" />
+    <MESSAGE value="1. Rental History Dynamic Code Push&#10;2. Fixes for Booking" />
+    <MESSAGE value="Bike Cancellation working use case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bike Cancellation working use case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="62" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilities/FileManager.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilities/FileManager.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilities/FileManager.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikeSpot/DashboardBikeSpotsAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-381">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/daoFactory/UserDAOFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/CancelBookingAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Support.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/ModelFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Models.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/DiscountFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/booking/BookingMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/booking/Booking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.bookings.changelog-1.0.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/MakeBookingAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/DiscountType.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/PenaltyFare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/NormalFare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/IBikeFare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="59" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/SilverDiscount.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/discount/GoldDiscount.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/money/money-api/1.0.1/money-api-1.0.1.jar!/javax/money/MonetaryAmount.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding>
-            <element signature="e#176#177#0" expanded="false" />
-            <element signature="e#203#204#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareDecorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding>
-            <element signature="e#189#190#0" expanded="false" />
-            <element signature="e#223#224#0" expanded="false" />
-            <element signature="e#291#292#0" expanded="false" />
-            <element signature="e#337#338#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/IDiscount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/SilverDiscount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        <state relative-caret-position="221">
+          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/BikeFare.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Connection/MySqlConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/GoldDiscount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/NoDiscount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/RegisterAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/paymentcontroller/PayAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/bike/BikeStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/LogoutAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/BikeAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="95" column="85" lean-forward="true" selection-start-line="95" selection-start-column="85" selection-end-line="95" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/BikeModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/IBookModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bookingdao/BookAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="32" column="65" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="32" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bookingdao/IBookDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IBikeModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-618">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
-          <caret line="65" column="58" lean-forward="false" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+          <caret line="65" column="9" lean-forward="false" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/bike/BikeLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikespotmodel/BikeSpotModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#299#300#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
+            <element signature="e#456#457#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/bikeSpot/BikeSpots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikespot/BikeSpotMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/liquibase/liquibase-core/3.5.3/liquibase-core-3.5.3.jar!/liquibase/sdk/watch/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="1282" column="2" lean-forward="false" selection-start-line="1282" selection-start-column="2" selection-end-line="1282" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bikeLocator-1.1-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.support.changelog-1.0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/liquibase.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.bikespots.changelog-1.0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/RentalHistoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/IUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="44" column="55" lean-forward="false" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/UserRank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/RegisterAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.users.changelog-1.0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="34" column="145" lean-forward="false" selection-start-line="34" selection-start-column="145" selection-end-line="34" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="102" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/bike/BookingType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.bikes.changelog-1.0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/rentalHistory.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="55" column="28" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/bike/Booking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bikeRental.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="115" column="14" lean-forward="false" selection-start-line="115" selection-start-column="1" selection-end-line="115" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/bikemodel/IBikeModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="90" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/MakeBookingAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/CancelBookingAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="19" column="58" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+          <folding>
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/IBookModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bookingdao/IBookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.bookings.changelog-1.0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/bookingdao/BookDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        <state relative-caret-position="408">
+          <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
+            <marker date="1512326268308" expanded="true" signature="2137:2176" ph="{...}" />
+            <marker date="1512326268308" expanded="false" signature="2233:2244" ph=" { " />
+            <marker date="1512326268308" expanded="false" signature="2275:2281" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/UsersAccountAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/IFare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/IPayModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="18" column="61" lean-forward="false" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/usermodel/IUserModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        <state relative-caret-position="175">
+          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="193">
+          <caret line="59" column="28" lean-forward="false" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/IUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="173">
+          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2639,6 +2648,89 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
           <caret line="61" column="26" lean-forward="false" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+          <folding>
+            <marker date="1512326268733" expanded="true" signature="4036:4112" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bookingdao/BookAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="40" column="52" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1512326268321" expanded="true" signature="430:484" ph="/**...*/" />
+            <marker date="1512326268321" expanded="true" signature="538:663" ph="/**...*/" />
+            <marker date="1512326268321" expanded="true" signature="795:959" ph="/**...*/" />
+            <marker date="1512326268321" expanded="true" signature="964:1059" ph="@{...}" />
+            <marker date="1512326268321" expanded="true" signature="1246:1502" ph="@{...}" />
+            <marker date="1512326268321" expanded="true" signature="1553:1675" ph="/**...*/" />
+            <marker date="1512326268321" expanded="true" signature="1680:1809" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Dasboard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="54" column="65" lean-forward="false" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bikes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="155" column="12" lean-forward="true" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2646,6 +2738,17 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
