@@ -1,6 +1,6 @@
 package dao.bookingdao;
 
-import entities.bike.Booking;
+import entities.booking.Booking;
 
 import java.util.List;
 
@@ -18,6 +18,14 @@ public interface IBookDao {
     boolean checkExist(String bookingId);
 
     /**
+     * Retrieve a booking from the database
+     *
+     * @param bookingId
+     * @return
+     */
+    Booking findBookingById(String bookingId);
+
+    /**
      * Creates a booking
      *
      * @param booking
@@ -32,6 +40,22 @@ public interface IBookDao {
      * @return
      */
     boolean cancelBooking(String bookingId);
+
+    /**
+     * Set start time for the bike usage
+     *
+     * @param bookingId
+     * @return
+     */
+    boolean startRentalTime(String bookingId);
+
+    /**
+     * Set time when the bike was returned
+     *
+     * @param bookingId
+     * @return
+     */
+    boolean endRentalTime(String bookingId);
 
     /**
      * Retrieves all active bookings

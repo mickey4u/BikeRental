@@ -1,6 +1,6 @@
 package models.rentalmodel;
 
-import entities.bike.Booking;
+import entities.booking.Booking;
 
 import java.util.List;
 
@@ -31,4 +31,20 @@ public interface IBookModel {
      * @return list of active bookings on the system
      */
     List<Booking> getAllBookings();
+
+    /**
+     * Set the time the bike was unlocked from the spot
+     *
+     * @param bookingId
+     * @return
+     */
+    boolean startRentalTime(String bookingId);
+
+    /**
+     * Set the time the bike was returned to the spot
+     *
+     * @param bookingId
+     * @return
+     */
+    boolean endRentalTime(String bookingId);
 }

@@ -1,7 +1,9 @@
 package models.rentalmodel;
 
 import dao.bookingdao.IBookDao;
-import entities.bike.Booking;
+import entities.bike.BikeStatus;
+import entities.booking.Booking;
+import models.bikemodel.IBikeModel;
 import utilities.Utils;
 
 import java.util.List;
@@ -9,9 +11,13 @@ import java.util.List;
 
 public class BookModel implements IBookModel {
     private IBookDao bookDao;
-    Utils bookingUtility= new Utils();
-    public BookModel(IBookDao bookDao) {
+    private IBikeModel bikeModel;
+    private Utils bookingUtility;
+
+    public BookModel(IBookDao bookDao, IBikeModel bikeModel) {
         this.bookDao = bookDao;
+        this.bikeModel = bikeModel;
+        bookingUtility = new Utils();
     }
 
     @Override
@@ -28,5 +34,24 @@ public class BookModel implements IBookModel {
     @Override
     public List<Booking> getAllBookings() {
         return bookDao.getAllBookings();
+    }
+
+    @Override
+    public boolean startRentalTime(String bookingId) {
+        if (bookDao.startRentalTime(bookingId)) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public boolean endRentalTime(String bookingId) {
+        if (bookDao.endRentalTime(bookingId)) {
+            // set bike to available available
+            Booking booking = bookDao.findBookingById(bookingId);
+            bikeModel.updateBikeStatus(booking.getBikeId(), BikeStatus.AVAILABLE);
+            return true;
+        }
+        return false;
     }
 }

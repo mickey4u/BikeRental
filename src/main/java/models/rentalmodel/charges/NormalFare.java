@@ -11,7 +11,7 @@ import javax.money.MonetaryAmount;
 public class NormalFare  implements IBikeFare {
 
     @Override
-    public Money calculateFare(Long rentalTime, BikeType bikeType) {
+    public MonetaryAmount calculateFare(Long rentalTime, BikeType bikeType) {
 
         MonetaryAmount normalFare = IBikeFare.bikeRate(bikeType).multiply(rentalTime);
         return Money.from(normalFare);

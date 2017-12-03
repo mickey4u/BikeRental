@@ -2,7 +2,7 @@ package models.usermodel;
 
 import com.opensymphony.xwork2.ActionContext;
 import dao.userdao.IUserDao;
-import entities.bike.Booking;
+import entities.booking.Booking;
 import entities.users.User;
 import entities.users.UserRank;
 import utilities.Constants;
@@ -41,7 +41,7 @@ public class UserModel implements IUserModel, Constants {
     @Override
     public boolean login(String userId, String userPassword) {
 
-        User user = userDAO.findUserById(userId).get();
+        User user = userDAO.findUserById(userId);
         if (user != null && user.getUsername().equals(userId) && user.getPassword().equals(userPassword)) {
             return true;
         }

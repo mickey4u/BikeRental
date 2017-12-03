@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet id="1" author="Michael Tetteh">
+        <comment>Create Accounts Table</comment>
+        <createTable tableName="Accounts">
+            <column name="account_id" type="varchar(40)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(100)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="ledger_id" type="varchar(40)">
+                <constraints nullable="true" foreignKeyName="fk_accounts_ledgers_id" references="Ledgers(id)"/>
+            </column>
+            <column name="amount" type="decimal(13,4)" defaultValueNumeric="0.00">
+                <constraints nullable="true"/>
+            </column>
+            <column name="currency" type="varchar(3)" defaultValue="EUR">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created" type="timestamp" defaultValue="Current_Timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="deleted" type="boolean" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="Michael Tetteh">
+        <insert tableName="Accounts">
+            <column name="id"/>
+            <column name="name" value="Bike Rental Account"/>
+            <column name="currency" value="EUR"/>
+            <column name="ledger_id" value="ABM59LEBFFW4ZA1MH3MC5OO5I"/>
+            <column name="deleted" value="false"/>
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>

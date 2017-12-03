@@ -42,17 +42,14 @@
             <result name="success">/Login.jsp</result>
             <result name="input">/Register.jsp</result>
         </action>
-
         <!-- Logout -->
         <action name="logout" class="controllers.usercontroller.LogoutAction">
             <result name="success">/Login.jsp</result>
         </action>
-
         <!-- User dashboard -->
         <action name="dashboard" class="controllers.usercontroller.DashboardAction">
             <result name="success">/Dasboard.jsp</result>
         </action>
-
         <!--Fetch Bike Availabilty-->
         <action name="fetchAvailabilityData" class="controllers.bikecontroller.BikesAction">
             <result type="json">
@@ -94,7 +91,6 @@
                 <param name="root">bookings</param>
             </result>
         </action>
-
         <!--Updates password-->
         <action name="updateDetails" class="controllers.usercontroller.UserAction" method="updatePassword">
             <result name="success">/Dasboard.jsp</result>

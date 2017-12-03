@@ -1,10 +1,9 @@
 package dao.userdao;
 
-import entities.bike.Booking;
+import entities.booking.Booking;
 import entities.users.User;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * User Dao contract
@@ -25,7 +24,7 @@ public interface IUserDao {
      * @param userId id of the user to find
      * @return
      */
-    Optional<User> findUserById(String userId);
+    User findUserById(String userId);
 
     /**
      * Retrieves a users rental histories

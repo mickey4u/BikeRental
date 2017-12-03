@@ -1,53 +1,74 @@
 package main;
 
-import Connection.*;
-import entities.database.Database;
-import models.bikespotmodel.IBikeSpotModel;
+import dao.bikedao.BikeAccess;
+import dao.bikedao.BikeDao;
+import dao.bikedao.IBikeDao;
+import dao.bookingdao.BookAccess;
+import dao.bookingdao.BookDao;
+import dao.bookingdao.IBookDao;
+import dao.support.ISupportDao;
+import dao.support.SupportAccess;
+import dao.support.SupportDao;
+import dao.userdao.IUserDao;
+import dao.userdao.UserAccess;
+import dao.userdao.UserDao;
+import models.bikemodel.BikeModel;
 import models.bikemodel.IBikeModel;
+import models.rentalmodel.BookModel;
 import models.rentalmodel.IBookModel;
+import models.rentalmodel.pay.IPayModel;
+import models.rentalmodel.pay.PayModel;
 import models.supportmodel.ISupportModel;
+import models.supportmodel.SupportModel;
 import models.usermodel.IUserModel;
+import models.usermodel.UserModel;
+import org.jdbi.v3.core.Jdbi;
+import org.jdbi.v3.jodatime2.JodaTimePlugin;
+import org.jdbi.v3.sqlobject.SqlObjectPlugin;
 
 /**
  * This class is the application's entry point.
  */
 public class BikeRentalSingleton {
-
-    /* We should fetch the database type from an
-    external resource (ex: configuration file).
-    In order to keep things simple we will
-    use a private static method and an Enum */
-
-    Database databaseType = Database.SQL;
+    private Jdbi jdbi;
+    private IUserDao userDao;
+    private IUserModel userModel;
+    private IBikeDao bikesDao;
+    private IBikeModel bikeModel;
+    private IBookDao bookDao;
+    private IBookModel bookModel;
+    private ISupportDao supportDao;
+    private ISupportModel supportModel;
+    private IPayModel payModel;
 
     private BikeRentalSingleton() {
-        ConnectionFactory connectionFactory = getConnectionFactory(databaseType);
-        ConnectionManager connection = connectionFactory.getConnection();
-        connection.connect();
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        jdbi = Jdbi.create("jdbc:mysql://localhost:3306/bikerental", "root", "");
+        jdbi.installPlugin(new SqlObjectPlugin());
+        jdbi.installPlugin(new JodaTimePlugin());
+
+        userDao = new UserDao(jdbi.onDemand(UserAccess.class));
+        userModel = new UserModel(userDao);
+
+        bikesDao = new BikeDao(jdbi.onDemand(BikeAccess.class));
+        bikeModel = new BikeModel(bikesDao);
+
+        bookDao = new BookDao(jdbi.onDemand(BookAccess.class));
+        bookModel = new BookModel(bookDao, bikeModel);
+
+        supportDao = new SupportDao(jdbi.onDemand(SupportAccess.class));
+        supportModel = new SupportModel(supportDao);
+
+        payModel = new PayModel(bookDao, userDao, bikesDao);
     }
 
-    private ConnectionFactory getConnectionFactory(Database databaseType) {
-        switch (databaseType) {
-            case SQL:
-                return new MySQLconnectionFactory();
-            default:
-                return new PostGREconnectionFactory();
-        }
-    }
 
     public static BikeRentalSingleton getInstance() {
         return SingletonHelper.instance;
-    }
-
-    public IBikeSpotModel getBikeSpotModel() {
-        switch (databaseType) {
-            case SQL:
-                MySqlConnection connection1 = new MySqlConnection();
-                return connection1.iBikeSpotModel;
-            default:
-                PostGREconnection connection2 = new PostGREconnection();
-                return null;
-        }
     }
 
     private static class SingletonHelper {
@@ -56,47 +77,23 @@ public class BikeRentalSingleton {
     }
 
     public IUserModel getUserModel() {
-        switch (databaseType) {
-            case SQL:
-                MySqlConnection connection1 = new MySqlConnection();
-                return connection1.userModel;
-            default:
-                PostGREconnection connection2 = new PostGREconnection();
-                return null;
-        }
+        return userModel;
     }
 
     public IBikeModel getBikeModel() {
-        switch (databaseType) {
-            case SQL:
-                MySqlConnection connection1 = new MySqlConnection();
-                return connection1.bikeModel;
-            default:
-                PostGREconnection connection2 = new PostGREconnection();
-                return null;
-        }
+        return bikeModel;
     }
 
     public IBookModel getBookModel() {
-        switch (databaseType) {
-            case SQL:
-                MySqlConnection connection1 = new MySqlConnection();
-                return connection1.bookModel;
-            default:
-                PostGREconnection connection2 = new PostGREconnection();
-                return null;
-        }
+        return bookModel;
     }
 
     public ISupportModel getSupportModel() {
-        switch (databaseType) {
-            case SQL:
-                MySqlConnection connection1 = new MySqlConnection();
-                return connection1.supportModel;
-            default:
-                PostGREconnection connection2 = new PostGREconnection();
-                return null;
-        }
+        return supportModel;
     }
-}
 
+    public IPayModel getPayModel() {
+        return payModel;
+    }
+
+}

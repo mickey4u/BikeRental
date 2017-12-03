@@ -1,8 +1,10 @@
 package dao.bookingdao;
 
-import entities.bike.Booking;
+import entities.booking.Booking;
 import lombok.AllArgsConstructor;
+import org.joda.time.LocalDateTime;
 
+import java.sql.Timestamp;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,6 +19,11 @@ public class BookDao implements IBookDao {
     public boolean checkExist(String bookingId) {
         Optional.of(bookingId).orElseThrow(NullPointerException::new);
         return access.checkExist(bookingId);
+    }
+
+    @Override
+    public Booking findBookingById(String bookingId) {
+        return access.findBookingById(bookingId);
     }
 
     @Override
@@ -35,6 +42,31 @@ public class BookDao implements IBookDao {
         // check if booking exist
         if (Boolean.TRUE.equals(access.checkExist(bookingId))) {
             return access.cancelBooking(bookingId);
+        }
+        return false;
+    }
+
+    @Override
+    public boolean startRentalTime(String bookingId) {
+
+        Optional.of(bookingId).orElseThrow(NullPointerException::new);
+        // check if booking already exist
+        if (access.checkExist(bookingId)) {
+            LocalDateTime now = LocalDateTime.now();
+            access.startRentalTime(bookingId, new Timestamp(now.toDateTime().getMillis()));
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public boolean endRentalTime(String bookingId) {
+        Optional.of(bookingId).orElseThrow(NullPointerException::new);
+        // check if booking already exist
+        if (access.checkExist(bookingId)) {
+            LocalDateTime now = LocalDateTime.now();
+            access.endRentalTime(bookingId, new Timestamp(now.toDateTime().getMillis()));
+            return true;
         }
         return false;
     }

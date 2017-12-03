@@ -1,7 +1,8 @@
 package dao.userdao;
 
-import entities.bike.Booking;
+import entities.booking.Booking;
 import entities.users.User;
+import entities.users.UserMapper;
 import org.jdbi.v3.sqlobject.SqlObject;
 import org.jdbi.v3.sqlobject.customizer.Bind;
 import org.jdbi.v3.sqlobject.customizer.BindBean;

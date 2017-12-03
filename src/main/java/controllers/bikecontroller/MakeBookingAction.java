@@ -1,10 +1,9 @@
 package controllers.bikecontroller;
 
 import com.opensymphony.xwork2.ActionSupport;
-import entities.bike.Booking;
-import entities.bike.BookingType;
+import entities.booking.Booking;
+import entities.booking.BookingType;
 import lombok.Data;
-import main.BikeRentalSingleton;
 
 @Data
 public class MakeBookingAction extends ActionSupport {
@@ -14,8 +13,9 @@ public class MakeBookingAction extends ActionSupport {
     private String username;
     boolean bookingStatus;
     main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
+
     /**
-     * Responsibe for Instant Booking of the Bike
+     * Responsible for Instant Booking of the Bike
      * Fetches the list of Bikes For the Given BikeLocation
      *
      * @return
@@ -35,7 +35,6 @@ public class MakeBookingAction extends ActionSupport {
 
         return SUCCESS;
     }
-
 
     public String getBikeId() {
         return bikeId;
@@ -66,11 +65,4 @@ public class MakeBookingAction extends ActionSupport {
 
     public void setUsername(String username) { this.username = username;  }
 
-    public BikeRentalSingleton getBikeRentalSingleton() {
-        return bikeRentalSingleton;
-    }
-
-    public void setBikeRentalSingleton(BikeRentalSingleton bikeRentalSingleton) {
-        this.bikeRentalSingleton = bikeRentalSingleton;
-    }
 }

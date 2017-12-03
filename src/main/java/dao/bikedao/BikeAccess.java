@@ -93,7 +93,7 @@ public interface BikeAccess extends SqlObject {
      * @return
      */
     @SqlUpdate("update BIKES set bikeStatus = :bikeStatus where bikeId = :bikeId")
-    boolean updateBikeStatus(String bikeId, BikeStatus bikeStatus);
+    boolean updateBikeStatus(@Bind("bikeId") String bikeId, @Bind("bikeStatus") BikeStatus bikeStatus);
 
 
 }

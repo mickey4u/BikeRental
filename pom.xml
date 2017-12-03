@@ -163,6 +163,13 @@
             <artifactId>joda-time</artifactId>
             <version>2.9.9</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jdbi/jdbi3-jodatime2 -->
+        <dependency>
+            <groupId>org.jdbi</groupId>
+            <artifactId>jdbi3-jodatime2</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
     </dependencies>
 
 

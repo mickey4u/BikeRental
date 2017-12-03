@@ -24,6 +24,8 @@ public class User {
     private String secretAnswer;
     // user house address
     private Address address;
+    // total number of bookings
+    private int numberOfBookings;
     // user's ranking
     private UserRank userRank;
 }

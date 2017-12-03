@@ -1,7 +1,5 @@
-package dao.bookingdao;
+package entities.booking;
 
-import entities.bike.Booking;
-import entities.bike.BookingType;
 import org.jdbi.v3.core.mapper.RowMapper;
 import org.jdbi.v3.core.statement.StatementContext;
 
@@ -21,6 +19,8 @@ public class BookingMapper implements RowMapper<Booking> {
         booking.setStatus(rs.getBoolean("booking_status"));
         booking.setBikeSpot(rs.getString("bike_spot"));
         booking.setBookingType(BookingType.valueOf(rs.getString("booking_type")));
+        booking.setStartTime(rs.getTimestamp("start_time"));
+        booking.setEndTime(rs.getTimestamp(""));
 
         return booking;
     }

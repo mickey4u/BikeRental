@@ -1,6 +1,9 @@
-package entities.bike;
+package entities.booking;
 
+import entities.booking.BookingType;
 import lombok.Data;
+
+import java.sql.Timestamp;
 
 /**
  * Represents a booking for a bike
@@ -20,4 +23,8 @@ public class Booking {
     // userID
     private String username;
 
+    // start time for the bike
+    private Timestamp startTime;
+    // end time for the bike
+    private Timestamp endTime;
 }

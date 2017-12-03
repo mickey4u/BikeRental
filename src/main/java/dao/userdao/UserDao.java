@@ -1,7 +1,7 @@
 package dao.userdao;
 
 
-import entities.bike.Booking;
+import entities.booking.Booking;
 import entities.users.User;
 import lombok.AllArgsConstructor;
 
@@ -51,13 +51,13 @@ public class UserDao implements IUserDao {
      * @return the user details
      */
     @Override
-    public Optional<User> findUserById(String userId) {
-        Optional.ofNullable(userId).orElseThrow(NullPointerException::new);
+    public User findUserById(String userId) {
+        //Optional.ofNullable(userId).orElseThrow(NullPointerException::new);
         // check if the user exist
         if (!access.checkExist(userId)) {
             return null;
         }
-        return Optional.of(access.getUser(userId));
+        return access.getUser(userId);
     }
 
     /**

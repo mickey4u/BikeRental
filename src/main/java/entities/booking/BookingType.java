@@ -1,4 +1,4 @@
-package entities.bike;
+package entities.booking;
 
 /**
  * Types of booking supported on the platform

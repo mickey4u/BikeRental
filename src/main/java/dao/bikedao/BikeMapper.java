@@ -18,7 +18,6 @@ public class BikeMapper implements RowMapper<Bike> {
     @Override
     public Bike map(ResultSet rs, StatementContext ctx) throws SQLException {
         Bike bike = new Bike();
-
         bike.setBikeId(rs.getString("bike_id"));
         bike.setBikeStatus(BikeStatus.valueOf(rs.getString("bike_status")));
         bike.setBikeSpot(rs.getString("bike_spot"));

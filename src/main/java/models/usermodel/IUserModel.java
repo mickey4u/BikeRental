@@ -1,7 +1,7 @@
 package models.usermodel;
 
 
-import entities.bike.Booking;
+import entities.booking.Booking;
 
 import java.io.FileNotFoundException;
 import java.util.List;

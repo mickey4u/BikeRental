@@ -1,8 +1,10 @@
 package controllers.usercontroller;
 
-import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
+import com.opensymphony.xwork2.ValidationAwareSupport;
+import controllers.command.Command;
 import entities.users.User;
+import interceptors.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.struts2.ServletActionContext;
@@ -15,12 +17,14 @@ import java.util.Map;
 /**
  * Handles user login
  */
-public class LoginAction extends ActionSupport implements Constants, SessionAware, ModelDriven<User> {
+public class LoginAction implements Command, Constants, SessionAware, ModelDriven<User> {
     private static final Logger logger = LogManager.getLogger(LoginAction.class);
+    private final ValidationAwareSupport validationAware = new ValidationAwareSupport();
 
     private static final long serialVersionUID = 1L;
     private Map<String, Object> session = null;
     private User user = new User();
+    IUnmarshaledRequest<User> userIUnmarshaledRequest = new UnmarshaledRequest();
 
     main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
 
@@ -36,16 +40,19 @@ public class LoginAction extends ActionSupport implements Constants, SessionAwar
 
         if (getSessionAttr != null) {
             action = SUCCESS;
-        } else if (user.getUsername() == null || user.getPassword() == null) {
-            action = INPUT;
+        } else if (user.getUsername() == null || user.getUsername().trim().equals("")) {
+            validationAware.addActionError("Username/Password cannot be left blank");
 
-        } else if (user.getUsername().isEmpty() || user.getPassword().isEmpty()) {
-            addActionError("Username/Password cannot be left blank");
+        } else if (user.getPassword() == null || user.getPassword().trim().equals("")) {
+            validationAware.addActionError("Username/Password cannot be left blank");
 
         } else if (bikeRentalSingleton.getUserModel().login(user.getUsername(), user.getPassword())) {
             // store logged user in session
             session.put(LOGGED_IN_USER, user);
             action = SUCCESS;
+
+            userIUnmarshaledRequest.setObject(this.user);
+            LoggingDispatcher.getInstance().dispatchClientPreRequestPreMarshal(userIUnmarshaledRequest);
         }
 
         return action;

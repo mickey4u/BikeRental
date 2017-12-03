@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet id="1" author="Michael Tetteh">
+        <comment>Create Ledgers Table</comment>
+        <createTable tableName="Ledgers">
+            <column name="ledger_id" type="varchar(40)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(100)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="deleted" type="boolean" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="Michael Tetteh">
+        <insert tableName="Ledgers">
+            <column name="ledger_id" value="ABM59LEBFFW4ZA1MH3MC5OO5I"/>
+            <column name="name" value="Rental Account Ledger"/>
+            <column name="deleted" defaultValueBoolean="false"/>
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>

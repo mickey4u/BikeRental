@@ -1,11 +1,12 @@
 package dao.bookingdao;
 
-import entities.bike.Booking;
+import entities.booking.Booking;
 import org.jdbi.v3.sqlobject.customizer.Bind;
 import org.jdbi.v3.sqlobject.customizer.BindBean;
 import org.jdbi.v3.sqlobject.statement.SqlQuery;
 import org.jdbi.v3.sqlobject.statement.SqlUpdate;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 /**
@@ -23,6 +24,15 @@ public interface BookAccess {
     boolean checkExist(@Bind("bookingId") String bookingId);
 
     /**
+     * Retrieve a booking from the database
+     *
+     * @param bookingId
+     * @return
+     */
+    @SqlQuery("select * from BOOKINGS where booking_id = :bookingId")
+    Booking findBookingById(@Bind("bookingId") String bookingId);
+
+    /**
      * Creates a booking
      *
      * @param booking
@@ -38,8 +48,28 @@ public interface BookAccess {
      * @param bookingId id of the booking to be cancelled
      * @return
      */
-    @SqlUpdate("update BOOKINGS set cancelled = true where booking_id = :bookingId")
+    @SqlUpdate("update BOOKINGS set status = true where booking_id = :bookingId")
     boolean cancelBooking(@Bind("bookingId") String bookingId);
+
+    /**
+     * Set the time the bike was unlocked from the spot
+     *
+     * @param bookingId
+     * @param startTime
+     * @return
+     */
+    @SqlUpdate("update BOOKINGS set start_time = :startTime where booking_id = :bookingId")
+    boolean startRentalTime(@Bind("bookingId") String bookingId, @Bind("startTime") Timestamp startTime);
+
+    /**
+     * Set the time the bike was returned to the spot
+     *
+     * @param bookingId
+     * @param endTime
+     * @return
+     */
+    @SqlUpdate("update BOOKINGS set end_time = :endTime where booking_id = :bookingId")
+    boolean endRentalTime(@Bind("bookingId") String bookingId, @Bind("endTime") Timestamp endTime);
 
     /**
      * Retrieves all active bookings

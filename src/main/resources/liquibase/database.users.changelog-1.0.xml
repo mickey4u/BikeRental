@@ -30,6 +30,9 @@
             <column name="userRank" type="varchar(20)">
                 <constraints nullable="true"/>
             </column>
+            <column name="number_of_bookings" type="int(10)">
+                <constraints nullable="true"/>
+            </column>
             <column name="secretAnswer" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>

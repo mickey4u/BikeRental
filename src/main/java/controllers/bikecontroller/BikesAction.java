@@ -2,7 +2,6 @@ package controllers.bikecontroller;
 
 import com.opensymphony.xwork2.ActionSupport;
 import entities.bike.Bike;
-import main.BikeRentalSingleton;
 
 import java.util.List;
 
@@ -14,11 +13,7 @@ public class BikesAction extends ActionSupport {
     private Bike bike;
     main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
     List<Bike> bikeSpots;
-    /**
-     * Availability of Bikes
 
-     * @return List of Available Bikes
-     */
     public String execute() {
         bikeSpots = bikeRentalSingleton.getBikeModel().getAvailableBikesBySpot(bikeSpotLocation);
         return SUCCESS;
@@ -43,14 +38,6 @@ public class BikesAction extends ActionSupport {
 
     public void setBike(Bike bike) {
         this.bike = bike;
-    }
-
-    public BikeRentalSingleton getBikeRentalSingleton() {
-        return bikeRentalSingleton;
-    }
-
-    public void setBikeRentalSingleton(BikeRentalSingleton bikeRentalSingleton) {
-        this.bikeRentalSingleton = bikeRentalSingleton;
     }
 
     public List<Bike> getBikeSpots() {

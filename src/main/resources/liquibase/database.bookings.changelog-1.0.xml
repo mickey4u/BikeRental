@@ -25,6 +25,13 @@
                 <constraints nullable="false"/>
             </column>
             <column name="status" type="boolean" defaultValueBoolean="false">
+                <constraints nullable="true"/>
+            </column>
+            <column name="start_time" type="timestamp">
+                <constraints nullable="true"/>
+            </column>
+            <column name="end_time" type="timestamp">
+                <constraints nullable="true"/>
             </column>
             <column name="cancelled" type="boolean" defaultValueBoolean="false">
             </column>

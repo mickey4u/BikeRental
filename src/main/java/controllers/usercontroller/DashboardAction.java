@@ -2,7 +2,7 @@ package controllers.usercontroller;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
-import entities.bike.Booking;
+import entities.booking.Booking;
 import entities.users.User;
 import interceptors.UserAware;
 import lombok.Getter;
