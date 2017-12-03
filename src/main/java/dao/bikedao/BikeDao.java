@@ -63,4 +63,15 @@ public class BikeDao implements IBikeDao {
         Optional.ofNullable(bikeStatus).orElseThrow(NullPointerException::new);
         return access.updateBikeStatus(bikeId, bikeStatus);
     }
+
+    /**
+     * Retrieve a list of bikes based on a bike status
+     *
+     * @param bikeStatus
+     * @return list of bikes
+     */
+    @Override
+    public List<Bike> getAllBikes(BikeStatus bikeStatus) {
+        return access.getAllBikes(bikeStatus);
+    }
 }

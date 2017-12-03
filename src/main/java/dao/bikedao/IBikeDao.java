@@ -66,4 +66,12 @@ public interface IBikeDao {
      * @return
      */
     boolean updateBikeStatus(String bikeId, BikeStatus bikeStatus);
+
+    /**
+     * Retrieve a list of bikes based on a bike status
+     *
+     * @param bikeStatus
+     * @return list of bikes
+     */
+    List<Bike> getAllBikes(BikeStatus bikeStatus);
 }

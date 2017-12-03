@@ -19,11 +19,6 @@ public class BikesAction extends ActionSupport {
         return SUCCESS;
     }
 
-    public Boolean addServicedBikes(){
-        // ibike.addNewServicedBike(bike);
-        return true;
-    }
-
     public String getBikeSpotLocation() {
         return bikeSpotLocation;
     }

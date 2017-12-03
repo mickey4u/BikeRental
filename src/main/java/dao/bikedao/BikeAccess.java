@@ -33,9 +33,18 @@ public interface BikeAccess extends SqlObject {
      * @param bikeSpot name of the bike spot
      * @return return available Bikes if found and null if it doesn't not exist
      */
-    @SqlQuery("select * from BIKES where bike_spot = :bikeSpot and deleted = false")
+    @SqlQuery("select * from BIKES where bike_spot = :bikeSpot and deleted = false and bike_status = 'AVAILABLE'")
     @UseRowMapper(BikeMapper.class)
     List<Bike> getAvailableBikesBySpot(@Bind("bikeSpot") String bikeSpot);
+
+    /**
+     * Find a Bike from the database wrt The Bike Spots
+     *
+     * @return return available Bikes if found and null if it doesn't not exist
+     */
+    @SqlQuery("select * from BIKES where bike_status = :bikeStatus deleted = false")
+    @UseRowMapper(BikeMapper.class)
+    List<Bike> getAllBikes(@Bind("bikeStatus") BikeStatus bikeStatus);
 
     /**
      * Retrieves only registered bikes

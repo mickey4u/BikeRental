@@ -23,7 +23,12 @@ public class BookModel implements IBookModel {
     @Override
     public boolean bookBike(Booking booking) {
         booking.setBookingId(bookingUtility.createBookingID());
-        return bookDao.insertBooking(booking);
+        if (bookDao.insertBooking(booking)) {
+            // change status to booked
+            bikeModel.updateBikeStatus(booking.getBikeId(), BikeStatus.BOOKED);
+            return true;
+        }
+        return false;
     }
 
     @Override
@@ -39,6 +44,9 @@ public class BookModel implements IBookModel {
     @Override
     public boolean startRentalTime(String bookingId) {
         if (bookDao.startRentalTime(bookingId)) {
+            // change status to in use
+            Booking booking = bookDao.findBookingById(bookingId);
+            bikeModel.updateBikeStatus(booking.getBikeId(), BikeStatus.IN_USE);
             return true;
         }
         return false;
