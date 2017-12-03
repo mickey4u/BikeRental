@@ -28,8 +28,8 @@ public interface BookAccess {
      * @param booking
      * @return
      */
-    @SqlUpdate("insert into BOOKINGS(booking_id, bike_id, bike_spot, booking_type, status) values " +
-            "(:bookingId, :bikeId, :bikeSpot, :bookingType, :status)")
+    @SqlUpdate("insert into BOOKINGS(booking_id, bike_id, bike_spot, booking_type, status,username) values " +
+            "(:bookingId, :bikeId, :bikeSpot, :bookingType, :status, :username)")
     boolean insertBooking(@BindBean Booking booking);
 
     /**

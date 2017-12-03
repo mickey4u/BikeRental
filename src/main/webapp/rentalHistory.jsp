@@ -24,9 +24,11 @@
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/bikeLocator-1.1-min.js"></script>
     <script type="text/javascript" src="js/bikes.js"></script>
     <title>Rental History</title>
+    <h2 style="font-size: 98%;position:relative; margin-left: 87%; top:93px; font-family: 'Bookman Old Style',serif">Howdy, <s:property value="username"/></h2>
     <div id="header" style="height: 132px;">
         <a class="UL_logo" style="display: block; float: left; background: url(https://www.ul.ie/ee/images/interface/UL_logo_large.jpg) no-repeat; height: 85px; width: 363px; margin-top: 5px;" href="localhost:8080/bikerental/login"></a>
     </div>
+    <input type="text" value="<%=session.getAttribute("username")%>"/>
     <div id="dialog" title="Alert message" style="display: none">
         <div class="ui-dialog-content ui-widget-content">
             <p>
@@ -49,6 +51,7 @@
 </head>
 <body>
 <script type="text/javascript">
+    var username = $('h2')[0].innerHTML;
     $(document).ready(function () {
         loadRentalHistory();
     });

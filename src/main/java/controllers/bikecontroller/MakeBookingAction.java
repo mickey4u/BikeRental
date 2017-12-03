@@ -11,6 +11,7 @@ public class MakeBookingAction extends ActionSupport {
     private String bikeId;
     private String bikeSpot;
     private String bookingType;
+    private String username;
     boolean bookingStatus;
     main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
     /**
@@ -26,6 +27,7 @@ public class MakeBookingAction extends ActionSupport {
             bookingDetails.setBikeId(bikeId);
             bookingDetails.setBikeSpot(bikeSpot);
             bookingDetails.setBookingType(BookingType.INSTANT_BOOKING);
+            bookingDetails.setUsername(username);
             bookingStatus = bikeRentalSingleton.getBookModel().bookBike(bookingDetails);
         } catch (Exception e) {
             e.printStackTrace();
@@ -59,13 +61,10 @@ public class MakeBookingAction extends ActionSupport {
         this.bookingType = bookingType;
     }
 
-  /*  public Booking getBookingDetails() {
-        return bookingDetails;
-    }
 
-    public void setBookingDetails(Booking bookingDetails) {
-        this.bookingDetails = bookingDetails;
-    }*/
+    public String getUsername() { return username;  }
+
+    public void setUsername(String username) { this.username = username;  }
 
     public BikeRentalSingleton getBikeRentalSingleton() {
         return bikeRentalSingleton;

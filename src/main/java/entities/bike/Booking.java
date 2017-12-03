@@ -17,4 +17,7 @@ public class Booking {
     private BookingType bookingType;
     // status of the booking, whether the booking was cancelled
     private boolean status;
+    // userID
+    private String username;
+
 }

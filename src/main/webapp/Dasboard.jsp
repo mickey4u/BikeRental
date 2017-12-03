@@ -28,7 +28,7 @@
 <%--
 <input value="${firstname}"/>
 --%>
-<h2 style="font-size: 98%;position:relative; margin-left: 87%; top:93px; font-family: 'Bookman Old Style',serif">Howdy, <s:property value="username"/>...!</h2>
+<h2 style="font-size: 98%;position:relative; margin-left: 87%; top:93px; font-family: 'Bookman Old Style',serif">Howdy, <s:property value="username"/></h2>
     <div id="header" style="height: 132px;">
         <a class="UL_logo" style="display: block; float: left; background: url(https://www.ul.ie/ee/images/interface/UL_logo_large.jpg) no-repeat; height: 85px; width: 363px; margin-top: 5px;"></a>
     </div>
@@ -42,7 +42,7 @@
         </div>
     </div>
     <div style="float: right; position: relative; top: -54px; width: 99%">
-        <ul class="tabs"><a href="rentalHistory.jsp" class="tabsfont">Rental History</a></ul>
+        <ul class="tabs"><a id="rentalHistory" onclick="loadRentalHistory();" class="tabsfont">Rental History</a></ul>
         <ul class="tabs"><a class="tabsfont">Pre-Booking</a></ul>
         <ul class="tabs"><a class="tabsfont">Student Offers</a></ul>
         <ul class="tabs"><a href="https://www.ul.ie/" class="tabsfont">UL Link</a></ul>
@@ -52,6 +52,7 @@
     </div>
     <div id="map" style="width: 96%; height: 60%; float: right"></div>
     <div id="secondWindow" style="display: none"><table id="grid"></table></div>
+    <div id="viewHistory" style="display: none"><table id="grid1"></table></div>
     <form id="ticketForm" style="display: none">
         <textarea name="fullName" placeholder="Write your Message here" id="t1" cols="40" rows="5"></textarea>
         <br/>
@@ -75,13 +76,19 @@
     <button id="goBack" style="display: none;" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit">Back</button>
 
     <script type="text/javascript">
+        /*
+        * Global Variables
+        * */
         var selectedBikeJson = "";
         var selectedBikeSpot="";
+        var username = $('h2')[0].innerHTML;
+
     $(document).ready(function () {
         navigator.geolocation.getCurrentPosition(showPosition);
             $("#goBack").click(function (){
                 navigator.geolocation.getCurrentPosition(showPosition);
                 $("#secondWindow").hide();$("#goBack").hide();
+                $("#viewHistory").hide();
                 $("#map").show();$("#lowerPanel").show();
             });
             $("#raiseTicket").click(function () {
@@ -90,6 +97,14 @@
                 $("#ticketForm").show();
                 $("#b1").show();
             })
+        $("#rentalHistory").click(function () {
+            $("#secondWindow").hide();$("#goBack").hide();
+            $("#map").hide();$("#lowerPanel").hide();
+            $("#viewHistory").css({
+                display: "block"
+            });
+
+        })
         });
     </script>
 </body>

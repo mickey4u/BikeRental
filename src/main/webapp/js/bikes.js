@@ -1,3 +1,4 @@
+
 function loadBikesViews(json) {
     $("#goBack").css({
         display: "block"
@@ -105,6 +106,9 @@ function bookBike() {
     var bookingType = "INSTANT_BOOKING";
     var bikeType = jsonData.bikeType;
     var bikeSpot = jsonData.bikeSpot;
+    var values = username.split(" ");
+    var f_part = values[0];
+    var u_name = values[1] ? username.substr(username.indexOf(' ') + 1) : '';
     console.log(jsonData);
     {
         $.ajax({
@@ -114,7 +118,8 @@ function bookBike() {
             data: {
                 bikeId: bikeId,
                 bookingType: bookingType,
-                bikeSpot: bikeSpot
+                bikeSpot: bikeSpot,
+                username: u_name
             },
             success: function (json){
                 var bookingStatus = json.toString();
@@ -177,16 +182,21 @@ function ShowDialogBox(title, content, btn1text, btn2text, functionText, paramet
         ]
     });
 }
-
+/*
+* Responsible for retrieving the rental history of the user
+* */
 function loadRentalHistory()
 {
+    var values = username.split(" ");
+    var f_part = values[0];
+    var u_name = values[1] ? username.substr(username.indexOf(' ') + 1) : '';
     {
         $.ajax({
             type: 'GET',
             url: "viewRentalHistory",
             dataType: "json",
             data: {
-                username: "2037"
+                username: u_name
             },
             success: function (json){
                 createRentalHistoryable(json);
@@ -202,7 +212,7 @@ function createRentalHistoryable(json) {
     {
         json = "<html><p>You're yet to ride with us</p></html>";
     }
-    $("#grid").jqGrid({
+    $("#grid1").jqGrid({
         datatype: "local",
         height: 300,
         width:500,
