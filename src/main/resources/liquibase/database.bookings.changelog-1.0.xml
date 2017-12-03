@@ -8,30 +8,38 @@
 
     <changeSet id="1" author="Michael Tetteh">
         <comment>Create Bookings Table</comment>
-        <createTable tableName="Bookings">
+        <createTable tableName="BOOKINGS">
             <column name="booking_id" type="varchar(40)">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
             <column name="bike_id" type="varchar(40)">
                 <constraints nullable="false"/>
             </column>
+            <column name="username" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
             <column name="bike_spot" type="varchar(40)">
                 <constraints nullable="false"/>
             </column>
-            <column name="booking_type" type="varchar(40)">
+            <!--<column name="booking_type" type="boolean" defaultValueBoolean="false">
                 <constraints nullable="false"/>
-            </column>
-            <column name="status" type="boolean" defaultValueBoolean="false">
-            </column>
+            </column>-->
+            <!--<column name="status" type="boolean" defaultValueBoolean="false">
+            </column>-->
         </createTable>
     </changeSet>
 
-<!--    <changeSet id="2" author="Michael Tetteh">
+    <changeSet id="2" author="Mayank Srivastava">
         <comment>Insert Dummy Data Into Your Database</comment>
-        <insert tableName="Bookings">
-            <column name=""></column>
+        <insert tableName="BOOKINGS">
+            <column name="booking_id" value="123123"/>
+            <column name="bike_id" value="Gear"/>
+            <column name="username" value="2037"/>
+            <column name="bike_spot" value="Stables"/>
+            <!--<column name="booking_type" value="Instant"/>
+            <column name="status" value="true"/>-->
         </insert>
-    </changeSet>-->
+    </changeSet>
 
 
 </databaseChangeLog>

@@ -8,29 +8,45 @@
 
     <changeSet id="1" author="Mayank Srivastava">
         <comment>Create Bike Spots Table</comment>
-        <createTable tableName="bikeSpots">
-            <column name="bikeLocation" type="varchar(40)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="type" type="varchar(40)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="bikeID" type="varchar(40)">
+        <createTable tableName="Spots">
+            <column name="name" type="varchar(40)">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
-            <column name="bikeStatus" type="varchar(40)">
+            <column name="latitude" type="decimal(10,8)">
                 <constraints nullable="false"/>
+            </column>
+            <column name="longitude" type="decimal(11,8)">
+                <constraints nullable="true"/>
             </column>
         </createTable>
     </changeSet>
 
     <changeSet id="2" author="Mayank Srivastava">
         <comment>Insert Dummy Data Into Your Database</comment>
-        <insert tableName="bikeSpots">
-            <column name="bikeLocation" value="Stable"/>
-            <column name="type" value="Gear"/>
-            <column name="bikeID" value="2001"/>
-            <column name="bikeStatus" value="AVAILABLE"/>
+        <insert tableName="Spots">
+            <column name="name" value="Milford Centre"/>
+            <column name="latitude" value="52.670507"/>
+            <column name="longitude" value="-8.5735550"/>
+        </insert>
+        <insert tableName="Spots">
+            <column name="name" value="Stables"/>
+            <column name="latitude" value="52.672946"/>
+            <column name="longitude" value="-8.5698254"/>
+        </insert>
+        <insert tableName="Spots">
+            <column name="name" value="Lero Centre for excellence"/>
+            <column name="latitude" value="52.674576"/>
+            <column name="longitude" value="-8.5771720"/>
+        </insert>
+        <insert tableName="Spots">
+            <column name="name" value="A School Of Fish"/>
+            <column name="latitude" value="52.674492"/>
+            <column name="longitude" value="-8.5737320"/>
+        </insert>
+        <insert tableName="Spots">
+            <column name="name" value="Dromroe Village"/>
+            <column name="latitude" value="52.679088"/>
+            <column name="longitude" value="-8.5735807"/>
         </insert>
     </changeSet>
 

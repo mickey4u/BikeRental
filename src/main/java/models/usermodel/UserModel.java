@@ -1,7 +1,6 @@
 package models.usermodel;
 
 import com.opensymphony.xwork2.ActionContext;
-import dao.daoFactory.UserDAOFactory;
 import dao.userdao.IUserDao;
 import entities.bike.Booking;
 import entities.users.User;
@@ -16,8 +15,6 @@ import java.util.Optional;
  */
 public class UserModel implements IUserModel, Constants {
     private IUserDao userDAO;
-    private UserDAOFactory userDAOFactory;
-
     public UserModel(IUserDao userDAO) {
         this.userDAO = userDAO;
     }

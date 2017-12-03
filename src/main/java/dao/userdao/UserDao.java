@@ -43,6 +43,13 @@ public class UserDao implements IUserDao {
         return access.createUser(user);
     }
 
+    /**
+     *
+     *
+     * This Method gets a user in the Platform from Database
+     * @param userId id of the user to find
+     * @return the user details
+     */
     @Override
     public Optional<User> findUserById(String userId) {
         Optional.ofNullable(userId).orElseThrow(NullPointerException::new);
@@ -53,12 +60,18 @@ public class UserDao implements IUserDao {
         return Optional.of(access.getUser(userId));
     }
 
+    /**
+     * This method fetches the Rental History of the user
+     *
+     * @param username username of the user
+     * @return List of rental history
+     */
     @Override
     public List<Booking> getUserRentalHistory(String username) {
         Optional.ofNullable(username).orElseThrow(NullPointerException::new);
         // check if user exist
-        if (!access.checkExist(username)) {
-            return null;
+        if (access.checkExist(username)) {
+            return access.getRentalHistory(username);
         }
         return null;
     }
@@ -67,4 +80,5 @@ public class UserDao implements IUserDao {
     public Boolean resetPassword(String password) {
         return null;
     }
+
 }

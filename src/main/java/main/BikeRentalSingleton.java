@@ -2,9 +2,10 @@ package main;
 
 import Connection.*;
 import entities.database.Database;
+import models.bikespotmodel.IBikeSpotModel;
 import models.bikemodel.IBikeModel;
 import models.rentalmodel.IBookModel;
-import models.support.ISupportModel;
+import models.supportmodel.ISupportModel;
 import models.usermodel.IUserModel;
 
 /**
@@ -34,9 +35,19 @@ public class BikeRentalSingleton {
         }
     }
 
-
     public static BikeRentalSingleton getInstance() {
         return SingletonHelper.instance;
+    }
+
+    public IBikeSpotModel getBikeSpotModel() {
+        switch (databaseType) {
+            case SQL:
+                MySqlConnection connection1 = new MySqlConnection();
+                return connection1.iBikeSpotModel;
+            default:
+                PostGREconnection connection2 = new PostGREconnection();
+                return null;
+        }
     }
 
     private static class SingletonHelper {

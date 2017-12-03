@@ -1,5 +1,8 @@
 package Connection;
 
+import dao.bikespot.BikeSpotAccess;
+import dao.bikespot.BikeSpotDao;
+import dao.bikespot.IBikeSpotDao;
 import dao.bikedao.BikeAccess;
 import dao.bikedao.BikeDao;
 import dao.bikedao.IBikeDao;
@@ -12,12 +15,14 @@ import dao.support.SupportDao;
 import dao.userdao.IUserDao;
 import dao.userdao.UserAccess;
 import dao.userdao.UserDao;
+import models.bikespotmodel.BikeSpotModel;
+import models.bikespotmodel.IBikeSpotModel;
 import models.bikemodel.BikeModel;
 import models.bikemodel.IBikeModel;
 import models.rentalmodel.BookModel;
 import models.rentalmodel.IBookModel;
-import models.support.ISupportModel;
-import models.support.SupportModel;
+import models.supportmodel.ISupportModel;
+import models.supportmodel.SupportModel;
 import models.usermodel.IUserModel;
 import models.usermodel.UserModel;
 import org.jdbi.v3.core.Jdbi;
@@ -35,7 +40,10 @@ public class MySqlConnection implements ConnectionManager {
     public static IBookModel bookModel;
     private ISupportDao supportDao;
     public static ISupportModel supportModel;
+    private IBikeSpotDao iBikeSpotDao;
+    public static IBikeSpotModel iBikeSpotModel;
     private Jdbi jdbi;
+
 
     @Override
     public void connect() {
@@ -59,6 +67,9 @@ public class MySqlConnection implements ConnectionManager {
 
         supportDao = new SupportDao(jdbi.onDemand(SupportAccess.class));
         supportModel = new SupportModel(supportDao);
+
+        iBikeSpotDao = new BikeSpotDao(jdbi.onDemand(BikeSpotAccess.class));
+        iBikeSpotModel = new BikeSpotModel(iBikeSpotDao);
 
     }
 }

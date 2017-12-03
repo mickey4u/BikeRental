@@ -152,7 +152,7 @@ $.widget = function( name, base, prototype ) {
 	} );
 	constructor.prototype = $.widget.extend( basePrototype, {
 
-		// TODO: remove support for widgetEventPrefix
+		// TODO: remove supportmodel for widgetEventPrefix
 		// always use the name + a colon as the prefix, e.g., draggable:start
 		// don't prefix for widgets that aren't DOM-based
 		widgetEventPrefix: existingConstructor ? ( basePrototype.widgetEventPrefix || name ) : name
@@ -1455,7 +1455,7 @@ $.effects = {
 	},
 	support = color.support = {},
 
-	// Element for support tests
+	// Element for supportmodel tests
 	supportElem = jQuery( "<p>" )[ 0 ],
 
 	// Colors = jQuery.Color.names
@@ -1464,7 +1464,7 @@ $.effects = {
 	// Local aliases of functions called often
 	each = jQuery.each;
 
-// Determine rgba support immediately
+// Determine rgba supportmodel immediately
 supportElem.style.cssText = "background-color:rgba(1,1,1,.5)";
 support.rgba = supportElem.style.backgroundColor.indexOf( "rgba" ) > -1;
 
@@ -3635,7 +3635,7 @@ var effectsEffectScale = $.effects.define( "scale", function( options, done ) {
 			origin: options.origin || [ "middle", "center" ]
 		}, options );
 
-	// Fade option to support puff
+	// Fade option to supportmodel puff
 	if ( options.fade ) {
 		newOptions.from.opacity = 1;
 		newOptions.to.opacity = 0;
@@ -3947,7 +3947,7 @@ var focusable = $.ui.focusable;
 
 
 // Support: IE8 Only
-// IE8 does not support the form attribute and when it is supplied. It overwrites the form prop
+// IE8 does not supportmodel the form attribute and when it is supplied. It overwrites the form prop
 // with a string, so we need to find the proper form.
 var form = $.fn.form = function() {
 	return typeof this[ 0 ].form === "string" ? this.closest( "form" ) : $( this[ 0 ].form );
@@ -4034,7 +4034,7 @@ var formResetMixin = $.ui.formResetMixin = {
 
 
 // Support: jQuery 1.7 only
-// Not a great way to check versions, but since we only support 1.7+ and only
+// Not a great way to check versions, but since we only supportmodel 1.7+ and only
 // need to detect <1.8, this is a simple check that should suffice. Checking
 // for "1.7." would be a bit safer, but the version string is 1.7, not 1.7.0
 // and we'll never reach 1.70.0 (if we do, we certainly won't be supporting
@@ -4042,7 +4042,7 @@ var formResetMixin = $.ui.formResetMixin = {
 if ( $.fn.jquery.substring( 0, 3 ) === "1.7" ) {
 
 	// Setters for .innerWidth(), .innerHeight(), .outerWidth(), .outerHeight()
-	// Unlike jQuery Core 1.8+, these only support numeric values to set the
+	// Unlike jQuery Core 1.8+, these only supportmodel numeric values to set the
 	// dimensions in pixels
 	$.each( [ "Width", "Height" ], function( i, name ) {
 		var side = name === "Width" ? [ "Left", "Right" ] : [ "Top", "Bottom" ],
@@ -4167,7 +4167,7 @@ var labels = $.fn.labels = function() {
 	}
 
 	// Support: IE <= 11, FF <= 37, Android <= 2.3 only
-	// Above browsers do not support control.labels. Everything below is to support them
+	// Above browsers do not supportmodel control.labels. Everything below is to supportmodel them
 	// as well as document fragments. control.labels does not work on document fragments
 	labels = this.eq( 0 ).parents( "label" );
 
@@ -5775,7 +5775,7 @@ $.widget( "ui.autocomplete", {
 			.appendTo( this._appendTo() )
 			.menu( {
 
-				// disable ARIA support, the live region takes care of that
+				// disable ARIA supportmodel, the live region takes care of that
 				role: null
 			} )
 			.hide()
@@ -5808,7 +5808,7 @@ $.widget( "ui.autocomplete", {
 			menufocus: function( event, ui ) {
 				var label, item;
 
-				// support: Firefox
+				// supportmodel: Firefox
 				// Prevent accidental activation of menu items in Firefox (#7024 #9118)
 				if ( this.isNewMenu ) {
 					this.isNewMenu = false;
@@ -6280,7 +6280,7 @@ var widgetsControlgroup = $.widget( "ui.controlgroup", {
 		this._enhance();
 	},
 
-	// To support the enhanced option in jQuery Mobile, we isolate DOM manipulation
+	// To supportmodel the enhanced option in jQuery Mobile, we isolate DOM manipulation
 	_enhance: function() {
 		this.element.attr( "role", "toolbar" );
 		this.refresh();
@@ -6831,7 +6831,7 @@ $.widget( "ui.button", {
 	_getCreateOptions: function() {
 		var disabled,
 
-			// This is to support cases like in jQuery Mobile where the base widget does have
+			// This is to supportmodel cases like in jQuery Mobile where the base widget does have
 			// an implementation of _getCreateOptions
 			options = this._super() || {};
 
@@ -10883,7 +10883,7 @@ $.widget( "ui.resizable", $.ui.mouse, {
 			this.element.css( margins );
 			this.originalElement.css( "margin", 0 );
 
-			// support: Safari
+			// supportmodel: Safari
 			// Prevent Safari textarea resize
 			this.originalResizeStyle = this.originalElement.css( "resize" );
 			this.originalElement.css( "resize", "none" );
@@ -12255,7 +12255,7 @@ $.widget( "ui.dialog", {
 		event.preventDefault();
 		checkFocus.call( this );
 
-		// support: IE
+		// supportmodel: IE
 		// IE <= 8 doesn't prevent moving focus even with event.preventDefault()
 		// so we check again later
 		this._delay( checkFocus );
@@ -16891,7 +16891,7 @@ $.widget( "ui.spinner", {
 					this.element.trigger( "focus" );
 					this.previous = previous;
 
-					// support: IE
+					// supportmodel: IE
 					// IE sets focus asynchronously, so we need to check if focus
 					// moved off of the input because the user clicked on the button.
 					this._delay( function() {
@@ -16973,7 +16973,7 @@ $.widget( "ui.spinner", {
 				}
 			} );
 
-		// TODO: Right now button does not support classes this is already updated in button PR
+		// TODO: Right now button does not supportmodel classes this is already updated in button PR
 		this._removeClass( this.buttons, "ui-corner-all" );
 
 		this._addClass( this.buttons.first(), "ui-spinner-button ui-spinner-up" );
@@ -18142,7 +18142,7 @@ $.widget( "ui.tabs", {
 			this.xhr
 				.done( function( response, status, jqXHR ) {
 
-					// support: jQuery <1.8
+					// supportmodel: jQuery <1.8
 					// http://bugs.jquery.com/ticket/11778
 					setTimeout( function() {
 						panel.html( response );
@@ -18153,7 +18153,7 @@ $.widget( "ui.tabs", {
 				} )
 				.fail( function( jqXHR, status ) {
 
-					// support: jQuery <1.8
+					// supportmodel: jQuery <1.8
 					// http://bugs.jquery.com/ticket/11778
 					setTimeout( function() {
 						complete( jqXHR, status );
@@ -18226,7 +18226,7 @@ $.widget( "ui.tooltip", {
 		},
 		content: function() {
 
-			// support: IE<9, Opera in jQuery <1.7
+			// supportmodel: IE<9, Opera in jQuery <1.7
 			// .text() can't accept undefined, so coerce to a string
 			var title = $( this ).attr( "title" ) || "";
 

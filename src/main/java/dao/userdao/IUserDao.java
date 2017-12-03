@@ -42,4 +42,5 @@ public interface IUserDao {
      * @return
      */
     Boolean resetPassword(String password);
+
 }

@@ -54,18 +54,6 @@
             <column name="role" value="USER"/>
         </insert>
         <insert tableName="Users">
-            <column name="username" value="ADMIN"/>
-            <column name="password" value="ADMIN"/>
-            <column name="firstname" value="Robin"/>
-            <column name="lastname" value="Srivastava"/>
-            <column name="phoneNumber" value="+356576473733"/>
-            <column name="phoneNumber" value="+356576473733"/>
-            <column name="secretQuestion" value="What is your firstname"/>
-            <column name="secretAnswer" value="Mayank"/>
-            <column name="userRank" value="GOLD"/>
-            <column name="role" value="ADMIN"/>
-        </insert>
-        <insert tableName="Users">
             <column name="username" value="2037"/>
             <column name="password" value="T@t@123456"/>
             <column name="firstname" value="Mayank"/>

@@ -4,12 +4,13 @@ function loadBikesViews(json) {
     });
     if(json.length===0)
     {
-        json = "<p>Bikes Not Available</p>";
+        json = "<html><p>Bikes Not Available</p></html>";
     }
     $("#grid").jqGrid({
         datatype: "local",
         height: 280,
-        colNames: ['ID','Description','Spot', 'Variant','Fare',''],
+        width:600,
+        colNames: ['ID','Description','Spot', 'Variant','Rate',''],
         colModel: [
             { name: 'bikeId', key: true, sorttype: "int", width: 80 },
             { name: 'bikeIcon', fixed: true ,width: 80 },
@@ -78,9 +79,9 @@ function getAvailabilty()
             for (var index = 0; index < json.length; index++) {
                 array.push({
                     "bikeId": json[index].bikeId,
-                    "bikeIcon": "images/Logo.png",
+                    "bikeIcon": (json[index].bikeType.replace(/_/g,' ')).toLowerCase(),
                     "bikeSpot":selectedBikeSpot ,
-                    "bikeType": json[index].bikeType,
+                    "bikeType": (json[index].bikeType.replace(/_/g,' ')).toLowerCase(),
                     "Fare": json[index].rate+"/Hour"
                 });
             }
@@ -188,11 +189,31 @@ function loadRentalHistory()
                 username: "2037"
             },
             success: function (json){
-               alert(json);
+                createRentalHistoryable(json);
             },
             error: function (xhr) {
                 alert("Error:" + "Ooooops! We're down. Come back again.");
             }
         });
     }
+}
+function createRentalHistoryable(json) {
+    if(json.length===0)
+    {
+        json = "<html><p>Bikes Not Available</p></html>";
+    }
+    $("#grid").jqGrid({
+        datatype: "local",
+        height: 300,
+        width:500,
+        colNames: ['Bike ID','Bike Spot','Booking ID'],
+        colModel: [
+            { name: 'bikeId', key: true, sorttype: "int", width: 120 },
+            { name: 'bikeSpot', fixed: true ,width: 120 },
+            { name: 'bookingId', width: 120  }
+            ],
+        caption: "Rental History",
+        data: json,
+        gridview: true
+    });
 }

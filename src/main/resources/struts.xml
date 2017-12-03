@@ -60,6 +60,13 @@
             </result>
         </action>
 
+        <!--fetches the Bike Spots-->
+        <action name="getBikeSpots" class="controllers.bikeSpot.DashboardBikeSpotsAction">
+            <result type="json">
+                <param name="root">bikeSpots</param>
+            </result>
+        </action>
+
         <!--Fetch Bike Availabilty-->
         <action name="returnBike" class="controllers.bikecontroller.BikesAction">
             <result type="json">

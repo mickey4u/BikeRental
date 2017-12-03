@@ -1,4 +1,4 @@
-package models.support;
+package models.supportmodel;
 
 import dao.support.ISupportDao;
 import entities.support.Ticket;

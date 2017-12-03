@@ -1,5 +1,6 @@
 package dao.userdao;
 
+import entities.bike.Booking;
 import entities.users.User;
 import org.jdbi.v3.sqlobject.SqlObject;
 import org.jdbi.v3.sqlobject.customizer.Bind;
@@ -7,6 +8,8 @@ import org.jdbi.v3.sqlobject.customizer.BindBean;
 import org.jdbi.v3.sqlobject.statement.SqlQuery;
 import org.jdbi.v3.sqlobject.statement.SqlUpdate;
 import org.jdbi.v3.sqlobject.statement.UseRowMapper;
+
+import java.util.List;
 
 /**
  * Used for Users table access in the database
@@ -42,5 +45,15 @@ public interface UserAccess extends SqlObject {
             "secretQuestion,secretAnswer) values (:username,:password,:firstname,:lastname,:phoneNumber," +
             ":secretQuestion,:secretAnswer)")
     boolean createUser(@BindBean User user);
+
+    /**
+     *
+     * Gets the Rental History of the user
+     * @param username
+     * @return List of Rental History
+     */
+    @SqlQuery("select * from BOOKINGS where username = :username")
+    @UseRowMapper(RentalHistoryMapper.class)
+    List<Booking> getRentalHistory(@Bind("username") String username);
 
 }

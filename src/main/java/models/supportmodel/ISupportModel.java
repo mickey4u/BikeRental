@@ -1,4 +1,4 @@
-package models.support;
+package models.supportmodel;
 
 import entities.support.Ticket;
 
