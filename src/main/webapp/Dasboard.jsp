@@ -52,7 +52,7 @@
     </div>
     <div id="map" style="width: 96%; height: 60%; float: right"></div>
     <div id="secondWindow" style="display: none"><table id="grid"></table></div>
-    <div id="viewHistory" style="display: none"><table id="grid1"></table></div>
+    <div id="viewHistory" style="display: none; padding-left: 30%"><table id="grid1"></table></div>
     <form id="ticketForm" style="display: none">
         <textarea name="fullName" placeholder="Write your Message here" id="t1" cols="40" rows="5"></textarea>
         <br/>

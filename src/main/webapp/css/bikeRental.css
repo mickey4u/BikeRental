@@ -115,7 +115,7 @@ h1 {
 }
 #rentalHistory
 {
-    margin-left: 30%;
+    margin-left: 30% !important;
 }
 .ui-jqgrid .ui-jqgrid-caption {
     text-align: center !important;

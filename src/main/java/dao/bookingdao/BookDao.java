@@ -34,9 +34,9 @@ public class BookDao implements IBookDao {
         Optional.of(bookingId).orElseThrow(NullPointerException::new);
         // check if booking exist
         if (Boolean.TRUE.equals(access.checkExist(bookingId))) {
-            return false;
+            return access.cancelBooking(bookingId);
         }
-        return access.cancelBooking(bookingId);
+        return false;
     }
 
     @Override

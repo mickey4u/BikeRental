@@ -52,7 +52,7 @@ public interface UserAccess extends SqlObject {
      * @param username
      * @return List of Rental History
      */
-    @SqlQuery("select * from BOOKINGS where username = :username")
+    @SqlQuery("select * from BOOKINGS where username = :username and cancelled = false")
     @UseRowMapper(RentalHistoryMapper.class)
     List<Booking> getRentalHistory(@Bind("username") String username);
 

@@ -1,4 +1,8 @@
-
+/*
+* Creates the jQGrid for displaying the List of Bikes in a Given bike Spot
+*
+* */
+var bikeCancelRow= "";
 function loadBikesViews(json) {
     $("#goBack").css({
         display: "block"
@@ -212,18 +216,51 @@ function createRentalHistoryable(json) {
     {
         json = "<html><p>You're yet to ride with us</p></html>";
     }
+    $('#grid1').trigger( 'reloadGrid' );
+    jQuery('#grid1').jqGrid('clearGridData')
     $("#grid1").jqGrid({
         datatype: "local",
         height: 300,
         width:500,
-        colNames: ['Bike ID','Bike Spot','Booking ID'],
+        colNames: ['Bike ID','Bike Spot','Booking ID',''],
         colModel: [
             { name: 'bikeId', key: true, sorttype: "int", width: 120 },
             { name: 'bikeSpot', fixed: true ,width: 120 },
-            { name: 'bookingId', width: 120  }
+            { name: 'bookingId', width: 120  },
+            { name: '', align: 'center', sortable: false, width: 40,
+                formatter: function () {
+                    var grid = $('#grid'), rowid = $(this).closest("tr.jqgrow").attr("id");
+                    var myCellData = grid.jqGrid('getCell', rowid, 'bikeId');
+                    return "<a href='#' onclick='cancelBooking()'>Cancel Booking</a>"; } }
             ],
         caption: "Rental History",
         data: json,
-        gridview: true
+        gridview: true,
+        onCellSelect: function (rowid) {
+            var rowData = $(this).jqGrid("getRowData", rowid);
+            bikeCancelRow = rowData.bookingId
+            console.log(bikeCancelRow);
+        }
     });
+}
+function cancelBooking()
+{
+    alert(bikeCancelRow);
+    {
+        $.ajax({
+            type: 'POST',
+            url: "cancelBooking",
+            dataType: "json",
+            data: {
+                bookingID: bikeCancelRow
+            },
+            success: function (json){
+                alert(json);
+                loadRentalHistory();
+            },
+            error: function (xhr) {
+                alert("Error:" + "Ooooops! We're down. Come back again.");
+            }
+        });
+    }
 }

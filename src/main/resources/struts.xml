@@ -81,6 +81,13 @@
             </result>
         </action>
 
+        <!--Booking Cancellation-->
+        <action name="cancelBooking" class="controllers.bikecontroller.CancelBookingAction">
+            <result type="json">
+                <param name="root">status</param>
+            </result>
+        </action>
+
         <!--View Rental History-->
         <action name="viewRentalHistory" class="controllers.bikecontroller.UsersAccountAction">
             <result type="json">
