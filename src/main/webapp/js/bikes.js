@@ -200,7 +200,7 @@ function loadRentalHistory()
 function createRentalHistoryable(json) {
     if(json.length===0)
     {
-        json = "<html><p>Bikes Not Available</p></html>";
+        json = "<html><p>You're yet to ride with us</p></html>";
     }
     $("#grid").jqGrid({
         datatype: "local",

@@ -4,11 +4,11 @@ import com.opensymphony.xwork2.ActionContext;
 import dao.userdao.IUserDao;
 import entities.bike.Booking;
 import entities.users.User;
+import entities.users.UserRank;
 import utilities.Constants;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 /**
  * Handles all the business logic for user on the platform
@@ -20,9 +20,9 @@ public class UserModel implements IUserModel, Constants {
     }
 
     @Override
-    public boolean register(Optional<String> firstname, Optional<String> lastname, String id,
-                            String password, Optional<String> phoneNumber, Optional<String> secretQuestion,
-                            Optional<String> secretAnswer) {
+    public boolean register(String firstname, String lastname, String id,
+                            String password, String phoneNumber, String secretQuestion,
+                            String secretAnswer) {
 
         User user = new User();
         user.setUsername(id);
@@ -32,6 +32,7 @@ public class UserModel implements IUserModel, Constants {
         user.setPhoneNumber(phoneNumber);
         user.setSecretQuestion(secretQuestion);
         user.setSecretAnswer(secretAnswer);
+        user.setUserRank(UserRank.BASIC);
        // userDAO=userDAOFactory.getUserDAO(Database.SQL);
 
         return userDAO.createUser(user);

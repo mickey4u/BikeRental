@@ -42,8 +42,8 @@ public interface UserAccess extends SqlObject {
      * @return true if user creation was successful
      */
     @SqlUpdate("insert into Users (username,password,firstname,lastname,phoneNumber," +
-            "secretQuestion,secretAnswer) values (:username,:password,:firstname,:lastname,:phoneNumber," +
-            ":secretQuestion,:secretAnswer)")
+            "secretQuestion,secretAnswer,userRank) values (:username,:password,:firstname,:lastname,:phoneNumber," +
+            ":secretQuestion,:secretAnswer,:userRank)")
     boolean createUser(@BindBean User user);
 
     /**

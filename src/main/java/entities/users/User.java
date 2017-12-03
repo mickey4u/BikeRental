@@ -2,8 +2,6 @@ package entities.users;
 
 import lombok.Data;
 
-import java.util.Optional;
-
 /**
  * Represents a user on the platform
  */
@@ -15,15 +13,15 @@ public class User {
     // user's password
     private String password;
     // user's first name
-    private Optional<String> firstname;
+    private String firstname;
     // user's last name
-    private Optional<String> lastname;
+    private String lastname;
     // user's phone number
-    private Optional<String> phoneNumber;
+    private String phoneNumber;
     // secret question
-    private Optional<String> secretQuestion;
+    private String secretQuestion;
     // answer to secret question
-    private Optional<String> secretAnswer;
+    private String secretAnswer;
     // user house address
     private Address address;
     // user's ranking

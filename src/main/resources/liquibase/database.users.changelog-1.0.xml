@@ -33,9 +33,6 @@
             <column name="secretAnswer" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="role" type="varchar(255)">
-                <constraints nullable="false"/>
-            </column>
         </createTable>
     </changeSet>
 
@@ -51,7 +48,6 @@
             <column name="secretQuestion" value="What is your firstname"/>
             <column name="secretAnswer" value="Michael"/>
             <column name="userRank" value="GOLD"/>
-            <column name="role" value="USER"/>
         </insert>
         <insert tableName="Users">
             <column name="username" value="2037"/>
@@ -63,7 +59,6 @@
             <column name="secretQuestion" value="What is your firstname"/>
             <column name="secretAnswer" value="Mayank"/>
             <column name="userRank" value="GOLD"/>
-            <column name="role" value="USER"/>
         </insert>
     </changeSet>
 

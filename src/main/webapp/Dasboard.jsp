@@ -25,9 +25,10 @@
     <style></style>
 </head>
 <body>
+<input value="${firstname}"/>
 <h2 style="font-size: 98%;position:relative; margin-left: 87%; top:93px; font-family: 'Bookman Old Style',serif">Howdy, <s:property value="username"/>...!</h2>
     <div id="header" style="height: 132px;">
-        <a class="UL_logo" style="display: block; float: left; background: url(https://www.ul.ie/ee/images/interface/UL_logo_large.jpg) no-repeat; height: 85px; width: 363px; margin-top: 5px;" href="localhost:8080/bikerental/login"></a>
+        <a class="UL_logo" style="display: block; float: left; background: url(https://www.ul.ie/ee/images/interface/UL_logo_large.jpg) no-repeat; height: 85px; width: 363px; margin-top: 5px;"></a>
     </div>
     <div id="dialog" title="Alert message" style="display: none">
         <div class="ui-dialog-content ui-widget-content">
@@ -41,11 +42,11 @@
     <div style="float: right; position: relative; top: -54px; width: 99%">
         <ul class="tabs"><a href="rentalHistory.jsp" class="tabsfont">Rental History</a></ul>
         <ul class="tabs"><a class="tabsfont">Pre-Booking</a></ul>
-        <ul class="tabs"><a class="tabsfont">Offers</a></ul>
-        <ul class="tabs"><a href="https://www.ul.ie/" class="tabsfont">UL</a></ul>
-        <ul class="tabs"><a class="tabsfont">Bikes</a></ul>
+        <ul class="tabs"><a class="tabsfont">Student Offers</a></ul>
+        <ul class="tabs"><a href="https://www.ul.ie/" class="tabsfont">UL Link</a></ul>
+        <ul class="tabs"><a class="tabsfont">Latest Bikes</a></ul>
         <ul class="tabs"><a id="raiseTicket" class="tabsfont">Contact Admin</a></ul>
-        <ul class="tabs"><a href="<s:url action="logout"/>" class="tabsfont">SignOut</a></ul>
+        <ul class="tabs"><a href="<s:url action="logout"/>" class="tabsfont">LogOff</a></ul>
     </div>
     <div id="map" style="width: 96%; height: 60%; float: right"></div>
     <div id="secondWindow" style="display: none"><table id="grid"></table></div>
