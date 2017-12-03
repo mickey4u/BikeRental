@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fbac297a-215d-4b13-9c17-c43ab0a233c5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/Dasboard.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/Dasboard.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/Register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/Register.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,16 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IUserModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/usermodel/IUserModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,37 +45,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dasboard.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/Dasboard.jsp">
+      <file leaf-file-name="Register.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="28" column="15" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IUserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/IUserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            <state relative-caret-position="353">
+              <caret line="34" column="145" lean-forward="false" selection-start-line="34" selection-start-column="145" selection-end-line="34" selection-end-column="145" />
               <folding>
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
-                <element signature="e#928#929#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="102" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="102" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,6 +113,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dasboard.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/Dasboard.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="33" column="10" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="33" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -201,7 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/Login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/login.css" />
         <option value="$PROJECT_DIR$/src/main/java/entities/bike/Booking.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/userdao/RentalHistoryMapper.java" />
@@ -252,6 +239,7 @@
         <option value="$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/Dasboard.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Register.jsp" />
       </list>
     </option>
   </component>
@@ -1567,7 +1555,7 @@
       <workItem from="1511791402901" duration="12035000" />
       <workItem from="1511877137360" duration="62322000" />
       <workItem from="1512071108316" duration="8121000" />
-      <workItem from="1512224465189" duration="34510000" />
+      <workItem from="1512224465189" duration="36105000" />
     </task>
     <task id="LOCAL-00001" summary="Partial commit for UserDao implementation">
       <created>1509711964430</created>
@@ -1765,7 +1753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512277642848</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Field Removed">
+      <created>1512277693353</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1512277693353</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1774,7 +1769,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="542858000" />
+    <option name="totallyTimeSpent" value="544453000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1905,7 +1900,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Partial commit for UserDao implementation" />
     <MESSAGE value="Partial edit for UserDao implementation" />
     <MESSAGE value="Updates, introduced decorator pattern for creating Models for BikeRenter or Bikeowner or both." />
     <MESSAGE value="Partial commit." />
@@ -1930,7 +1924,8 @@
     <MESSAGE value="Simulation for return Bike" />
     <MESSAGE value="Retrieve Bike Locations Dynamically &#10;View Rental History Changes" />
     <MESSAGE value="Fix for Registration.&#10;1. Extra Field of UserRank set as basic during registration.&#10;2. Optional fields removed for user Bean Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix for Registration.&#10;1. Extra Field of UserRank set as basic during registration.&#10;2. Optional fields removed for user Bean Class" />
+    <MESSAGE value="Field Removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Field Removed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2040,7 +2035,7 @@
         <state relative-caret-position="136">
           <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2076,7 +2071,7 @@
         <state relative-caret-position="204">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2147,14 +2142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/liquibase/liquibase-core/3.5.3/liquibase-core-3.5.3.jar!/liquibase/sdk/watch/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -2167,14 +2154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-160">
           <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2389,9 +2368,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Dasboard.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="28" column="15" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="33" column="10" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="33" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="102" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="34" column="145" lean-forward="false" selection-start-line="34" selection-start-column="145" selection-end-line="34" selection-end-column="145" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
