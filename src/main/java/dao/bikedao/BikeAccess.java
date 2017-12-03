@@ -62,7 +62,8 @@ public interface BikeAccess extends SqlObject {
      * @param bikeId
      * @return
      */
-    @SqlQuery("select * from BIKES where bikeId = :bikeId")
+    @SqlQuery("select * from BIKES where bike_id = :bikeId")
+    @UseRowMapper(BikeMapper.class)
     Optional<Bike> findBikeById(@Bind("bikeId") String bikeId);
 
     /**
@@ -82,7 +83,7 @@ public interface BikeAccess extends SqlObject {
      * @param bikeId
      * @return
      */
-    @SqlUpdate("update BIKES set deleted = true where bikeId = :bikeId")
+    @SqlUpdate("update BIKES set deleted = true where bike_id = :bikeId")
     boolean deleteBikeById(String bikeId);
 
     /**
@@ -92,7 +93,7 @@ public interface BikeAccess extends SqlObject {
      * @param bikeStatus
      * @return
      */
-    @SqlUpdate("update BIKES set bikeStatus = :bikeStatus where bikeId = :bikeId")
+    @SqlUpdate("update BIKES set bike_status = :bikeStatus where bike_id = :bikeId")
     boolean updateBikeStatus(@Bind("bikeId") String bikeId, @Bind("bikeStatus") BikeStatus bikeStatus);
 
 

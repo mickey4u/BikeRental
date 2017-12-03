@@ -1,11 +1,11 @@
-package controllers.bikecontroller;
+package controllers.usercontroller;
 
 import com.opensymphony.xwork2.ActionSupport;
-import entities.bike.Booking;
+import entities.booking.Booking;
 
 import java.util.List;
 
-public class UsersAccountAction extends ActionSupport{
+public class RentalHistoryAction extends ActionSupport{
 
     main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
     List<Booking> bookings;

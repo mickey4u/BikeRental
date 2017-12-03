@@ -23,7 +23,7 @@ public interface UserAccess extends SqlObject {
      * @param username
      * @return
      */
-    @SqlQuery("select true from USERS where username = :username")
+    @SqlQuery("select count(1) from USERS where username = :username")
     boolean checkExist(@Bind("username") String username);
 
     /**

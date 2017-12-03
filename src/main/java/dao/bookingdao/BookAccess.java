@@ -1,10 +1,12 @@
 package dao.bookingdao;
 
 import entities.booking.Booking;
+import entities.booking.BookingMapper;
 import org.jdbi.v3.sqlobject.customizer.Bind;
 import org.jdbi.v3.sqlobject.customizer.BindBean;
 import org.jdbi.v3.sqlobject.statement.SqlQuery;
 import org.jdbi.v3.sqlobject.statement.SqlUpdate;
+import org.jdbi.v3.sqlobject.statement.UseRowMapper;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -30,6 +32,7 @@ public interface BookAccess {
      * @return
      */
     @SqlQuery("select * from BOOKINGS where booking_id = :bookingId")
+    @UseRowMapper(BookingMapper.class)
     Booking findBookingById(@Bind("bookingId") String bookingId);
 
     /**

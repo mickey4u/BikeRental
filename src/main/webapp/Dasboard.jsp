@@ -72,6 +72,9 @@
     <div id="lowerPanel">
         <button id="button" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit" onclick="checkSelection()">View Bikes</button>
         <button id="returnBike" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit" onclick="returnBike()">Return Bike</button>
+<%--
+        <button id="startTrip" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit" onclick="startTrip()">Start Trip</button>
+--%>
     </div>
     <button id="goBack" style="display: none;" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit">Back</button>
 

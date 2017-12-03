@@ -16,11 +16,12 @@ public class BookingMapper implements RowMapper<Booking> {
         Booking booking = new Booking();
         booking.setBookingId(rs.getString("booking_id"));
         booking.setBikeId(rs.getString("bike_id"));
-        booking.setStatus(rs.getBoolean("booking_status"));
+        booking.setUsername(rs.getString("username"));
+        booking.setStatus(rs.getBoolean("status"));
         booking.setBikeSpot(rs.getString("bike_spot"));
         booking.setBookingType(BookingType.valueOf(rs.getString("booking_type")));
         booking.setStartTime(rs.getTimestamp("start_time"));
-        booking.setEndTime(rs.getTimestamp(""));
+        booking.setEndTime(rs.getTimestamp("end_time"));
 
         return booking;
     }

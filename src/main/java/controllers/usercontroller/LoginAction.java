@@ -4,7 +4,6 @@ import com.opensymphony.xwork2.ModelDriven;
 import com.opensymphony.xwork2.ValidationAwareSupport;
 import controllers.command.Command;
 import entities.users.User;
-import interceptors.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.struts2.ServletActionContext;
@@ -24,7 +23,7 @@ public class LoginAction implements Command, Constants, SessionAware, ModelDrive
     private static final long serialVersionUID = 1L;
     private Map<String, Object> session = null;
     private User user = new User();
-    IUnmarshaledRequest<User> userIUnmarshaledRequest = new UnmarshaledRequest();
+    //IUnmarshaledRequest<User> userIUnmarshaledRequest = new UnmarshaledRequest();
 
     main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
 
@@ -51,8 +50,8 @@ public class LoginAction implements Command, Constants, SessionAware, ModelDrive
             session.put(LOGGED_IN_USER, user);
             action = SUCCESS;
 
-            userIUnmarshaledRequest.setObject(this.user);
-            LoggingDispatcher.getInstance().dispatchClientPreRequestPreMarshal(userIUnmarshaledRequest);
+           // userIUnmarshaledRequest.setObject(this.user);
+            //LoggingDispatcher.getInstance().dispatchClientPreRequestPreMarshal(userIUnmarshaledRequest);
         }
 
         return action;

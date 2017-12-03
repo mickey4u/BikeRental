@@ -1,6 +1,7 @@
 package dao.userdao;
 
-import entities.bike.Booking;
+
+import entities.booking.Booking;
 import org.jdbi.v3.core.mapper.RowMapper;
 import org.jdbi.v3.core.statement.StatementContext;
 

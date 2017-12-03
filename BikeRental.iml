@@ -86,6 +86,8 @@
         <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Maven: org.jdbi:jdbi3-jodatime2:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jdbi:jdbi3-core:3.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.javamoney:moneta:1.1" level="project" />
     <orderEntry type="library" name="Maven: javax.money:money-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: javax.annotation:javax.annotation-api:1.2" level="project" />

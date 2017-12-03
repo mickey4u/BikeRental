@@ -86,7 +86,7 @@
         </action>
 
         <!--View Rental History-->
-        <action name="viewRentalHistory" class="controllers.bikecontroller.UsersAccountAction">
+        <action name="viewRentalHistory" class="controllers.usercontroller.RentalHistoryAction">
             <result type="json">
                 <param name="root">bookings</param>
             </result>
@@ -100,6 +100,24 @@
         <action name="raiseNewTicket" class="controllers.support.RaiseTicketAction">
             <result type="json">
                 <param name="root">ticketStatus</param>
+            </result>
+        </action>
+        <!--Simulation for start Trip-->
+        <action name="startTrip" class="controllers.bikecontroller.StartTripAction">
+            <result type="json">
+                <param name="root">tripStatus</param>
+            </result>
+        </action>
+        <!--Simulation for ending a trip User-->
+        <action name="endBooking" class="controllers.bikecontroller.EndTripAction">
+            <result type="json">
+                <param name="root">bookingStatus</param>
+            </result>
+        </action>
+        <!--Calculation of Fare-->
+        <action name="displayFare" class="controllers.bikecontroller.DisplayFareAction">
+            <result type="json">
+                <param name="root">fare</param>
             </result>
         </action>
     </package>

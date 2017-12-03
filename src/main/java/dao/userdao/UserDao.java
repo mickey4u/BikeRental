@@ -52,10 +52,10 @@ public class UserDao implements IUserDao {
      */
     @Override
     public User findUserById(String userId) {
-        //Optional.ofNullable(userId).orElseThrow(NullPointerException::new);
+//        Optional.ofNullable(userId).orElseThrow(NullPointerException::new);
         // check if the user exist
         if (!access.checkExist(userId)) {
-            return null;
+            return new User();
         }
         return access.getUser(userId);
     }

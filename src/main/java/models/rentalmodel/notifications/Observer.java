@@ -11,7 +11,7 @@ public interface Observer {
     void update();
 
     /**
-     * @param subject subject the observer wants to observe
+     * @param ISubject ISubject the observer wants to observe
      */
-    void setSubject(Subject subject);
+    void setSubject(ISubject ISubject);
 }

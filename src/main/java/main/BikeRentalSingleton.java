@@ -3,6 +3,9 @@ package main;
 import dao.bikedao.BikeAccess;
 import dao.bikedao.BikeDao;
 import dao.bikedao.IBikeDao;
+import dao.bikespot.BikeSpotAccess;
+import dao.bikespot.BikeSpotDao;
+import dao.bikespot.IBikeSpotDao;
 import dao.bookingdao.BookAccess;
 import dao.bookingdao.BookDao;
 import dao.bookingdao.IBookDao;
@@ -14,6 +17,8 @@ import dao.userdao.UserAccess;
 import dao.userdao.UserDao;
 import models.bikemodel.BikeModel;
 import models.bikemodel.IBikeModel;
+import models.bikespotmodel.BikeSpotModel;
+import models.bikespotmodel.IBikeSpotModel;
 import models.rentalmodel.BookModel;
 import models.rentalmodel.IBookModel;
 import models.rentalmodel.pay.IPayModel;
@@ -40,6 +45,8 @@ public class BikeRentalSingleton {
     private ISupportDao supportDao;
     private ISupportModel supportModel;
     private IPayModel payModel;
+    private IBikeSpotDao bikeSpotDao;
+    private IBikeSpotModel bikeSpotModel;
 
     private BikeRentalSingleton() {
         try {
@@ -62,6 +69,9 @@ public class BikeRentalSingleton {
 
         supportDao = new SupportDao(jdbi.onDemand(SupportAccess.class));
         supportModel = new SupportModel(supportDao);
+
+        bikeSpotDao = new BikeSpotDao(jdbi.onDemand(BikeSpotAccess.class));
+        bikeSpotModel = new BikeSpotModel(bikeSpotDao);
 
         payModel = new PayModel(bookDao, userDao, bikesDao);
     }
@@ -94,6 +104,10 @@ public class BikeRentalSingleton {
 
     public IPayModel getPayModel() {
         return payModel;
+    }
+
+    public IBikeSpotModel getBikeSpotModel() {
+        return bikeSpotModel;
     }
 
 }

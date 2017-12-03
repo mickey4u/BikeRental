@@ -3,6 +3,11 @@
 *
 * */
 var bikeCancelRow= "";
+
+/**
+ * Loads the available Bikes
+ * @param json
+ */
 function loadBikesViews(json) {
     $("#goBack").css({
         display: "block"
@@ -67,6 +72,81 @@ function returnBike()
         }
     });
 }
+
+/*
+* Method to start a trip(Simulation feature)
+*
+* */
+function startTrip()
+{
+
+    var values = username.split(" ");
+    var f_part = values[0];
+    var u_name = values[1] ? username.substr(username.indexOf(' ') + 1) : '';
+    $.ajax({
+        type:'GET',
+        url: "startTrip",
+        dataType: "json",
+        data:{
+            bookingID: bikeCancelRow
+        },
+        success: function(json){
+            console.log(json);
+                    },
+        error: function (xhr) {
+            alert("Error:" + "Ooooops! We're down. Come back again.");
+        }
+    })
+}
+
+/**
+ *
+ */
+function endTrip()
+{
+var bookingID = bikeCancelRow;
+    {
+        $.ajax({
+            type: 'GET',
+            url: "endBooking",
+            dataType: "json",
+            data: {
+                bookingID: bookingID
+            },
+            success: function (json){
+
+                    displayFare(bookingID);
+
+            },
+            error: function (xhr) {
+                alert("Error:" + "Ooooops! We're down. Come back again.");
+            }
+        });
+    }
+}
+
+/**
+ * To display the Total Calculated Fare
+ * @param bookingID
+ */
+function displayFare(bookingID){
+    jQuery.ajax({
+        type: 'GET',
+        url: 'displayFare',
+        dataType: "json",
+        data: {
+            bookingID: bookingID
+        },
+        success: function (json){
+            console.log("fare is=="+ json);
+            ShowDialogBox("Total Fare", json, "Ok", null, "GoToAssetList", null)
+        },
+        error: function (xhr) {
+            alert("Error:" + "Ooooops! We're down. Come back again.");
+        }
+    })
+}
+
 
 /*
 * Fetches Availability
@@ -216,33 +296,51 @@ function createRentalHistoryable(json) {
     {
         json = "<html><p>You're yet to ride with us</p></html>";
     }
-    $('#grid1').trigger( 'reloadGrid' );
-    jQuery('#grid1').jqGrid('clearGridData')
-    $("#grid1").jqGrid({
+    jQuery('#grid1').trigger( 'reloadGrid' );
+    jQuery('#grid1').jqGrid('clearGridData');
+    jQuery("#grid1").jqGrid({
         datatype: "local",
         height: 300,
-        width:500,
-        colNames: ['Bike ID','Bike Spot','Booking ID',''],
+        width:600,
+        colNames: ['Bike ID','Bike Spot','Booking ID','','Start Booking','End Booking'],
         colModel: [
             { name: 'bikeId', key: true, sorttype: "int", width: 120 },
             { name: 'bikeSpot', fixed: true ,width: 120 },
             { name: 'bookingId', width: 120  },
-            { name: '', align: 'center', sortable: false, width: 40,
+            {
+                name: '', align: 'center', sortable: false, width: 80,
                 formatter: function () {
                     var grid = $('#grid'), rowid = $(this).closest("tr.jqgrow").attr("id");
                     var myCellData = grid.jqGrid('getCell', rowid, 'bikeId');
-                    return "<a href='#' onclick='cancelBooking()'>Cancel Booking</a>"; } }
+                    return "<a href='#' onclick='cancelBooking()'>Cancel Booking</a>";
+                },
+            },
+            { name: '', align: 'center', sortable: false, width: 80,
+                formatter: function () {
+                    var grid = $('#grid'), rowid = $(this).closest("tr.jqgrow").attr("id");
+                    var myCellData = grid.jqGrid('getCell', rowid, 'bikeId');
+                    return "<a href='#' onclick='startTrip()'>Start trip</a>"; }
+            },
+            { name: '', align: 'center', sortable: false, width: 80,
+                formatter: function () {
+                    var grid = $('#grid'), rowid = $(this).closest("tr.jqgrow").attr("id");
+                    var myCellData = grid.jqGrid('getCell', rowid, 'bikeId');
+                    return "<a href='#' onclick='endTrip()'>End trip</a>"; }
+            }
             ],
         caption: "Rental History",
         data: json,
         gridview: true,
         onCellSelect: function (rowid) {
             var rowData = $(this).jqGrid("getRowData", rowid);
-            bikeCancelRow = rowData.bookingId
+            bikeCancelRow = rowData.bookingId;
             console.log(bikeCancelRow);
         }
     });
 }
+/*
+* To Cancel A BOOKING
+* */
 function cancelBooking()
 {
     alert(bikeCancelRow);

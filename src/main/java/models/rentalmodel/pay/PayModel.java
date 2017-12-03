@@ -40,6 +40,7 @@ public class PayModel implements IPayModel {
 
         // get the user rank
         User renter = userDao.findUserById(booking.getUsername());
+        System.err.println(renter.toString());
         UserRank userRank = renter.getUserRank();
 
         // get the bike and check the bike type to determine rate
