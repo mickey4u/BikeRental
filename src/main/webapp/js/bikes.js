@@ -216,6 +216,7 @@ function bookBike() {
             },
             success: function (json){
                 var bookingStatus = json.toString();
+                alert(bookingStatus);
                 if (bookingStatus !== "true") {
                     alert("You have an ongoing trip");
                 } else {

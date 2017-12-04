@@ -2,13 +2,17 @@ package utilities;
 
 public interface IUtil {
 
-    /*
-    * Creates a Unique Booking ID
-    * */
+    /**
+     * Generates IDs
+     *
+     * @return
+     */
     public String createBookingID();
 
-    /*
-    * Gets the current Time
-    * */
+    /**
+     * Gets current time
+     *
+     * @return
+     */
     public long getTime();
 }

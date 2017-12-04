@@ -112,8 +112,6 @@ public class BikeRentalSingleton {
         return bikeSpotModel;
     }
 
-    public Subject getSubject() {
-        return SingletonHelper.notificationSubject;
-    }
+    public Subject getSubject() { return SingletonHelper.notificationSubject;   }
 
 }

@@ -42,7 +42,7 @@
         </div>
     </div>
     <div style="float: right; position: relative; top: -54px; width: 99%">
-        <ul class="tabs"><a id="rentalHistory" onclick="loadRentalHistory();" class="tabsfont">Rental History</a></ul>
+        <ul class="tabs"><a id="rentalHistory" onclick="loadRentalHistory();" class="tabsfont">Active Bookings</a></ul>
         <ul class="tabs"><a class="tabsfont">Pre-Booking</a></ul>
         <ul class="tabs"><a class="tabsfont">Student Offers</a></ul>
         <ul class="tabs"><a href="https://www.ul.ie/" class="tabsfont">UL Link</a></ul>

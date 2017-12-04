@@ -13,7 +13,8 @@ public class Subject implements ISubject {
     // message to be sent to registered observers
     private String message = null;
     private boolean isUpdated = false;
-    /* mutual exclusion object (mutex) allows multiple program threads to
+    /*
+    *  mutual exclusion object (mutex) allows multiple program threads to
      * share the same resource but not simultaneously
      */
     private final Object MUTEX = new Object();
@@ -56,7 +57,9 @@ public class Subject implements ISubject {
             isUpdated = false;
         }
         // update/notify all observers
-        existingObservers.stream().forEach(eo -> eo.update());
+        existingObservers.forEach(eo -> eo.update());
+
+
     }
 
     @Override
