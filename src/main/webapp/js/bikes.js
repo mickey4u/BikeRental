@@ -42,6 +42,8 @@ function loadBikesViews(json) {
         onCellSelect: function (rowid) {
             var rowData = $(this).jqGrid("getRowData", rowid);
             selectedBikeJson = rowData
+
+
         }
     });
 }
