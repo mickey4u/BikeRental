@@ -50,7 +50,7 @@ public class LoginAction implements Command, Constants, SessionAware, ModelDrive
             session.put(LOGGED_IN_USER, user);
             action = SUCCESS;
 
-           // userIUnmarshaledRequest.setObject(this.user);
+           // userIUnmarshaledRequest.setBooking(this.user);
             //LoggingDispatcher.getInstance().dispatchClientPreRequestPreMarshal(userIUnmarshaledRequest);
         }
 

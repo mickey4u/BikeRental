@@ -5,6 +5,9 @@ import dao.userdao.IUserDao;
 import entities.bike.BikeStatus;
 import entities.booking.Booking;
 import entities.users.User;
+import interceptors.LoggingDispatcher;
+import interceptors.perevent.BookingRequest;
+import interceptors.perevent.IBookingRequest;
 import main.BikeRentalSingleton;
 import models.bikemodel.IBikeModel;
 import models.rentalmodel.notifications.BookingNotification;
@@ -19,6 +22,7 @@ public class BookModel implements IBookModel {
     private IBookDao bookDao;
     private IBikeModel bikeModel;
     private IUserDao userDao;
+    private IBookingRequest bookingRequest;
     private Utils bookingUtility;
 
     public BookModel(IBookDao bookDao, IBikeModel bikeModel, IUserDao userDao) {
@@ -47,8 +51,20 @@ public class BookModel implements IBookModel {
                     "You have successfully booked a  bike." +
                     '\n' + "Your booking ID is : " + bookingId);
 
+            // booking context object
+            bookingRequest = new BookingRequest();
+            bookingRequest.setBooking(booking);
+            // pass the context object to teh dispatcher
+            LoggingDispatcher.getInstance().dispatchClientPreRequestPreMarshal(bookingRequest);
+
             return true;
         }
+        // booking context object
+        bookingRequest = new BookingRequest();
+        bookingRequest.setBooking(booking);
+        System.err.println("------>Called");
+        // pass the context object to teh dispatcher
+        LoggingDispatcher.getInstance().dispatchClientPreRequestPreMarshal(bookingRequest);
         return false;
     }
 

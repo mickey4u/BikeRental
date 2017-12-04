@@ -15,6 +15,9 @@ import dao.support.SupportDao;
 import dao.userdao.IUserDao;
 import dao.userdao.UserAccess;
 import dao.userdao.UserDao;
+import interceptors.LoggingDispatcher;
+import interceptors.perevent.ClientBookingLoggerInterceptor;
+import interceptors.perevent.IClientBookingInterceptor;
 import models.bikemodel.BikeModel;
 import models.bikemodel.IBikeModel;
 import models.bikespotmodel.BikeSpotModel;
@@ -75,6 +78,10 @@ public class BikeRentalSingleton {
         bikeSpotModel = new BikeSpotModel(bikeSpotDao);
 
         payModel = new PayModel(bookDao, userDao, bikesDao);
+
+        IClientBookingInterceptor bookingInterceptor = new ClientBookingLoggerInterceptor();
+        LoggingDispatcher.getInstance().register(bookingInterceptor);
+
     }
 
 
@@ -86,7 +93,9 @@ public class BikeRentalSingleton {
 
         private static final BikeRentalSingleton instance = new BikeRentalSingleton();
         private static final Subject notificationSubject = new Subject();
+       // private static final IClientBookingInterceptor bookingInterceptor = new ClientBookingLoggerInterceptor();
     }
+
 
     public IUserModel getUserModel() {
         return userModel;

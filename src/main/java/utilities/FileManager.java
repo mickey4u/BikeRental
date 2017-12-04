@@ -2,15 +2,12 @@ package utilities;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
-import com.opensymphony.xwork2.util.ClassLoaderUtil;
-import entities.users.User;
+import entities.booking.Booking;
 import org.apache.struts2.ServletActionContext;
 
-import javax.servlet.ServletContext;
 import java.io.*;
-
 import java.lang.reflect.Type;
-import java.nio.channels.FileChannel;
+import java.sql.Timestamp;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,6 +20,26 @@ import java.util.List;
 public class FileManager implements Constants {
 
     private static Gson gson;
+
+    /**
+     * @param fileName represents the absolute path plus the file name
+     */
+    public static void writeToFile(String fileName, Booking booking) {
+
+        try {
+
+            PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(fileName, true)));
+            // timestamp for simulation
+            out.println("Timestamp" + new Timestamp(System.currentTimeMillis()));
+            out.println("Timestamp" + booking.toString());
+            out.println();
+            out.println();
+            out.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
      * Method reads data from the file
@@ -66,7 +83,7 @@ public class FileManager implements Constants {
             }
 
             FileWriter fileWriter = new FileWriter(fileToWrite, true);
-            fileWriter.write(gson.toJson(data)+gson.toJson(data));
+            fileWriter.write(gson.toJson(data) + gson.toJson(data));
             fileWriter.flush();
             fileWriter.close();
 
