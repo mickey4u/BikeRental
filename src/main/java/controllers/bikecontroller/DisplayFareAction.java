@@ -7,7 +7,6 @@ public class DisplayFareAction extends ActionSupport {
     public String bookingID;
     public String fare;
     BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
-
     /**
      *
      * @return Total fare for the Trip
@@ -16,5 +15,4 @@ public class DisplayFareAction extends ActionSupport {
         fare = bikeRentalSingleton.getPayModel().amountDue(bookingID).toString();
         return SUCCESS;
     }
-
 }

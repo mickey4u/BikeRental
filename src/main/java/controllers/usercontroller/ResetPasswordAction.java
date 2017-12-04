@@ -5,28 +5,18 @@ import models.usermodel.IUserModel;
 
 import java.io.FileNotFoundException;
 
-public class UserAction extends ActionSupport {
-
-
+public class ResetPasswordAction extends ActionSupport {
     String secretAnswer;
     String userId;
     String newPassword;
     IUserModel userPasswordReset;
-
-    public String updatePassword()
+    public String updatePassword() throws FileNotFoundException
     {
-
         Boolean status = null;
-        try {
-            status = userPasswordReset.passwordReset(userId,secretAnswer,newPassword);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
+        status = userPasswordReset.passwordReset(userId,secretAnswer,newPassword);
         if(status)
             return SUCCESS;
         else
             return ERROR;
     }
-
 }

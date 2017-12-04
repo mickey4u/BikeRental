@@ -92,7 +92,7 @@
             </result>
         </action>
         <!--Updates password-->
-        <action name="updateDetails" class="controllers.usercontroller.UserAction" method="updatePassword">
+        <action name="updateDetails" class="controllers.usercontroller.ResetPasswordAction" method="updatePassword">
             <result name="success">/Dasboard.jsp</result>
         </action>
 

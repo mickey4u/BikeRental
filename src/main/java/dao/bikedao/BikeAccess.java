@@ -17,7 +17,6 @@ import java.util.Optional;
  */
 public interface BikeAccess extends SqlObject {
 
-
     /**
      * Checks if the bike with this id already exist in the database
      *

@@ -12,12 +12,11 @@ public class BikeSpotDao implements IBikeSpotDao {
     BikeSpotAccess access;
 
     /**
-     * @return
+     * @return the BikeSpots dynamically
      */
     @Override
     public List<BikeSpots> getBikeSpots() {
         List<BikeSpots> bikespots = access.getBikeSpots();
-        System.out.print("Final spots------------------>"+bikespots);
         return bikespots;
     }
 }

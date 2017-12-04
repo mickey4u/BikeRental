@@ -74,5 +74,4 @@ public class LoginAction implements Command, Constants, SessionAware, ModelDrive
     public User getModel() {
         return user;
     }
-
 }

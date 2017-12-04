@@ -12,5 +12,4 @@ public interface BikeSpotAccess {
     @UseRowMapper(BikeSpotMapper.class)
     List<BikeSpots> getBikeSpots();
 
-
 }
