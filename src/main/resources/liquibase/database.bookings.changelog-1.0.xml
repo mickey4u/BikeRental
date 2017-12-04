@@ -35,6 +35,8 @@
             </column>
             <column name="cancelled" type="boolean" defaultValueBoolean="false">
             </column>
+            <column name="activeBooking" type="boolean" defaultValueBoolean="false">
+            </column>
         </createTable>
     </changeSet>
 

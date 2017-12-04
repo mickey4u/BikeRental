@@ -30,7 +30,7 @@ public class BookDao implements IBookDao {
     public boolean insertBooking(Booking booking) {
         Optional.of(booking).orElseThrow(NullPointerException::new);
         // check if booking already exist
-        if (access.checkExist(booking.getBookingId())) {
+        if (access.checkActiveBooking(booking.getUsername())) {
             return false;
         }
         return access.insertBooking(booking);

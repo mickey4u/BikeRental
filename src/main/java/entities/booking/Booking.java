@@ -1,6 +1,5 @@
 package entities.booking;
 
-import entities.booking.BookingType;
 import lombok.Data;
 
 import java.sql.Timestamp;
@@ -22,9 +21,10 @@ public class Booking {
     private boolean status;
     // userID
     private String username;
-
     // start time for the bike
     private Timestamp startTime;
     // end time for the bike
     private Timestamp endTime;
+
+    private boolean activeBooking;
 }

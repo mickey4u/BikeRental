@@ -25,6 +25,14 @@ public interface BookAccess {
     @SqlQuery("select count(1) from BOOKINGS where booking_id = :bookingId")
     boolean checkExist(@Bind("bookingId") String bookingId);
 
+
+    /**
+     * Checks for active bookings for user
+      * @param username
+     * @return
+     */
+    @SqlQuery("select count(1) from BOOKINGS where username = :username and activeBooking = true")
+    boolean checkActiveBooking(@Bind("username") String username);
     /**
      * Retrieve a booking from the database
      *
@@ -41,8 +49,8 @@ public interface BookAccess {
      * @param booking
      * @return
      */
-    @SqlUpdate("insert into BOOKINGS(booking_id, bike_id, bike_spot, booking_type, status,username) values " +
-            "(:bookingId, :bikeId, :bikeSpot, :bookingType, :status, :username)")
+    @SqlUpdate("insert into BOOKINGS(booking_id, bike_id, bike_spot, booking_type, status,username, activeBooking) values " +
+            "(:bookingId, :bikeId, :bikeSpot, :bookingType, :status, :username, :activeBooking)")
     boolean insertBooking(@BindBean Booking booking);
 
     /**
@@ -51,7 +59,7 @@ public interface BookAccess {
      * @param bookingId id of the booking to be cancelled
      * @return
      */
-    @SqlUpdate("update BOOKINGS set status = true where booking_id = :bookingId")
+    @SqlUpdate("update BOOKINGS set status = true, activeBooking = false where booking_id = :bookingId")
     boolean cancelBooking(@Bind("bookingId") String bookingId);
 
     /**
@@ -71,7 +79,7 @@ public interface BookAccess {
      * @param endTime
      * @return
      */
-    @SqlUpdate("update BOOKINGS set end_time = :endTime where booking_id = :bookingId")
+    @SqlUpdate("update BOOKINGS set end_time = :endTime, activeBooking = false where booking_id = :bookingId")
     boolean endRentalTime(@Bind("bookingId") String bookingId, @Bind("endTime") Timestamp endTime);
 
     /**

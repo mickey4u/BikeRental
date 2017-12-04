@@ -28,6 +28,7 @@ public class MakeBookingAction extends ActionSupport {
             bookingDetails.setBikeSpot(bikeSpot);
             bookingDetails.setBookingType(BookingType.INSTANT_BOOKING);
             bookingDetails.setUsername(username);
+            bookingDetails.setActiveBooking(true);
             bookingStatus = bikeRentalSingleton.getBookModel().bookBike(bookingDetails);
         } catch (Exception e) {
             e.printStackTrace();

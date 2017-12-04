@@ -16,6 +16,8 @@ function loadBikesViews(json) {
     {
         json = "<html><p>Bikes Not Available</p></html>";
     }
+    jQuery('#grid').empty();
+    $("#grid").GridUnload();
     $("#grid").jqGrid({
         datatype: "local",
         height: 280,
@@ -91,7 +93,12 @@ function startTrip()
             bookingID: bikeCancelRow
         },
         success: function(json){
-            console.log(json);
+            var bookingStatus = json.toString();
+            if (bookingStatus !== "true") {
+                alert("Something Went wrong. Please try again'!!");
+            } else {
+                alert("Hola!!..Trip Started.");
+            }
                     },
         error: function (xhr) {
             alert("Error:" + "Ooooops! We're down. Come back again.");
@@ -114,8 +121,8 @@ var bookingID = bikeCancelRow;
                 bookingID: bookingID
             },
             success: function (json){
-
-                    displayFare(bookingID);
+                loadRentalHistory();
+                displayFare(bookingID);
 
             },
             error: function (xhr) {
@@ -138,8 +145,10 @@ function displayFare(bookingID){
             bookingID: bookingID
         },
         success: function (json){
-            console.log("fare is=="+ json);
-            ShowDialogBox("Total Fare", json, "Ok", null, "GoToAssetList", null)
+            alert("Total Fare : "+ json);
+/*
+            ShowDialogBox("Total Fare", json, "Ok")
+*/
         },
         error: function (xhr) {
             alert("Error:" + "Ooooops! We're down. Come back again.");
@@ -208,10 +217,10 @@ function bookBike() {
             success: function (json){
                 var bookingStatus = json.toString();
                 if (bookingStatus !== "true") {
-
+                    alert("You have an ongoing trip");
                 } else {
                     $("#goBack").click();
-                    ShowDialogBox('Title', 'Booking Successful.', 'Ok', '', 'GoToAssetList', null);
+                    alert("Booking Successful.");
                 }
 
             },
@@ -222,20 +231,9 @@ function bookBike() {
     }
 }
 
-function ShowDialogBox(title, content, btn1text, btn2text, functionText, parameterList) {
+function ShowDialogBox(title, content, btn1text) {
     var btn1css;
     var btn2css;
-    $('.selector').dialog('option', 'position', 'top');
-    if (btn1text == '') {
-        btn1css = "hidecss";
-    } else {
-        btn1css = "showcss";
-    }
-    if (btn2text == '') {
-        btn2css = "hidecss";
-    } else {
-        btn2css = "showcss";
-    }
     $("#lblMessage").html(content);
     $("#dialog").dialog({
         resizable: false,
@@ -245,20 +243,9 @@ function ShowDialogBox(title, content, btn1text, btn2text, functionText, paramet
         height: 'auto',
         bgiframe: false,
         hide: { effect: 'scale', duration: 100 },
-
         buttons: [
             {
                 text: btn1text,
-                "class": btn1css,
-                click: function () {
-
-                    $("#dialog").dialog('close');
-
-                }
-            },
-            {
-                text: btn2text,
-                "class": btn2css,
                 click: function () {
                     $("#dialog").dialog('close');
                 }
@@ -271,6 +258,9 @@ function ShowDialogBox(title, content, btn1text, btn2text, functionText, paramet
 * */
 function loadRentalHistory()
 {
+    jQuery("#homePage").css({
+        display: "block"
+    });
     var values = username.split(" ");
     var f_part = values[0];
     var u_name = values[1] ? username.substr(username.indexOf(' ') + 1) : '';
@@ -296,8 +286,8 @@ function createRentalHistoryable(json) {
     {
         json = "<html><p>You're yet to ride with us</p></html>";
     }
-    jQuery('#grid1').trigger( 'reloadGrid' );
-    jQuery('#grid1').jqGrid('clearGridData');
+    jQuery('#grid1').empty();
+    $("#grid1").GridUnload();
     jQuery("#grid1").jqGrid({
         datatype: "local",
         height: 300,
@@ -353,7 +343,6 @@ function cancelBooking()
                 bookingID: bikeCancelRow
             },
             success: function (json){
-                alert(json);
                 loadRentalHistory();
             },
             error: function (xhr) {

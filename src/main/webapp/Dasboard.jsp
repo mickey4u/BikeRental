@@ -71,12 +71,9 @@
     </form>
     <div id="lowerPanel">
         <button id="button" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit" onclick="checkSelection()">View Bikes</button>
-        <button id="returnBike" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit" onclick="returnBike()">Return Bike</button>
-<%--
-        <button id="startTrip" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit" onclick="startTrip()">Start Trip</button>
---%>
     </div>
     <button id="goBack" style="display: none;" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit">Back</button>
+    <button id="homePage" style="display: none;" class="ui-button ui-widget ui-corner-all ui-shadow ui-button-inherit">HomePage</button>
 
     <script type="text/javascript">
         /*
@@ -105,6 +102,10 @@
             $("#map").hide();$("#lowerPanel").hide();
             $("#viewHistory").css({
                 display: "block"
+            });
+            jQuery("#homePage").click(function(){
+               $("#homePage").hide();$("#viewHistory").hide();
+                $("#map").show();$("#lowerPanel").show();
             });
 
         })
