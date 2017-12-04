@@ -21,6 +21,7 @@ import models.bikespotmodel.BikeSpotModel;
 import models.bikespotmodel.IBikeSpotModel;
 import models.rentalmodel.BookModel;
 import models.rentalmodel.IBookModel;
+import models.rentalmodel.notifications.Subject;
 import models.rentalmodel.pay.IPayModel;
 import models.rentalmodel.pay.PayModel;
 import models.supportmodel.ISupportModel;
@@ -65,7 +66,7 @@ public class BikeRentalSingleton {
         bikeModel = new BikeModel(bikesDao);
 
         bookDao = new BookDao(jdbi.onDemand(BookAccess.class));
-        bookModel = new BookModel(bookDao, bikeModel);
+        bookModel = new BookModel(bookDao, bikeModel, userDao);
 
         supportDao = new SupportDao(jdbi.onDemand(SupportAccess.class));
         supportModel = new SupportModel(supportDao);
@@ -84,6 +85,7 @@ public class BikeRentalSingleton {
     private static class SingletonHelper {
 
         private static final BikeRentalSingleton instance = new BikeRentalSingleton();
+        private static final Subject notificationSubject = new Subject();
     }
 
     public IUserModel getUserModel() {
@@ -108,6 +110,10 @@ public class BikeRentalSingleton {
 
     public IBikeSpotModel getBikeSpotModel() {
         return bikeSpotModel;
+    }
+
+    public Subject getSubject() {
+        return SingletonHelper.notificationSubject;
     }
 
 }

@@ -1,9 +1,15 @@
 package models.rentalmodel;
 
 import dao.bookingdao.IBookDao;
+import dao.userdao.IUserDao;
 import entities.bike.BikeStatus;
 import entities.booking.Booking;
+import entities.users.User;
+import main.BikeRentalSingleton;
 import models.bikemodel.IBikeModel;
+import models.rentalmodel.notifications.BookingNotification;
+import models.rentalmodel.notifications.Observer;
+import models.rentalmodel.notifications.Subject;
 import utilities.Utils;
 
 import java.util.List;
@@ -12,20 +18,35 @@ import java.util.List;
 public class BookModel implements IBookModel {
     private IBookDao bookDao;
     private IBikeModel bikeModel;
+    private IUserDao userDao;
     private Utils bookingUtility;
 
-    public BookModel(IBookDao bookDao, IBikeModel bikeModel) {
+    public BookModel(IBookDao bookDao, IBikeModel bikeModel, IUserDao userDao) {
         this.bookDao = bookDao;
         this.bikeModel = bikeModel;
+        this.userDao = userDao;
         bookingUtility = new Utils();
     }
 
     @Override
     public boolean bookBike(Booking booking) {
-        booking.setBookingId(bookingUtility.createBookingID());
+        String bookingId = bookingUtility.createBookingID();
+        booking.setBookingId(bookingId);
         if (bookDao.insertBooking(booking)) {
             // change status to booked
             bikeModel.updateBikeStatus(booking.getBikeId(), BikeStatus.BOOKED);
+            // send user booking notification
+            Subject subject = BikeRentalSingleton.getInstance().getSubject();
+            // notification observer
+            Observer bookingObserver = new BookingNotification("Booking Notifications");
+            // attach observer to subject
+            subject.attach(bookingObserver);
+            // send notification to user for booking
+            User renter = userDao.findUserById(booking.getUsername());
+            subject.sendNotifications("Dear " + renter.getFirstname() + " " +
+                    "You have successfully booked a  bike." +
+                    '\n' + "Your booking ID is : " + bookingId);
+
             return true;
         }
         return false;

@@ -24,10 +24,10 @@ public class Subject implements ISubject {
     }
 
     @Override
-    public void register(Observer observer) {
+    public void attach(Observer observer) {
         // throw a null pointer if the observer is null
         Optional.of(observer).orElseThrow(NullPointerException::new);
-        // check if observer is already registered,otherwise register the observer
+        // check if observer is already registered,otherwise attach the observer
         synchronized (MUTEX) {
             boolean exist = observers.stream().anyMatch(obs -> obs.equals(observer));
             if (!exist) {
@@ -38,7 +38,7 @@ public class Subject implements ISubject {
     }
 
     @Override
-    public void unregister(Observer observer) {
+    public void detach(Observer observer) {
 
         synchronized (MUTEX) {
             observers.remove(observer);
@@ -59,6 +59,16 @@ public class Subject implements ISubject {
         existingObservers.stream().forEach(eo -> eo.update());
     }
 
+    @Override
+    public Object getState(Observer observer) {
+        synchronized (MUTEX) {
+            if (!observers.stream().anyMatch(obs -> obs.equals(observer))) {
+                return null;
+            }
+            return this.message;
+        }
+    }
+
 
     /**
      * Sends notification to observers registered with it
@@ -67,7 +77,7 @@ public class Subject implements ISubject {
      */
     public void sendNotifications(String notificationMessage) {
 
-        System.out.println(notificationMessage);
+        System.err.println(notificationMessage);
         this.message = notificationMessage;
         this.isUpdated = true;
         // notify all registered observers
