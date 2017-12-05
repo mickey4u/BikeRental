@@ -37,8 +37,11 @@ public class LoggingDispatcher implements ILoggingDispatcher {
 
         existingClientRequestInterceptors.forEach(eld -> {
             // dispatch callback hook method
-            System.err.println(context.getBooking().toString());
-            eld.onPreBookingRequest(context);
+            if(context.getBooking().getStartTime() == null) {
+                eld.onPreBookingRequest(context);
+            }else{
+                eld.onPostBookingRequest(context);
+            }
         });
     }
 
