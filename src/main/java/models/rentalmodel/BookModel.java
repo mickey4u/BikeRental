@@ -59,12 +59,6 @@ public class BookModel implements IBookModel {
 
             return true;
         }
-        // booking context object
-        bookingRequest = new BookingRequest();
-        bookingRequest.setBooking(booking);
-        System.err.println("------>Called");
-        // pass the context object to teh dispatcher
-        LoggingDispatcher.getInstance().dispatchClientPreRequestPreMarshal(bookingRequest);
         return false;
     }
 
@@ -84,6 +78,12 @@ public class BookModel implements IBookModel {
             // change status to in use
             Booking booking = bookDao.findBookingById(bookingId);
             bikeModel.updateBikeStatus(booking.getBikeId(), BikeStatus.IN_USE);
+
+            // booking context object
+            bookingRequest = new BookingRequest();
+            bookingRequest.setBooking(booking);
+            // pass the context object to teh dispatcher
+            LoggingDispatcher.getInstance().dispatchClientPreRequestPreMarshal(bookingRequest);
             return true;
         }
         return false;

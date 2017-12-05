@@ -1,7 +1,6 @@
 package interceptors.perevent;
 
 import entities.booking.Booking;
-import interceptors.MarshaledRequest;
 import utilities.FileManager;
 
 /**
@@ -11,13 +10,15 @@ public class ClientBookingLoggerInterceptor implements IClientBookingInterceptor
 
     @Override
     public void onPreBookingRequest(IBookingRequest context) {
-        System.err.println("------------->" + context.getBooking().toString());
         Booking booking = context.getBooking();
         FileManager.writeToFile(FileManager.BOOKINGS_lOG_FILE.getAbsolutePath(), booking);
     }
 
     @Override
-    public void onPostBookingRequest(MarshaledRequest context) {
-
+    public void onPostBookingRequest(IBookingRequest context) {
+        Booking booking = context.getBooking();
+        String logMessage = "Booking with ID : " + booking.getBookingId() + " started at : "
+                + booking.getStartTime();
+        FileManager.writeToFile(FileManager.AFTER_BOOKINGS_lOG_FILE.getAbsolutePath(), logMessage);
     }
 }

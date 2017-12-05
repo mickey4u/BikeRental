@@ -33,8 +33,6 @@ public class MakeBookingAction extends ActionSupport {
         } catch (Exception e) {
             e.printStackTrace();
         }
-       // IClientBookingInterceptor bookingInterceptor = new ClientBookingLoggerInterceptor();
-        //LoggingDispatcher.getInstance().register(bookingInterceptor);
 
         return SUCCESS;
     }
