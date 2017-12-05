@@ -111,9 +111,10 @@ function startTrip()
 /**
  *
  */
-function endTrip()
+function endTrip(myCellData)
 {
-var bookingID = bikeCancelRow;
+alert(myCellData);
+    var bookingID = bikeCancelRow;
     {
         $.ajax({
             type: 'GET',
@@ -294,18 +295,18 @@ function createRentalHistoryable(json) {
     jQuery("#grid1").jqGrid({
         datatype: "local",
         height: 300,
-        width:600,
+        width:700,
         colNames: ['Bike ID','Bike Spot','Booking ID','','Start Booking','End Booking'],
         colModel: [
             { name: 'bikeId', key: true, sorttype: "int", width: 120 },
             { name: 'bikeSpot', fixed: true ,width: 120 },
-            { name: 'bookingId', width: 120  },
+            { name: 'bookingId', width: 160  },
             {
                 name: '', align: 'center', sortable: false, width: 80,
                 formatter: function () {
                     var grid = $('#grid'), rowid = $(this).closest("tr.jqgrow").attr("id");
                     var myCellData = grid.jqGrid('getCell', rowid, 'bikeId');
-                    return "<a href='#' onclick='cancelBooking()'>Cancel Booking</a>";
+                    return "<a href='#' id='cancelBooking' onclick='cancelBooking()'>Cancel Booking</a>";
                 },
             },
             { name: '', align: 'center', sortable: false, width: 80,
