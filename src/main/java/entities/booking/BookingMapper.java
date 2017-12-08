@@ -22,7 +22,6 @@ public class BookingMapper implements RowMapper<Booking> {
         booking.setBookingType(BookingType.valueOf(rs.getString("booking_type")));
         booking.setStartTime(rs.getTimestamp("start_time"));
         booking.setEndTime(rs.getTimestamp("end_time"));
-
         return booking;
     }
 }

@@ -16,10 +16,8 @@ public class BookingNotification implements Observer {
      */
     @Override
     public void update() throws NullPointerException {
-        System.out.print("observer-----inside----->"+this);
         try{
             Optional<String> msg = Optional.ofNullable((String) subject.getState(this));
-            System.out.print("The message is"+ msg);
             if (msg == null) {
                 System.out.println("No notifications");
             } else

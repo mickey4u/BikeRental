@@ -10,11 +10,10 @@ public class ResetPasswordAction extends ActionSupport {
     String userId;
     String newPassword;
     IUserModel userPasswordReset;
-    public String updatePassword() throws FileNotFoundException
-    {
-        Boolean status = null;
-        status = userPasswordReset.passwordReset(userId,secretAnswer,newPassword);
-        if(status)
+
+    public String updatePassword() throws FileNotFoundException {
+        Boolean status = userPasswordReset.passwordReset(userId, secretAnswer, newPassword);
+        if (status)
             return SUCCESS;
         else
             return ERROR;

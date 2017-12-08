@@ -1,0 +1,146 @@
+Timestamp2017-12-04 23:24:56.044
+TimestampBooking(bookingId=8e122812-9e93-4468-b7e4-73b59808cce0, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+
+Timestamp2017-12-04 23:27:42.81
+TimestampBooking(bookingId=8b448fee-10cf-4995-8e61-40e614ee4e49, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+
+Timestamp2017-12-04 23:31:54.58
+TimestampBooking(bookingId=6048bbc5-b115-446d-998f-a4851559155d, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+
+Timestamp2017-12-04 23:34:27.184
+TimestampBooking(bookingId=de2caef2-8609-455e-9efc-6b0f9bfec8ef, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+
+Timestamp2017-12-04 23:38:51.415
+TimestampBooking(bookingId=0b26e039-ac89-4d3c-91cc-76ca9a239465, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+
+Timestamp2017-12-05 00:06:12.102
+TimestampBooking(bookingId=5c1c97dc-c17c-4d58-8b4b-8baf39881026, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+
+Timestamp2017-12-05 00:08:29.849
+TimestampBooking(bookingId=c25d163d-f02f-4b96-8f21-8f7cdde89b51, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+
+Timestamp2017-12-05 00:38:01.821
+TimestampBooking(bookingId=6c8042f0-f5d3-4670-8448-2282cce3f7af, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+
+Timestamp2017-12-05 00:52:05.545
+TimestampBooking(bookingId=f45ba678-f26a-4426-a35a-31eca5fae08c, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+
+Timestamp2017-12-05 00:54:40.411
+TimestampBooking(bookingId=158f60f8-9e65-43cf-bc75-4404529729fc, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+
+Timestamp2017-12-05 01:03:08.73
+TimestampBooking(bookingId=d816977a-3a97-430d-b997-8b1ada64c6f1, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+
+Timestamp : 2017-12-05 02:20:46.932
+Booking(bookingId=df6519b7-f987-4305-8ec0-8f4b82311fd5, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-05 14:28:18.669
+Booking(bookingId=da34264a-0c21-4918-a577-a033931985ae, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-05 15:48:09.973
+Booking(bookingId=2289b376-7b08-47b1-8ebb-8b19cef4669e, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-05 23:39:46.907
+Booking(bookingId=769df0fb-a638-46c2-8a89-2a7134e8334d, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 15:39:12.73
+Booking(bookingId=6a0fd084-36e8-4df9-b73c-69207f8d1a4f, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 15:47:23.487
+Booking(bookingId=74489124-61a5-420f-9557-e9201e0535cf, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 15:54:16.172
+Booking(bookingId=e8a26abe-b585-4c2b-b943-0bd00111dff5, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 16:01:33.242
+Booking(bookingId=515bc66a-30ba-4040-a857-b4f2c6403a7c, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 16:17:40.104
+Booking(bookingId=662419c7-99f2-486f-a137-ab96b0d4a138, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 16:26:54.701
+Booking(bookingId=424441ab-448d-4569-ad24-304aad18979e, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 16:32:07.668
+Booking(bookingId=13426f24-8847-4f1b-a4fd-68bd1a1975e1, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 16:32:56.179
+Booking(bookingId=2210d108-a3cd-460f-b1bb-519fea5208c4, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 16:35:04.014
+Booking(bookingId=74ecf30d-4423-49e5-964f-1ef5d92d3d2c, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 16:39:13.284
+Booking(bookingId=6c5e666b-2893-4230-a366-35e75a7da857, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 16:46:35.98
+Booking(bookingId=36e014f0-1b66-4612-998c-b0692c70fd4f, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-07 16:50:25.805
+Booking(bookingId=2335df06-0e48-404d-88d5-52347aa130c2, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 01:28:59.626
+Booking(bookingId=1e31ab3d-a859-465e-a117-66493713db82, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 02:32:28.993
+entities.booking.Booking@3708ea8e
+
+Timestamp : 2017-12-08 14:08:27.261
+entities.booking.Booking@6049b811
+
+Timestamp : 2017-12-08 14:21:21.963
+entities.booking.Booking@7223f17d
+
+Timestamp : 2017-12-08 14:36:58.684
+entities.booking.Booking@6a993a55
+
+Timestamp : 2017-12-08 14:50:01.034
+Booking(bookingId=da454ace-3211-41a6-b970-888e264957c0, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 14:53:58.831
+Booking(bookingId=002b8bda-69ff-43e2-8d58-688c64d82ba6, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 15:00:24.494
+Booking(bookingId=283e8c9b-72ad-4756-8bf7-ee5c13c80b37, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 15:06:33.194
+Booking(bookingId=e4940d8d-332b-41e2-98f3-1559758386da, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 15:07:06.158
+Booking(bookingId=edde3884-6a5a-4bcd-929d-ed82be560994, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 15:09:24.744
+Booking(bookingId=e3a808d7-2211-4fbb-820a-80b83f939d84, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 15:10:42.884
+Booking(bookingId=adea4934-bb32-45ea-b095-6fe86725475e, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 15:14:57.972
+Booking(bookingId=80ceef6d-1973-4c9c-8f45-9ba16fcd27ca, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 15:16:39.524
+Booking(bookingId=cb4b3fb8-8127-4b10-bbc3-469e9447defc, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 16:14:36.112
+Booking(bookingId=4e1e8b42-9af1-4c5e-a02b-5660207959ff, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 18:25:30.916
+Booking(bookingId=4353f6a8-a6bb-49d4-866c-b780e44ddcbe, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 19:21:54.652
+Booking(bookingId=a39f9a25-42cf-4599-a204-25c07b6631e1, bikeId=1001, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+
+Timestamp : 2017-12-08 22:21:39.242
+Booking(bookingId=6b86998e-8dd3-47d7-9f38-96ce754b7f93, bikeId=1000, bikeSpot=Stables, bookingType=INSTANT_BOOKING, status=false, username=2037, startTime=null, endTime=null, activeBooking=true)
+

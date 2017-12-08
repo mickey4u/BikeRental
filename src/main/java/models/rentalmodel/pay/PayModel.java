@@ -31,35 +31,42 @@ public class PayModel implements IPayModel {
     }
 
     @Override
-    public MonetaryAmount amountDue(String bookingId) {
+    public MonetaryAmount amountDue(String bookingId) throws NullPointerException {
         // get the time the bike was submitted check if penalty is applied
-        Booking booking = bookDao.findBookingById(bookingId);
-        DateTime start = new DateTime(booking.getStartTime().getTime());
-        DateTime stop = new DateTime(booking.getEndTime().getTime());
-        int duration = Minutes.minutesBetween(start, stop).getMinutes();
+        try{
+            Booking booking = bookDao.findBookingById(bookingId);
+            DateTime start = new DateTime(booking.getStartTime().getTime());
+            DateTime stop  = new DateTime(booking.getEndTime().getTime());
+            int duration = Minutes.minutesBetween(start, stop).getMinutes();
 
-        // get the user rank
-        User renter = userDao.findUserById(booking.getUsername());
-        System.err.println(renter.toString());
-        UserRank userRank = renter.getUserRank();
+            // get the user rank
+            User renter = userDao.findUserById(booking.getUsername());
+            System.err.println(renter.toString());
+            UserRank userRank = renter.getUserRank();
 
-        // get the bike and check the bike type to determine rate
-        Bike rentedBike = bikeDao.findBikeById(booking.getBikeId()).get();
-        BikeType bikeType = rentedBike.getBikeType();
+            // get the bike and check the bike type to determine rate
+            Bike rentedBike = bikeDao.findBikeById(booking.getBikeId()).get();
+            BikeType bikeType = rentedBike.getBikeType();
 
-        FareFactory fareFactory = new FareFactory();
-        IBikeFare fare;
+            FareFactory fareFactory = new FareFactory();
+            IBikeFare fare;
 
-        // get users fare type if user is subject to penalty fare or not
-        fare = fareFactory.getFare(duration);
+            // get users fare type if user is subject to penalty fare or not
+            fare = fareFactory.getFare(duration);
 
-        // get fare amount without discounts
-        MonetaryAmount fareAmount = fare.calculateFare(Long.valueOf(duration), bikeType);
-        // amount to pay by applying appropriate rank attached to a user
-        IFare amountToPay = fareFactory.getFinalFare(userRank);
-        // compute the amount due
-        Number amountDue = fareAmount.getNumber();
+            // get fare amount without discounts
+            MonetaryAmount fareAmount = fare.calculateFare(Long.valueOf(duration), bikeType);
+            // amount to pay by applying appropriate rank attached to a user
+            IFare amountToPay = fareFactory.getFinalFare(userRank);
+            // compute the amount due
+            Number amountDue = fareAmount.getNumber();
 
-        return amountToPay.calculate(amountDue);
+            return amountToPay.calculate(amountDue);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+       return null;
     }
 }

@@ -28,11 +28,11 @@ public class LoggingDispatcher implements ILoggingDispatcher {
     }
 
     @Override
-    public void dispatchClientPreRequestPreMarshal(IBookingRequest context) {
+    public void dispatchClientRequest(IBookingRequest context) {
         List<IClientBookingInterceptor> existingClientRequestInterceptors = null;
         synchronized (MUTEX) {
             // get all registered interceptors
-            existingClientRequestInterceptors = new ArrayList<>(clientRequestInterceptors);
+            existingClientRequestInterceptors = new ArrayList(clientRequestInterceptors);
         }
 
         existingClientRequestInterceptors.forEach(eld -> {
@@ -50,7 +50,7 @@ public class LoggingDispatcher implements ILoggingDispatcher {
         synchronized (MUTEX) {
             boolean exists = clientRequestInterceptors
                     .stream()
-                    .filter(cri -> clientRequestInterceptor.equals(cri))
+                    .filter(clientRequestInterceptor::equals)
                     .findFirst()
                     .isPresent();
 
@@ -65,7 +65,7 @@ public class LoggingDispatcher implements ILoggingDispatcher {
         synchronized (MUTEX) {
             boolean exists = clientRequestInterceptors
                     .stream()
-                    .filter(cri -> clientRequestInterceptor.equals(cri))
+                    .filter(clientRequestInterceptor::equals)
                     .findFirst()
                     .isPresent();
 

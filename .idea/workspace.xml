@@ -7,7 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbac297a-215d-4b13-9c17-c43ab0a233c5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AfterBookings.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bookings.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/DisplayFareAction.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/DisplayFareAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/usercontroller/DashboardAction.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/usercontroller/DashboardAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/usercontroller/ResetPasswordAction.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/usercontroller/ResetPasswordAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/booking/Booking.java" afterPath="$PROJECT_DIR$/src/main/java/entities/booking/Booking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entities/booking/BookingMapper.java" afterPath="$PROJECT_DIR$/src/main/java/entities/booking/BookingMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/interceptors/ILoggingDispatcher.java" afterPath="$PROJECT_DIR$/src/main/java/interceptors/ILoggingDispatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/interceptors/LoggingDispatcher.java" afterPath="$PROJECT_DIR$/src/main/java/interceptors/LoggingDispatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java" afterPath="$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/PenaltyFare.java" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/PenaltyFare.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/BookingNotification.java" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/BookingNotification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/Subject.java" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/Subject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java" afterPath="$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/bikeRental.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/bikeRental.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/bikes.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/bikes.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,22 +54,102 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="bikes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bikes.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BikeMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/BikeMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="311" column="68" lean-forward="true" selection-start-line="311" selection-start-column="68" selection-end-line="311" selection-end-column="68" />
+            <state relative-caret-position="119">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bikeRental.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bikeRental.css">
+      <file leaf-file-name="PayModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="124" column="30" lean-forward="true" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="30" />
+            <state relative-caret-position="339">
+              <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/Observer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookingNotification.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/BookingNotification.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/Subject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-119">
+              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bikes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bikes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="169" column="47" lean-forward="false" selection-start-line="169" selection-start-column="26" selection-end-line="169" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IBikeFare.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/IBikeFare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NormalFare.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/NormalFare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilsTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/UtilsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserAccess.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -93,6 +193,9 @@
       <find>fare</find>
       <find>endTrip</find>
       <find>startTrip</find>
+      <find>displayFare</find>
+      <find>alert</find>
+      <find>book</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -124,10 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/controllers/usercontroller/RegisterAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/bike/Booking.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/rentalHistory.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/CancelBookingAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/userdao/RentalHistoryMapper.java" />
@@ -135,7 +234,6 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/EndTripAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/displayFare.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/displayFareAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/booking/BookingMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/Notifications.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/RentalHistoryAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/usercontroller/RentalHistoryAction.java" />
@@ -144,16 +242,12 @@
         <option value="$PROJECT_DIR$/src/main/java/dao/bikedao/BikeDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/BikesAction.java" />
         <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.bookings.changelog-1.0.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/booking/Booking.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/MakeBookingAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/bookingdao/IBookDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/bookingdao/BookAccess.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/bikeSpot/DashboardBikeSpotsAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/DisplayFareAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/StartTripAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/usercontroller/UserAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/usercontroller/ResetPasswordAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/bikedao/BikeAccess.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/bikespot/BikeSpotAccess.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/bikespot/BikeSpotDao.java" />
@@ -162,19 +256,28 @@
         <option value="$PROJECT_DIR$/src/main/java/dao/userdao/BikeSpotMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/utilities/IUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/users/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/Observer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/BookingNotification.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/Subject.java" />
         <option value="$PROJECT_DIR$/Bookings.txt" />
         <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/GoldDiscount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/bikes.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/Dasboard.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/usercontroller/DashboardAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/usercontroller/ResetPasswordAction.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bikeRental.css" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/booking/BookingMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/booking/Booking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/BookingNotification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/bikecontroller/DisplayFareAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/bikes.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interceptors/LoggingDispatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/PenaltyFare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/Subject.java" />
       </list>
     </option>
   </component>
@@ -229,9 +332,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-62" />
-    <option name="y" value="81" />
-    <option name="width" value="697" />
+    <option name="x" value="-14" />
+    <option name="y" value="47" />
+    <option name="width" value="1181" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -386,10 +489,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -421,20 +520,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BikeRental" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BikeRental" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -446,17 +541,17 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\resources\liquibase" />
+      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF\lib" />
+      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\resources" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="models" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="models" />
-      <recent name="dao" />
-      <recent name="dao.userdao" />
-      <recent name="entities" />
-      <recent name="Connection" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mayank\IdeaProjects\BikeRental\src\main\webapp\images" />
@@ -465,11 +560,12 @@
       <recent name="C:\Users\Mayank\IdeaProjects\BikeRental\src\main" />
       <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\resources\liquibase" />
-      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF\lib" />
-      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\Molly\IdeaProjects\BikeRental\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="models" />
+      <recent name="dao" />
+      <recent name="dao.userdao" />
+      <recent name="entities" />
+      <recent name="Connection" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -885,6 +981,319 @@
               <JettyConfigFile>
                 <option name="path" value="modules/websocket.mod" />
               </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\alpn.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\annotations.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\apache-jsp.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\apache-jstl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\cdi.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\client.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\connectionlimit.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\conscrypt.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\console-capture.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\continuation.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\debug.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\debuglog.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\deploy.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\ext.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\fcgi.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\flight-recorder.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\gcloud-datastore.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\gcloud.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\gzip.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\hawtio.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\hazelcast-embedded-sessions.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\hazelcast-remote-sessions.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\home-base-warning.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\http-forwarded.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\http.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\http2.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\http2c.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\https.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\ipaccess.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jaas.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jamon.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jaspi.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jcl-slf4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jminix.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jmx-remote.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="active" value="true" />
+                <option name="path" value="modules\jmx.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jndi.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jolokia.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jsp.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jstl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jul-impl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jul-slf4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jvm.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\log4j-impl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\log4j2-api.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\log4j2-impl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\log4j2-slf4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logback-access.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logback-impl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-jetty.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-jul.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-log4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-log4j2.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-logback.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-slf4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\lowresources.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\mail.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\plus.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\proxy-protocol-ssl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\proxy-protocol.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\proxy.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\quickstart.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\requestlog.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\resources.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\rewrite-compactpath.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\rewrite-customizer.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\rewrite.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\security.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\server.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\servlet.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\servlets.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-cache-hash.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-cache-null.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-cache.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-file.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-gcloud.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-hazelcast-embedded.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-hazelcast-remote.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-infinispan-embedded.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-infinispan-remote.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-jdbc.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-mongo.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\sessions.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\setuid.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-api.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-jul.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-log4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-log4j2.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-logback.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-simple-impl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\spring.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\ssl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\stats.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\stop.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\threadlimit.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\transactions.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket-forwarded.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket-http.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket-http2c.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket-proxy-protocol.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket-secure.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\webapp.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\websocket.mod" />
+              </JettyConfigFile>
             </list>
           </option>
           <option name="myConfigFiles">
@@ -1216,6 +1625,319 @@
               <JettyConfigFile>
                 <option name="path" value="modules/websocket.mod" />
               </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\alpn.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\annotations.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\apache-jsp.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\apache-jstl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\cdi.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\client.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\connectionlimit.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\conscrypt.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\console-capture.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\continuation.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\debug.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\debuglog.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\deploy.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\ext.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\fcgi.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\flight-recorder.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\gcloud-datastore.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\gcloud.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\gzip.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\hawtio.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\hazelcast-embedded-sessions.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\hazelcast-remote-sessions.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\home-base-warning.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\http-forwarded.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\http.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\http2.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\http2c.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\https.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\ipaccess.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jaas.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jamon.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jaspi.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jcl-slf4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jminix.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jmx-remote.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="active" value="true" />
+                <option name="path" value="modules\jmx.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jndi.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jolokia.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jsp.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jstl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jul-impl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jul-slf4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\jvm.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\log4j-impl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\log4j2-api.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\log4j2-impl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\log4j2-slf4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logback-access.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logback-impl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-jetty.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-jul.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-log4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-log4j2.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-logback.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\logging-slf4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\lowresources.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\mail.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\plus.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\proxy-protocol-ssl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\proxy-protocol.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\proxy.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\quickstart.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\requestlog.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\resources.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\rewrite-compactpath.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\rewrite-customizer.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\rewrite.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\security.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\server.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\servlet.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\servlets.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-cache-hash.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-cache-null.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-cache.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-file.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-gcloud.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-hazelcast-embedded.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-hazelcast-remote.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-infinispan-embedded.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-infinispan-remote.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-jdbc.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\session-store-mongo.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\sessions.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\setuid.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-api.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-jul.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-log4j.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-log4j2.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-logback.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\slf4j-simple-impl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\spring.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\ssl.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\stats.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\stop.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\threadlimit.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\transactions.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket-forwarded.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket-http.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket-http2c.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket-proxy-protocol.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket-secure.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\unixsocket.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\webapp.mod" />
+              </JettyConfigFile>
+              <JettyConfigFile>
+                <option name="path" value="modules\websocket.mod" />
+              </JettyConfigFile>
             </list>
           </option>
         </data>
@@ -1500,7 +2222,10 @@
       <workItem from="1512071108316" duration="8121000" />
       <workItem from="1512224465189" duration="83754000" />
       <workItem from="1512399687630" duration="29831000" />
-      <workItem from="1512434989102" duration="1623000" />
+      <workItem from="1512434989102" duration="2659000" />
+      <workItem from="1512439033053" duration="2424000" />
+      <workItem from="1512483959795" duration="30310000" />
+      <workItem from="1512743456740" duration="10003000" />
     </task>
     <task id="LOCAL-00001" summary="Partial commit for UserDao implementation">
       <created>1509711964430</created>
@@ -1768,7 +2493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512430907280</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="minor changes">
+      <created>1512437858128</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1512437858128</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1777,7 +2509,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="623556000" />
+    <option name="totallyTimeSpent" value="667329000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1795,72 +2527,78 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27380952" sideWeight="0.2246596" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15615141" sideWeight="0.49707174" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16490166" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2344932" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23979592" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1802721" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27602524" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50510204" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3713799" sideWeight="0.4919473" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3622449" sideWeight="0.49121523" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5102041" sideWeight="0.7753404" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20189275" sideWeight="0.4941435" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17246597" sideWeight="0.76046515" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25510204" sideWeight="0.7753404" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3622449" sideWeight="0.49121523" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20189275" sideWeight="0.4941435" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19288956" sideWeight="0.76046515" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304539" sideWeight="0.23953488" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35714287" sideWeight="0.4795022" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5008518" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48601398" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37414965" sideWeight="0.4919473" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35714287" sideWeight="0.4795022" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5008518" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27380952" sideWeight="0.2246596" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15615141" sideWeight="0.49707174" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16490166" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2344932" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23979592" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1802721" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48601398" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27602524" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37414965" sideWeight="0.4919473" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50510204" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3713799" sideWeight="0.4919473" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3622449" sideWeight="0.49121523" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23809524" sideWeight="0.7753404" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20189275" sideWeight="0.4941435" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17246597" sideWeight="0.76046515" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25510204" sideWeight="0.7753404" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3622449" sideWeight="0.49121523" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20189275" sideWeight="0.4941435" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27760968" sideWeight="0.76046515" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24304539" sideWeight="0.23953488" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35714287" sideWeight="0.4795022" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1910,8 +2648,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Use Case 3a and A Dashboard for user" />
-    <MESSAGE value="Error fixed" />
     <MESSAGE value="Use Case 7 working" />
     <MESSAGE value="Added initial work on bookkeeping" />
     <MESSAGE value="Database creation with user login, registration and logout" />
@@ -1935,31 +2671,27 @@
     <MESSAGE value="Code Changes for single Booking per user.&#10;UI Changes.&#10;1. Button Implemented&#10;2. UI Fixes" />
     <MESSAGE value="Active bookings minor fix." />
     <MESSAGE value="nothing" />
-    <option name="LAST_COMMIT_MESSAGE" value="nothing" />
+    <MESSAGE value="minor changes" />
+    <MESSAGE value="alerts removed.&#10;Sysouts removed." />
+    <option name="LAST_COMMIT_MESSAGE" value="alerts removed.&#10;Sysouts removed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/utilities/FileManager.java</url>
-          <line>54</line>
+          <line>41</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/utilities/FileManager.java</url>
-          <line>56</line>
+          <line>42</line>
           <properties />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/utilities/FileManager.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="59" />
+      <option name="time" value="60" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1968,190 +2700,197 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/ILedgerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/ITransactionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/LedgerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/bookkeepingmodel/TransactionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/booking/Booking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="24" />
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/IBikeFare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/NormalFare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/PenaltyFare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/BikeFare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareDecorator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/booking/BookingMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/GoldDiscount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/IFare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/NoDiscount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/SilverDiscount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/IPayModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/supportmodel/ISupportModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/supportmodel/SupportModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/FileManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/Utils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-806">
+          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bookingdao/IBookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bookingdao/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#601#602#0" expanded="false" />
+            <element signature="e#657#658#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.bookings.changelog-1.0.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bookingdao/BookAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/paymentcontroller/PayAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="18" />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/IUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.changelog-master.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.transactions.changelog-1.0.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/BikeDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.transactionlines.changelog-1.0.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/BikeAccess.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.support.changelog-1.0.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/RentalHistoryAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptors/perevent/IBookingRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/money/money-api/1.0.1/money-api-1.0.1.jar!/javax/money/NumberSupplier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="74" column="75" lean-forward="true" selection-start-line="74" selection-start-column="75" selection-end-line="74" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptors/ILoggingDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptors/LoggingDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-222">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptors/perevent/IClientBookingInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptors/perevent/BookingRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#242#243#0" expanded="false" />
+            <element signature="e#280#281#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptors/perevent/ClientBookingLoggerInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/ISubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -2159,50 +2898,192 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/MakeBookingAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="31" column="67" lean-forward="false" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+          <caret line="31" column="66" lean-forward="false" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/IBookModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="178">
           <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Collection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="579" column="22" lean-forward="false" selection-start-line="579" selection-start-column="22" selection-end-line="579" selection-end-column="22" />
+        <state relative-caret-position="179">
+          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/stream/Stream.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikecontroller/DisplayFareAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="874" column="12" lean-forward="false" selection-start-line="874" selection-start-column="12" selection-end-line="874" selection-end-column="12" />
+        <state relative-caret-position="255">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/List.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/IPayModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="237" column="12" lean-forward="false" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bookingdao/BookAccess.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/PenaltyFare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/FareFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/GoldDiscount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/FareDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/SilverDiscount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/IFare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/fare/BikeFare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/bookkeeping/TransactionLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/bookkeeping/TransactionBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/BikeAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/BikeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/IBikeDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="33" column="96" lean-forward="false" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="96" />
+          <caret line="67" column="12" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/BikeRentalSingleton.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/bikedao/BikeMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="114" column="19" lean-forward="false" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+        <state relative-caret-position="119">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/UtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/bikeSpot/DashboardBikeSpotsAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/IBikeFare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/charges/NormalFare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/pay/PayModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2210,1028 +3091,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/usercontroller/RentalHistoryAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="55" column="90" lean-forward="true" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/userdao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="73" column="31" lean-forward="false" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/usermodel/UserModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="59" column="31" lean-forward="false" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/usermodel/IUserModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="43" column="18" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/ISubject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/BookModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211">
-          <caret line="44" column="70" lean-forward="false" selection-start-line="44" selection-start-column="70" selection-end-line="44" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/BookingNotification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/database.bookings.changelog-1.0.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JavaScript-modules-diagram/C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/utilities;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/bike;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/bikeSpot;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/bikecontroller;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/bikeSpot;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/paymentcontroller;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/main;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/interceptors;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/command;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/support;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/models;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/support;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/usercontroller;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/dao;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/booking;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/users;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/bookkeeping;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers;">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JavaScript-modules-diagram</ID>
-          <OriginalElement>$PROJECT_DIR$/src/main/java/utilities;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/bike;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/bikeSpot;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/bikecontroller;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/bikeSpot;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/paymentcontroller;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/main;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/interceptors;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/command;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/support;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/models;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/support;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers/usercontroller;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/dao;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/booking;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/users;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/entities/bookkeeping;C:/Users/Mayank/IdeaProjects/BikeRental/src/main/java/controllers;</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="561.0" y="220.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>All</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/users/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/controllers">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>controllers</OriginalElement>
-          <nodes>
-            <node x="1654.5833333333333" y="2960.5">dao.bookkeepingdao.AccountDao</node>
-            <node x="2837.429666740708" y="413.0">entities.bike</node>
-            <node x="4788.97817864547" y="1106.5">interceptors.UserAware</node>
-            <node x="3570.172483766233" y="45.0">entities.users.UserRank</node>
-            <node x="896.0" y="2349.5">controllers.usercontroller.RentalHistoryAction</node>
-            <node x="1622.8183749574378" y="900.0">utilities.IUtil</node>
-            <node x="2989.452898766962" y="1117.5">dao.userdao</node>
-            <node x="2356.8207559098187" y="1117.5">dao.bookingdao</node>
-            <node x="4575.118912337662" y="0.0">entities.users.Address</node>
-            <node x="2110.904089243152" y="1117.5">dao.bikespot</node>
-            <node x="293.8555555555555" y="3072.5">entities.bookkeeping.Transaction</node>
-            <node x="2627.0833333333335" y="2602.5">controllers.bikecontroller.RegisterBike</node>
-            <node x="2138.9928571428563" y="56.0">entities.booking.BookingType</node>
-            <node x="4454.452245670995" y="236.0">entities.users.User</node>
-            <node x="4059.2281786454705" y="1387.0">utilities.FileManager</node>
-            <node x="372.25" y="3385.5">dao.bookkeepingdao.ITransactionDao</node>
-            <node x="1163.0833333333333" y="2602.5">entities.bookkeeping.Ledger</node>
-            <node x="2647.452898766962" y="922.5">dao.bikedao</node>
-            <node x="1248.3839242552237" y="1386.5">models.supportmodel.SupportModel</node>
-            <node x="1842.8183749574378" y="1106.5">models.bikespotmodel.IBikeSpotModel</node>
-            <node x="1834.5833333333333" y="2792.5">models.bookkeepingmodel.IAccountModel</node>
-            <node x="2714.0494004456996" y="1420.5">models.rentalmodel</node>
-            <node x="2146.629504403046" y="2349.5">controllers.bikecontroller.EndTripAction</node>
-            <node x="1842.6295044030462" y="2350.0">controllers.bikecontroller.DisplayFareAction</node>
-            <node x="2199.8207559098187" y="911.5">entities.booking.BookingMapper</node>
-            <node x="1594.5833333333333" y="2792.5">dao.bookkeepingdao.IAccountDao</node>
-            <node x="4136.9781786454705" y="1838.5">controllers.command.Command</node>
-            <node x="3884.7281786454705" y="2338.5">controllers.bikecontroller.BikesAction</node>
-            <node x="4193.4781786454705" y="2305.5">controllers.usercontroller.LoginAction</node>
-            <node x="70.25" y="3407.0">models.bookkeepingmodel.ITransactionModel</node>
-            <node x="2802.452898766962" y="1117.5">models.bikemodel</node>
-            <node x="3132.452898766962" y="1062.5">models.usermodel.IUserModel</node>
-            <node x="0.0" y="2305.5">controllers.support.RaiseTicketAction</node>
-            <node x="3140.5528987669613" y="1365.0">controllers.usercontroller.ResetPasswordAction</node>
-            <node x="3476.7716487669613" y="1342.5">models.usermodel.UserModel</node>
-            <node x="372.33333333333326" y="2726.5">entities.bookkeeping.TransactionLine</node>
-            <node x="2429.0833333333335" y="2602.5">controllers.paymentcontroller.PayAction</node>
-            <node x="2367.6595238095233" y="258.0">entities.booking.Booking</node>
-            <node x="2754.629504403046" y="2372.0">controllers.usercontroller.LogoutAction</node>
-            <node x="304.0" y="2261.5">controllers.bikecontroller.MakeBookingAction</node>
-            <node x="974.3333333333334" y="2860.5">dao.bookkeepingdao.ILedgerDao</node>
-            <node x="1034.3333333333335" y="3028.5">dao.bookkeepingdao.LedgerDao</node>
-            <node x="1480.8183749574378" y="1117.5">dao.support</node>
-            <node x="1960.3183749574378" y="1342.5">models.bikespotmodel.BikeSpotModel</node>
-            <node x="2380.4052797193426" y="1738.5">main.BikeRentalSingleton</node>
-            <node x="1214.3333333333333" y="2860.5">models.bookkeepingmodel.ILedgerModel</node>
-            <node x="2911.952898766962" y="911.5">entities.users.UserMapper</node>
-            <node x="1950.2158139268552" y="922.5">entities.bikeSpot</node>
-            <node x="4459.118912337662" y="56.0">entities.users.UserRole</node>
-            <node x="2450.629504403046" y="2349.5">controllers.bikecontroller.StartTripAction</node>
-            <node x="3058.629504403046" y="2349.5">controllers.bikecontroller.CancelBookingAction</node>
-            <node x="312.75" y="3576.5">dao.bookkeepingdao.TransactionDao</node>
-            <node x="4500.47817864547" y="2360.5">controllers.usercontroller.RegisterAction</node>
-            <node x="0.0" y="3598.0">models.bookkeepingmodel.TransactionModel</node>
-            <node x="1153.0658139268553" y="922.5">entities.support</node>
-            <node x="592.0" y="2360.5">controllers.bikeSpot.DashboardBikeSpotsAction</node>
-            <node x="2176.0833333333335" y="2602.5">entities.users.RentalHistory</node>
-            <node x="1285.5833333333335" y="3028.5">models.bookkeepingmodel.LedgerModel</node>
-            <node x="634.3333333333333" y="3362.5">entities.bookkeeping.TransactionBuilder</node>
-            <node x="1108.8839242552237" y="1106.5">models.supportmodel.ISupportModel</node>
-            <node x="2309.2802797193426" y="1398.5">main.BikeRentalSingleton.SingletonHelper</node>
-            <node x="1622.8183749574378" y="1095.0">utilities.Utils</node>
-            <node x="624.1888888888889" y="2602.5">entities.bookkeeping.ValueType</node>
-            <node x="4924.97817864547" y="1364.5">controllers.usercontroller.DashboardAction</node>
-            <node x="1788.583333333333" y="2602.5">entities.bookkeeping.Account</node>
-            <node x="4652.97817864547" y="1376.0">interceptors.AuthenticationInterceptor</node>
-            <node x="1898.0833333333335" y="2960.5">models.bookkeepingmodel.AccountModel</node>
-            <node x="4148.022244005057" y="1073.5">utilities.Constants</node>
-            <node x="2825.0833333333335" y="2602.5">controllers.bikecontroller.PreBookAction</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="interceptors.AuthenticationInterceptor" target="interceptors.UserAware">
-              <point x="83.66666666666697" y="-59.5" />
-              <point x="4862.1448453121375" y="1322.5" />
-              <point x="4815.47817864547" y="1322.5" />
-              <point x="-26.5" y="26.0" />
-            </edge>
-            <edge source="controllers.usercontroller.LoginAction" target="entities.users.User">
-              <point x="41.0" y="-104.0" />
-              <point x="4377.9781786454705" y="2221.5" />
-              <point x="4473.022244005057" y="2221.5" />
-              <point x="4473.022244005057" y="860.0" />
-              <point x="4546.216951553348" y="860.0" />
-              <point x="-12.235294117646845" y="192.0" />
-            </edge>
-            <edge source="entities.users.User" target="entities.users.Address">
-              <point x="69.33333333333303" y="-192.0" />
-              <point x="4627.785579004329" y="216.0" />
-              <point x="4679.118912337662" y="216.0" />
-              <point x="0.0" y="93.0" />
-            </edge>
-            <edge source="models.bookkeepingmodel.IAccountModel" target="entities.bookkeeping.Account">
-              <point x="-2.2737367544323206E-13" y="-59.0" />
-              <point x="1951.083333333333" y="2767.5" />
-              <point x="1912.333333333333" y="2767.5" />
-              <point x="24.75" y="70.0" />
-            </edge>
-            <edge source="models.rentalmodel" target="entities.bike">
-              <point x="0.0" y="-15.0" />
-              <point x="2786.5494004456996" y="1262.5" />
-              <point x="2780.952898766962" y="1262.5" />
-              <point x="2780.952898766962" y="770.0" />
-              <point x="2882.492166740708" y="770.0" />
-              <point x="-6.4375" y="15.0" />
-            </edge>
-            <edge source="utilities.FileManager" target="utilities.Constants">
-              <point x="0.0" y="-48.5" />
-              <point x="4195.2281786454705" y="1322.5" />
-              <point x="4230.522244005057" y="1322.5" />
-              <point x="-27.5" y="59.0" />
-            </edge>
-            <edge source="controllers.bikecontroller.BikesAction" target="entities.bike">
-              <point x="113.60000000000036" y="-71.0" />
-              <point x="4140.328178645471" y="2231.5" />
-              <point x="4048.7281786454705" y="2231.5" />
-              <point x="4048.7281786454705" y="680.0" />
-              <point x="2933.992166740708" y="680.0" />
-              <point x="45.0625" y="15.0" />
-            </edge>
-            <edge source="dao.bookkeepingdao.IAccountDao" target="entities.bookkeeping.Account">
-              <point x="0.0" y="-59.0" />
-              <point x="1704.0833333333333" y="2767.5" />
-              <point x="1813.333333333333" y="2767.5" />
-              <point x="-74.25" y="70.0" />
-            </edge>
-            <edge source="models.bookkeepingmodel.TransactionModel" target="models.bookkeepingmodel.ITransactionModel">
-              <point x="70.25" y="-37.5" />
-              <point x="0.0" y="37.5" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="models.usermodel.UserModel">
-              <point x="120.45714285714303" y="-181.5" />
-              <point x="2624.8624225764856" y="1718.5" />
-              <point x="3685.2716487669613" y="1718.5" />
-              <point x="0.0" y="93.0" />
-            </edge>
-            <edge source="entities.bookkeeping.TransactionBuilder" target="entities.bookkeeping.Transaction">
-              <point x="-118.0" y="-82.0" />
-              <point x="663.8333333333333" y="3332.5" />
-              <point x="488.8555555555555" y="3332.5" />
-              <point x="65.0" y="115.0" />
-            </edge>
-            <edge source="models.bikespotmodel.BikeSpotModel" target="dao.bikespot">
-              <point x="29.0" y="-93.0" />
-              <point x="2105.3183749574378" y="1322.5" />
-              <point x="2155.904089243152" y="1322.5" />
-              <point x="-18.0" y="15.0" />
-            </edge>
-            <edge source="dao.bookkeepingdao.AccountDao" target="dao.bookkeepingdao.IAccountDao">
-              <point x="-54.75" y="-59.0" />
-              <point x="1709.3333333333333" y="2935.5" />
-              <point x="1704.0833333333333" y="2935.5" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="models.rentalmodel">
-              <point x="42.514285714285506" y="-181.5" />
-              <point x="2546.919565433628" y="1608.5" />
-              <point x="2732.1744004456996" y="1608.5" />
-              <point x="-54.375" y="15.0" />
-            </edge>
-            <edge source="controllers.support.RaiseTicketAction" target="entities.support">
-              <point x="-71.0" y="-104.0" />
-              <point x="71.0" y="2241.5" />
-              <point x="89.16666666666652" y="2241.5" />
-              <point x="89.16666666666652" y="1012.5" />
-              <point x="1203.8991472601886" y="1012.5" />
-              <point x="-10.166666666666742" y="15.0" />
-            </edge>
-            <edge source="controllers.bikecontroller.MakeBookingAction" target="entities.booking.Booking">
-              <point x="0.0" y="-148.0" />
-              <point x="438.0" y="2121.5" />
-              <point x="400.9000000000001" y="2121.5" />
-              <point x="400.9000000000001" y="850.0" />
-              <point x="2391.6595238095233" y="850.0" />
-              <point x="-80.0" y="170.0" />
-            </edge>
-            <edge source="interceptors.AuthenticationInterceptor" target="utilities.Constants">
-              <point x="-83.66666666666697" y="-59.5" />
-              <point x="4694.8115119788035" y="1312.5" />
-              <point x="4340.522244005057" y="1312.5" />
-              <point x="82.5" y="59.0" />
-            </edge>
-            <edge source="models.rentalmodel" target="dao.bookingdao">
-              <point x="-26.363636363636488" y="-15.0" />
-              <point x="2760.1857640820635" y="1232.5" />
-              <point x="2489.737422576485" y="1232.5" />
-              <point x="60.416666666666515" y="15.0" />
-            </edge>
-            <edge source="controllers.usercontroller.LogoutAction" target="main.BikeRentalSingleton">
-              <point x="71.0" y="-37.5" />
-              <point x="2967.629504403046" y="2211.5" />
-              <point x="2540.571946386009" y="2211.5" />
-              <point x="36.166666666666515" y="181.5" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="models.bikespotmodel.IBikeSpotModel">
-              <point x="-70.85714285714312" y="-181.5" />
-              <point x="2433.5481368621995" y="1638.5" />
-              <point x="1911.0278987669615" y="1638.5" />
-              <point x="1911.0278987669615" y="1322.5" />
-              <point x="1939.8183749574378" y="1322.5" />
-              <point x="0.0" y="26.0" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="models.supportmodel.SupportModel">
-              <point x="-106.28571428571422" y="-181.5" />
-              <point x="2398.1195654336284" y="1688.5" />
-              <point x="1360.3839242552237" y="1688.5" />
-              <point x="0.0" y="49.0" />
-            </edge>
-            <edge source="models.rentalmodel" target="entities.users.User">
-              <point x="13.181818181818016" y="-15.0" />
-              <point x="2799.7312186275176" y="1262.5" />
-              <point x="2791.952898766962" y="1262.5" />
-              <point x="2791.952898766962" y="790.0" />
-              <point x="4460.569892729818" y="790.0" />
-              <point x="-97.88235294117658" y="192.0" />
-            </edge>
-            <edge source="models.usermodel.UserModel" target="models.usermodel.IUserModel">
-              <point x="-78.1875" y="-93.0" />
-              <point x="3607.0841487669613" y="1292.5" />
-              <point x="3424.3528987669615" y="1292.5" />
-              <point x="83.40000000000009" y="70.0" />
-            </edge>
-            <edge source="models.usermodel.UserModel" target="utilities.Constants">
-              <point x="182.4375" y="-93.0" />
-              <point x="3867.7091487669613" y="1322.5" />
-              <point x="4175.522244005057" y="1322.5" />
-              <point x="-82.5" y="59.0" />
-            </edge>
-            <edge source="models.bookkeepingmodel.AccountModel" target="entities.bookkeeping.Account">
-              <point x="58.24999999999977" y="-59.0" />
-              <point x="2072.833333333333" y="2935.5" />
-              <point x="2078.083333333333" y="2935.5" />
-              <point x="2078.083333333333" y="2767.5" />
-              <point x="1961.833333333333" y="2767.5" />
-              <point x="74.25" y="70.0" />
-            </edge>
-            <edge source="models.bookkeepingmodel.TransactionModel" target="entities.bookkeeping.Transaction">
-              <point x="-70.25" y="-37.5" />
-              <point x="70.25" y="3551.5" />
-              <point x="59.75" y="3551.5" />
-              <point x="59.75" y="3322.5" />
-              <point x="315.5222222222221" y="3322.5" />
-              <point x="-108.33333333333337" y="115.0" />
-            </edge>
-            <edge source="models.rentalmodel" target="dao.userdao">
-              <point x="65.90909090909099" y="-15.0" />
-              <point x="2852.4584913547906" y="1312.5" />
-              <point x="3037.286232100295" y="1312.5" />
-              <point x="-13.666666666666515" y="15.0" />
-            </edge>
-            <edge source="entities.bookkeeping.Transaction" target="entities.bookkeeping.ValueType">
-              <point x="-86.66666666666669" y="-115.0" />
-              <point x="337.1888888888888" y="3047.5" />
-              <point x="316.9666666666666" y="3047.5" />
-              <point x="316.9666666666666" y="2696.5" />
-              <point x="641.6888888888889" y="2696.5" />
-              <point x="-35.0" y="37.0" />
-            </edge>
-            <edge source="controllers.bikecontroller.MakeBookingAction" target="main.BikeRentalSingleton">
-              <point x="53.60000000000002" y="-148.0" />
-              <point x="491.5999999999999" y="2151.5" />
-              <point x="2406.238613052676" y="2151.5" />
-              <point x="-98.16666666666652" y="181.5" />
-            </edge>
-            <edge source="main.BikeRentalSingleton.SingletonHelper" target="main.BikeRentalSingleton">
-              <point x="-27.875" y="37.0" />
-              <point x="2392.9052797193426" y="1558.5" />
-              <point x="2490.233851147914" y="1558.5" />
-              <point x="-14.171428571428805" y="-181.5" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="dao.bikespot">
-              <point x="-56.68571428571431" y="-181.5" />
-              <point x="2447.7195654336283" y="1618.5" />
-              <point x="2202.8183749574378" y="1618.5" />
-              <point x="2202.8183749574378" y="1322.5" />
-              <point x="2191.904089243152" y="1322.5" />
-              <point x="18.0" y="15.0" />
-            </edge>
-            <edge source="dao.bookkeepingdao.ILedgerDao" target="entities.bookkeeping.Ledger">
-              <point x="0.0" y="-59.0" />
-              <point x="1083.8333333333335" y="2835.5" />
-              <point x="1191.0833333333333" y="2835.5" />
-              <point x="-84.0" y="104.0" />
-            </edge>
-            <edge source="controllers.usercontroller.RentalHistoryAction" target="entities.booking.Booking">
-              <point x="-35.5" y="-60.0" />
-              <point x="1002.5" y="2121.5" />
-              <point x="972.5" y="2121.5" />
-              <point x="972.5" y="870.0" />
-              <point x="2423.6595238095233" y="870.0" />
-              <point x="-48.0" y="170.0" />
-            </edge>
-            <edge source="controllers.usercontroller.DashboardAction" target="models.usermodel.IUserModel">
-              <point x="-83.19999999999982" y="-71.0" />
-              <point x="4945.778178645471" y="1272.5" />
-              <point x="3507.752898766962" y="1272.5" />
-              <point x="166.80000000000018" y="70.0" />
-            </edge>
-            <edge source="dao.bikespot" target="dao.bikespot">
-              <point x="-54.0" y="15.0" />
-              <point x="2119.904089243152" y="1167.5" />
-              <point x="2090.904089243152" y="1167.5" />
-              <point x="2090.904089243152" y="1140.0" />
-              <point x="-63.0" y="7.5" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="dao.bikedao">
-              <point x="14.17142857142835" y="-181.5" />
-              <point x="2518.576708290771" y="1568.5" />
-              <point x="2581.781470195533" y="1568.5" />
-              <point x="2581.781470195533" y="1022.5" />
-              <point x="2691.3814701955334" y="1022.5" />
-              <point x="-17.57142857142844" y="15.0" />
-            </edge>
-            <edge source="controllers.usercontroller.RegisterAction" target="entities.users.User">
-              <point x="0.0" y="-49.0" />
-              <point x="4642.47817864547" y="880.0" />
-              <point x="4582.922833906288" y="880.0" />
-              <point x="24.47058823529369" y="192.0" />
-            </edge>
-            <edge source="utilities.Utils" target="utilities.IUtil">
-              <point x="0.0" y="-37.5" />
-              <point x="0.0" y="37.5" />
-            </edge>
-            <edge source="models.bikemodel" target="entities.bike">
-              <point x="45.666666666666515" y="-15.0" />
-              <point x="2916.619565433628" y="1022.5" />
-              <point x="2841.202898766962" y="1022.5" />
-              <point x="2841.202898766962" y="780.0" />
-              <point x="2895.367166740708" y="780.0" />
-              <point x="6.4375" y="15.0" />
-            </edge>
-            <edge source="models.usermodel.IUserModel" target="entities.booking.Booking">
-              <point x="0.0" y="-70.0" />
-              <point x="3340.952898766962" y="720.0" />
-              <point x="2535.6595238095233" y="720.0" />
-              <point x="64.0" y="170.0" />
-            </edge>
-            <edge source="models.rentalmodel" target="models.bikemodel">
-              <point x="39.545454545454504" y="-15.0" />
-              <point x="2826.0948549911545" y="1292.5" />
-              <point x="2870.952898766962" y="1292.5" />
-              <point x="0.0" y="15.0" />
-            </edge>
-            <edge source="models.bookkeepingmodel.ITransactionModel" target="entities.bookkeeping.Transaction">
-              <point x="0.0" y="-37.5" />
-              <point x="210.75" y="3332.5" />
-              <point x="358.8555555555555" y="3332.5" />
-              <point x="-65.0" y="115.0" />
-            </edge>
-            <edge source="controllers.bikeSpot.DashboardBikeSpotsAction" target="entities.bikeSpot">
-              <point x="-35.5" y="-49.0" />
-              <point x="698.5" y="2121.5" />
-              <point x="668.5" y="2121.5" />
-              <point x="668.5" y="1032.5" />
-              <point x="1981.9658139268552" y="1032.5" />
-              <point x="-31.75" y="15.0" />
-            </edge>
-            <edge source="models.rentalmodel" target="main.BikeRentalSingleton">
-              <point x="54.375" y="15.0" />
-              <point x="2840.9244004456996" y="1638.5" />
-              <point x="2568.1767082907713" y="1638.5" />
-              <point x="63.771428571428714" y="-181.5" />
-            </edge>
-            <edge source="interceptors.AuthenticationInterceptor" target="entities.users.User">
-              <point x="0.0" y="-59.5" />
-              <point x="4778.47817864547" y="870.0" />
-              <point x="4595.158128023937" y="870.0" />
-              <point x="36.705882352941444" y="192.0" />
-            </edge>
-            <edge source="models.supportmodel.ISupportModel" target="entities.support">
-              <point x="0.0" y="-26.0" />
-              <point x="1215.3839242552237" y="1012.5" />
-              <point x="1224.232480593522" y="1012.5" />
-              <point x="10.166666666666742" y="15.0" />
-            </edge>
-            <edge source="models.bikespotmodel.IBikeSpotModel" target="entities.bikeSpot">
-              <point x="0.0" y="-26.0" />
-              <point x="1939.8183749574378" y="1042.5" />
-              <point x="2003.132480593522" y="1042.5" />
-              <point x="-10.583333333333258" y="15.0" />
-            </edge>
-            <edge source="controllers.bikecontroller.MakeBookingAction" target="entities.booking.BookingType">
-              <point x="-107.19999999999982" y="-148.0" />
-              <point x="330.8000000000002" y="2121.5" />
-              <point x="343.93206974983286" y="2121.5" />
-              <point x="343.93206974983286" y="216.0" />
-              <point x="2163.3261904761903" y="216.0" />
-              <point x="-48.666666666666515" y="37.0" />
-            </edge>
-            <edge source="entities.users.UserMapper" target="entities.users.UserRank">
-              <point x="-92.66666666666652" y="-26.0" />
-              <point x="2958.286232100295" y="780.0" />
-              <point x="2999.6317500740415" y="780.0" />
-              <point x="2999.6317500740415" y="216.0" />
-              <point x="3586.672483766233" y="216.0" />
-              <point x="-33.0" y="48.0" />
-            </edge>
-            <edge source="dao.bookkeepingdao.ITransactionDao" target="entities.bookkeeping.Transaction">
-              <point x="0.0" y="-59.0" />
-              <point x="491.25" y="3342.5" />
-              <point x="445.5222222222222" y="3342.5" />
-              <point x="21.666666666666686" y="115.0" />
-            </edge>
-            <edge source="dao.bikedao" target="dao.bikedao">
-              <point x="-35.14285714285715" y="15.0" />
-              <point x="2673.8100416241045" y="982.5" />
-              <point x="2617.452898766962" y="982.5" />
-              <point x="2617.452898766962" y="930.0" />
-              <point x="-61.5" y="-7.5" />
-            </edge>
-            <edge source="models.usermodel.UserModel" target="entities.users.UserRank">
-              <point x="26.0625" y="-93.0" />
-              <point x="3711.3341487669613" y="1322.5" />
-              <point x="3680.665083407375" y="1322.5" />
-              <point x="3680.665083407375" y="216.0" />
-              <point x="3619.672483766233" y="216.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="controllers.support.RaiseTicketAction" target="utilities.Utils">
-              <point x="-23.666666666666515" y="-104.0" />
-              <point x="118.33333333333348" y="2241.5" />
-              <point x="100.16666666666652" y="2241.5" />
-              <point x="100.16666666666652" y="1708.5" />
-              <point x="354.93206974983286" y="1708.5" />
-              <point x="354.93206974983286" y="1312.5" />
-              <point x="1647.8183749574378" y="1312.5" />
-              <point x="-75.0" y="37.5" />
-            </edge>
-            <edge source="entities.bike" target="entities.bike">
-              <point x="-45.0625" y="15.0" />
-              <point x="2843.867166740708" y="463.0" />
-              <point x="2817.429666740708" y="463.0" />
-              <point x="2817.429666740708" y="428.0" />
-              <point x="-51.5" y="-0.0" />
-            </edge>
-            <edge source="dao.bookingdao" target="entities.booking.Booking">
-              <point x="36.25" y="-15.0" />
-              <point x="2465.5707559098187" y="1042.5" />
-              <point x="2509.3207559098187" y="1042.5" />
-              <point x="2509.3207559098187" y="880.0" />
-              <point x="2471.6595238095233" y="880.0" />
-              <point x="0.0" y="170.0" />
-            </edge>
-            <edge source="models.bikespotmodel.BikeSpotModel" target="entities.bikeSpot">
-              <point x="-29.0" y="-93.0" />
-              <point x="2047.3183749574378" y="1042.5" />
-              <point x="2024.2991472601884" y="1042.5" />
-              <point x="10.583333333333258" y="15.0" />
-            </edge>
-            <edge source="controllers.bikecontroller.BikesAction" target="main.BikeRentalSingleton">
-              <point x="-56.80000000000018" y="-71.0" />
-              <point x="3969.9281786454703" y="2171.5" />
-              <point x="2581.9052797193426" y="2171.5" />
-              <point x="77.5" y="181.5" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="main.BikeRentalSingleton.SingletonHelper">
-              <point x="-21.257142857142753" y="-181.5" />
-              <point x="2483.1481368622" y="1568.5" />
-              <point x="2337.1552797193426" y="1568.5" />
-              <point x="-83.625" y="37.0" />
-            </edge>
-            <edge source="controllers.usercontroller.DashboardAction" target="entities.users.User">
-              <point x="41.600000000000364" y="-71.0" />
-              <point x="5070.57817864547" y="1322.5" />
-              <point x="5075.022244005057" y="1322.5" />
-              <point x="5075.022244005057" y="660.0" />
-              <point x="4631.864010376878" y="660.0" />
-              <point x="73.41176470588198" y="192.0" />
-            </edge>
-            <edge source="dao.support" target="entities.support">
-              <point x="0.0" y="-15.0" />
-              <point x="1541.8183749574378" y="1002.5" />
-              <point x="1264.8991472601886" y="1002.5" />
-              <point x="50.83333333333326" y="15.0" />
-            </edge>
-            <edge source="models.bookkeepingmodel.ILedgerModel" target="entities.bookkeeping.Ledger">
-              <point x="0.0" y="-59.0" />
-              <point x="1346.3333333333333" y="2835.5" />
-              <point x="1303.0833333333333" y="2835.5" />
-              <point x="28.0" y="104.0" />
-            </edge>
-            <edge source="models.usermodel.UserModel" target="entities.booking.Booking">
-              <point x="-26.0625" y="-93.0" />
-              <point x="3659.2091487669613" y="1282.5" />
-              <point x="3591.0216487669613" y="1282.5" />
-              <point x="3591.0216487669613" y="710.0" />
-              <point x="2551.6595238095233" y="710.0" />
-              <point x="80.0" y="170.0" />
-            </edge>
-            <edge source="controllers.usercontroller.LoginAction" target="utilities.Constants">
-              <point x="0.0" y="-104.0" />
-              <point x="4336.9781786454705" y="2241.5" />
-              <point x="4359.97817864547" y="2241.5" />
-              <point x="4359.97817864547" y="1322.5" />
-              <point x="4285.522244005057" y="1322.5" />
-              <point x="27.5" y="59.0" />
-            </edge>
-            <edge source="models.supportmodel.SupportModel" target="models.supportmodel.ISupportModel">
-              <point x="-84.0" y="-49.0" />
-              <point x="1276.3839242552237" y="1302.5" />
-              <point x="1286.3839242552237" y="1302.5" />
-              <point x="71.0" y="26.0" />
-            </edge>
-            <edge source="models.supportmodel.SupportModel" target="entities.support">
-              <point x="-28.0" y="-49.0" />
-              <point x="1332.3839242552237" y="1012.5" />
-              <point x="1244.5658139268553" y="1012.5" />
-              <point x="30.5" y="15.0" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="models.usermodel.IUserModel">
-              <point x="113.37142857142862" y="-181.5" />
-              <point x="2617.7767082907712" y="1708.5" />
-              <point x="3385.0528987669613" y="1708.5" />
-              <point x="3385.0528987669613" y="1322.5" />
-              <point x="3340.952898766962" y="1322.5" />
-              <point x="0.0" y="70.0" />
-            </edge>
-            <edge source="models.bookkeepingmodel.LedgerModel" target="models.bookkeepingmodel.ILedgerModel">
-              <point x="-66.0" y="-59.0" />
-              <point x="1351.5833333333335" y="3003.5" />
-              <point x="1346.3333333333333" y="3003.5" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="controllers.bikecontroller.StartTripAction" target="main.BikeRentalSingleton">
-              <point x="71.0" y="-60.0" />
-              <point x="2663.629504403046" y="2231.5" />
-              <point x="2519.9052797193426" y="2231.5" />
-              <point x="15.5" y="181.5" />
-            </edge>
-            <edge source="models.rentalmodel" target="utilities.Utils">
-              <point x="-65.90909090909099" y="-15.0" />
-              <point x="2720.6403095366086" y="1262.5" />
-              <point x="1747.8183749574378" y="1262.5" />
-              <point x="25.0" y="37.5" />
-            </edge>
-            <edge source="dao.bookkeepingdao.LedgerDao" target="dao.bookkeepingdao.ILedgerDao">
-              <point x="-54.75" y="-59.0" />
-              <point x="1089.0833333333335" y="3003.5" />
-              <point x="1083.8333333333335" y="3003.5" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="controllers.support.RaiseTicketAction" target="main.BikeRentalSingleton">
-              <point x="118.33333333333337" y="-104.0" />
-              <point x="260.3333333333335" y="2141.5" />
-              <point x="2395.9052797193426" y="2141.5" />
-              <point x="-108.5" y="181.5" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="dao.support">
-              <point x="-85.02857142857147" y="-181.5" />
-              <point x="2419.376708290771" y="1658.5" />
-              <point x="1674.4833333333331" y="1658.5" />
-              <point x="1674.4833333333331" y="1282.5" />
-              <point x="1592.651708290771" y="1282.5" />
-              <point x="50.83333333333326" y="15.0" />
-            </edge>
-            <edge source="entities.users.UserMapper" target="entities.users.User">
-              <point x="0.0" y="-26.0" />
-              <point x="3050.952898766962" y="800.0" />
-              <point x="4472.805186847465" y="800.0" />
-              <point x="-85.64705882352973" y="192.0" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="models.bikespotmodel.BikeSpotModel">
-              <point x="-63.771428571428714" y="-181.5" />
-              <point x="2440.633851147914" y="1628.5" />
-              <point x="2076.3183749574378" y="1628.5" />
-              <point x="0.0" y="93.0" />
-            </edge>
-            <edge source="dao.bookkeepingdao.LedgerDao" target="entities.bookkeeping.Ledger">
-              <point x="54.75" y="-59.0" />
-              <point x="1198.5833333333335" y="3003.5" />
-              <point x="1203.8333333333333" y="3003.5" />
-              <point x="1203.8333333333333" y="2835.5" />
-              <point x="1247.0833333333333" y="2835.5" />
-              <point x="-28.0" y="104.0" />
-            </edge>
-            <edge source="dao.bookingdao" target="entities.booking.BookingMapper">
-              <point x="-36.25" y="-15.0" />
-              <point x="2393.0707559098187" y="1042.5" />
-              <point x="2349.3207559098187" y="1042.5" />
-              <point x="0.0" y="26.0" />
-            </edge>
-            <edge source="entities.users.User" target="entities.users.UserRole">
-              <point x="0.0" y="-192.0" />
-              <point x="4558.452245670995" y="216.0" />
-              <point x="4507.118912337662" y="216.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="dao.bookkeepingdao.AccountDao" target="entities.bookkeeping.Account">
-              <point x="54.75" y="-59.0" />
-              <point x="1818.8333333333333" y="2935.5" />
-              <point x="1824.0833333333333" y="2935.5" />
-              <point x="1824.0833333333333" y="2767.5" />
-              <point x="1862.833333333333" y="2767.5" />
-              <point x="-24.75" y="70.0" />
-            </edge>
-            <edge source="models.usermodel.UserModel" target="entities.users.User">
-              <point x="130.3125" y="-93.0" />
-              <point x="3815.5841487669613" y="1312.5" />
-              <point x="3736.062142230904" y="1312.5" />
-              <point x="3736.062142230904" y="850.0" />
-              <point x="4533.981657435701" y="850.0" />
-              <point x="-24.47058823529369" y="192.0" />
-            </edge>
-            <edge source="dao.support" target="dao.support">
-              <point x="-50.83333333333326" y="15.0" />
-              <point x="1490.9850416241045" y="1167.5" />
-              <point x="1460.8183749574378" y="1167.5" />
-              <point x="1460.8183749574378" y="1132.5" />
-              <point x="-61.0" y="-0.0" />
-            </edge>
-            <edge source="controllers.usercontroller.DashboardAction" target="entities.booking.Booking">
-              <point x="0.0" y="-71.0" />
-              <point x="5028.97817864547" y="670.0" />
-              <point x="2567.6595238095233" y="670.0" />
-              <point x="96.0" y="170.0" />
-            </edge>
-            <edge source="dao.userdao" target="entities.users.User">
-              <point x="49.19999999999982" y="-15.0" />
-              <point x="3100.1528987669617" y="1042.5" />
-              <point x="3270.702898766962" y="1042.5" />
-              <point x="3270.702898766962" y="830.0" />
-              <point x="4509.511069200407" y="830.0" />
-              <point x="-48.94117647058829" y="192.0" />
-            </edge>
-            <edge source="entities.booking.BookingMapper" target="entities.booking.Booking">
-              <point x="0.0" y="-26.0" />
-              <point x="2349.3207559098187" y="880.0" />
-              <point x="2439.6595238095233" y="880.0" />
-              <point x="-32.0" y="170.0" />
-            </edge>
-            <edge source="entities.bookkeeping.TransactionBuilder" target="entities.bookkeeping.TransactionLine">
-              <point x="58.99999999999997" y="-82.0" />
-              <point x="840.8333333333333" y="3047.5" />
-              <point x="809.8333333333333" y="3047.5" />
-              <point x="187.49999999999997" y="148.0" />
-            </edge>
-            <edge source="entities.booking.Booking" target="entities.booking.BookingType">
-              <point x="0.0" y="-170.0" />
-              <point x="2471.6595238095233" y="216.0" />
-              <point x="2260.6595238095233" y="216.0" />
-              <point x="48.666666666666515" y="37.0" />
-            </edge>
-            <edge source="controllers.bikecontroller.EndTripAction" target="main.BikeRentalSingleton">
-              <point x="71.0" y="-60.0" />
-              <point x="2359.629504403046" y="2241.5" />
-              <point x="2499.238613052676" y="2241.5" />
-              <point x="-5.166666666666515" y="181.5" />
-            </edge>
-            <edge source="entities.booking.BookingMapper" target="entities.booking.BookingType">
-              <point x="-99.66666666666652" y="-26.0" />
-              <point x="2249.654089243152" y="830.0" />
-              <point x="2211.9928571428563" y="830.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="models.usermodel.UserModel" target="dao.userdao">
-              <point x="-182.4375" y="-93.0" />
-              <point x="3502.8341487669613" y="1312.5" />
-              <point x="3091.952898766962" y="1312.5" />
-              <point x="41.0" y="15.0" />
-            </edge>
-            <edge source="models.bookkeepingmodel.LedgerModel" target="entities.bookkeeping.Ledger">
-              <point x="66.0" y="-59.0" />
-              <point x="1483.5833333333335" y="3003.5" />
-              <point x="1488.8333333333335" y="3003.5" />
-              <point x="1488.8333333333335" y="2835.5" />
-              <point x="1359.0833333333333" y="2835.5" />
-              <point x="84.0" y="104.0" />
-            </edge>
-            <edge source="dao.userdao" target="dao.userdao">
-              <point x="-54.66666666666666" y="15.0" />
-              <point x="2996.286232100295" y="1167.5" />
-              <point x="2969.452898766962" y="1167.5" />
-              <point x="2969.452898766962" y="1140.0" />
-              <point x="-61.5" y="7.5" />
-            </edge>
-            <edge source="dao.bookingdao" target="dao.bookingdao">
-              <point x="-60.416666666666686" y="15.0" />
-              <point x="2368.904089243152" y="1167.5" />
-              <point x="2336.8207559098187" y="1167.5" />
-              <point x="2336.8207559098187" y="1132.5" />
-              <point x="-72.5" y="-0.0" />
-            </edge>
-            <edge source="models.bikemodel" target="dao.bikedao">
-              <point x="-45.666666666666515" y="-15.0" />
-              <point x="2825.286232100295" y="1042.5" />
-              <point x="2744.0957559098188" y="1042.5" />
-              <point x="35.14285714285734" y="15.0" />
-            </edge>
-            <edge source="dao.bookkeepingdao.TransactionDao" target="dao.bookkeepingdao.ITransactionDao">
-              <point x="59.5" y="-59.0" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="dao.userdao" target="entities.booking.Booking">
-              <point x="-49.19999999999982" y="-15.0" />
-              <point x="3001.752898766962" y="1012.5" />
-              <point x="2852.202898766962" y="1012.5" />
-              <point x="2852.202898766962" y="740.0" />
-              <point x="2503.6595238095233" y="740.0" />
-              <point x="32.0" y="170.0" />
-            </edge>
-            <edge source="controllers.usercontroller.LoginAction" target="main.BikeRentalSingleton">
-              <point x="-123.0" y="-104.0" />
-              <point x="4213.9781786454705" y="2161.5" />
-              <point x="2592.238613052676" y="2161.5" />
-              <point x="87.83333333333348" y="181.5" />
-            </edge>
-            <edge source="controllers.usercontroller.RentalHistoryAction" target="main.BikeRentalSingleton">
-              <point x="35.5" y="-60.0" />
-              <point x="1073.5" y="2191.5" />
-              <point x="2447.571946386009" y="2191.5" />
-              <point x="-56.833333333333485" y="181.5" />
-            </edge>
-            <edge source="entities.bookkeeping.TransactionLine" target="entities.bookkeeping.ValueType">
-              <point x="0.0" y="-148.0" />
-              <point x="622.3333333333333" y="2706.5" />
-              <point x="676.6888888888889" y="2706.5" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="dao.bikedao" target="entities.bike">
-              <point x="-30.75" y="-15.0" />
-              <point x="2678.202898766962" y="750.0" />
-              <point x="2856.742166740708" y="750.0" />
-              <point x="-32.1875" y="15.0" />
-            </edge>
-            <edge source="controllers.bikecontroller.CancelBookingAction" target="main.BikeRentalSingleton">
-              <point x="71.0" y="-60.0" />
-              <point x="3271.629504403046" y="2191.5" />
-              <point x="2561.238613052676" y="2191.5" />
-              <point x="56.833333333333485" y="181.5" />
-            </edge>
-            <edge source="dao.userdao" target="entities.users.UserMapper">
-              <point x="0.0" y="-15.0" />
-              <point x="0.0" y="26.0" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="models.bikemodel">
-              <point x="77.94285714285706" y="-181.5" />
-              <point x="2582.3481368621997" y="1658.5" />
-              <point x="2909.520418173439" y="1658.5" />
-              <point x="2909.520418173439" y="1292.5" />
-              <point x="2925.752898766962" y="1292.5" />
-              <point x="54.80000000000018" y="15.0" />
-            </edge>
-            <edge source="controllers.bikecontroller.DisplayFareAction" target="main.BikeRentalSingleton">
-              <point x="-71.0" y="-59.5" />
-              <point x="1913.6295044030462" y="2211.5" />
-              <point x="2468.238613052676" y="2211.5" />
-              <point x="-36.166666666666515" y="181.5" />
-            </edge>
-            <edge source="interceptors.UserAware" target="entities.users.User">
-              <point x="0.0" y="-26.0" />
-              <point x="4841.97817864547" y="860.0" />
-              <point x="4607.393422141584" y="860.0" />
-              <point x="48.94117647058829" y="192.0" />
-            </edge>
-            <edge source="models.rentalmodel" target="entities.booking.Booking">
-              <point x="-13.181818181818016" y="-15.0" />
-              <point x="2773.3675822638816" y="1222.5" />
-              <point x="2606.952898766962" y="1222.5" />
-              <point x="2606.952898766962" y="870.0" />
-              <point x="2487.6595238095233" y="870.0" />
-              <point x="16.0" y="170.0" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="dao.bookingdao">
-              <point x="-35.42857142857156" y="-181.5" />
-              <point x="2468.976708290771" y="1588.5" />
-              <point x="2291.694565433628" y="1588.5" />
-              <point x="2291.694565433628" y="1312.5" />
-              <point x="2393.0707559098187" y="1312.5" />
-              <point x="-36.25" y="15.0" />
-            </edge>
-            <edge source="controllers.bikeSpot.DashboardBikeSpotsAction" target="main.BikeRentalSingleton">
-              <point x="35.5" y="-49.0" />
-              <point x="769.5" y="2171.5" />
-              <point x="2426.9052797193426" y="2171.5" />
-              <point x="-77.5" y="181.5" />
-            </edge>
-            <edge source="entities.users.User" target="entities.users.UserRank">
-              <point x="-69.33333333333303" y="-192.0" />
-              <point x="4489.118912337663" y="206.0" />
-              <point x="3652.672483766233" y="206.0" />
-              <point x="33.0" y="48.0" />
-            </edge>
-            <edge source="models.bookkeepingmodel.AccountModel" target="models.bookkeepingmodel.IAccountModel">
-              <point x="-58.25000000000023" y="-59.0" />
-              <point x="1956.3333333333333" y="2935.5" />
-              <point x="1951.0833333333333" y="2935.5" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="entities.bookkeeping.Transaction" target="entities.bookkeeping.TransactionLine">
-              <point x="0.0" y="-115.0" />
-              <point x="423.8555555555555" y="3047.5" />
-              <point x="434.83333333333326" y="3047.5" />
-              <point x="-187.5" y="148.0" />
-            </edge>
-            <edge source="controllers.usercontroller.DashboardAction" target="interceptors.UserAware">
-              <point x="-41.600000000000364" y="-71.0" />
-              <point x="4987.378178645469" y="1262.5" />
-              <point x="4868.47817864547" y="1262.5" />
-              <point x="26.5" y="26.0" />
-            </edge>
-            <edge source="entities.bookkeeping.TransactionBuilder" target="entities.bookkeeping.ValueType">
-              <point x="117.99999999999997" y="-82.0" />
-              <point x="899.8333333333333" y="3342.5" />
-              <point x="906.3166666666666" y="3342.5" />
-              <point x="906.3166666666666" y="2706.5" />
-              <point x="711.6888888888889" y="2706.5" />
-              <point x="35.0" y="37.0" />
-            </edge>
-            <edge source="entities.support" target="entities.support">
-              <point x="-50.83333333333326" y="15.0" />
-              <point x="1163.232480593522" y="972.5" />
-              <point x="1133.0658139268553" y="972.5" />
-              <point x="1133.0658139268553" y="937.5" />
-              <point x="-61.0" y="-0.0" />
-            </edge>
-            <edge source="controllers.usercontroller.RegisterAction" target="main.BikeRentalSingleton">
-              <point x="-56.80000000000018" y="-49.0" />
-              <point x="4585.67817864547" y="2121.5" />
-              <point x="2623.238613052676" y="2121.5" />
-              <point x="118.83333333333348" y="181.5" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="dao.userdao">
-              <point x="85.02857142857147" y="-181.5" />
-              <point x="2589.433851147914" y="1668.5" />
-              <point x="2968.30111736888" y="1668.5" />
-              <point x="2968.30111736888" y="1322.5" />
-              <point x="3050.952898766962" y="1322.5" />
-              <point x="0.0" y="15.0" />
-            </edge>
-            <edge source="models.bikespotmodel.BikeSpotModel" target="models.bikespotmodel.IBikeSpotModel">
-              <point x="-87.0" y="-93.0" />
-              <point x="1989.3183749574378" y="1322.5" />
-              <point x="2004.4850416241047" y="1322.5" />
-              <point x="64.66666666666674" y="26.0" />
-            </edge>
-            <edge source="controllers.usercontroller.ResetPasswordAction" target="models.usermodel.IUserModel">
-              <point x="0.0" y="-70.5" />
-              <point x="-83.40000000000009" y="70.0" />
-            </edge>
-            <edge source="controllers.usercontroller.LoginAction" target="controllers.command.Command">
-              <point x="-41.0" y="-104.0" />
-              <point x="4295.9781786454705" y="2141.5" />
-              <point x="4213.4781786454705" y="2141.5" />
-              <point x="0.0" y="81.5" />
-            </edge>
-            <edge source="dao.bikespot" target="entities.bikeSpot">
-              <point x="-31.5" y="-15.0" />
-              <point x="2142.404089243152" y="1032.5" />
-              <point x="2045.4658139268552" y="1032.5" />
-              <point x="31.75" y="15.0" />
-            </edge>
-            <edge source="models.supportmodel.SupportModel" target="dao.support">
-              <point x="84.0" y="-49.0" />
-              <point x="1444.3839242552237" y="1302.5" />
-              <point x="1531.651708290771" y="1302.5" />
-              <point x="-10.166666666666742" y="15.0" />
-            </edge>
-            <edge source="dao.bookkeepingdao.TransactionDao" target="entities.bookkeeping.Transaction">
-              <point x="-59.5" y="-59.0" />
-              <point x="372.25" y="3551.5" />
-              <point x="361.75" y="3551.5" />
-              <point x="361.75" y="3342.5" />
-              <point x="402.18888888888887" y="3342.5" />
-              <point x="-21.66666666666663" y="115.0" />
-            </edge>
-            <edge source="main.BikeRentalSingleton" target="models.supportmodel.ISupportModel">
-              <point x="-120.45714285714303" y="-181.5" />
-              <point x="2383.9481368621996" y="1708.5" />
-              <point x="1151.722545940309" y="1708.5" />
-              <point x="1151.722545940309" y="1302.5" />
-              <point x="1144.3839242552237" y="1302.5" />
-              <point x="-71.0" y="26.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="2365.0" y="1001.0" />
-          <SelectedNodes>
-            <node>entities.bike</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
+        <state relative-caret-position="95">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/rentalmodel/notifications/Subject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-581">
-          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="-119">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bikes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="311" column="68" lean-forward="true" selection-start-line="311" selection-start-column="68" selection-end-line="311" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Dasboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="54" column="64" lean-forward="false" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bikeRental.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="124" column="30" lean-forward="true" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="30" />
+        <state relative-caret-position="272">
+          <caret line="169" column="47" lean-forward="false" selection-start-line="169" selection-start-column="26" selection-end-line="169" selection-end-column="47" />
           <folding />
         </state>
       </provider>

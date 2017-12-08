@@ -15,4 +15,5 @@
     <include file="src/main/resources/liquibase/database.bikespots.changelog-1.0.xml"/>
     <include file="src/main/resources/liquibase/database.support.changelog-1.0.xml"/>
 
+
 </databaseChangeLog>

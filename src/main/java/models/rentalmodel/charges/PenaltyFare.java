@@ -13,7 +13,7 @@ public class PenaltyFare implements IBikeFare {
     @Override
     public Money calculateFare(Long rentalTime, BikeType bikeType) {
 
-        MonetaryAmount normalFare = IBikeFare.bikeRate(bikeType).multiply(rentalTime);
+        MonetaryAmount normalFare = IBikeFare.bikeRate(bikeType).multiply(rentalTime).multiply(1.5);
         return Money.from(normalFare);
     }
 }

@@ -78,7 +78,7 @@ public class UserDao implements IUserDao {
 
     @Override
     public Boolean resetPassword(String password) {
-        return null;
+        return false;
     }
 
 }

@@ -5,7 +5,7 @@ import interceptors.perevent.IClientBookingInterceptor;
 
 public interface ILoggingDispatcher {
 
-    void dispatchClientPreRequestPreMarshal(IBookingRequest context);
+    void dispatchClientRequest(IBookingRequest context);
 
     void register(IClientBookingInterceptor clientRequestInterceptor);
 

@@ -1,0 +1,84 @@
+Timestamp : 2017-12-05 02:21:09.11
+Booking with ID : df6519b7-f987-4305-8ec0-8f4b82311fd5 started at : 2017-12-05 02:21:08.0
+
+Timestamp : 2017-12-05 14:28:35.959
+Booking with ID : da34264a-0c21-4918-a577-a033931985ae started at : 2017-12-05 14:28:35.0
+
+Timestamp : 2017-12-05 15:48:25.848
+Booking with ID : 2289b376-7b08-47b1-8ebb-8b19cef4669e started at : 2017-12-05 15:48:25.0
+
+Timestamp : 2017-12-05 23:39:58.216
+Booking with ID : 769df0fb-a638-46c2-8a89-2a7134e8334d started at : 2017-12-05 23:39:58.0
+
+Timestamp : 2017-12-07 15:39:30.804
+Booking with ID : 6a0fd084-36e8-4df9-b73c-69207f8d1a4f started at : 2017-12-07 15:39:30.0
+
+Timestamp : 2017-12-07 15:47:39.789
+Booking with ID : 74489124-61a5-420f-9557-e9201e0535cf started at : 2017-12-07 15:47:39.0
+
+Timestamp : 2017-12-07 15:54:49.761
+Booking with ID : e8a26abe-b585-4c2b-b943-0bd00111dff5 started at : 2017-12-07 15:54:49.0
+
+Timestamp : 2017-12-07 16:01:42.665
+Booking with ID : 515bc66a-30ba-4040-a857-b4f2c6403a7c started at : 2017-12-07 16:01:42.0
+
+Timestamp : 2017-12-07 16:17:53.5
+Booking with ID : 662419c7-99f2-486f-a137-ab96b0d4a138 started at : 2017-12-07 16:17:53.0
+
+Timestamp : 2017-12-07 16:35:11.78
+Booking with ID : 74ecf30d-4423-49e5-964f-1ef5d92d3d2c started at : 2017-12-07 16:35:11.0
+
+Timestamp : 2017-12-07 16:39:20.972
+Booking with ID : 6c5e666b-2893-4230-a366-35e75a7da857 started at : 2017-12-07 16:39:20.0
+
+Timestamp : 2017-12-07 16:47:15.513
+Booking with ID : 36e014f0-1b66-4612-998c-b0692c70fd4f started at : 2017-12-07 16:47:15.0
+
+Timestamp : 2017-12-07 16:50:33.105
+Booking with ID : 2335df06-0e48-404d-88d5-52347aa130c2 started at : 2017-12-07 16:50:32.0
+
+Timestamp : 2017-12-08 01:29:08.049
+Booking with ID : 1e31ab3d-a859-465e-a117-66493713db82 started at : 2017-12-08 01:29:07.0
+
+Timestamp : 2017-12-08 14:08:36.91
+Booking with ID : 3178601e-bc19-4d04-a989-1aad7c03e159 started at : 2017-12-08 14:08:36.0
+
+Timestamp : 2017-12-08 14:21:29.968
+Booking with ID : 565b4d81-da78-44f7-af86-bc9b0e3e0680 started at : 2017-12-08 14:21:29.0
+
+Timestamp : 2017-12-08 14:37:07.16
+Booking with ID : 67d8c259-081b-4ffb-bbd7-796d49fa2b21 started at : 2017-12-08 14:37:06.0
+
+Timestamp : 2017-12-08 14:50:09.921
+Booking with ID : da454ace-3211-41a6-b970-888e264957c0 started at : 2017-12-08 14:50:09.0
+
+Timestamp : 2017-12-08 14:54:06.968
+Booking with ID : 002b8bda-69ff-43e2-8d58-688c64d82ba6 started at : 2017-12-08 14:54:06.0
+
+Timestamp : 2017-12-08 15:00:33.702
+Booking with ID : 283e8c9b-72ad-4756-8bf7-ee5c13c80b37 started at : 2017-12-08 15:00:33.0
+
+Timestamp : 2017-12-08 15:06:40.961
+Booking with ID : e4940d8d-332b-41e2-98f3-1559758386da started at : 2017-12-08 15:06:40.0
+
+Timestamp : 2017-12-08 15:07:12.806
+Booking with ID : edde3884-6a5a-4bcd-929d-ed82be560994 started at : 2017-12-08 15:07:12.0
+
+Timestamp : 2017-12-08 15:09:32.06
+Booking with ID : e3a808d7-2211-4fbb-820a-80b83f939d84 started at : 2017-12-08 15:09:31.0
+
+Timestamp : 2017-12-08 15:10:53.698
+Booking with ID : adea4934-bb32-45ea-b095-6fe86725475e started at : 2017-12-08 15:10:53.0
+
+Timestamp : 2017-12-08 15:15:08.293
+Booking with ID : 80ceef6d-1973-4c9c-8f45-9ba16fcd27ca started at : 2017-12-08 15:15:07.0
+
+Timestamp : 2017-12-08 15:17:08.509
+Booking with ID : cb4b3fb8-8127-4b10-bbc3-469e9447defc started at : 2017-12-08 15:17:08.0
+
+Timestamp : 2017-12-08 16:15:07.44
+Booking with ID : 4e1e8b42-9af1-4c5e-a02b-5660207959ff started at : 2017-12-08 16:15:07.0
+
+Timestamp : 2017-12-08 18:25:41.452
+Booking with ID : 4353f6a8-a6bb-49d4-866c-b780e44ddcbe started at : 2017-12-08 18:25:41.0
+

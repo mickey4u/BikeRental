@@ -25,6 +25,6 @@ public class Booking {
     private Timestamp startTime;
     // end time for the bike
     private Timestamp endTime;
-
+    //Flag for active Booking
     private boolean activeBooking;
 }

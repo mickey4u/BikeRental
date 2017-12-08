@@ -26,7 +26,7 @@ public class Subject implements ISubject {
 
     @Override
     public void attach(Observer observer) {
-        // throw a null pointer if the observer is null
+        // throw a null pointer if the   is null
         Optional.of(observer).orElseThrow(NullPointerException::new);
         // check if observer is already registered,otherwise attach the observer
         synchronized (MUTEX) {
@@ -57,7 +57,7 @@ public class Subject implements ISubject {
             isUpdated = false;
         }
         // update/notify all observers
-        existingObservers.forEach(eo -> eo.update());
+        existingObservers.forEach(Observer::update);
 
 
     }

@@ -23,8 +23,6 @@ public class LoginAction extends ActionSupport implements Constants, SessionAwar
     private static final long serialVersionUID = 1L;
     private Map<String, Object> session = null;
     private User user = new User();
-    //IUnmarshaledRequest<User> userIUnmarshaledRequest = new UnmarshaledRequest();
-
     main.BikeRentalSingleton bikeRentalSingleton = main.BikeRentalSingleton.getInstance();
 
 
@@ -49,9 +47,6 @@ public class LoginAction extends ActionSupport implements Constants, SessionAwar
             // store logged user in session
             session.put(LOGGED_IN_USER, user);
             action = SUCCESS;
-
-           // userIUnmarshaledRequest.setBooking(this.user);
-            //LoggingDispatcher.getInstance().dispatchClientPreRequestPreMarshal(userIUnmarshaledRequest);
         }
 
         return action;

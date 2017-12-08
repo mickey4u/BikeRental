@@ -55,7 +55,7 @@ public class BookModel implements IBookModel {
             bookingRequest = new BookingRequest();
             bookingRequest.setBooking(booking);
             // pass the context object to teh dispatcher
-            LoggingDispatcher.getInstance().dispatchClientPreRequestPreMarshal(bookingRequest);
+            LoggingDispatcher.getInstance().dispatchClientRequest(bookingRequest);
 
             return true;
         }
@@ -83,7 +83,7 @@ public class BookModel implements IBookModel {
             bookingRequest = new BookingRequest();
             bookingRequest.setBooking(booking);
             // pass the context object to teh dispatcher
-            LoggingDispatcher.getInstance().dispatchClientPreRequestPreMarshal(bookingRequest);
+            LoggingDispatcher.getInstance().dispatchClientRequest(bookingRequest);
             return true;
         }
         return false;
