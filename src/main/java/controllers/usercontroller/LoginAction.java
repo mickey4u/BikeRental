@@ -1,8 +1,8 @@
 package controllers.usercontroller;
 
+import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import com.opensymphony.xwork2.ValidationAwareSupport;
-import controllers.command.Command;
 import entities.users.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * Handles user login
  */
-public class LoginAction implements Command, Constants, SessionAware, ModelDriven<User> {
+public class LoginAction extends ActionSupport implements Constants, SessionAware, ModelDriven<User> {
     private static final Logger logger = LogManager.getLogger(LoginAction.class);
     private final ValidationAwareSupport validationAware = new ValidationAwareSupport();
 
